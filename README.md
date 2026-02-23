@@ -1,67 +1,118 @@
-# Payload Blank Template
+# Colombia Elections App
 
-This template comes configured with the bare minimum to get started on anything you need.
+A neutral, voter-focused website that gives Colombians a single place to read clear, unbiased information about every major presidential candidate — backed by verifiable sources.
 
-## Quick start
+## Why this exists
 
-This template can be deployed directly from our Cloud hosting and it will setup MongoDB and cloud S3 object storage for media.
+There is no single reliable resource online where Colombian voters can find thorough, up-to-date, and unbiased profiles of presidential candidates. This project fills that gap by publishing structured, sourced candidate information in plain Spanish, covering everything from policy proposals to controversies.
 
-## Quick Start - local setup
+## What it does
 
-To spin up this template locally, follow these steps:
+Visitors can:
 
-### Clone
+- Browse a directory of major presidential candidates.
+- Read a full candidate profile (biography, proposals, scandals, endorsements, legislative record, and campaign finance).
+- Compare two candidates side by side.
+- See the sources behind every claim.
+- View the public correction history for any candidate.
 
-After you click the `Deploy` button above, you'll want to have standalone copy of this repo on your machine. If you've already cloned this repo, skip to [Development](#development).
+There are no user accounts. The public-facing site is entirely read-only.
 
-### Development
+## Tech Stack
 
-1. First [clone the repo](#clone) if you have not done so already
-2. `cd my-project && cp .env.example .env` to copy the example environment variables. You'll need to add the `MONGODB_URL` from your Cloud project to your `.env` if you want to use S3 storage and the MongoDB database that was created for you.
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js 15 (App Router) + React + TypeScript |
+| CMS / API | Payload CMS — local API + admin UI |
+| Database | Neon Postgres (via Postgres adapter) |
+| Testing | Vitest (unit/integration) · Playwright (e2e) |
+| Runtime / PM | Bun · ESLint · Docker |
 
-3. `pnpm install && pnpm dev` to install dependencies and start the dev server
-4. open `http://localhost:3000` to open the app in your browser
+## Project Structure
 
-That's it! Changes made in `./src` will be reflected in your app. Follow the on-screen instructions to login and create your first admin user. Then check out [Production](#production) once you're ready to build and serve your app, and [Deployment](#deployment) when you're ready to go live.
+```
+src/
+├── app/
+│   ├── (frontend)/        # Public-facing Next.js routes
+│   └── (payload)/         # Payload admin UI routes
+├── collections/           # Payload collection definitions
+├── payload.config.ts      # Payload configuration
+└── payload-types.ts       # Auto-generated TypeScript types (do not edit)
+tests/
+├── e2e/                   # Playwright end-to-end tests
+├── int/                   # Vitest integration tests
+└── helpers/               # Shared test utilities
+```
 
-#### Docker (Optional)
+## Getting Started
 
-If you prefer to use Docker for local development instead of a local MongoDB instance, the provided docker-compose.yml file can be used.
+### Prerequisites
 
-To do so, follow these steps:
+- [Bun](https://bun.sh) v1.1+
+- A [Neon](https://neon.tech) Postgres database (free tier works for development)
 
-- Modify the `MONGODB_URL` in your `.env` file to `mongodb://127.0.0.1/<dbname>`
-- Modify the `docker-compose.yml` file's `MONGODB_URL` to match the above `<dbname>`
-- Run `docker-compose up` to start the database, optionally pass `-d` to run in the background.
+### Local Development
 
-## How it works
+```bash
+# 1. Clone the repo
+git clone <repo-url>
+cd col-elections-app
 
-The Payload config is tailored specifically to the needs of most websites. It is pre-configured in the following ways:
+# 2. Copy environment variables and fill in your values
+#    Set DATABASE_URL to your Neon connection string
+cp .env.example .env
 
-### Collections
+# 3. Install dependencies
+bun install
 
-See the [Collections](https://payloadcms.com/docs/configuration/collections) docs for details on how to extend this functionality.
+# 4. Start the development server
+bun dev
+```
 
-- #### Users (Authentication)
+Open [http://localhost:3000](http://localhost:3000) for the frontend and [http://localhost:3000/admin](http://localhost:3000/admin) for the Payload admin panel.
 
-  Users are auth-enabled collections that have access to the admin panel.
+### Environment Variables
 
-  For additional help, see the official [Auth Example](https://github.com/payloadcms/payload/tree/main/examples/auth) or the [Authentication](https://payloadcms.com/docs/authentication/overview#authentication-overview) docs.
+| Variable | Description |
+|---|---|
+| `DATABASE_URL` | Neon Postgres connection string (`postgresql://user:pass@host/dbname?sslmode=require`) |
+| `PAYLOAD_SECRET` | Random secret used to sign Payload sessions |
 
-- #### Media
+### Docker (optional)
 
-  This is the uploads enabled collection. It features pre-configured sizes, focal point and manual resizing to help you manage your pictures.
+The `docker-compose.yml` can spin up a local Postgres instance if you prefer not to use Neon during development:
 
-### Docker
+```bash
+# Set DATABASE_URL in .env to: postgresql://postgres:postgres@127.0.0.1:5432/col-elections
+docker-compose up -d
+bun dev
+```
 
-Alternatively, you can use [Docker](https://www.docker.com) to spin up this template locally. To do so, follow these steps:
+### Useful Commands
 
-1. Follow [steps 1 and 2 from above](#development), the docker-compose file will automatically use the `.env` file in your project root
-1. Next run `docker-compose up`
-1. Follow [steps 4 and 5 from above](#development) to login and create your first admin user
+| Command | Description |
+|---|---|
+| `bun dev` | Start the dev server |
+| `bun run build` | Production build |
+| `bun run generate:types` | Regenerate Payload TypeScript types after schema changes |
+| `bun run generate:importmap` | Regenerate admin import map after adding admin components |
+| `bun run test:int` | Run Vitest unit/integration tests |
+| `bun run test:e2e` | Run Playwright end-to-end tests |
+| `bunx tsc --noEmit` | Validate TypeScript without emitting files |
 
-That's it! The Docker instance will help you get up and running quickly while also standardizing the development environment across your teams.
+## Content & Editorial
 
-## Questions
+All candidate data is entered manually by invitation-only editors through the Payload admin UI. The editorial workflow is **draft → review → publish**.
 
-If you have any issues or questions, reach out to us on [Discord](https://discord.com/invite/payload) or start a [GitHub discussion](https://github.com/payloadcms/payload/discussions).
+Content rules:
+- Tone is strictly descriptive — no opinions or candidate rankings.
+- Every sensitive claim (especially scandals) must include: what is alleged, current status, and outcome if known, with a citation.
+- Preferred sources: official institutions → reputable Colombian media (La Silla Vacía, Revista Cambio) → NGOs → social media (last resort).
+
+## Contributing
+
+Access to the CMS is invitation-only. If you are a developer contributing to the codebase, please read [AGENTS.md](./AGENTS.md) for project conventions and architecture rules before making changes.
+
+## License
+
+MIT — see [LICENSE](./LICENSE) for details.

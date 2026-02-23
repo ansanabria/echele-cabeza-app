@@ -1,100 +1,103 @@
-# Agent Context for Colombia Elections App
+# Agent Context — Colombia Elections App
 
-This file gives future agents only the minimum context needed to keep moving.
-If deeper implementation details are needed, load the relevant skill file instead of expanding this document.
-
-## 1) Technical Context (High-Level)
-
-### Stack Overview
-- Frontend: Next.js (App Router) + React + TypeScript.
-- CMS / Backend: Payload CMS (TypeScript-first) with local API and admin UI.
-- Testing: Vitest (integration/unit) and Playwright (e2e).
-- Tooling: ESLint, Docker support, generated Payload types in `src/payload-types.ts`.
-
-### Project Shape
-- Main app code lives in `src/app`.
-- Payload config lives in `src/payload.config.ts`.
-- Collections live in `src/collections`.
-- Admin import map lives in `src/app/(payload)/admin/importMap.js`.
-
-### Critical Rules (Do Not Skip)
-1. When using Payload local API with a `user`, always set `overrideAccess: false`.
-2. In Payload hooks, always pass `req` to nested Payload operations.
-3. Prevent hook loops by using context flags when hooks trigger writes.
-4. After schema/config changes, run type generation (`generate:types`).
-5. After creating/updating admin components, regenerate import map (`payload generate:importmap`).
-6. Validate TypeScript with `tsc --noEmit` after meaningful code changes.
-
-### Agent Depth Rule
-- Keep stack assumptions lightweight in normal execution.
-- If implementation requires deeper framework-specific rules, load a skill:
-  - `payload` skill for Payload schemas, access, hooks, transactions, and API behavior.
-  - `frontend-design` skill for UI/UX design and component styling quality.
-  - Other skills only when directly relevant.
+This file is the single source of context for any agent working on this project. It is intentionally brief. Read it top to bottom before starting any task. If a section points you to a skill, load that skill file before going deeper.
 
 ---
 
-## 2) Business Context (High-Level)
+## Tech Stack
 
-### Product Mission
-Build a neutral, trustworthy, and easy-to-understand website for Colombia’s upcoming presidential election, so voters can review relevant candidate information in one place before voting.
+The app is a **Next.js** (App Router) frontend backed by **Payload CMS** as both the content API and admin UI. Everything is written in **TypeScript**.
 
-### Audience & Language
-- Primary audience: voters nationwide in Colombia.
-- Language at launch: Spanish only.
-- Writing style: very simple, approachable language (avoid technical/political jargon where possible).
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js (App Router) + React + TypeScript |
+| CMS / API | Payload CMS — local API + admin UI |
+| Testing | Vitest (unit/integration) · Playwright (e2e) |
+| Tooling | ESLint · Docker · generated types at `src/payload-types.ts` |
 
-### MVP Scope
-- Election scope: presidential candidates only (major candidates).
-- Core pages/features:
-  - Candidate directory/list.
-  - Candidate detail pages.
-  - Side-by-side comparison.
-  - Source citations per claim.
-  - Public correction history.
-- Public experience is open read-only (no public user accounts in MVP).
+**Where things live:**
 
-### Candidate Information Model (Required Coverage)
-Each candidate profile should cover:
-1. Biography / trajectory.
-2. Government proposals.
-3. Scandals / controversies.
-4. Alliances / endorsements.
-5. Voting or legislative record.
-6. Assets, funding, and campaign finance.
+- `src/app` — all Next.js routes (frontend under `(frontend)/`, Payload admin under `(payload)/`)
+- `src/payload.config.ts` — Payload configuration
+- `src/collections` — collection definitions
+- `src/app/(payload)/admin/importMap.js` — admin import map (regenerate after adding admin components)
 
-### Editorial Policy
-- Tone must be strictly descriptive and non-opinionated.
-- Avoid rankings/scores in MVP to preserve neutrality.
-- For sensitive claims (including scandals), show:
-  - What is alleged/claimed.
-  - Current status.
-  - Outcome (if available).
-  - Clear citations.
-- Sourcing approach: editor discretion with citation notes, preferring source hierarchy:
-  - Official documents/institutions.
-  - Reputable media.
-  - NGOs/civil society reports.
-  - Social media (lowest trust, contextual only).
+### Non-Negotiable Rules
 
-### Operations & Governance
-- Content ingestion at launch: manual CMS entry.
-- Editorial roles at launch: `admin`, `editor` (invitation-only).
-- Workflow: draft -> review -> publish.
-- Update cadence target during campaign peak: every 2–3 days.
-- Include legal/editorial disclaimer in footer and About page.
-- Use privacy-first analytics (no invasive personal tracking).
+Breaking any of these will cause security holes, data corruption, or type errors. Do not skip them.
+
+1. **Always set `overrideAccess: false`** when calling the Payload local API with a `user` object.
+2. **Always pass `req`** to nested Payload operations inside hooks to keep them in the same transaction.
+3. **Prevent hook loops** by guarding recursive writes with a context flag (e.g. `context.skipHooks`).
+4. **Regenerate types** after any schema or config change — run `generate:types`.
+5. **Regenerate the import map** after adding or editing admin components — run `payload generate:importmap`.
+6. **Validate TypeScript** after meaningful changes — run `tsc --noEmit`.
+
+### When to Load a Skill
+
+This file stays thin on purpose. If a task requires deeper knowledge, load the matching skill:
+
+- Payload schemas, access control, hooks, queries, or transactions → load the **`payload`** skill.
+- UI components, page layouts, or visual design → load the **`frontend-design`** skill.
+- Only load other skills when they are directly relevant to the task at hand.
 
 ---
 
-## 3) Agent Working Agreement
+## What We're Building
 
-When requirements are ambiguous:
-1. Default to the simplest implementation that supports voter understanding and neutrality.
-2. Do not add scope beyond MVP without explicit instruction.
-3. Ask clarifying questions before introducing new product assumptions.
+Colombia's next presidential election is approaching, and there is no single reliable place online where voters can find clear, unbiased information about every major candidate. This app fills that gap.
 
-When making code changes:
-1. Make small, targeted edits.
-2. Preserve existing architecture unless a change is explicitly requested.
-3. Validate the changed surface area with relevant tests/checks.
+The goal is simple: give any Colombian voter a single place to read — in plain Spanish — what each major presidential candidate stands for, what their record looks like, and what controversies surround them, all backed by verifiable sources.
+
+### Who it's for
+
+All voters nationwide. The writing style must be simple and approachable — think of a voter who doesn't follow politics closely and needs the key facts explained without jargon.
+
+### What the MVP covers
+
+The first release focuses on major presidential candidates only. Every visitor can:
+
+- Browse the full candidate directory.
+- Read a candidate detail page.
+- Compare two candidates side by side.
+- See the sources behind each claim.
+- View the public correction history for any candidate.
+
+There are no user accounts. The public experience is entirely read-only.
+
+### What goes on each candidate page
+
+Every profile must include all six sections below — no exceptions:
+
+1. **Biography / trajectory** — key life events and public offices held.
+2. **Government plan / proposals** — concrete policy positions.
+3. **Scandals / controversies** — allegations, current status, and outcome if known.
+4. **Alliances and endorsements** — who is backing them.
+5. **Voting / legislative record** — how they have acted in office.
+6. **Assets, funding, and campaign finance** — declared wealth and donors.
+
+### Editorial rules
+
+- **Tone is strictly descriptive.** No opinions, no framing language, no implicit rankings.
+- **No scoring or ranking of candidates** in the MVP — this preserves neutrality.
+- **All sensitive claims** (especially scandals) must state: what is alleged, the current legal/political status, and the outcome if one exists. Every such claim needs a citation.
+- **Source hierarchy** (prefer higher tiers): official documents and institutions → reputable Colombian media (e.g. La Silla Vacía, Revista Cambio) → NGOs and civil society reports → social media (lowest trust, use only for direct candidate statements with full context).
+- **Content workflow:** draft → review → publish. Editors target an update cycle of every 2–3 days during campaign peak.
+- **Access is invitation-only.** Only `admin` and `editor` roles exist; no self-signup.
+
+### Legal and privacy
+
+- A neutrality and editorial disclaimer must appear in both the footer and the About page.
+- Analytics must be privacy-first — no invasive personal tracking.
+
+---
+
+## Working Agreement
+
+Follow these defaults on every task:
+
+- **Stay in scope.** Do not build beyond MVP features without an explicit instruction to do so.
+- **When in doubt, ask.** If a requirement is ambiguous, ask one focused clarifying question before proceeding.
+- **Make small, targeted edits.** Avoid large refactors unless explicitly requested.
+- **Keep the architecture stable.** Preserve existing patterns unless a change is directly requested.
+- **Verify your work.** After any non-trivial change, validate the affected surface area with the relevant tests or type checks.

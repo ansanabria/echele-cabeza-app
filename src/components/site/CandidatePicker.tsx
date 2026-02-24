@@ -1,7 +1,15 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState, useTransition } from 'react'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu'
 
 type CandidateOption = {
   slug: string
@@ -14,23 +22,52 @@ type CandidatePickerProps = {
   candidates: CandidateOption[]
   selectedA?: string
   selectedB?: string
+  onPendingChange?: (isPending: boolean) => void
+  onSelectionChange?: (nextA: string, nextB: string) => void
 }
 
-export function CandidatePicker({ candidates, selectedA, selectedB }: CandidatePickerProps) {
+export function CandidatePicker({
+  candidates,
+  selectedA,
+  selectedB,
+  onPendingChange,
+  onSelectionChange,
+}: CandidatePickerProps) {
   const router = useRouter()
+  const [isPending, startTransition] = useTransition()
+  const [localSelectedA, setLocalSelectedA] = useState(selectedA ?? '')
+  const [localSelectedB, setLocalSelectedB] = useState(selectedB ?? '')
 
   const sortedCandidates = useMemo(
     () => [...candidates].sort((a, b) => a.name.localeCompare(b.name, 'es-CO')),
     [candidates],
   )
 
+  useEffect(() => {
+    onPendingChange?.(isPending)
+  }, [isPending, onPendingChange])
+
+  useEffect(() => {
+    setLocalSelectedA(selectedA ?? '')
+  }, [selectedA])
+
+  useEffect(() => {
+    setLocalSelectedB(selectedB ?? '')
+  }, [selectedB])
+
   function handleSelect(nextA: string, nextB: string) {
+    setLocalSelectedA(nextA)
+    setLocalSelectedB(nextB)
+    onSelectionChange?.(nextA, nextB)
+
     const params = new URLSearchParams()
     if (nextA) params.set('a', nextA)
     if (nextB) params.set('b', nextB)
 
     const query = params.toString()
-    router.push(query ? `/comparar?${query}` : '/comparar')
+    startTransition(() => {
+      router.push(query ? `/comparar?${query}` : '/comparar')
+    })
   }
 
   return (
@@ -38,15 +75,15 @@ export function CandidatePicker({ candidates, selectedA, selectedB }: CandidateP
       <CandidateSelect
         candidates={sortedCandidates}
         label="Candidato A"
-        selectedSlug={selectedA}
-        onSelect={(slug) => handleSelect(slug, selectedB ?? '')}
+        selectedSlug={localSelectedA || undefined}
+        onSelect={(slug) => handleSelect(slug, localSelectedB)}
       />
 
       <CandidateSelect
         candidates={sortedCandidates}
         label="Candidato B"
-        selectedSlug={selectedB}
-        onSelect={(slug) => handleSelect(selectedA ?? '', slug)}
+        selectedSlug={localSelectedB || undefined}
+        onSelect={(slug) => handleSelect(localSelectedA, slug)}
       />
     </section>
   )
@@ -72,10 +109,14 @@ function CandidateSelect({
       <p className="mb-1 text-xs font-medium uppercase tracking-widest text-muted-foreground">
         {label}
       </p>
-      <details className="relative">
-        <summary className="flex w-full min-h-[2.9rem] cursor-pointer list-none items-center gap-2 rounded-md border border-border bg-card px-2.5 py-1.5 text-foreground transition-colors hover:border-ring [&::-webkit-details-marker]:hidden">
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <button
+            type="button"
+            className="flex min-h-[2.9rem] w-full items-center rounded-md border border-border bg-card px-2.5 py-1.5 text-left text-foreground transition-colors hover:border-ring"
+          >
           {selected ? (
-            <>
+            <span className="flex items-center gap-2">
               {selected.imageUrl ? (
                 <img
                   alt={`Foto de ${selected.name}`}
@@ -83,28 +124,27 @@ function CandidateSelect({
                   className="size-[30px] shrink-0 rounded-full object-cover"
                 />
               ) : (
-                <div className="size-[30px] shrink-0 rounded-full bg-secondary" aria-hidden />
+                <span className="size-[30px] shrink-0 rounded-full bg-secondary" aria-hidden />
               )}
               <span className="text-sm">
                 {selected.name} · {selected.party}
               </span>
-            </>
+            </span>
           ) : (
-            <span className="text-sm">Selecciona un candidato</span>
+            <span className="text-sm text-muted-foreground">
+              Selecciona un candidato
+            </span>
           )}
-        </summary>
-        <ul className="absolute left-0 right-0 top-[calc(100%+0.35rem)] z-10 m-0 max-h-60 list-none overflow-auto rounded-md border border-border bg-card p-1 shadow-md">
+          </button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className="w-(--radix-dropdown-menu-trigger-width) min-w-[18rem]">
+          <DropdownMenuLabel className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+            {label}
+          </DropdownMenuLabel>
+          <DropdownMenuRadioGroup value={selectedSlug ?? ''} onValueChange={onSelect}>
           {candidates.map((candidate) => (
-            <li key={`${label}-${candidate.slug}`}>
-              <button
-                type="button"
-                className="flex w-full cursor-pointer items-center gap-2 rounded-md border-0 bg-transparent px-2 py-1.5 text-left text-foreground transition-colors hover:bg-secondary"
-                onClick={(event) => {
-                  onSelect(candidate.slug)
-                  const details = event.currentTarget.closest('details')
-                  details?.removeAttribute('open')
-                }}
-              >
+            <DropdownMenuRadioItem key={`${label}-${candidate.slug}`} value={candidate.slug}>
+              <span className="flex items-center gap-2">
                 {candidate.imageUrl ? (
                   <img
                     alt={`Foto de ${candidate.name}`}
@@ -112,16 +152,17 @@ function CandidateSelect({
                     className="size-[30px] shrink-0 rounded-full object-cover"
                   />
                 ) : (
-                  <div className="size-[30px] shrink-0 rounded-full bg-secondary" aria-hidden />
+                  <span className="size-[30px] shrink-0 rounded-full bg-secondary" aria-hidden />
                 )}
                 <span className="text-sm">
                   {candidate.name} · {candidate.party}
                 </span>
-              </button>
-            </li>
+              </span>
+            </DropdownMenuRadioItem>
           ))}
-        </ul>
-      </details>
+          </DropdownMenuRadioGroup>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   )
 }

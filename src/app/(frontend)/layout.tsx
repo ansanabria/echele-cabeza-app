@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.css'
+import './globals.css'
 import { SiteFooter } from '@/components/site/SiteFooter'
 import { SiteHeader } from '@/components/site/SiteHeader'
 

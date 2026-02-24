@@ -69,6 +69,8 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
+    candidates: Candidate;
+    corrections: Correction;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -78,6 +80,8 @@ export interface Config {
   collectionsSelect: {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    candidates: CandidatesSelect<false> | CandidatesSelect<true>;
+    corrections: CorrectionsSelect<false> | CorrectionsSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -160,6 +164,139 @@ export interface Media {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "candidates".
+ */
+export interface Candidate {
+  id: number;
+  name: string;
+  slug: string;
+  party: string;
+  currentOffice?: string | null;
+  photo: number | Media;
+  lastUpdated: string;
+  biography: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  proposals: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  controversies: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  alliances: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  record: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  funding: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  sources?:
+    | {
+        section: 'biography' | 'proposals' | 'controversies' | 'alliances' | 'record' | 'funding';
+        title: string;
+        publishedAt: string;
+        url: string;
+        tier: 'oficial' | 'prensa' | 'ong' | 'redes';
+        id?: string | null;
+      }[]
+    | null;
+  summaryTrajectory: string;
+  summaryProposals: string;
+  summaryControversies: string;
+  summaryAlliances: string;
+  summaryRecord: string;
+  summaryFunding: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "corrections".
+ */
+export interface Correction {
+  id: number;
+  candidate: number | Candidate;
+  note: string;
+  correctedAt: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -189,6 +326,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'media';
         value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'candidates';
+        value: number | Candidate;
+      } | null)
+    | ({
+        relationTo: 'corrections';
+        value: number | Correction;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -271,6 +416,53 @@ export interface MediaSelect<T extends boolean = true> {
   height?: T;
   focalX?: T;
   focalY?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "candidates_select".
+ */
+export interface CandidatesSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  party?: T;
+  currentOffice?: T;
+  photo?: T;
+  lastUpdated?: T;
+  biography?: T;
+  proposals?: T;
+  controversies?: T;
+  alliances?: T;
+  record?: T;
+  funding?: T;
+  sources?:
+    | T
+    | {
+        section?: T;
+        title?: T;
+        publishedAt?: T;
+        url?: T;
+        tier?: T;
+        id?: T;
+      };
+  summaryTrajectory?: T;
+  summaryProposals?: T;
+  summaryControversies?: T;
+  summaryAlliances?: T;
+  summaryRecord?: T;
+  summaryFunding?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "corrections_select".
+ */
+export interface CorrectionsSelect<T extends boolean = true> {
+  candidate?: T;
+  note?: T;
+  correctedAt?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

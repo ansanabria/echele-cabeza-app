@@ -1,18 +1,25 @@
 import React from 'react'
 import './styles.css'
+import { SiteFooter } from '@/components/site/SiteFooter'
+import { SiteHeader } from '@/components/site/SiteHeader'
 
 export const metadata = {
-  description: 'A blank template using Payload in a Next.js app.',
-  title: 'Payload Blank Template',
+  description:
+    'Perfiles verificados de candidatos presidenciales en Colombia para comparar propuestas y trayectoria con enfoque neutral.',
+  title: 'Elecciones Colombia',
 }
 
 export default async function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props
 
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
-        <main>{children}</main>
+        <main className="site-shell">
+          <SiteHeader />
+          {children}
+          <SiteFooter />
+        </main>
       </body>
     </html>
   )

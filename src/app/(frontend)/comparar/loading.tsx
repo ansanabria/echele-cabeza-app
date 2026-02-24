@@ -1,16 +1,18 @@
+import { Skeleton } from "@/components/ui/skeleton"
+
 export default function CompareLoading() {
   const TOPIC_COUNT = 6
 
   return (
     <section>
       {/* Page header */}
-      <div className="mb-1 h-9 w-56 animate-pulse rounded bg-muted" />
-      <div className="mb-6 h-4 w-3/4 animate-pulse rounded bg-muted" />
+      <Skeleton className="mb-1 h-9 w-56" />
+      <Skeleton className="mb-6 h-4 w-3/4" />
 
       {/* CandidatePicker skeleton — two select boxes */}
       <div className="mb-6 flex flex-col gap-3 sm:flex-row">
-        <div className="h-10 flex-1 animate-pulse rounded-md border border-border bg-muted" />
-        <div className="h-10 flex-1 animate-pulse rounded-md border border-border bg-muted" />
+        <Skeleton className="h-10 flex-1 rounded-md" />
+        <Skeleton className="h-10 flex-1 rounded-md" />
       </div>
 
       {/* Comparison table skeleton */}
@@ -18,16 +20,16 @@ export default function CompareLoading() {
         {/* Header row */}
         <div className="hidden grid-cols-[180px_1fr_1fr] bg-secondary md:grid">
           <div className="border-b border-r border-border p-4">
-            <div className="h-4 w-12 animate-pulse rounded bg-muted" />
+            <Skeleton className="h-4 w-12" />
           </div>
           {[0, 1].map((col) => (
             <div
               key={col}
-              className={`border-b border-border p-4 ${col === 0 ? 'border-r' : ''}`}
+              className={`border-b border-border p-4 ${col === 0 ? "border-r" : ""}`}
             >
-              <div className="mb-2 aspect-[3/4] w-[110px] animate-pulse rounded-lg bg-muted" />
-              <div className="mb-1 h-4 w-28 animate-pulse rounded bg-muted" />
-              <div className="h-3 w-20 animate-pulse rounded bg-muted" />
+              <Skeleton className="mb-2 aspect-[3/4] w-[110px] rounded-lg" />
+              <Skeleton className="mb-1 h-4 w-28" />
+              <Skeleton className="h-3 w-20" />
             </div>
           ))}
         </div>
@@ -37,17 +39,17 @@ export default function CompareLoading() {
           {Array.from({ length: TOPIC_COUNT }).map((_, i) => (
             <div key={i} className="grid grid-cols-[180px_1fr_1fr]">
               <div className="border-b border-r border-border p-4">
-                <div className="h-4 w-24 animate-pulse rounded bg-muted" />
+                <Skeleton className="h-4 w-24" />
               </div>
               {[0, 1].map((col) => (
                 <div
                   key={col}
-                  className={`border-b border-border p-4 ${col === 0 ? 'border-r' : ''}`}
+                  className={`border-b border-border p-4 ${col === 0 ? "border-r" : ""}`}
                 >
                   <div className="space-y-1.5">
-                    <div className="h-3 w-full animate-pulse rounded bg-muted" />
-                    <div className="h-3 w-5/6 animate-pulse rounded bg-muted" />
-                    <div className="h-3 w-4/6 animate-pulse rounded bg-muted" />
+                    <Skeleton className="h-3 w-full" />
+                    <Skeleton className="h-3 w-5/6" />
+                    <Skeleton className="h-3 w-4/6" />
                   </div>
                 </div>
               ))}
@@ -60,17 +62,17 @@ export default function CompareLoading() {
           {Array.from({ length: TOPIC_COUNT }).map((_, i) => (
             <div key={i} className="overflow-hidden rounded-lg border border-border">
               <div className="border-b border-border bg-secondary p-3">
-                <div className="h-4 w-24 animate-pulse rounded bg-muted" />
+                <Skeleton className="h-4 w-24" />
               </div>
               {[0, 1].map((col) => (
                 <div
                   key={col}
-                  className={`p-3 ${col === 0 ? 'border-b border-border' : ''}`}
+                  className={`p-3 ${col === 0 ? "border-b border-border" : ""}`}
                 >
-                  <div className="mb-1 h-3 w-32 animate-pulse rounded bg-muted" />
+                  <Skeleton className="mb-1 h-3 w-32" />
                   <div className="space-y-1.5">
-                    <div className="h-3 w-full animate-pulse rounded bg-muted" />
-                    <div className="h-3 w-4/5 animate-pulse rounded bg-muted" />
+                    <Skeleton className="h-3 w-full" />
+                    <Skeleton className="h-3 w-4/5" />
                   </div>
                 </div>
               ))}

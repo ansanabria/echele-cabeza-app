@@ -17,10 +17,14 @@ export default function CandidateLoading() {
       {/* Main content skeleton */}
       <div className="min-w-0 space-y-4">
         {/* Section nav skeleton */}
-        <div className="flex gap-2 overflow-hidden">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <div key={i} className="h-8 w-28 animate-pulse rounded-md bg-muted" />
-          ))}
+        <div className="rounded-full border border-border bg-background p-1">
+          <div className="flex w-full">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div key={i} className="flex-1 px-2 py-1">
+                <div className="h-5 animate-pulse rounded-full bg-muted" />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Section cards skeleton */}

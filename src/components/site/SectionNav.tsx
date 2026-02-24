@@ -9,12 +9,12 @@ type SectionNavProps = {
 export function SectionNav({ sections }: SectionNavProps) {
   return (
     <div className="sticky top-0 z-5 mb-5 rounded-full border border-border bg-background p-1">
-      <nav aria-label="Secciones del perfil" className="hidden flex-wrap gap-1 md:flex">
+      <nav aria-label="Secciones del perfil" className="hidden w-full md:flex">
         {sections.map((section) => (
           <a
             key={section.id}
             href={`#${section.id}`}
-            className="rounded-full px-3 py-1.5 text-sm text-muted-foreground no-underline transition-colors hover:bg-secondary hover:text-foreground"
+            className="flex-1 rounded-full px-2 py-1 text-center text-sm text-muted-foreground no-underline transition-colors hover:bg-secondary hover:text-foreground"
           >
             {section.navLabel}
           </a>

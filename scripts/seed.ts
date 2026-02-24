@@ -42,6 +42,37 @@ const CANDIDATE_LOCAL_PHOTOS_BY_SLUG: Record<string, string> = {
   'juan-fernando-cristo': 'juan-fernando-cristo.webp',
   'luis-carlos-reyes': 'luis-carlos-reyes.webp',
 }
+const CANDIDATE_DIRECTORY_ORDER_BY_SLUG: Record<string, number> = {
+  // Ordered by latest complete nationwide intention-to-vote snapshot fetched during this task:
+  // Invamer / Colombia Opina (Noticias Caracol, updated Dec 1, 2025).
+  'ivan-cepeda': 1,
+  'abelardo-de-la-espriella': 2,
+  'sergio-fajardo': 3,
+  'claudia-lopez': 4,
+  'vicky-davila': 5,
+  'juan-carlos-pinzon': 6,
+  'santiago-botero': 7,
+  'juan-manuel-galan': 8,
+  'anibal-gaviria': 9,
+  'enrique-penalosa': 10,
+  'paloma-valencia': 11,
+  'camilo-romero': 12,
+  'luis-gilberto-murillo': 13,
+  'luis-carlos-reyes': 14,
+  'carlos-caicedo': 15,
+  'efrain-cepeda': 16,
+  'roy-barreras': 17,
+  'david-luna': 18,
+  'mauricio-cardenas': 19,
+  'juan-daniel-oviedo': 20,
+  'norman-maurice-armitage': 21,
+  'felipe-cordoba': 22,
+  'daniel-palacios': 23,
+  'juan-fernando-cristo': 24,
+  // Not explicitly listed in that published top-line result set:
+  'daniel-quintero': 25,
+  'clara-lopez': 26,
+}
 const ENV_PATH = path.resolve(dirname, '../.env')
 const ENV_LOCAL_PATH = path.resolve(dirname, '../.env.local')
 
@@ -50,6 +81,7 @@ type SourceSection = 'biography' | 'proposals' | 'controversies' | 'alliances' |
 type CandidateSeed = {
   name: string
   slug: string
+  directoryOrder: number
   party: string
   currentOffice?: string
   photoUrl?: string
@@ -212,8 +244,10 @@ function parseCandidates(markdown: string): CandidateSeed[] {
       const summaryAlliances = getMatch(summarySection, /- \*\*summaryAlliances:\*\*\s*(.+)/)
       const summaryRecord = getMatch(summarySection, /- \*\*summaryRecord:\*\*\s*(.+)/)
       const summaryFunding = getMatch(summarySection, /- \*\*summaryFunding:\*\*\s*(.+)/)
+      const directoryOrder = CANDIDATE_DIRECTORY_ORDER_BY_SLUG[slug]
 
       if (
+        !directoryOrder ||
         !summaryTrajectory ||
         !summaryProposals ||
         !summaryControversies ||
@@ -227,6 +261,7 @@ function parseCandidates(markdown: string): CandidateSeed[] {
       acc.push({
         name,
         slug,
+        directoryOrder,
         party,
         currentOffice,
         photoUrl,
@@ -306,6 +341,7 @@ async function upsertCandidate(
   const candidateData = {
     name: candidate.name,
     slug: candidate.slug,
+    directoryOrder: candidate.directoryOrder,
     party: candidate.party,
     currentOffice: candidate.currentOffice,
     photo: photoId,

@@ -57,7 +57,7 @@ export const Candidates: CollectionConfig = {
   slug: 'candidates',
   admin: {
     useAsTitle: 'name',
-    defaultColumns: ['name', 'party', 'slug', 'updatedAt'],
+    defaultColumns: ['name', 'directoryOrder', 'party', 'slug', 'updatedAt'],
   },
   access: {
     read: () => true,
@@ -79,6 +79,18 @@ export const Candidates: CollectionConfig = {
       name: 'party',
       type: 'text',
       required: true,
+    },
+    {
+      name: 'directoryOrder',
+      type: 'number',
+      label: 'Orden en directorio (opcional)',
+      admin: {
+        description:
+          'Asigna un numero para mostrar primero a los candidatos mas relevantes. Si se deja vacio, se ordena alfabeticamente.',
+        step: 1,
+      },
+      min: 1,
+      index: true,
     },
     {
       name: 'currentOffice',

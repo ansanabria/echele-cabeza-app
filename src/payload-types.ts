@@ -172,6 +172,10 @@ export interface Candidate {
   name: string;
   slug: string;
   party: string;
+  /**
+   * Asigna un numero para mostrar primero a los candidatos mas relevantes. Si se deja vacio, se ordena alfabeticamente.
+   */
+  directoryOrder?: number | null;
   currentOffice?: string | null;
   photo: number | Media;
   lastUpdated: string;
@@ -427,6 +431,7 @@ export interface CandidatesSelect<T extends boolean = true> {
   name?: T;
   slug?: T;
   party?: T;
+  directoryOrder?: T;
   currentOffice?: T;
   photo?: T;
   lastUpdated?: T;

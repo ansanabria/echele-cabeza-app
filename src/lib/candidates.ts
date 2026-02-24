@@ -77,12 +77,25 @@ export async function getCandidatesForDirectory(): Promise<Candidate[]> {
   const result = await payload.find({
     collection: 'candidates',
     depth: 1,
-    sort: 'name',
     limit: 100,
     overrideAccess: false,
   })
 
-  return result.docs
+  return result.docs.sort((a, b) => {
+    const aOrder = a.directoryOrder
+    const bOrder = b.directoryOrder
+    const aHasOrder = typeof aOrder === 'number'
+    const bHasOrder = typeof bOrder === 'number'
+
+    if (aHasOrder && bHasOrder && aOrder !== bOrder) {
+      return aOrder - bOrder
+    }
+
+    if (aHasOrder && !bHasOrder) return -1
+    if (!aHasOrder && bHasOrder) return 1
+
+    return a.name.localeCompare(b.name, 'es-CO')
+  })
 }
 
 export async function getCandidateBySlug(slug: string): Promise<Candidate | null> {

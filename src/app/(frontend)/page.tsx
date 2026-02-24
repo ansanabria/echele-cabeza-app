@@ -8,10 +8,13 @@ export default async function HomePage() {
   const candidates = await getCandidatesForDirectory()
 
   return (
-    <section className="directory-page">
+    <section className="grid gap-8 lg:grid-cols-[minmax(220px,300px)_1fr]">
       <IntroPanel />
 
-      <div className="candidate-grid" aria-label="Directorio de candidatos">
+      <div
+        className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        aria-label="Directorio de candidatos"
+      >
         {candidates.map((candidate) => {
           const slug = candidate.slug
           const name = candidate.name

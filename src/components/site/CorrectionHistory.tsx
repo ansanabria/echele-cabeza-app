@@ -12,21 +12,27 @@ type CorrectionHistoryProps = {
 
 export function CorrectionHistory({ corrections }: CorrectionHistoryProps) {
   return (
-    <details className="correction-history" id="historial-correcciones">
-      <summary>Historial de correcciones</summary>
+    <details className="mt-3 rounded-lg border border-border bg-secondary px-4 py-3" id="historial-correcciones">
+      <summary className="cursor-pointer text-sm font-medium text-foreground">
+        Historial de correcciones
+      </summary>
       {corrections.length ? (
-        <ul>
+        <ul className="mt-3 space-y-2.5 pl-4">
           {corrections.map((correction) => (
             <li key={correction.id}>
-              <time dateTime={correction.correctedAt}>
+              <time dateTime={correction.correctedAt} className="text-sm text-muted-foreground">
                 {formatDate(correction.correctedAt)}
               </time>
-              <p>{correction.note ?? 'Sin detalle registrado.'}</p>
+              <p className="mt-0.5 text-sm text-muted-foreground">
+                {correction.note ?? 'Sin detalle registrado.'}
+              </p>
             </li>
           ))}
         </ul>
       ) : (
-        <p>No hay correcciones registradas para este perfil.</p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          No hay correcciones registradas para este perfil.
+        </p>
       )}
     </details>
   )

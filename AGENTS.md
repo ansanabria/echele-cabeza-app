@@ -31,7 +31,8 @@ Breaking any of these will cause security holes, data corruption, or type errors
 3. **Prevent hook loops** by guarding recursive writes with a context flag (e.g. `context.skipHooks`).
 4. **Regenerate types** after any schema or config change — run `generate:types`.
 5. **Regenerate the import map** after adding or editing admin components — run `payload generate:importmap`.
-6. **Validate TypeScript** after meaningful changes — run `tsc --noEmit`.
+6. **Validate TypeScript** after meaningful changes — run `bunx tsc --noEmit`.
+7. **Always use Bun tooling** for project commands (for example: `bun run <script>` and `bunx <cli>`). Do not use `npm`, `npx`, `pnpm`, or `yarn` in this repo unless explicitly requested.
 
 ### When to Load a Skill
 

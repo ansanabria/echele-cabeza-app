@@ -12,6 +12,36 @@ const dirname = path.dirname(filename)
 const CANDIDATES_DATA_PATH = path.resolve(dirname, '../data/candidates.md')
 const CORRECTIONS_DATA_PATH = path.resolve(dirname, '../data/corrections.json')
 const PLACEHOLDER_ALT = '__seed_placeholder_candidate_photo__'
+const CANDIDATE_PHOTO_ALT_PREFIX = '__seed_candidate_photo__'
+const CANDIDATE_IMAGES_DIR = path.resolve(dirname, '../media')
+const CANDIDATE_LOCAL_PHOTOS_BY_SLUG: Record<string, string> = {
+  'vicky-davila': 'vicky-davila.webp',
+  'juan-manuel-galan': 'juan-manuel-galan.webp',
+  'daniel-quintero': 'daniel-quintero.webp',
+  'ivan-cepeda': 'ivan-cepeda.webp',
+  'enrique-penalosa': 'enrique-penalosa.webp',
+  'camilo-romero': 'camilo-romero.webp',
+  'paloma-valencia': 'paloma-valencia.webp',
+  'roy-barreras': 'roy-barreras.webp',
+  'clara-lopez': 'clara-lopez.webp',
+  'juan-daniel-oviedo': 'juan-daniel-oviedo.webp',
+  'juan-carlos-pinzon': 'juan-carlos-pinzon.webp',
+  'anibal-gaviria': 'anibal-gaviria.webp',
+  'david-luna': 'david-luna.webp',
+  'mauricio-cardenas': 'mauricio-cardenas.webp',
+  'santiago-botero': 'santiago-botero.webp',
+  'abelardo-de-la-espriella': 'abelardo-espriella.webp',
+  'felipe-cordoba': 'felipe-cordoba.webp',
+  'daniel-palacios': 'daniel-palacios.webp',
+  'efrain-cepeda': 'efrain-cepeda.webp',
+  'sergio-fajardo': 'sergio-fajardo.webp',
+  'norman-maurice-armitage': 'armitage.webp',
+  'carlos-caicedo': 'carlos-caicedo.webp',
+  'claudia-lopez': 'claudia-lopez.webp',
+  'luis-gilberto-murillo': 'luis-gilberto-murillo.webp',
+  'juan-fernando-cristo': 'juan-fernando-cristo.webp',
+  'luis-carlos-reyes': 'luis-carlos-reyes.webp',
+}
 const ENV_PATH = path.resolve(dirname, '../.env')
 const ENV_LOCAL_PATH = path.resolve(dirname, '../.env.local')
 
@@ -22,6 +52,7 @@ type CandidateSeed = {
   slug: string
   party: string
   currentOffice?: string
+  photoUrl?: string
   biography: string
   proposals: string
   controversies: string
@@ -147,6 +178,7 @@ function parseCandidates(markdown: string): CandidateSeed[] {
       const slug = getMatch(block, /- \*\*slug:\*\*\s*(.+)/)
       const party = getMatch(block, /- \*\*party:\*\*\s*(.+)/)
       const currentOffice = getMatch(block, /- \*\*currentOffice:\*\*\s*(.+)/)
+      const photoUrl = getMatch(block, /- \*\*photoUrl:\*\*\s*(.+)/)
 
       const biography = getSection(block, 'Biografía y trayectoria', [
         'Plan de gobierno y propuestas',
@@ -197,6 +229,7 @@ function parseCandidates(markdown: string): CandidateSeed[] {
         slug,
         party,
         currentOffice,
+        photoUrl,
         biography,
         proposals,
         controversies,
@@ -308,6 +341,129 @@ async function upsertCandidate(
   return created.id
 }
 
+function inferImageExtension(contentType: string | null, url: string): string {
+  if (contentType?.includes('png')) return '.png'
+  if (contentType?.includes('webp')) return '.webp'
+  if (contentType?.includes('gif')) return '.gif'
+  if (contentType?.includes('jpeg') || contentType?.includes('jpg')) return '.jpg'
+  if (contentType?.includes('svg')) return '.svg'
+
+  const pathname = new URL(url).pathname.toLowerCase()
+  if (pathname.endsWith('.png')) return '.png'
+  if (pathname.endsWith('.webp')) return '.webp'
+  if (pathname.endsWith('.gif')) return '.gif'
+  if (pathname.endsWith('.svg')) return '.svg'
+  return '.jpg'
+}
+
+function isHttpUrl(value: string): boolean {
+  return /^https?:\/\//i.test(value)
+}
+
+function resolveLocalPhotoPath(photoPath: string): string {
+  if (photoPath.startsWith('~/')) {
+    return path.resolve(os.homedir(), photoPath.slice(2))
+  }
+
+  if (path.isAbsolute(photoPath)) {
+    return photoPath
+  }
+
+  return path.resolve(dirname, '..', photoPath)
+}
+
+async function ensureCandidatePhotoMedia(
+  payload: Awaited<ReturnType<typeof getPayload>>,
+  candidate: CandidateSeed,
+  fallbackMediaId: number,
+): Promise<number> {
+  const photoAlt = `${CANDIDATE_PHOTO_ALT_PREFIX}:${candidate.slug}`
+  const mappedFileName = CANDIDATE_LOCAL_PHOTOS_BY_SLUG[candidate.slug]
+  const localSourcePath = mappedFileName
+    ? path.join(CANDIDATE_IMAGES_DIR, mappedFileName)
+    : candidate.photoUrl && !isHttpUrl(candidate.photoUrl)
+      ? resolveLocalPhotoPath(candidate.photoUrl)
+      : undefined
+
+  const existing = await payload.find({
+    collection: 'media',
+    where: {
+      alt: { equals: photoAlt },
+    },
+    limit: 1,
+  })
+
+  if (existing.docs[0]) {
+    if (localSourcePath && (await exists(localSourcePath))) {
+      const updated = await payload.update({
+        collection: 'media',
+        id: existing.docs[0].id,
+        data: { alt: photoAlt },
+        filePath: localSourcePath,
+      })
+      return updated.id
+    }
+
+    return existing.docs[0].id
+  }
+
+  if (localSourcePath) {
+    if (!(await exists(localSourcePath))) {
+      payload.logger.warn(
+        `Could not find local photo for ${candidate.slug} at "${localSourcePath}". Using placeholder.`,
+      )
+      return fallbackMediaId
+    }
+
+    const created = await payload.create({
+      collection: 'media',
+      data: { alt: photoAlt },
+      filePath: localSourcePath,
+    })
+    return created.id
+  }
+
+  if (!candidate.photoUrl) {
+    return fallbackMediaId
+  }
+
+  try {
+    const response = await fetch(candidate.photoUrl)
+    if (!response.ok) {
+      payload.logger.warn(
+        `Could not download photo for ${candidate.slug}. Status: ${response.status}. Using placeholder.`,
+      )
+      return fallbackMediaId
+    }
+
+    const extension = inferImageExtension(response.headers.get('content-type'), candidate.photoUrl)
+    const temporaryImagePath = path.join(
+      os.tmpdir(),
+      `seed-candidate-${candidate.slug}-${Date.now()}${extension}`,
+    )
+    const imageBuffer = Buffer.from(await response.arrayBuffer())
+    await fs.writeFile(temporaryImagePath, imageBuffer)
+
+    try {
+      const created = await payload.create({
+        collection: 'media',
+        data: { alt: photoAlt },
+        filePath: temporaryImagePath,
+      })
+      return created.id
+    } finally {
+      await fs.rm(temporaryImagePath, { force: true })
+    }
+  } catch (error) {
+    payload.logger.warn(
+      `Could not fetch photo for ${candidate.slug}. Using placeholder. Error: ${
+        error instanceof Error ? error.message : String(error)
+      }`,
+    )
+    return fallbackMediaId
+  }
+}
+
 async function loadCorrections(): Promise<CorrectionSeed[]> {
   if (!(await exists(CORRECTIONS_DATA_PATH))) {
     return []
@@ -395,7 +551,12 @@ async function main() {
     const candidateIdBySlug = new Map<string, number>()
 
     for (const candidate of candidates) {
-      const id = await upsertCandidate(payload, candidate, placeholderMediaId)
+      const candidatePhotoId = await ensureCandidatePhotoMedia(
+        payload,
+        candidate,
+        placeholderMediaId,
+      )
+      const id = await upsertCandidate(payload, candidate, candidatePhotoId)
       candidateIdBySlug.set(candidate.slug, id)
       payload.logger.info(`Seeded candidate: ${candidate.slug}`)
     }

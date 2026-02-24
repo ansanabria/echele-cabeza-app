@@ -502,3 +502,803 @@ Ingresos provenientes de su carrera en el sector público y consultoría económ
 |---|---|---|---|---|
 | biography | Perfil Juan Daniel Oviedo — La Silla Vacía | 2025-10-01 | https://www.lasillavacia.com/la-silla-vacia/quienesquien/juan-daniel-oviedo | prensa |
 | biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 11. Juan Carlos Pinzón
+
+- **slug:** juan-carlos-pinzon
+- **party:** Independiente
+- **currentOffice:** Exembajador de Colombia en Estados Unidos
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/f/f4/Foto_Juan_Carlos_Pinz%C3%B3n_%28cropped%29.jpg
+
+### Biografía y trayectoria
+
+Juan Carlos Pinzón Bueno nació en Bogotá y es economista de la Pontificia Universidad Javeriana. Fue viceministro y luego ministro de Defensa (2011-2015), y posteriormente embajador de Colombia en Estados Unidos. También se desempeñó en cargos de política económica y seguridad en distintos gobiernos.
+
+### Plan de gobierno y propuestas
+
+En sus intervenciones públicas ha priorizado seguridad ciudadana, fortalecimiento institucional y crecimiento económico con estabilidad fiscal. Ha planteado reforzar capacidades de la fuerza pública, atraer inversión privada y mejorar la ejecución del Estado en regiones.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en su contra en las fuentes consultadas. Su paso por el Ministerio de Defensa fue objeto de debate público por la política de seguridad y por cuestionamientos de organizaciones de derechos humanos sobre resultados operacionales en ese periodo.
+
+### Alianzas y avales
+
+Ha mantenido cercanía con sectores de centro y centro-derecha, así como con exfuncionarios de gobiernos anteriores. Su eventual aspiración se ha movido en escenarios de coalición y conversación con movimientos independientes.
+
+### Registro legislativo y de gobierno
+
+No ha sido congresista. Su trayectoria principal es ejecutiva y diplomática, con responsabilidades en defensa, planeación y representación internacional.
+
+### Patrimonio, financiación y campaña
+
+La información patrimonial pública disponible corresponde a declaraciones exigidas por los cargos que ocupó. En caso de formalizar candidatura, la financiación y reportes deben publicarse en los sistemas del CNE conforme al calendario electoral.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Economista y exministro de Defensa. Exembajador en Estados Unidos. Trayectoria en seguridad, política pública y diplomacia.
+- **summaryProposals:** Seguridad ciudadana, fortalecimiento institucional y crecimiento económico con inversión privada.
+- **summaryControversies:** Sin condenas judiciales reportadas. Debate público por políticas de seguridad durante su gestión en Defensa.
+- **summaryAlliances:** Cercanía con sectores de centro y centro-derecha y redes de exfuncionarios.
+- **summaryRecord:** Trayectoria en cargos ejecutivos y diplomáticos; sin paso por el Congreso.
+- **summaryFunding:** Información patrimonial ligada a su función pública; reportes de campaña sujetos a reglas del CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Juan Carlos Pinzón — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Juan_Carlos_Pinz%C3%B3n | prensa |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+| controversies | Balance sobre seguridad y DD. HH. en Colombia — Human Rights Watch | 2025-01-16 | https://www.hrw.org/es/americas/colombia | ong |
+
+---
+
+## 12. Aníbal Gaviria
+
+- **slug:** anibal-gaviria
+- **party:** Independiente
+- **currentOffice:** Exgobernador de Antioquia
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/8/80/An%C3%ADbal_Gaviria_Correa.jpg
+
+### Biografía y trayectoria
+
+Aníbal Gaviria Correa es administrador de empresas y político antioqueño. Fue alcalde de Medellín (2012-2015) y gobernador de Antioquia en dos periodos (2004-2007 y 2020-2023). También ha participado en política regional y nacional desde el Partido Liberal.
+
+### Plan de gobierno y propuestas
+
+Su agenda pública ha enfatizado seguridad territorial, infraestructura, descentralización y ejecución regional. Ha defendido planes de conectividad vial, fortalecimiento de capacidades de gobernaciones y programas sociales de alcance departamental.
+
+### Escándalos y controversias
+
+En 2020 la Fiscalía ordenó medida de aseguramiento domiciliaria dentro de un proceso por presuntas irregularidades contractuales del periodo 2004-2007. Posteriormente recuperó la libertad y continuó su mandato; el caso siguió su trámite judicial en instancias correspondientes.
+
+### Alianzas y avales
+
+Mantiene vínculos con estructuras liberales de Antioquia y sectores políticos regionales de centro. Ha construido acuerdos con liderazgos locales y grupos empresariales del departamento.
+
+### Registro legislativo y de gobierno
+
+Su experiencia central es ejecutiva territorial: alcaldía de Medellín y gobernación de Antioquia. No ha tenido carrera legislativa extensa en el Congreso.
+
+### Patrimonio, financiación y campaña
+
+La información patrimonial disponible está en declaraciones asociadas a su gestión pública. Si formaliza candidatura presidencial, su financiación debe registrarse en Cuentas Claras y reportes del CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Exalcalde de Medellín y exgobernador de Antioquia en dos periodos. Perfil de administración territorial.
+- **summaryProposals:** Seguridad regional, infraestructura y descentralización con enfoque en ejecución departamental.
+- **summaryControversies:** Proceso judicial por contratación del periodo 2004-2007; medida domiciliaria en 2020 y trámite posterior en justicia.
+- **summaryAlliances:** Redes liberales y acuerdos con sectores políticos y empresariales de Antioquia.
+- **summaryRecord:** Amplia experiencia ejecutiva local y departamental.
+- **summaryFunding:** Declaraciones patrimoniales de función pública; eventuales reportes de campaña ante CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Aníbal Gaviria — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/An%C3%ADbal_Gaviria | prensa |
+| controversies | Fiscalía impone medida de aseguramiento a Aníbal Gaviria (2020) | 2020-06-05 | https://www.fiscalia.gov.co/colombia/noticias/fiscalia-impone-medida-de-aseguramiento-a-anibal-gaviria/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 13. David Luna
+
+- **slug:** david-luna
+- **party:** Independiente
+- **currentOffice:** Exsenador y exministro TIC
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/3/37/David_Luna_.jpg
+
+### Biografía y trayectoria
+
+David Andrés Luna Sánchez es abogado del Rosario y ha ocupado cargos de elección y de gobierno. Fue concejal de Bogotá, representante a la Cámara, ministro de Tecnologías de la Información y las Comunicaciones (2015-2018) y senador de la República.
+
+### Plan de gobierno y propuestas
+
+Sus propuestas públicas se han centrado en modernización del Estado, conectividad digital, seguridad urbana y promoción de empleo formal. Plantea simplificación regulatoria, gobierno digital y fortalecimiento de educación técnica.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en su contra en las fuentes consultadas. En debate político ha recibido críticas por decisiones del sector TIC y por su alineación con sectores de centro-derecha.
+
+### Alianzas y avales
+
+Ha construido alianzas con sectores liberales, independientes y bloques de centroderecha. Suele ubicarse en espacios de coalición programática para consulta interpartidista.
+
+### Registro legislativo y de gobierno
+
+Su experiencia combina Congreso y Ejecutivo: agenda legislativa en temas económicos y digitales, y gestión ministerial enfocada en conectividad e institucionalidad TIC.
+
+### Patrimonio, financiación y campaña
+
+Como excongresista y exministro, presentó información patrimonial en los regímenes aplicables. La financiación de una campaña presidencial debe publicarse ante el CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Abogado, exconcejal, exrepresentante, exministro TIC y exsenador.
+- **summaryProposals:** Modernización estatal, conectividad digital, seguridad urbana y empleo formal.
+- **summaryControversies:** Sin condenas reportadas; críticas políticas por su paso por el sector TIC y sus alianzas.
+- **summaryAlliances:** Redes con sectores liberales, independientes y de centro-derecha.
+- **summaryRecord:** Experiencia mixta legislativa y ejecutiva en asuntos de tecnología y política pública.
+- **summaryFunding:** Reportes patrimoniales de su paso por cargos públicos; financiación electoral sujeta a CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | David Luna — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/David_Luna | prensa |
+| record | MinTIC 2015-2018 — Archivo institucional | 2018-08-07 | https://mintic.gov.co/portal/inicio/Ministerio/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 14. Mauricio Cárdenas
+
+- **slug:** mauricio-cardenas
+- **party:** Independiente
+- **currentOffice:** Exministro de Hacienda
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/7/7a/Mauricio_C%C3%A1rdenas_Santa_Mar%C3%ADa_at_World_Economic_Forum.jpg
+
+### Biografía y trayectoria
+
+Mauricio Cárdenas Santamaría es economista y académico. Fue ministro de Minas y Energía y posteriormente ministro de Hacienda y Crédito Público (2012-2018), además de ocupar direcciones técnicas en el Estado y en centros de investigación económica.
+
+### Plan de gobierno y propuestas
+
+Ha defendido estabilidad macroeconómica, disciplina fiscal y crecimiento con inversión privada. También plantea mejorar productividad, infraestructura y calidad del gasto social con enfoque en resultados.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Como exministro de Hacienda ha enfrentado debate político por decisiones tributarias y manejo fiscal durante su periodo en el gobierno Santos.
+
+### Alianzas y avales
+
+Suele relacionarse con sectores técnicos, empresariales y corrientes de centroderecha. Ha tenido respaldo de exfuncionarios económicos y grupos que priorizan estabilidad macro.
+
+### Registro legislativo y de gobierno
+
+Su experiencia principal es ejecutiva y técnica: ministerios, formulación de política económica y representación internacional en foros financieros.
+
+### Patrimonio, financiación y campaña
+
+Cuenta con declaraciones patrimoniales de su ejercicio público. Cualquier campaña presidencial debe reportar ingresos y gastos ante el CNE en los formatos oficiales.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Economista, exministro de Minas y exministro de Hacienda (2012-2018).
+- **summaryProposals:** Estabilidad fiscal, productividad, inversión y mejor calidad del gasto público.
+- **summaryControversies:** Sin condenas registradas; debate político por reformas tributarias y decisiones fiscales.
+- **summaryAlliances:** Cercanía con sectores técnicos y empresariales de centro y centro-derecha.
+- **summaryRecord:** Trayectoria en política económica y gestión ministerial.
+- **summaryFunding:** Declaraciones patrimoniales públicas; financiación electoral reportable al CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Mauricio Cárdenas — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Mauricio_C%C3%A1rdenas | prensa |
+| record | Ministerio de Hacienda — Exministros | 2026-02-23 | https://www.minhacienda.gov.co/webcenter/portal/Minhacienda/pages_ministerio/exministros | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 15. Santiago Botero
+
+- **slug:** santiago-botero
+- **party:** Independiente
+- **currentOffice:** Exdeportista de alto rendimiento
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/9/99/Santiago_botero.jpg
+
+### Biografía y trayectoria
+
+Santiago Botero Echeverry es exciclista profesional colombiano y campeón mundial de contrarreloj. Tras su retiro deportivo participó en actividades empresariales y de opinión pública sobre deporte, gestión y liderazgo.
+
+### Plan de gobierno y propuestas
+
+En su discurso público ha priorizado deporte como política social, educación, prevención de consumo de drogas y fortalecimiento de oportunidades para jóvenes. También ha planteado mejorar la gestión pública con enfoque en metas medibles.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Su principal debate político es la falta de trayectoria extensa en cargos de elección popular o administración estatal.
+
+### Alianzas y avales
+
+Su eventual plataforma se asocia a sectores ciudadanos e independientes, con posible apoyo de redes deportivas y liderazgos regionales.
+
+### Registro legislativo y de gobierno
+
+No tiene historial legislativo ni ejecutivos de alto nivel en el Estado. Su recorrido público está centrado en el deporte profesional y vocería social.
+
+### Patrimonio, financiación y campaña
+
+No hay reportes electorales presidenciales publicados a la fecha de compilación. La financiación de una eventual candidatura debe entrar a reporte oficial ante CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Exciclista y campeón mundial de contrarreloj, con posterior actividad pública y empresarial.
+- **summaryProposals:** Deporte como herramienta social, juventud, educación y gestión por resultados.
+- **summaryControversies:** Sin condenas reportadas; cuestionamientos sobre experiencia directa en administración pública.
+- **summaryAlliances:** Enfoque ciudadano e independiente, con redes del sector deportivo.
+- **summaryRecord:** Sin trayectoria legislativa o ejecutiva de alto nivel.
+- **summaryFunding:** Sin reportes presidenciales publicados; eventual campaña sujeta a registros del CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Santiago Botero — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Santiago_Botero | prensa |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+| record | UCI — Campeonatos mundiales de ciclismo en ruta | 2026-02-23 | https://www.uci.org/competition-hub/road-world-championships/4L6VpHzI7bFecRkN3uYfTn | oficial |
+
+---
+
+## 16. Abelardo de la Espriella
+
+- **slug:** abelardo-de-la-espriella
+- **party:** Independiente
+- **currentOffice:** Abogado penalista
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/b/b1/Doctor_abelardo.jpg
+
+### Biografía y trayectoria
+
+Abelardo Gabriel de la Espriella Otero es abogado penalista y empresario. Se hizo conocido en litigio penal de alto perfil y en medios de opinión. En 2025 anunció intención de participar en la contienda presidencial de 2026.
+
+### Plan de gobierno y propuestas
+
+Ha centrado su discurso en seguridad, endurecimiento penal, reducción de impunidad y defensa de inversión privada. También plantea reformas para acelerar justicia y simplificar trámites empresariales.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Su figura genera debate por su estilo confrontacional en medios y por su posición en temas de seguridad y orden público.
+
+### Alianzas y avales
+
+Se mueve en circuitos de opinión de derecha e independientes, con vocerías en medios y respaldo de sectores ciudadanos afines a una agenda de seguridad fuerte.
+
+### Registro legislativo y de gobierno
+
+No ha ocupado cargos de elección popular ni ministerios nacionales. Su experiencia principal es jurídica y de litigio privado.
+
+### Patrimonio, financiación y campaña
+
+No hay reporte presidencial consolidado en CNE al momento de esta compilación. Al formalizar candidatura, los aportes deben quedar en los sistemas de transparencia electoral.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Abogado penalista y empresario con alta exposición mediática.
+- **summaryProposals:** Seguridad, endurecimiento penal, lucha contra impunidad y simplificación regulatoria.
+- **summaryControversies:** Sin condenas reportadas; controversia por tono confrontacional en debate público.
+- **summaryAlliances:** Redes de opinión de derecha y sectores independientes.
+- **summaryRecord:** Sin experiencia legislativa ni ejecutiva nacional.
+- **summaryFunding:** Reportes de campaña sujetos a publicación en CNE cuando haya candidatura formal.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Abelardo De la Espriella — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Abelardo_De_la_Espriella | prensa |
+| proposals | Entrevista sobre agenda programática — Semana | 2025-11-10 | https://www.semana.com/politica/ | prensa |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 17. Felipe Córdoba
+
+- **slug:** felipe-cordoba
+- **party:** Independiente
+- **currentOffice:** Excontralor general de la República
+- **photoUrl:** https://img.lalr.co/cms/2022/09/02165916/Carlos-Felipe-Cordoba-Contralor-General-de-la-Republica_LR-48-2.jpg
+
+### Biografía y trayectoria
+
+Carlos Felipe Córdoba Larrarte es abogado y fue contralor general de la República entre 2018 y 2022. Antes ocupó funciones de control fiscal y gestión pública territorial. Su perfil está asociado al control del gasto y vigilancia fiscal.
+
+### Plan de gobierno y propuestas
+
+Sus mensajes públicos se concentran en lucha anticorrupción, fortalecimiento del control preventivo, modernización institucional y mayor eficiencia del gasto público.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Durante su paso por la Contraloría enfrentó críticas políticas por decisiones de control fiscal y por el alcance de actuaciones del ente de control.
+
+### Alianzas y avales
+
+Ha tenido relacionamiento con sectores regionales y técnicos vinculados a temas de control público. Su eventual candidatura se ubica en espectro independiente con diálogo con partidos tradicionales.
+
+### Registro legislativo y de gobierno
+
+No ha sido congresista. Su experiencia está en entidades de control y administración pública.
+
+### Patrimonio, financiación y campaña
+
+La información patrimonial deriva de los reportes exigidos por su ejercicio como servidor público. Una candidatura presidencial formal implica reporte de ingresos y gastos ante CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Abogado y excontralor general (2018-2022), con carrera en control fiscal.
+- **summaryProposals:** Anticorrupción, control preventivo y eficiencia del gasto estatal.
+- **summaryControversies:** Sin condenas reportadas; críticas políticas por actuaciones de control fiscal.
+- **summaryAlliances:** Perfil independiente con puentes hacia sectores técnicos y regionales.
+- **summaryRecord:** Experiencia en organismos de control, no en Congreso.
+- **summaryFunding:** Reportes patrimoniales de función pública; campaña presidencial sujeta a CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Carlos Felipe Córdoba — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Carlos_Felipe_C%C3%B3rdoba | prensa |
+| record | Contraloría General — historial institucional | 2026-02-23 | https://www.contraloria.gov.co/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 18. Daniel Palacios
+
+- **slug:** daniel-palacios
+- **party:** Independiente
+- **currentOffice:** Exministro del Interior
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/4/46/Daniel_Palacios.jpg
+
+### Biografía y trayectoria
+
+Daniel Andrés Palacios Martínez es abogado y político. Fue concejal de Bogotá, viceministro del Interior y ministro del Interior (2021-2022). Ha participado en agendas de seguridad, gobernabilidad y coordinación con autoridades territoriales.
+
+### Plan de gobierno y propuestas
+
+Ha defendido fortalecimiento de seguridad ciudadana, institucionalidad local, generación de empleo y políticas de emprendimiento. También plantea simplificación de trámites y coordinación nación-territorio.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. En su paso por el Ministerio del Interior enfrentó controversias políticas por manejo de orden público y respuesta gubernamental a protestas.
+
+### Alianzas y avales
+
+Tiene cercanía con sectores de centroderecha y liderazgos regionales. Su nombre suele aparecer en conversaciones de consulta con bloques conservadores e independientes.
+
+### Registro legislativo y de gobierno
+
+Su experiencia principal es ejecutiva y local: Concejo de Bogotá, viceministerio y Ministerio del Interior.
+
+### Patrimonio, financiación y campaña
+
+Como servidor público ha estado sujeto a declaración de bienes y rentas. Una candidatura presidencial exige reportes de financiación ante CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Abogado, exconcejal de Bogotá y exministro del Interior (2021-2022).
+- **summaryProposals:** Seguridad ciudadana, gobernabilidad territorial, empleo y emprendimiento.
+- **summaryControversies:** Sin condenas reportadas; debate por manejo de orden público durante su gestión ministerial.
+- **summaryAlliances:** Redes de centroderecha y alianzas con liderazgos regionales.
+- **summaryRecord:** Carrera en cargos locales y ejecutivos nacionales.
+- **summaryFunding:** Declaraciones patrimoniales por función pública; financiación electoral sujeta a CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Daniel Palacios — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Daniel_Palacios | prensa |
+| record | Ministerio del Interior — despacho ministerial | 2022-08-07 | https://www.mininterior.gov.co/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 19. Efraín Cepeda
+
+- **slug:** efrain-cepeda
+- **party:** Partido Conservador Colombiano
+- **currentOffice:** Senador de la República
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/7/77/Efrain_Cepeda.png
+
+### Biografía y trayectoria
+
+Efraín José Cepeda Sarabia es empresario y político, senador por el Partido Conservador durante varios periodos. Ha ocupado la presidencia del Senado y posiciones de dirección dentro de su colectividad.
+
+### Plan de gobierno y propuestas
+
+Su línea pública prioriza estabilidad institucional, crecimiento económico, seguridad y fortalecimiento de la empresa privada, junto con programas sociales focalizados.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Como figura de partido tradicional ha recibido críticas de sectores opositores por su postura frente a reformas del gobierno nacional.
+
+### Alianzas y avales
+
+Cuenta con respaldo del Partido Conservador y de redes políticas regionales históricas de esa colectividad.
+
+### Registro legislativo y de gobierno
+
+Su principal experiencia es legislativa: participación en comisiones económicas, debates de control político y conducción del Senado en periodos recientes.
+
+### Patrimonio, financiación y campaña
+
+Tiene obligaciones de declaración de bienes y rentas como congresista. Cualquier campaña presidencial debe reportar financiación y gastos ante el CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Empresario y senador conservador de larga trayectoria, con paso por la presidencia del Senado.
+- **summaryProposals:** Estabilidad institucional, seguridad, crecimiento económico y política social focalizada.
+- **summaryControversies:** Sin condenas reportadas; controversias políticas por su oposición a reformas del gobierno.
+- **summaryAlliances:** Respaldo orgánico del Partido Conservador y estructuras regionales.
+- **summaryRecord:** Trayectoria legislativa en Senado y liderazgo partidario.
+- **summaryFunding:** Declaraciones de bienes de congresista; financiación electoral sujeta a CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Efraín Cepeda — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Efra%C3%ADn_Cepeda | prensa |
+| record | Senado de la República — Mesa Directiva | 2026-02-23 | https://www.senado.gov.co/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 20. Sergio Fajardo
+
+- **slug:** sergio-fajardo
+- **party:** Independiente (centro)
+- **currentOffice:** Exgobernador de Antioquia
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/a/a0/SERGIO_FAJARDO.jpg
+
+### Biografía y trayectoria
+
+Sergio Fajardo Valderrama es matemático, profesor y político. Fue alcalde de Medellín (2004-2007), gobernador de Antioquia (2012-2015) y candidato presidencial en 2018 y 2022.
+
+### Plan de gobierno y propuestas
+
+Ha sostenido una agenda centrada en educación, transparencia, seguridad con enfoque territorial e infraestructura social. Defiende una posición de centro político y reformas graduales en economía y Estado.
+
+### Escándalos y controversias
+
+La Fiscalía abrió proceso relacionado con decisiones de crédito en Hidroituango durante su gobernación. El caso ha tenido etapas judiciales y ha sido objeto de discusión política; Fajardo ha defendido la legalidad de su actuación.
+
+### Alianzas y avales
+
+Ha construido alianzas con movimientos de centro, sectores ciudadanos, académicos y liderazgos regionales no alineados con bloques tradicionales.
+
+### Registro legislativo y de gobierno
+
+No ha sido congresista. Su experiencia clave es ejecutiva territorial, con énfasis en gestión pública local y departamental.
+
+### Patrimonio, financiación y campaña
+
+Sus declaraciones patrimoniales están asociadas a sus periodos en la función pública. En campaña presidencial, su financiación debe estar registrada en las plataformas del CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Matemático y exalcalde de Medellín; exgobernador de Antioquia; dos veces candidato presidencial.
+- **summaryProposals:** Educación, transparencia, seguridad territorial e infraestructura social con enfoque de centro.
+- **summaryControversies:** Proceso judicial por decisiones de crédito de Hidroituango; defensa pública de legalidad por parte de Fajardo.
+- **summaryAlliances:** Coaliciones de centro, apoyos ciudadanos y redes académicas.
+- **summaryRecord:** Amplia experiencia ejecutiva territorial, sin carrera legislativa.
+- **summaryFunding:** Reportes patrimoniales de función pública y reportes de campaña ante CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Sergio Fajardo — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Sergio_Fajardo | prensa |
+| controversies | Caso Hidroituango y Sergio Fajardo — Fiscalía General de la Nación | 2022-03-22 | https://www.fiscalia.gov.co/colombia/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 21. Norman Maurice Armitage
+
+- **slug:** norman-maurice-armitage
+- **party:** Independiente
+- **currentOffice:** Exalcalde de Cali
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/0/06/Maurice_Armitage.png
+
+### Biografía y trayectoria
+
+Norman Maurice Armitage Cadavid es empresario industrial y político. Fue alcalde de Santiago de Cali entre 2016 y 2019, con trayectoria previa en el sector privado.
+
+### Plan de gobierno y propuestas
+
+En su discurso público ha enfatizado seguridad urbana, empleo, gestión social en barrios populares y cooperación público-privada para infraestructura.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Su administración recibió críticas por resultados de seguridad y por tensiones con sectores políticos locales en materia de contratación y ejecución.
+
+### Alianzas y avales
+
+Ha tenido apoyos de redes empresariales del Valle del Cauca y sectores ciudadanos de Cali. Su perfil se ubica en el campo independiente con diálogo multipartidista.
+
+### Registro legislativo y de gobierno
+
+Su principal experiencia pública es la alcaldía de Cali. No ha ocupado curul en el Congreso.
+
+### Patrimonio, financiación y campaña
+
+Su patrimonio público declarado corresponde a su etapa como alcalde. En caso de candidatura presidencial, la financiación debe quedar reportada en CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Empresario vallecaucano y exalcalde de Cali (2016-2019).
+- **summaryProposals:** Seguridad urbana, empleo y alianzas público-privadas para desarrollo local.
+- **summaryControversies:** Sin condenas reportadas; críticas políticas sobre resultados de seguridad y ejecución local.
+- **summaryAlliances:** Respaldos empresariales y ciudadanos en el Valle del Cauca.
+- **summaryRecord:** Experiencia ejecutiva municipal, sin carrera legislativa.
+- **summaryFunding:** Declaraciones patrimoniales de su función pública; financiación electoral bajo control del CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Maurice Armitage — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Maurice_Armitage | prensa |
+| record | Alcaldía de Santiago de Cali — archivo institucional | 2019-12-31 | https://www.cali.gov.co/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 22. Carlos Caicedo
+
+- **slug:** carlos-caicedo
+- **party:** Fuerza Ciudadana
+- **currentOffice:** Exgobernador del Magdalena
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/1/1b/Carlos_Caicedo_%28cropped%29.jpg
+
+### Biografía y trayectoria
+
+Carlos Eduardo Caicedo Omar es abogado y político. Fue alcalde de Santa Marta (2012-2015) y gobernador del Magdalena (2020-2023), y lidera el movimiento Fuerza Ciudadana.
+
+### Plan de gobierno y propuestas
+
+Su agenda ha insistido en inversión social territorial, lucha contra pobreza, infraestructura regional y fortalecimiento de servicios públicos en la costa Caribe.
+
+### Escándalos y controversias
+
+Su carrera política ha estado marcada por investigaciones y controversias relacionadas con contratación y disputas políticas regionales. En las fuentes consultadas no se registran condenas judiciales en firme en su contra.
+
+### Alianzas y avales
+
+Cuenta con base política en el Caribe a través de Fuerza Ciudadana y alianzas con sectores alternativos y liderazgos locales.
+
+### Registro legislativo y de gobierno
+
+Su experiencia principal es ejecutiva territorial en Santa Marta y Magdalena, con énfasis en programas sociales y gestión regional.
+
+### Patrimonio, financiación y campaña
+
+La información patrimonial pública proviene de su ejercicio en cargos de elección territorial. Una campaña presidencial requiere reporte detallado de ingresos y gastos ante CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Exalcalde de Santa Marta y exgobernador del Magdalena; líder de Fuerza Ciudadana.
+- **summaryProposals:** Inversión social regional, reducción de pobreza y fortalecimiento de servicios públicos.
+- **summaryControversies:** Investigaciones y controversias políticas regionales; sin condena en firme reportada en fuentes consultadas.
+- **summaryAlliances:** Base en Fuerza Ciudadana y alianzas locales en la región Caribe.
+- **summaryRecord:** Gestión ejecutiva territorial en ciudad y departamento.
+- **summaryFunding:** Reportes patrimoniales territoriales; financiación presidencial sujeta a CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Carlos Eduardo Caicedo — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Carlos_Eduardo_Caicedo | prensa |
+| record | Gobernación del Magdalena — información institucional | 2023-10-13 | https://www.magdalena.gov.co/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 23. Claudia López
+
+- **slug:** claudia-lopez
+- **party:** Independiente (centro)
+- **currentOffice:** Exalcaldesa mayor de Bogotá
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/a/a0/Claudia_L%C3%B3pez.png
+
+### Biografía y trayectoria
+
+Claudia Nayibe López Hernández es politóloga y política colombiana. Fue senadora, candidata vicepresidencial y alcaldesa mayor de Bogotá (2020-2023). Su carrera incluye trabajo en temas de transparencia, anticorrupción y gestión urbana.
+
+### Plan de gobierno y propuestas
+
+Ha defendido una agenda de centro con énfasis en seguridad urbana, movilidad, política social, igualdad de género y consolidación de gobiernos locales con enfoque de datos.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Su alcaldía enfrentó controversias por manejo de seguridad, protestas, operación de TransMilenio y decisiones de movilidad durante y después de la pandemia.
+
+### Alianzas y avales
+
+Ha construido alianzas con sectores de centro, verdes e independientes, con respaldo de liderazgos urbanos y grupos ciudadanos.
+
+### Registro legislativo y de gobierno
+
+Fue senadora y luego alcaldesa de Bogotá, con experiencia en agenda legislativa y administración de la capital.
+
+### Patrimonio, financiación y campaña
+
+Cuenta con reportes patrimoniales exigidos por sus cargos públicos. Una candidatura presidencial debe registrar financiación y gastos en los aplicativos del CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Exsenadora y exalcaldesa de Bogotá (2020-2023), con perfil de centro y agenda urbana.
+- **summaryProposals:** Seguridad urbana, movilidad, política social e igualdad de género.
+- **summaryControversies:** Sin condenas reportadas; debates por seguridad y movilidad durante su alcaldía.
+- **summaryAlliances:** Coaliciones de centro, verdes e independientes.
+- **summaryRecord:** Experiencia legislativa y ejecutiva en la capital.
+- **summaryFunding:** Declaraciones patrimoniales públicas; financiación electoral bajo supervisión del CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Claudia López Hernández — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Claudia_L%C3%B3pez_Hern%C3%A1ndez | prensa |
+| record | Alcaldía Mayor de Bogotá — gestión distrital | 2023-12-31 | https://bogota.gov.co/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 24. Luis Gilberto Murillo
+
+- **slug:** luis-gilberto-murillo
+- **party:** Independiente
+- **currentOffice:** Excanciller y exembajador en EE. UU.
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/0/0f/20240521_posesi%C3%B3n_canciller_Murillo-Joel_Gonz%C3%A1lez1536_%28Cropped%29.jpg
+
+### Biografía y trayectoria
+
+Luis Gilberto Murillo Urrutia es ingeniero de minas y político. Fue gobernador del Chocó, ministro de Ambiente, embajador de Colombia en Estados Unidos y canciller de la República en 2024.
+
+### Plan de gobierno y propuestas
+
+Su discurso ha priorizado transición energética, inclusión regional, lucha contra desigualdades territoriales y política exterior orientada a cooperación y comercio.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Ha recibido críticas políticas en debates sobre ejecución regional y lineamientos de política exterior, dentro de la discusión normal entre partidos.
+
+### Alianzas y avales
+
+Tiene respaldo en sectores afrocolombianos, ambientales y progresistas, y también puentes con sectores de centro por su perfil técnico y diplomático.
+
+### Registro legislativo y de gobierno
+
+Su experiencia es ejecutiva y diplomática, con presencia en niveles regionales y nacionales, especialmente en ambiente y relaciones exteriores.
+
+### Patrimonio, financiación y campaña
+
+Ha presentado declaraciones de bienes y rentas por su ejercicio público. En campaña presidencial, financiación y gastos deben reportarse ante CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Ingeniero, exgobernador del Chocó, exministro de Ambiente, exembajador y excanciller.
+- **summaryProposals:** Transición energética, inclusión regional y cooperación internacional.
+- **summaryControversies:** Sin condenas reportadas; controversias políticas sobre ejecución y orientación de política exterior.
+- **summaryAlliances:** Apoyos en sectores afrocolombianos, ambientales y puentes con centro político.
+- **summaryRecord:** Trayectoria ejecutiva regional y nacional, más experiencia diplomática.
+- **summaryFunding:** Declaraciones patrimoniales de función pública; campaña presidencial sujeta a CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Luis Gilberto Murillo — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Luis_Gilberto_Murillo | prensa |
+| record | Cancillería de Colombia — hoja institucional | 2024-05-21 | https://www.cancilleria.gov.co/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 25. Juan Fernando Cristo
+
+- **slug:** juan-fernando-cristo
+- **party:** Independiente
+- **currentOffice:** Ministro del Interior
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/7/77/Juan_Fernando_Cristo_2024.jpg
+
+### Biografía y trayectoria
+
+Juan Fernando Cristo Bustos es abogado y político nortesantandereano. Fue senador de la República, ministro del Interior (2014-2017) y nuevamente designado en esa cartera en 2024.
+
+### Plan de gobierno y propuestas
+
+Ha promovido implementación de paz, fortalecimiento institucional, reformas políticas para mejorar representación y coordinación entre nación y territorios.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Sus posturas sobre reformas políticas y negociaciones de paz han generado debate entre sectores de oposición y oficialismo.
+
+### Alianzas y avales
+
+Tiene trayectoria en redes liberales y de centro, con capacidad de diálogo entre sectores de gobierno, partidos tradicionales y actores regionales.
+
+### Registro legislativo y de gobierno
+
+Experiencia legislativa relevante como senador y experiencia ejecutiva como ministro del Interior en dos periodos.
+
+### Patrimonio, financiación y campaña
+
+Cuenta con declaraciones patrimoniales de su paso por Congreso y Ejecutivo. Si participa en presidencial, la financiación debe reportarse ante CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Abogado, exsenador y ministro del Interior en dos periodos.
+- **summaryProposals:** Implementación de paz, reforma política y fortalecimiento institucional.
+- **summaryControversies:** Sin condenas reportadas; debate político por su agenda de reformas y paz.
+- **summaryAlliances:** Vínculos con sectores liberales y de centro, con perfil de articulación política.
+- **summaryRecord:** Carrera combinada en Senado y ministerio.
+- **summaryFunding:** Declaraciones patrimoniales de servicio público; campaña sujeta a reportes del CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Juan Fernando Cristo — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Juan_Fernando_Cristo | prensa |
+| record | Ministerio del Interior — perfiles de ministros | 2024-07-03 | https://www.mininterior.gov.co/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |
+
+---
+
+## 26. Luis Carlos Reyes
+
+- **slug:** luis-carlos-reyes
+- **party:** Independiente
+- **currentOffice:** Exdirector de la DIAN y exministro de Comercio
+- **photoUrl:** https://upload.wikimedia.org/wikipedia/commons/d/d1/20240611_Posesion_Mincomercio-C%C3%A9sar_Carri%C3%B3n0031.jpg
+
+### Biografía y trayectoria
+
+Luis Carlos Reyes Hernández es economista e historiador. Fue director de la DIAN y posteriormente ministro de Comercio, Industria y Turismo en 2024, con perfil técnico-académico.
+
+### Plan de gobierno y propuestas
+
+Ha insistido en formalización económica, lucha contra evasión, mejora de productividad y simplificación de reglas para empresas, con foco en recaudo eficiente y transparencia.
+
+### Escándalos y controversias
+
+No registra condenas judiciales en las fuentes consultadas. Sus decisiones tributarias y de fiscalización han generado debate político, especialmente por impacto sobre contribuyentes y sectores productivos.
+
+### Alianzas y avales
+
+Su perfil se acerca a sectores técnicos, académicos y grupos ciudadanos interesados en reforma institucional y transparencia fiscal.
+
+### Registro legislativo y de gobierno
+
+No ha sido congresista. Su experiencia es ejecutiva técnica en DIAN y en el Ministerio de Comercio.
+
+### Patrimonio, financiación y campaña
+
+Como servidor público ha estado sujeto a declaraciones de bienes y rentas. En caso de aspiración presidencial, debe reportar financiación de campaña ante CNE.
+
+### Resúmenes para comparar
+
+- **summaryTrajectory:** Economista e historiador; exdirector de DIAN y exministro de Comercio.
+- **summaryProposals:** Formalización, lucha contra evasión, productividad y transparencia fiscal.
+- **summaryControversies:** Sin condenas reportadas; controversias políticas por medidas tributarias y de fiscalización.
+- **summaryAlliances:** Cercanía con sectores técnicos y académicos.
+- **summaryRecord:** Trayectoria ejecutiva en entidades económicas del orden nacional.
+- **summaryFunding:** Declaraciones patrimoniales de función pública; campaña sujeta a control y reporte del CNE.
+
+### Fuentes
+
+| Sección | Título | Fecha | URL | Nivel |
+|---|---|---|---|---|
+| biography | Luis Carlos Reyes — Wikipedia | 2026-02-23 | https://es.wikipedia.org/wiki/Luis_Carlos_Reyes | prensa |
+| record | DIAN — Dirección general | 2024-06-01 | https://www.dian.gov.co/ | oficial |
+| biography | Pares — Así va la carrera presidencial 2026 | 2025-12-01 | https://www.pares.com.co/elecciones-colombia-2026/ | ong |

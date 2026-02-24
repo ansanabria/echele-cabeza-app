@@ -77,6 +77,40 @@ const ENV_PATH = path.resolve(dirname, '../.env')
 const ENV_LOCAL_PATH = path.resolve(dirname, '../.env.local')
 
 type SourceSection = 'biography' | 'proposals' | 'controversies' | 'alliances' | 'record' | 'funding'
+type SourceTier = 'oficial' | 'prensa' | 'ong' | 'redes'
+type ControversyStatus =
+  | 'suspicion'
+  | 'under_investigation'
+  | 'indicted'
+  | 'cleared'
+  | 'convicted'
+
+type SourceSeed = {
+  section: SourceSection
+  title: string
+  publishedAt: string
+  url: string
+  tier: SourceTier
+}
+
+type ProposalItemSeed = {
+  title: string
+  description: string
+  topic?: string
+  sourceTitle: string
+  sourceUrl: string
+  sourceTier: SourceTier
+}
+
+type ControversyItemSeed = {
+  title: string
+  description: string
+  status: ControversyStatus
+  year?: string
+  sourceTitle: string
+  sourceUrl: string
+  sourceTier: SourceTier
+}
 
 type CandidateSeed = {
   name: string
@@ -97,13 +131,9 @@ type CandidateSeed = {
   summaryAlliances: string
   summaryRecord: string
   summaryFunding: string
-  sources: {
-    section: SourceSection
-    title: string
-    publishedAt: string
-    url: string
-    tier: 'oficial' | 'prensa' | 'ong' | 'redes'
-  }[]
+  sources: SourceSeed[]
+  proposalItems: ProposalItemSeed[]
+  controversyItems: ControversyItemSeed[]
 }
 
 type CorrectionSeed = {
@@ -172,7 +202,7 @@ function toLexicalRichText(text: string): Candidate['biography'] {
   }
 }
 
-function parseSources(tableContent: string): CandidateSeed['sources'] {
+function parseSources(tableContent: string): SourceSeed[] {
   const rows = tableContent
     .split('\n')
     .map((line) => line.trim())
@@ -192,13 +222,182 @@ function parseSources(tableContent: string): CandidateSeed['sources'] {
       title: cells[1],
       publishedAt: cells[2],
       url: cells[3],
-      tier: cells[4].toLowerCase() as CandidateSeed['sources'][number]['tier'],
+      tier: cells[4].toLowerCase() as SourceTier,
     }))
     .filter((source) =>
       ['biography', 'proposals', 'controversies', 'alliances', 'record', 'funding'].includes(
         source.section,
       ),
     )
+}
+
+const DEFAULT_SOURCE: Omit<SourceSeed, 'section' | 'publishedAt'> & { publishedAt: string } = {
+  title: 'Pares — Así va la carrera presidencial 2026',
+  url: 'https://www.pares.com.co/elecciones-colombia-2026/',
+  tier: 'ong',
+  publishedAt: '2025-12-01',
+}
+
+function normalizeItemText(value: string): string {
+  const cleaned = value
+    .replace(/^[-*•]\s+/, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\s+[.;,:]$/, '')
+
+  if (!cleaned) return ''
+  return cleaned[0].toUpperCase() + cleaned.slice(1)
+}
+
+function splitSectionIntoItems(sectionText: string): string[] {
+  const lines = sectionText
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean)
+
+  const explicitBullets = lines
+    .filter((line) => /^[-*•]\s+/.test(line))
+    .map((line) => normalizeItemText(line))
+    .filter(Boolean)
+
+  if (explicitBullets.length >= 2) {
+    return explicitBullets
+  }
+
+  const paragraph = lines.join(' ')
+  const sentenceSegments = paragraph
+    .split(/(?<=[.?!])\s+/)
+    .map((segment) => segment.trim())
+    .filter(Boolean)
+
+  const items: string[] = []
+
+  for (const segment of sentenceSegments) {
+    const commaSegments = segment
+      .split(',')
+      .map((part) => normalizeItemText(part))
+      .filter((part) => part.length >= 24)
+
+    if (commaSegments.length >= 2) {
+      for (const part of commaSegments) items.push(part)
+      continue
+    }
+
+    const normalized = normalizeItemText(segment)
+    if (normalized.length >= 24) {
+      items.push(normalized)
+    }
+  }
+
+  if (items.length >= 2) return items
+
+  const fallback = normalizeItemText(paragraph)
+  return fallback ? [fallback] : []
+}
+
+function deriveTitleFromItem(text: string, fallbackPrefix: string, index: number): string {
+  const noPeriod = text.replace(/[.;]+$/, '').trim()
+  const beforeColon = noPeriod.split(':')[0]?.trim() ?? ''
+
+  if (beforeColon && beforeColon.length <= 72) {
+    return beforeColon
+  }
+
+  const words = noPeriod.split(/\s+/).filter(Boolean)
+  if (words.length === 0) {
+    return `${fallbackPrefix} ${index + 1}`
+  }
+
+  return words.slice(0, 8).join(' ')
+}
+
+function deriveProposalTopic(text: string): string | undefined {
+  const value = text.toLowerCase()
+  if (/(seguridad|militar|polic|fuerza p[uú]blica|orden)/.test(value)) return 'Seguridad'
+  if (/(salud|hospital|eps|medic)/.test(value)) return 'Salud'
+  if (/(educaci[oó]n|universidad|colegio|docent)/.test(value)) return 'Educacion'
+  if (/(empleo|econom[ií]a|empresa|inversi[oó]n|tributari)/.test(value)) return 'Economia'
+  if (/(justicia|corrupci[oó]n|impunidad|fiscal[ií]a)/.test(value)) return 'Justicia'
+  if (/(paz|v[ií]ctima|conflicto|reconciliaci[oó]n)/.test(value)) return 'Paz'
+  if (/(clima|ambient|energ[ií]a|renovable)/.test(value)) return 'Medio ambiente'
+  if (/(infraestructura|metro|vial|transporte|movilidad)/.test(value)) return 'Infraestructura'
+  return undefined
+}
+
+function inferControversyStatus(text: string): ControversyStatus {
+  const value = text.toLowerCase()
+
+  if (/(condenad|sentenciad)/.test(value)) return 'convicted'
+  if (/(imputad|acusaci[oó]n formal|llamamiento a juicio|indict)/.test(value)) return 'indicted'
+  if (/(investigaci[oó]n|indagaci[oó]n|proceso en curso|procuradur[ií]a|contralor[ií]a|fiscal[ií]a)/.test(value)) {
+    return 'under_investigation'
+  }
+  if (/(absuelt|archiv|sin cargos|no result[oó] en cargos|caso cerrado|preclu)/.test(value)) {
+    return 'cleared'
+  }
+
+  return 'suspicion'
+}
+
+function inferControversyYear(text: string): string | undefined {
+  const years = text.match(/\b(19|20)\d{2}\b/g)
+  if (!years || years.length === 0) return undefined
+  if (years.length === 1) return years[0]
+  return `${years[0]}-${years[years.length - 1]}`
+}
+
+function getItemSource(
+  sources: SourceSeed[],
+  section: SourceSection,
+  itemIndex: number,
+): Pick<ProposalItemSeed, 'sourceTitle' | 'sourceUrl' | 'sourceTier'> {
+  const sectionSources = sources.filter((source) => source.section === section)
+  const fallbackSource = sectionSources[0] ?? sources[0]
+
+  const source = sectionSources[itemIndex] ?? fallbackSource
+  if (source) {
+    return {
+      sourceTitle: source.title,
+      sourceUrl: source.url,
+      sourceTier: source.tier,
+    }
+  }
+
+  return {
+    sourceTitle: DEFAULT_SOURCE.title,
+    sourceUrl: DEFAULT_SOURCE.url,
+    sourceTier: DEFAULT_SOURCE.tier,
+  }
+}
+
+function buildProposalItems(proposalsText: string, sources: SourceSeed[]): ProposalItemSeed[] {
+  const items = splitSectionIntoItems(proposalsText)
+  return items.map((itemText, index) => {
+    const source = getItemSource(sources, 'proposals', index)
+    return {
+      title: deriveTitleFromItem(itemText, 'Propuesta', index),
+      description: itemText,
+      topic: deriveProposalTopic(itemText),
+      ...source,
+    }
+  })
+}
+
+function buildControversyItems(
+  controversiesText: string,
+  sources: SourceSeed[],
+): ControversyItemSeed[] {
+  const items = splitSectionIntoItems(controversiesText)
+  return items.map((itemText, index) => {
+    const source = getItemSource(sources, 'controversies', index)
+    return {
+      title: deriveTitleFromItem(itemText, 'Controversia', index),
+      description: itemText,
+      status: inferControversyStatus(itemText),
+      year: inferControversyYear(itemText),
+      ...source,
+    }
+  })
 }
 
 function parseCandidates(markdown: string): CandidateSeed[] {
@@ -230,6 +429,7 @@ function parseCandidates(markdown: string): CandidateSeed[] {
       ])
       const summarySection = getSection(block, 'Resúmenes para comparar', ['Fuentes'])
       const sourcesSection = getSection(block, 'Fuentes', [])
+      const parsedSources = parseSources(sourcesSection)
 
       if (!slug || !party) {
         return acc
@@ -277,7 +477,9 @@ function parseCandidates(markdown: string): CandidateSeed[] {
         summaryAlliances,
         summaryRecord,
         summaryFunding,
-        sources: parseSources(sourcesSection),
+        sources: parsedSources,
+        proposalItems: buildProposalItems(proposals, parsedSources),
+        controversyItems: buildControversyItems(controversies, parsedSources),
       })
 
       return acc
@@ -348,7 +550,9 @@ async function upsertCandidate(
     lastUpdated: new Date().toISOString(),
     biography: toLexicalRichText(candidate.biography),
     proposals: toLexicalRichText(candidate.proposals),
+    proposalItems: candidate.proposalItems,
     controversies: toLexicalRichText(candidate.controversies),
+    controversyItems: candidate.controversyItems,
     alliances: toLexicalRichText(candidate.alliances),
     record: toLexicalRichText(candidate.record),
     funding: toLexicalRichText(candidate.funding),

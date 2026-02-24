@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+import { ControversyCard } from '@/components/site/ControversyCard'
 import { CorrectionHistory } from '@/components/site/CorrectionHistory'
+import { ProposalCard } from '@/components/site/ProposalCard'
 import { SectionNav } from '@/components/site/SectionNav'
 import { SourcesAccordion } from '@/components/site/SourcesAccordion'
 import {
@@ -69,13 +71,40 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
         {SECTION_CONFIG.map((section) => {
           const content = lexicalToPlainText(candidate[section.field])
           const sources = getSourcesForSection(candidate, section.id)
+          const proposalItems = section.id === 'proposals' ? (candidate.proposalItems ?? []) : []
+          const controversyItems =
+            section.id === 'controversies' ? (candidate.controversyItems ?? []) : []
 
           return (
             <article key={section.id} id={section.id} className="mb-4 rounded-lg border border-border bg-card p-5">
               <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
-              <p className="whitespace-pre-wrap leading-relaxed text-muted-foreground">
-                {content || 'Contenido pendiente de publicacion.'}
-              </p>
+
+              {content ? (
+                <p className="whitespace-pre-wrap leading-relaxed text-muted-foreground">
+                  {content}
+                </p>
+              ) : proposalItems.length === 0 && controversyItems.length === 0 ? (
+                <p className="leading-relaxed text-muted-foreground">
+                  Contenido pendiente de publicacion.
+                </p>
+              ) : null}
+
+              {proposalItems.length > 0 && (
+                <div className={`grid gap-4 sm:grid-cols-2 ${content ? 'mt-6' : ''}`}>
+                  {proposalItems.map((item) => (
+                    <ProposalCard key={item.id ?? item.title} item={item} />
+                  ))}
+                </div>
+              )}
+
+              {controversyItems.length > 0 && (
+                <div className={`flex flex-col gap-4 ${content ? 'mt-6' : ''}`}>
+                  {controversyItems.map((item) => (
+                    <ControversyCard key={item.id ?? item.title} item={item} />
+                  ))}
+                </div>
+              )}
+
               <SourcesAccordion sources={sources} />
             </article>
           )

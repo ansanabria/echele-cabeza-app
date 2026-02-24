@@ -209,6 +209,20 @@ export interface Candidate {
     };
     [k: string]: unknown;
   };
+  /**
+   * Cada entrada aparece como una tarjeta individual en el perfil del candidato.
+   */
+  proposalItems?:
+    | {
+        title: string;
+        description: string;
+        topic?: string | null;
+        sourceTitle: string;
+        sourceUrl: string;
+        sourceTier: 'oficial' | 'prensa' | 'ong' | 'redes';
+        id?: string | null;
+      }[]
+    | null;
   controversies: {
     root: {
       type: string;
@@ -224,6 +238,21 @@ export interface Candidate {
     };
     [k: string]: unknown;
   };
+  /**
+   * Cada entrada aparece como una tarjeta individual con codigo de color segun el estado.
+   */
+  controversyItems?:
+    | {
+        title: string;
+        description: string;
+        status: 'suspicion' | 'under_investigation' | 'indicted' | 'cleared' | 'convicted';
+        year?: string | null;
+        sourceTitle: string;
+        sourceUrl: string;
+        sourceTier: 'oficial' | 'prensa' | 'ong' | 'redes';
+        id?: string | null;
+      }[]
+    | null;
   alliances: {
     root: {
       type: string;
@@ -437,7 +466,30 @@ export interface CandidatesSelect<T extends boolean = true> {
   lastUpdated?: T;
   biography?: T;
   proposals?: T;
+  proposalItems?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        topic?: T;
+        sourceTitle?: T;
+        sourceUrl?: T;
+        sourceTier?: T;
+        id?: T;
+      };
   controversies?: T;
+  controversyItems?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        status?: T;
+        year?: T;
+        sourceTitle?: T;
+        sourceUrl?: T;
+        sourceTier?: T;
+        id?: T;
+      };
   alliances?: T;
   record?: T;
   funding?: T;

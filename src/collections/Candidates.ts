@@ -7,6 +7,99 @@ const sourceTierOptions = [
   { label: 'Redes', value: 'redes' },
 ]
 
+const inlineSourceFields: Field[] = [
+  {
+    name: 'sourceTitle',
+    type: 'text',
+    required: true,
+    label: 'Nombre de la fuente',
+  },
+  {
+    name: 'sourceUrl',
+    type: 'text',
+    required: true,
+    label: 'URL de la fuente',
+  },
+  {
+    name: 'sourceTier',
+    type: 'select',
+    required: true,
+    options: sourceTierOptions,
+    label: 'Nivel de la fuente',
+  },
+]
+
+const proposalItemsField: Field = {
+  name: 'proposalItems',
+  type: 'array',
+  label: 'Propuestas (tarjetas)',
+  admin: {
+    description: 'Cada entrada aparece como una tarjeta individual en el perfil del candidato.',
+  },
+  fields: [
+    {
+      name: 'title',
+      type: 'text',
+      required: true,
+      label: 'Titulo de la propuesta',
+    },
+    {
+      name: 'description',
+      type: 'textarea',
+      required: true,
+      label: 'Descripcion',
+    },
+    {
+      name: 'topic',
+      type: 'text',
+      label: 'Tema (ej: Seguridad, Salud, Economia)',
+    },
+    ...inlineSourceFields,
+  ],
+}
+
+const controversyItemsField: Field = {
+  name: 'controversyItems',
+  type: 'array',
+  label: 'Escandalos y controversias (tarjetas)',
+  admin: {
+    description: 'Cada entrada aparece como una tarjeta individual con codigo de color segun el estado.',
+  },
+  fields: [
+    {
+      name: 'title',
+      type: 'text',
+      required: true,
+      label: 'Titulo del escandalo o controversia',
+    },
+    {
+      name: 'description',
+      type: 'textarea',
+      required: true,
+      label: 'Descripcion (que se alega, estado actual, resultado si lo hay)',
+    },
+    {
+      name: 'status',
+      type: 'select',
+      required: true,
+      label: 'Estado',
+      options: [
+        { label: 'Sospecha / sin investigacion activa', value: 'suspicion' },
+        { label: 'Investigacion en curso', value: 'under_investigation' },
+        { label: 'Imputado formalmente', value: 'indicted' },
+        { label: 'Absuelto / caso cerrado', value: 'cleared' },
+        { label: 'Condenado', value: 'convicted' },
+      ],
+    },
+    {
+      name: 'year',
+      type: 'text',
+      label: 'Ano (ej: 2022, 2019–2021)',
+    },
+    ...inlineSourceFields,
+  ],
+}
+
 const sourcesField: Field = {
   name: 'sources',
   type: 'array',
@@ -126,12 +219,14 @@ export const Candidates: CollectionConfig = {
               required: true,
               label: 'Plan de gobierno y propuestas',
             },
+            proposalItemsField,
             {
               name: 'controversies',
               type: 'richText',
               required: true,
               label: 'Escandalos y controversias',
             },
+            controversyItemsField,
             {
               name: 'alliances',
               type: 'richText',

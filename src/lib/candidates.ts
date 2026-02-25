@@ -165,6 +165,11 @@ export function getCandidateImageUrl(candidate: Candidate): string | null {
   return null
 }
 
+export function getMediaUrl(media: number | Media | null | undefined): string | null {
+  if (!media || typeof media === 'number') return null
+  return (media as Media).url ?? null
+}
+
 export function formatDate(dateValue?: unknown): string {
   if (typeof dateValue !== 'string' || !dateValue) return 'Sin fecha'
 

@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
+import { AlliancePartyCard } from '@/components/site/AlliancePartyCard'
 import { ControversyCard } from '@/components/site/ControversyCard'
 import { CorrectionHistory } from '@/components/site/CorrectionHistory'
+import { EndorserCard } from '@/components/site/EndorserCard'
 import { ProposalCard } from '@/components/site/ProposalCard'
 import { SectionNav } from '@/components/site/SectionNav'
 import { SourcesAccordion } from '@/components/site/SourcesAccordion'
@@ -150,6 +152,66 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
                     </Link>
                   </Button>
                 )}
+              </article>
+            )
+          }
+
+          if (section.id === 'alliances') {
+            const allianceParties = candidate.allianceParties ?? []
+            const allEndorsers = candidate.endorsers ?? []
+            const endorserPreview = allEndorsers.slice(0, 4)
+            const hasMoreEndorsers = allEndorsers.length > 4
+
+            return (
+              <article key={section.id} id={section.id} className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5">
+                <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
+
+                {content && (
+                  <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
+                    {content}
+                  </p>
+                )}
+
+                {allianceParties.length > 0 && (
+                  <div className="mb-6">
+                    <p className="mb-3 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                      Partidos y coaliciones
+                    </p>
+                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                      {allianceParties.map((item) => (
+                        <AlliancePartyCard key={item.id ?? item.name} item={item} />
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {allEndorsers.length > 0 && (
+                  <div>
+                    <p className="mb-3 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                      Personas que apoyan
+                    </p>
+                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                      {endorserPreview.map((item) => (
+                        <EndorserCard key={item.id ?? item.name} item={item} />
+                      ))}
+                    </div>
+                    {hasMoreEndorsers && (
+                      <Button asChild variant="outline" className="mt-5 w-full">
+                        <Link href={`/candidatos/${candidate.slug}/alianzas`}>
+                          Ver todos los apoyos ({allEndorsers.length}) →
+                        </Link>
+                      </Button>
+                    )}
+                  </div>
+                )}
+
+                {!content && allianceParties.length === 0 && allEndorsers.length === 0 && (
+                  <p className="leading-relaxed text-muted-foreground">
+                    Contenido pendiente de publicación.
+                  </p>
+                )}
+
+                <SourcesAccordion sources={sources} />
               </article>
             )
           }

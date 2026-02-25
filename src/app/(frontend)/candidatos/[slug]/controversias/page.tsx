@@ -31,6 +31,14 @@ export default async function AllControversiesPage({ params }: Props) {
 
   return (
     <div>
+      <div className="mb-8">
+        <Button asChild variant="link" className="px-0">
+          <Link href={`/candidatos/${candidate.slug}#controversies`}>
+            ← Volver al perfil de {candidate.name}
+          </Link>
+        </Button>
+      </div>
+
       <nav className="mb-8 flex items-center gap-2 text-sm text-muted-foreground">
         <Link href="/candidatos" className="transition-colors hover:text-foreground">
           Candidatos
@@ -89,14 +97,6 @@ export default async function AllControversiesPage({ params }: Props) {
           <SourcesAccordion sources={sources} />
         </div>
       )}
-
-      <div className="mt-10 border-t border-border pt-6">
-        <Button asChild variant="link" className="px-0">
-          <Link href={`/candidatos/${candidate.slug}#controversies`}>
-            ← Volver al perfil de {candidate.name}
-          </Link>
-        </Button>
-      </div>
     </div>
   )
 }

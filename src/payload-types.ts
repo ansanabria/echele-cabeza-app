@@ -268,6 +268,26 @@ export interface Candidate {
     };
     [k: string]: unknown;
   };
+  /**
+   * Partidos y coaliciones que apoyan al candidato. Cada entrada muestra logo y nombre en una tarjeta.
+   */
+  allianceParties?:
+    | {
+        logo: number | Media;
+        name: string;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Personas relevantes que apoyan al candidato. Las primeras 4 se muestran en el perfil; si hay más, aparece el botón "Ver todos los apoyos".
+   */
+  endorsers?:
+    | {
+        photo: number | Media;
+        name: string;
+        id?: string | null;
+      }[]
+    | null;
   record: {
     root: {
       type: string;
@@ -491,6 +511,20 @@ export interface CandidatesSelect<T extends boolean = true> {
         id?: T;
       };
   alliances?: T;
+  allianceParties?:
+    | T
+    | {
+        logo?: T;
+        name?: T;
+        id?: T;
+      };
+  endorsers?:
+    | T
+    | {
+        photo?: T;
+        name?: T;
+        id?: T;
+      };
   record?: T;
   funding?: T;
   sources?:

@@ -42,6 +42,132 @@ const CANDIDATE_LOCAL_PHOTOS_BY_SLUG: Record<string, string> = {
   'juan-fernando-cristo': 'juan-fernando-cristo.webp',
   'luis-carlos-reyes': 'luis-carlos-reyes.webp',
 }
+/** Parties/coalitions and endorsers per candidate, derived from alliances content. Placeholder media used for logos and photos. */
+const ALLIANCE_DATA_BY_SLUG: Record<
+  string,
+  { parties: { name: string }[]; endorsers: { name: string }[] }
+> = {
+  'vicky-davila': {
+    parties: [
+      { name: 'La Gran Consulta' },
+      { name: 'Centro Democrático' },
+      { name: 'Partido Conservador' },
+    ],
+    endorsers: [],
+  },
+  'juan-manuel-galan': {
+    parties: [{ name: 'La Gran Consulta' }, { name: 'Nuevo Liberalismo' }],
+    endorsers: [{ name: 'Sergio Fajardo' }],
+  },
+  'daniel-quintero': {
+    parties: [{ name: 'Consulta del Frente Amplio' }, { name: 'Pacto Histórico' }],
+    endorsers: [],
+  },
+  'ivan-cepeda': {
+    parties: [
+      { name: 'Consulta del Frente Amplio' },
+      { name: 'Pacto Histórico' },
+      { name: 'Colombia Humana' },
+    ],
+    endorsers: [{ name: 'Gustavo Petro' }],
+  },
+  'enrique-penalosa': {
+    parties: [{ name: 'La Gran Consulta' }, { name: 'Cambio Radical' }],
+    endorsers: [],
+  },
+  'camilo-romero': {
+    parties: [
+      { name: 'Consulta del Frente Amplio' },
+      { name: 'Colombia Humana' },
+      { name: 'Pacto Histórico' },
+    ],
+    endorsers: [],
+  },
+  'paloma-valencia': {
+    parties: [{ name: 'La Gran Consulta' }, { name: 'Centro Democrático' }],
+    endorsers: [{ name: 'Álvaro Uribe' }],
+  },
+  'roy-barreras': {
+    parties: [{ name: 'Consulta del Frente Amplio' }, { name: 'Pacto Histórico' }],
+    endorsers: [],
+  },
+  'clara-lopez': {
+    parties: [
+      { name: 'Consulta del Frente Amplio' },
+      { name: 'Polo Democrático Alternativo' },
+    ],
+    endorsers: [],
+  },
+  'juan-daniel-oviedo': {
+    parties: [{ name: 'La Gran Consulta' }],
+    endorsers: [],
+  },
+  'juan-carlos-pinzon': {
+    parties: [{ name: 'Coalición de centro-derecha' }],
+    endorsers: [],
+  },
+  'anibal-gaviria': {
+    parties: [{ name: 'Partido Liberal' }],
+    endorsers: [],
+  },
+  'david-luna': {
+    parties: [{ name: 'Partido Liberal' }],
+    endorsers: [],
+  },
+  'mauricio-cardenas': {
+    parties: [{ name: 'Coalición técnica y empresarial' }],
+    endorsers: [],
+  },
+  'santiago-botero': {
+    parties: [{ name: 'Sector ciudadano e independiente' }],
+    endorsers: [],
+  },
+  'abelardo-de-la-espriella': {
+    parties: [{ name: 'Sectores de derecha e independientes' }],
+    endorsers: [],
+  },
+  'felipe-cordoba': {
+    parties: [{ name: 'Sectores técnicos y regionales' }],
+    endorsers: [],
+  },
+  'daniel-palacios': {
+    parties: [{ name: 'Partido Conservador' }, { name: 'Coalición de centro-derecha' }],
+    endorsers: [],
+  },
+  'efrain-cepeda': {
+    parties: [{ name: 'Partido Conservador' }],
+    endorsers: [],
+  },
+  'sergio-fajardo': {
+    parties: [{ name: 'Coalición de centro' }],
+    endorsers: [],
+  },
+  'norman-maurice-armitage': {
+    parties: [{ name: 'Sector empresarial del Valle del Cauca' }],
+    endorsers: [],
+  },
+  'carlos-caicedo': {
+    parties: [{ name: 'Fuerza Ciudadana' }],
+    endorsers: [],
+  },
+  'claudia-lopez': {
+    parties: [{ name: 'Coalición de centro' }, { name: 'Sectores verdes e independientes' }],
+    endorsers: [],
+  },
+  'luis-gilberto-murillo': {
+    parties: [{ name: 'Sectores afrocolombianos y ambientales' }],
+    endorsers: [],
+  },
+  'juan-fernando-cristo': {
+    parties: [{ name: 'Partido Liberal' }, { name: 'Coalición de centro' }],
+    endorsers: [],
+  },
+  'luis-carlos-reyes': {
+    parties: [{ name: 'Sectores técnicos y académicos' }],
+    endorsers: [],
+  },
+}
+
 const CANDIDATE_DIRECTORY_ORDER_BY_SLUG: Record<string, number> = {
   // Ordered by latest complete nationwide intention-to-vote snapshot fetched during this task:
   // Invamer / Colombia Opina (Noticias Caracol, updated Dec 1, 2025).
@@ -112,6 +238,14 @@ type ControversyItemSeed = {
   sourceTier: SourceTier
 }
 
+type AlliancePartySeed = {
+  name: string
+}
+
+type EndorserSeed = {
+  name: string
+}
+
 type CandidateSeed = {
   name: string
   slug: string
@@ -134,6 +268,8 @@ type CandidateSeed = {
   sources: SourceSeed[]
   proposalItems: ProposalItemSeed[]
   controversyItems: ControversyItemSeed[]
+  allianceParties: AlliancePartySeed[]
+  endorsers: EndorserSeed[]
 }
 
 type CorrectionSeed = {
@@ -458,6 +594,11 @@ function parseCandidates(markdown: string): CandidateSeed[] {
         throw new Error(`Missing summary fields for candidate "${name}" (${slug}).`)
       }
 
+      const allianceData = ALLIANCE_DATA_BY_SLUG[slug] ?? {
+        parties: [],
+        endorsers: [],
+      }
+
       acc.push({
         name,
         slug,
@@ -480,6 +621,8 @@ function parseCandidates(markdown: string): CandidateSeed[] {
         sources: parsedSources,
         proposalItems: buildProposalItems(proposals, parsedSources),
         controversyItems: buildControversyItems(controversies, parsedSources),
+        allianceParties: allianceData.parties,
+        endorsers: allianceData.endorsers,
       })
 
       return acc
@@ -531,6 +674,7 @@ async function upsertCandidate(
   payload: Awaited<ReturnType<typeof getPayload>>,
   candidate: CandidateSeed,
   photoId: number,
+  placeholderMediaId: number,
 ): Promise<number> {
   const existing = await payload.find({
     collection: 'candidates',
@@ -554,6 +698,14 @@ async function upsertCandidate(
     controversies: toLexicalRichText(candidate.controversies),
     controversyItems: candidate.controversyItems,
     alliances: toLexicalRichText(candidate.alliances),
+    allianceParties: candidate.allianceParties.map((p) => ({
+      logo: placeholderMediaId,
+      name: p.name,
+    })),
+    endorsers: candidate.endorsers.map((e) => ({
+      photo: placeholderMediaId,
+      name: e.name,
+    })),
     record: toLexicalRichText(candidate.record),
     funding: toLexicalRichText(candidate.funding),
     summaryTrajectory: candidate.summaryTrajectory,
@@ -796,7 +948,12 @@ async function main() {
         candidate,
         placeholderMediaId,
       )
-      const id = await upsertCandidate(payload, candidate, candidatePhotoId)
+      const id = await upsertCandidate(
+        payload,
+        candidate,
+        candidatePhotoId,
+        placeholderMediaId,
+      )
       candidateIdBySlug.set(candidate.slug, id)
       payload.logger.info(`Seeded candidate: ${candidate.slug}`)
     }

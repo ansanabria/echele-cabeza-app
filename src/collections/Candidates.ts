@@ -236,6 +236,54 @@ export const Candidates: CollectionConfig = {
               label: 'Alianzas y avales',
             },
             {
+              name: 'allianceParties',
+              type: 'array',
+              label: 'Partidos y coaliciones',
+              admin: {
+                description:
+                  'Partidos y coaliciones que apoyan al candidato. Cada entrada muestra logo y nombre en una tarjeta.',
+              },
+              fields: [
+                {
+                  name: 'logo',
+                  type: 'upload',
+                  relationTo: 'media',
+                  required: true,
+                  label: 'Logo del partido o coalición',
+                },
+                {
+                  name: 'name',
+                  type: 'text',
+                  required: true,
+                  label: 'Nombre del partido o coalición',
+                },
+              ],
+            },
+            {
+              name: 'endorsers',
+              type: 'array',
+              label: 'Personas que apoyan',
+              admin: {
+                description:
+                  'Personas relevantes que apoyan al candidato. Las primeras 4 se muestran en el perfil; si hay más, aparece el botón "Ver todos los apoyos".',
+              },
+              fields: [
+                {
+                  name: 'photo',
+                  type: 'upload',
+                  relationTo: 'media',
+                  required: true,
+                  label: 'Foto de la persona',
+                },
+                {
+                  name: 'name',
+                  type: 'text',
+                  required: true,
+                  label: 'Nombre',
+                },
+              ],
+            },
+            {
               name: 'record',
               type: 'richText',
               required: true,

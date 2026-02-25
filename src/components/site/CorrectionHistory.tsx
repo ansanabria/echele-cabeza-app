@@ -18,7 +18,7 @@ type CorrectionHistoryProps = {
 
 export function CorrectionHistory({ corrections }: CorrectionHistoryProps) {
   return (
-    <Accordion type="single" collapsible className="mt-3" id="historial-correcciones">
+    <Accordion type="single" collapsible className="mt-3 scroll-mt-20" id="historial-correcciones">
       <AccordionItem value="historial-correcciones" className="rounded-lg border border-border bg-secondary px-4">
         <AccordionTrigger className="py-3 text-sm font-medium text-foreground hover:no-underline">
           Historial de correcciones

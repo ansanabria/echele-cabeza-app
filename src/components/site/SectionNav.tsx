@@ -8,13 +8,13 @@ type SectionNavProps = {
 
 export function SectionNav({ sections }: SectionNavProps) {
   return (
-    <div className="sticky top-0 z-5 mb-5 rounded-full border border-border bg-background p-1">
+    <div className="sticky top-2 z-5 mb-5 rounded-lg border border-border bg-background p-1">
       <nav aria-label="Secciones del perfil" className="hidden w-full md:flex">
         {sections.map((section) => (
           <a
             key={section.id}
             href={`#${section.id}`}
-            className="flex-1 rounded-full px-2 py-1 text-center text-sm text-muted-foreground no-underline transition-colors hover:bg-secondary hover:text-foreground"
+            className="flex-1 rounded-lg px-2 py-1 text-center text-sm text-muted-foreground no-underline transition-colors hover:bg-secondary hover:text-foreground"
           >
             {section.navLabel}
           </a>
@@ -25,7 +25,7 @@ export function SectionNav({ sections }: SectionNavProps) {
         <span className="text-sm font-medium text-muted-foreground">Ir a sección</span>
         <select
           defaultValue=""
-          className="min-h-[2.4rem] rounded-full border border-border bg-card px-3 text-sm text-foreground"
+          className="min-h-[2.4rem] rounded-lg border border-border bg-card px-3 text-sm text-foreground"
           onChange={(event) => {
             const targetId = event.target.value
             if (!targetId) return

@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import React from 'react'
 import './globals.css'
 import { SiteFooter } from '@/components/site/SiteFooter'
@@ -21,6 +22,13 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
           href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Instrument+Serif&display=swap"
           rel="stylesheet"
         />
+        {process.env.NODE_ENV === 'development' && (
+          <Script
+            src="//unpkg.com/react-grab/dist/index.global.js"
+            crossOrigin="anonymous"
+            strategy="beforeInteractive"
+          />
+        )}
       </head>
       <body>
         <main className="mx-auto min-h-screen max-w-7xl px-6 py-6 md:px-8 lg:px-12">

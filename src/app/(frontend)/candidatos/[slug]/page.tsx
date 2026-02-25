@@ -78,7 +78,7 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
             const hasMore = allProposals.length > 4
 
             return (
-              <article key={section.id} id={section.id} className="mb-4 rounded-lg border border-border bg-card p-5">
+              <article key={section.id} id={section.id} className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5">
                 <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
 
                 {content && (
@@ -120,7 +120,7 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
             const hasMore = allControversies.length > 2
 
             return (
-              <article key={section.id} id={section.id} className="mb-4 rounded-lg border border-border bg-card p-5">
+              <article key={section.id} id={section.id} className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5">
                 <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
 
                 {content && (
@@ -155,7 +155,7 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
           }
 
           return (
-            <article key={section.id} id={section.id} className="mb-4 rounded-lg border border-border bg-card p-5">
+            <article key={section.id} id={section.id} className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5">
               <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
 
               {content ? (

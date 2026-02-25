@@ -5,11 +5,7 @@ import { AlliancePartyCard } from '@/components/site/AlliancePartyCard'
 import { EndorserCard } from '@/components/site/EndorserCard'
 import { SourcesAccordion } from '@/components/site/SourcesAccordion'
 import { Button } from '@/components/ui/button'
-import {
-  getCandidateBySlug,
-  getSourcesForSection,
-  lexicalToPlainText,
-} from '@/lib/candidates'
+import { getCandidateBySlug, getSourcesForSection, lexicalToPlainText } from '@/lib/candidates'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -61,18 +57,17 @@ export default async function AlliancesPage({ params }: Props) {
         <p className="mt-1 text-muted-foreground">{candidate.party}</p>
       </header>
 
-      {content && (
-        <p className="mb-10 text-sm leading-relaxed text-muted-foreground">
-          {content}
-        </p>
-      )}
+      {content && <p className="mb-10 text-sm leading-relaxed text-muted-foreground">{content}</p>}
 
       {allianceParties.length > 0 && (
-        <div className="mb-10">
-          <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-            Partidos y coaliciones
-          </p>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-12">
+          <div className="mb-5 flex items-center gap-3">
+            <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+              Partidos y coaliciones
+            </p>
+            <span className="h-px flex-1 bg-border" aria-hidden />
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {allianceParties.map((item) => (
               <AlliancePartyCard key={item.id ?? item.name} item={item} />
             ))}
@@ -82,10 +77,13 @@ export default async function AlliancesPage({ params }: Props) {
 
       {endorsers.length > 0 && (
         <div>
-          <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-            Personas que apoyan
-          </p>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="mb-5 flex items-center gap-3">
+            <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+              Personas que apoyan
+            </p>
+            <span className="h-px flex-1 bg-border" aria-hidden />
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {endorsers.map((item) => (
               <EndorserCard key={item.id ?? item.name} item={item} />
             ))}

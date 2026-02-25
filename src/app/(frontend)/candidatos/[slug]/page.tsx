@@ -41,7 +41,11 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
       <aside className="sticky top-6 h-max overflow-hidden rounded-lg border border-border bg-card md:self-start">
         <div className="aspect-[3/4] bg-secondary">
           {imageUrl ? (
-            <img alt={`Foto de ${candidate.name}`} src={imageUrl} className="block h-full w-full object-cover" />
+            <img
+              alt={`Foto de ${candidate.name}`}
+              src={imageUrl}
+              className="block h-full w-full object-cover"
+            />
           ) : (
             <div className="h-full w-full bg-secondary" aria-hidden />
           )}
@@ -50,12 +54,12 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
         <div className="p-5">
           <h1 className="mb-1 text-2xl leading-tight">{candidate.name}</h1>
           <p className="mb-1 text-muted-foreground">{candidate.party}</p>
-          <p className="mb-1 text-muted-foreground">{candidate.currentOffice ?? 'Cargo no disponible'}</p>
+          <p className="mb-1 text-muted-foreground">
+            {candidate.currentOffice ?? 'Cargo no disponible'}
+          </p>
 
           <Button asChild variant="outline" className="my-3 w-full">
-            <Link href={`/comparar?a=${candidate.slug}`}>
-              Comparar con otro candidato
-            </Link>
+            <Link href={`/comparar?a=${candidate.slug}`}>Comparar con otro candidato</Link>
           </Button>
 
           <p className="text-sm text-muted-foreground">
@@ -80,7 +84,11 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
             const hasMore = allProposals.length > 4
 
             return (
-              <article key={section.id} id={section.id} className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5">
+              <article
+                key={section.id}
+                id={section.id}
+                className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5"
+              >
                 <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
 
                 {content && (
@@ -122,7 +130,11 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
             const hasMore = allControversies.length > 2
 
             return (
-              <article key={section.id} id={section.id} className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5">
+              <article
+                key={section.id}
+                id={section.id}
+                className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5"
+              >
                 <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
 
                 {content && (
@@ -163,21 +175,26 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
             const hasMoreEndorsers = allEndorsers.length > 4
 
             return (
-              <article key={section.id} id={section.id} className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5">
-                <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
+              <article
+                key={section.id}
+                id={section.id}
+                className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-6"
+              >
+                <h2 className="mb-4 text-xl leading-snug">{section.heading}</h2>
 
                 {content && (
-                  <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
-                    {content}
-                  </p>
+                  <p className="mb-8 text-sm leading-relaxed text-muted-foreground">{content}</p>
                 )}
 
                 {allianceParties.length > 0 && (
-                  <div className="mb-6">
-                    <p className="mb-3 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-                      Partidos y coaliciones
-                    </p>
-                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="mb-8">
+                    <div className="mb-4 flex items-center gap-3">
+                      <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                        Partidos y coaliciones
+                      </p>
+                      <span className="h-px flex-1 bg-border" aria-hidden />
+                    </div>
+                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                       {allianceParties.map((item) => (
                         <AlliancePartyCard key={item.id ?? item.name} item={item} />
                       ))}
@@ -187,16 +204,19 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
 
                 {allEndorsers.length > 0 && (
                   <div>
-                    <p className="mb-3 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-                      Personas que apoyan
-                    </p>
-                    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="mb-4 flex items-center gap-3">
+                      <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                        Personas que apoyan
+                      </p>
+                      <span className="h-px flex-1 bg-border" aria-hidden />
+                    </div>
+                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                       {endorserPreview.map((item) => (
                         <EndorserCard key={item.id ?? item.name} item={item} />
                       ))}
                     </div>
                     {hasMoreEndorsers && (
-                      <Button asChild variant="outline" className="mt-5 w-full">
+                      <Button asChild variant="outline" className="mt-6 w-full">
                         <Link href={`/candidatos/${candidate.slug}/alianzas`}>
                           Ver todos los apoyos ({allEndorsers.length}) →
                         </Link>
@@ -217,7 +237,11 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
           }
 
           return (
-            <article key={section.id} id={section.id} className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5">
+            <article
+              key={section.id}
+              id={section.id}
+              className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5"
+            >
               <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
 
               {content ? (

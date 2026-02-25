@@ -138,3 +138,54 @@ Follow these defaults on every task:
 - **Make small, targeted edits.** Avoid large refactors unless explicitly requested.
 - **Keep the architecture stable.** Preserve existing patterns unless a change is directly requested.
 - **Verify your work.** After any non-trivial change, validate the affected surface area with the relevant tests or type checks.
+
+---
+
+## Cursor Cloud specific instructions
+
+### System prerequisites
+
+The VM update script installs Bun and PostgreSQL automatically. After it runs, the following are available:
+
+- **Bun** (`~/.bun/bin/bun`) — add `$HOME/.bun/bin` to `PATH` if not already present.
+- **PostgreSQL 16** on `127.0.0.1:5432` — must be started with `sudo pg_ctlcluster 16 main start` before running the app or tests.
+- **Node.js 22** — pre-installed via nvm.
+
+### Database setup (one-time, already done in snapshot)
+
+A local database `col_elections` exists with user `postgres` / password `postgres`. The `.env` file points to it:
+
+```
+DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:5432/col_elections
+PAYLOAD_SECRET=dev-secret-key-for-local-development-only-32chars
+```
+
+If the `.env` file is missing, recreate it with the values above.
+
+### Starting the dev server
+
+```bash
+sudo pg_ctlcluster 16 main start   # ensure Postgres is running
+bun dev                              # starts Next.js + Payload on http://localhost:3000
+```
+
+The frontend is at `/`, the Payload admin UI is at `/admin`.
+
+### Running checks
+
+All standard commands are in `package.json` scripts. See the README "Useful Commands" table. Key ones:
+
+- `bun run lint` — ESLint (exits 0 with warnings only)
+- `bun run test:int` — Vitest integration tests (needs Postgres running)
+- `bunx tsc --noEmit` — TypeScript validation
+- `bun run test:e2e` — Playwright e2e (install Chromium first: `bunx playwright install --with-deps chromium`)
+
+### Seeding data
+
+Run `bun run seed` to populate the database with 26 candidates from `data/candidates.md`. Photos will use a 1px placeholder since the `media/` directory with real images is not committed.
+
+### Gotchas
+
+- The `docker-compose.yml` is a leftover from the Payload template (references MongoDB). Ignore it — this project uses PostgreSQL exclusively.
+- The `.env.example` shows a MongoDB URL — also a template leftover. Always use a PostgreSQL connection string.
+- Candidate photo warnings during seed are expected when the `media/` image files are absent; placeholders are used instead.

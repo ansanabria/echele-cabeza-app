@@ -66,11 +66,11 @@ export function CompareInteractiveShell({
         {shouldShowLoading ? (
           <div
             aria-live="polite"
-            aria-label="Actualizando comparacion"
+            aria-label="Actualizando comparación"
             className="absolute inset-0 z-10 flex items-center justify-center rounded-lg bg-background/80 backdrop-blur-[1px]"
           >
             <div className="rounded-md border border-border bg-card px-4 py-2 text-sm text-muted-foreground">
-              Actualizando comparacion...
+              Actualizando comparación...
             </div>
           </div>
         ) : null}

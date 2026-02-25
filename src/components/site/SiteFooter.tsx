@@ -4,7 +4,7 @@ export function SiteFooter() {
   return (
     <footer className="mt-12 border-t border-border pt-6 text-sm text-muted-foreground">
       <p className="mb-2 leading-relaxed">
-        Este proyecto mantiene una linea editorial neutral y descriptiva. La informacion se
+        Este proyecto mantiene una línea editorial neutral y descriptiva. La información se
         publica con verificaciones y puede actualizarse cuando aparezcan nuevos datos
         confirmados.
       </p>
@@ -14,7 +14,7 @@ export function SiteFooter() {
         </Link>
         <span aria-hidden>·</span>
         <Link href="/metodologia" className="text-muted-foreground no-underline transition-colors hover:text-foreground">
-          Metodologia
+          Metodología
         </Link>
         <span aria-hidden>·</span>
         <Link href="/correcciones" className="text-muted-foreground no-underline transition-colors hover:text-foreground">

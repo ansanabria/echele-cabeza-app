@@ -22,7 +22,7 @@ export function SectionNav({ sections }: SectionNavProps) {
       </nav>
 
       <label className="grid gap-1 md:hidden">
-        <span className="text-sm font-medium text-muted-foreground">Ir a seccion</span>
+        <span className="text-sm font-medium text-muted-foreground">Ir a sección</span>
         <select
           defaultValue=""
           className="min-h-[2.4rem] rounded-full border border-border bg-card px-3 text-sm text-foreground"
@@ -33,7 +33,7 @@ export function SectionNav({ sections }: SectionNavProps) {
           }}
         >
           <option value="" disabled>
-            Seleccionar seccion
+            Seleccionar sección
           </option>
           {sections.map((section) => (
             <option key={section.id} value={section.id}>

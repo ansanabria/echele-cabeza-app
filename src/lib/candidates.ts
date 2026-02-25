@@ -31,8 +31,8 @@ export type CandidateSummaryField =
 export const SECTION_CONFIG: SectionConfig[] = [
   {
     id: 'biography',
-    navLabel: 'Biografia',
-    heading: 'Biografia y trayectoria',
+    navLabel: 'Biografía',
+    heading: 'Biografía y trayectoria',
     field: 'biography',
   },
   {
@@ -43,8 +43,8 @@ export const SECTION_CONFIG: SectionConfig[] = [
   },
   {
     id: 'controversies',
-    navLabel: 'Escandalos',
-    heading: 'Escandalos y controversias',
+    navLabel: 'Escándalos',
+    heading: 'Escándalos y controversias',
     field: 'controversies',
   },
   {
@@ -62,7 +62,7 @@ export const SECTION_CONFIG: SectionConfig[] = [
   {
     id: 'funding',
     navLabel: 'Patrimonio',
-    heading: 'Patrimonio, financiacion y campana',
+    heading: 'Patrimonio, financiación y campaña',
     field: 'funding',
   },
 ]

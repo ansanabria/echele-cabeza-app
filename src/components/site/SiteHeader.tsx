@@ -17,7 +17,7 @@ export function SiteHeader() {
         <span>Elecciones Colombia</span>
       </Link>
 
-      <nav aria-label="Navegacion principal" className="flex items-center gap-1">
+      <nav aria-label="Navegación principal" className="flex items-center gap-1">
         {NAV_LINKS.map((link) => (
           <Link
             key={link.href}

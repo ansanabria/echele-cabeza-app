@@ -210,7 +210,7 @@ export interface Candidate {
     [k: string]: unknown;
   };
   /**
-   * Cada entrada aparece como una tarjeta individual en el perfil del candidato.
+   * Cada entrada aparece como una tarjeta individual en el perfil del candidato. Las primeras 4 propuestas (en el orden de esta lista) se muestran en el perfil principal. Arrastra las filas para reordenar y elegir cuales 4 se destacan.
    */
   proposalItems?:
     | {
@@ -239,7 +239,7 @@ export interface Candidate {
     [k: string]: unknown;
   };
   /**
-   * Cada entrada aparece como una tarjeta individual con codigo de color segun el estado.
+   * Cada entrada aparece como una tarjeta individual con codigo de color segun el estado. Las primeras 2 controversias se muestran en el perfil principal. Arrastra las filas para reordenar y elegir cuales se destacan.
    */
   controversyItems?:
     | {

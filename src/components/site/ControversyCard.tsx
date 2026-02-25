@@ -16,13 +16,13 @@ const statusConfig: Record<
   { label: string; leftBorderClass: string; badgeClass: string; dotClass: string }
 > = {
   suspicion: {
-    label: 'Sospecha / sin investigacion activa',
+    label: 'Sospecha / sin investigación activa',
     leftBorderClass: 'border-l-muted-foreground/40',
     badgeClass: 'bg-muted text-muted-foreground',
     dotClass: 'bg-muted-foreground/60',
   },
   under_investigation: {
-    label: 'Investigacion en curso',
+    label: 'Investigación en curso',
     leftBorderClass: 'border-l-amber-500',
     badgeClass: 'bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300',
     dotClass: 'bg-amber-500',

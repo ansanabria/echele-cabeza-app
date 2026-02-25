@@ -50,7 +50,7 @@ export default async function ComparePage({ searchParams }: ComparePageProps) {
     <section>
       <h1 className="mb-1 text-3xl">Comparar candidatos</h1>
       <p className="mb-6 text-muted-foreground">
-        Selecciona dos perfiles para revisar su informacion en paralelo, con el mismo
+        Selecciona dos perfiles para revisar su información en paralelo, con el mismo
         formato y sin puntuaciones.
       </p>
 
@@ -66,7 +66,7 @@ export default async function ComparePage({ searchParams }: ComparePageProps) {
         showTable={Boolean(candidateA && candidateB)}
       >
         {candidateA && candidateB ? (
-          <div className="overflow-hidden rounded-lg border border-border" role="table" aria-label="Tabla de comparacion">
+          <div className="overflow-hidden rounded-lg border border-border" role="table" aria-label="Tabla de comparación">
             {/* Header */}
             <div className="hidden grid-cols-[180px_1fr_1fr] bg-secondary md:grid" role="row">
               <div className="border-b border-r border-border p-4" role="columnheader">
@@ -128,7 +128,7 @@ export default async function ComparePage({ searchParams }: ComparePageProps) {
           </div>
         ) : (
           <div className="rounded-lg border border-dashed border-border p-5 text-muted-foreground">
-            <p>Selecciona ambos candidatos para ver la comparacion por temas.</p>
+            <p>Selecciona ambos candidatos para ver la comparación por temas.</p>
           </div>
         )}
       </CompareInteractiveShell>

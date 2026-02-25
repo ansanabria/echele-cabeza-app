@@ -6,6 +6,7 @@ import { CorrectionHistory } from '@/components/site/CorrectionHistory'
 import { ProposalCard } from '@/components/site/ProposalCard'
 import { SectionNav } from '@/components/site/SectionNav'
 import { SourcesAccordion } from '@/components/site/SourcesAccordion'
+import { Button } from '@/components/ui/button'
 import {
   formatDate,
   getCandidateBySlug,
@@ -49,15 +50,14 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
           <p className="mb-1 text-muted-foreground">{candidate.party}</p>
           <p className="mb-1 text-muted-foreground">{candidate.currentOffice ?? 'Cargo no disponible'}</p>
 
-          <Link
-            className="my-3 inline-block rounded-md border border-border bg-card px-3.5 py-2 text-sm font-medium text-foreground no-underline transition-colors hover:bg-secondary"
-            href={`/comparar?a=${candidate.slug}`}
-          >
-            Comparar con otro candidato
-          </Link>
+          <Button asChild variant="outline" className="my-3 w-full">
+            <Link href={`/comparar?a=${candidate.slug}`}>
+              Comparar con otro candidato
+            </Link>
+          </Button>
 
           <p className="text-sm text-muted-foreground">
-            Ultima actualizacion: {formatDate(candidate.lastUpdated)}
+            Última actualización: {formatDate(candidate.lastUpdated)}
           </p>
           <a href="#historial-correcciones" className="text-sm text-primary">
             Ver historial de correcciones
@@ -71,9 +71,88 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
         {SECTION_CONFIG.map((section) => {
           const content = lexicalToPlainText(candidate[section.field])
           const sources = getSourcesForSection(candidate, section.id)
-          const proposalItems = section.id === 'proposals' ? (candidate.proposalItems ?? []) : []
-          const controversyItems =
-            section.id === 'controversies' ? (candidate.controversyItems ?? []) : []
+
+          if (section.id === 'proposals') {
+            const allProposals = candidate.proposalItems ?? []
+            const preview = allProposals.slice(0, 4)
+            const hasMore = allProposals.length > 4
+
+            return (
+              <article key={section.id} id={section.id} className="mb-4 rounded-lg border border-border bg-card p-5">
+                <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
+
+                {content && (
+                  <p className="mb-6 whitespace-pre-wrap leading-relaxed text-muted-foreground">
+                    {content}
+                  </p>
+                )}
+
+                {preview.length > 0 ? (
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {preview.map((item) => (
+                      <ProposalCard key={item.id ?? item.title} item={item} />
+                    ))}
+                  </div>
+                ) : (
+                  !content && (
+                    <p className="leading-relaxed text-muted-foreground">
+                      Contenido pendiente de publicación.
+                    </p>
+                  )
+                )}
+
+                {hasMore && (
+                  <Button asChild variant="outline" className="mt-5 w-full">
+                    <Link href={`/candidatos/${candidate.slug}/propuestas`}>
+                      Ver todas las propuestas ({allProposals.length}) →
+                    </Link>
+                  </Button>
+                )}
+
+                <SourcesAccordion sources={sources} />
+              </article>
+            )
+          }
+
+          if (section.id === 'controversies') {
+            const allControversies = candidate.controversyItems ?? []
+            const preview = allControversies.slice(0, 2)
+            const hasMore = allControversies.length > 2
+
+            return (
+              <article key={section.id} id={section.id} className="mb-4 rounded-lg border border-border bg-card p-5">
+                <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
+
+                {content && (
+                  <p className="mb-6 whitespace-pre-wrap leading-relaxed text-muted-foreground">
+                    {content}
+                  </p>
+                )}
+
+                {preview.length > 0 ? (
+                  <div className="flex flex-col gap-4">
+                    {preview.map((item) => (
+                      <ControversyCard key={item.id ?? item.title} item={item} />
+                    ))}
+                  </div>
+                ) : (
+                  !content && (
+                    <p className="leading-relaxed text-muted-foreground">
+                      Contenido pendiente de publicación.
+                    </p>
+                  )
+                )}
+
+                {hasMore && (
+                  <Button asChild variant="outline" className="mt-5 w-full">
+                    <Link href={`/candidatos/${candidate.slug}/controversias`}>
+                      Ver todas las controversias ({allControversies.length}) →
+                    </Link>
+                  </Button>
+                )}
+              </article>
+            )
+          }
 
           return (
             <article key={section.id} id={section.id} className="mb-4 rounded-lg border border-border bg-card p-5">
@@ -83,26 +162,10 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
                 <p className="whitespace-pre-wrap leading-relaxed text-muted-foreground">
                   {content}
                 </p>
-              ) : proposalItems.length === 0 && controversyItems.length === 0 ? (
+              ) : (
                 <p className="leading-relaxed text-muted-foreground">
-                  Contenido pendiente de publicacion.
+                  Contenido pendiente de publicación.
                 </p>
-              ) : null}
-
-              {proposalItems.length > 0 && (
-                <div className={`grid gap-4 sm:grid-cols-2 ${content ? 'mt-6' : ''}`}>
-                  {proposalItems.map((item) => (
-                    <ProposalCard key={item.id ?? item.title} item={item} />
-                  ))}
-                </div>
-              )}
-
-              {controversyItems.length > 0 && (
-                <div className={`flex flex-col gap-4 ${content ? 'mt-6' : ''}`}>
-                  {controversyItems.map((item) => (
-                    <ControversyCard key={item.id ?? item.title} item={item} />
-                  ))}
-                </div>
               )}
 
               <SourcesAccordion sources={sources} />

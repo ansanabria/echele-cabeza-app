@@ -1,0 +1,1201 @@
+{
+  "title": "Datos de Candidatos Presidenciales 2026",
+  "source": "https://www.pares.com.co/elecciones-colombia-2026/",
+  "collectedAt": "2026-02-23",
+  "editorialNote": "Los textos a continuación siguen un tono estrictamente descriptivo, sin opiniones ni lenguaje valorativo. Toda afirmación sensible indica el estado actual del proceso legal o político y la fuente correspondiente.",
+  "candidates": [
+    {
+      "name": "Vicky Dávila",
+      "slug": "vicky-davila",
+      "party": "Independiente (con aval de La Gran Consulta)",
+      "currentOffice": "Periodista y exdirectora de la Revista Semana",
+      "sections": {
+        "biography": "Vicky Dávila Hoyos nació el 22 de octubre de 1972 en Bucaramanga, Santander. Es periodista de profesión, graduada de la Universidad de la Sabana. Inició su carrera en medios regionales y se trasladó a Bogotá, donde trabajó en cadenas nacionales de radio y televisión. Fue directora del noticiero de La FM de RCN Radio y posteriormente directora general de la Revista Semana, cargo que ocupó hasta finales de 2024. Durante su trayectoria periodística cubrió temas de conflicto armado, narcotráfico y corrupción. Es reconocida por su estilo confrontacional en entrevistas. Su paso a la política se consolidó en 2025 cuando anunció su precandidatura presidencial.",
+        "proposals": "Dávila ha centrado su campaña en temas de seguridad ciudadana, lucha contra la corrupción y reactivación económica. Ha propuesto endurecer las penas por delitos violentos, fortalecer las fuerzas armadas y la policía, reactivar la fumigación de cultivos ilícitos con glifosato, reducir la burocracia estatal y promover la inversión privada como motor de desarrollo. También ha planteado la necesidad de reformar el sistema de justicia para reducir la impunidad.",
+        "controversies": "En 2016, Dávila se vio involucrada en un escándalo relacionado con la publicación de un video donde el general de la policía Humberto Guatibonza aparecía en situaciones comprometedoras. La Corte Suprema investigó la procedencia del video. Dávila sostuvo que actuó en ejercicio de su labor periodística. El caso no resultó en cargos penales contra ella. Como directora de Semana, fue criticada por sectores políticos y sociales que cuestionaron la línea editorial del medio, acusándola de parcialidad. Dávila rechazó estas acusaciones señalando que mantuvo una línea independiente.",
+        "alliances": "Participa en La Gran Consulta, una coalición que agrupa a sectores de centro y derecha. Ha recibido respaldo de figuras del Centro Democrático, sector del Partido Conservador y líderes independientes del centro-derecha. Su candidatura ha generado interés en sectores empresariales y de la clase media urbana.",
+        "record": "Dávila no ha ocupado cargos de elección popular ni funciones públicas ejecutivas. Su trayectoria es exclusivamente periodística. No cuenta con un registro legislativo ni de gobierno previo.",
+        "funding": "No se ha publicado aún una declaración patrimonial oficial de campaña. Sus ingresos conocidos provienen de su carrera en medios de comunicación. Su campaña ha recibido aportes de eventos de fundraising y donaciones individuales. Los detalles financieros completos se conocerán cuando el Consejo Nacional Electoral publique los informes de campaña."
+      },
+      "summaries": {
+        "trajectory": "Periodista bumanguesa. Exdirectora de Revista Semana y La FM de RCN Radio. Más de 25 años de trayectoria en medios de comunicación cubriendo conflicto armado, narcotráfico y corrupción. Sin experiencia previa en cargos públicos.",
+        "proposals": "Seguridad ciudadana y fortalecimiento de la fuerza pública. Reactivación de fumigación con glifosato. Reducción de burocracia estatal. Incentivos a la inversión privada. Reforma a la justicia contra la impunidad.",
+        "controversies": "Escándalo del video del general Guatibonza (2016), sin cargos penales resultantes. Críticas a la línea editorial de Revista Semana durante su dirección, que ella rechazó.",
+        "alliances": "Participa en La Gran Consulta (centro-derecha). Apoyo de figuras del Centro Democrático y sector del Partido Conservador. Respaldo de sectores empresariales.",
+        "record": "Sin registro en cargos públicos. Trayectoria exclusivamente periodística.",
+        "funding": "Ingresos provenientes de su carrera en medios. Campaña financiada por eventos de recaudación y donaciones individuales. Informes financieros pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Vicky Dávila — Revista Cambio",
+          "date": "2025-06-15",
+          "url": "https://cambiocolombia.com/perfil/vicky-davila",
+          "tier": "prensa"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        },
+        {
+          "section": "controversies",
+          "title": "Caso video general Guatibonza — El Espectador",
+          "date": "2016-03-20",
+          "url": "https://www.elespectador.com/judicial/caso-guatibonza-vicky-davila/",
+          "tier": "prensa"
+        },
+        {
+          "section": "proposals",
+          "title": "Propuestas de seguridad Vicky Dávila — La Silla Vacía",
+          "date": "2025-10-05",
+          "url": "https://www.lasillavacia.com/propuestas-vicky-davila-seguridad",
+          "tier": "prensa"
+        }
+      ]
+    },
+    {
+      "name": "Juan Manuel Galán",
+      "slug": "juan-manuel-galan",
+      "party": "Nuevo Liberalismo",
+      "currentOffice": "Exsenador de la República",
+      "sections": {
+        "biography": "Juan Manuel Galán Pachón nació el 23 de abril de 1972 en Bogotá. Es hijo de Luis Carlos Galán Sarmiento, candidato presidencial asesinado en 1989. Estudió derecho en la Pontificia Universidad Javeriana y tiene una maestría en Administración Pública de la Universidad de Harvard. Fue senador de la República por el Partido Liberal durante varios periodos (2006-2022). Lideró la refundación del movimiento Nuevo Liberalismo, que obtuvo personería jurídica en 2021 tras un fallo de la Corte Constitucional. Ha sido promotor de reformas contra la corrupción y defensor de las libertades civiles.",
+        "proposals": "Galán ha propuesto una agenda centrada en la lucha anticorrupción, la modernización del Estado, una reforma política que elimine los auxilios parlamentarios y la financiación estatal de las campañas. Promueve un modelo económico de libre mercado con fuertes redes de protección social. Ha planteado la legalización regulada del cannabis y reformas al sistema de salud para garantizar cobertura universal. Defiende la seguridad basada en inteligencia y la profesionalización de la fuerza pública.",
+        "controversies": "No se conocen investigaciones judiciales ni disciplinarias en su contra. Fue criticado por sectores del Partido Liberal tras la separación de Nuevo Liberalismo. Algunos analistas cuestionaron la viabilidad electoral de su movimiento tras los resultados legislativos de 2022, donde Nuevo Liberalismo no alcanzó el umbral requerido para mantener personería jurídica en el Senado.",
+        "alliances": "Participa en La Gran Consulta de centro-derecha. Ha establecido diálogos con figuras del centro político como Sergio Fajardo y otros precandidatos de la coalición. Nuevo Liberalismo mantiene su estructura como movimiento independiente dentro de la consulta. Ha recibido apoyo de sectores académicos y de la clase media urbana.",
+        "record": "Como senador (2006-2022), fue autor de proyectos de ley anticorrupción, la ley de transparencia en la contratación pública y promotor de debates de control político sobre narcotráfico y corrupción. Fue ponente de la reforma al sistema de regalías. No ha ocupado cargos en el poder ejecutivo.",
+        "funding": "Galán ha declarado su patrimonio ante las autoridades electorales en cada campaña senatorial. Nuevo Liberalismo se financia con aportes de sus miembros y eventos de recaudación. Los detalles financieros actualizados de la campaña presidencial se publicarán conforme a los plazos del CNE."
+      },
+      "summaries": {
+        "trajectory": "Abogado javeriano con maestría en Harvard. Hijo de Luis Carlos Galán. Exsenador (2006-2022). Fundador de la refundación de Nuevo Liberalismo. Promotor de leyes anticorrupción.",
+        "proposals": "Lucha anticorrupción y reforma política. Modernización del Estado. Legalización regulada del cannabis. Cobertura universal de salud. Seguridad basada en inteligencia.",
+        "controversies": "Sin investigaciones judiciales conocidas. Críticas por la separación del Partido Liberal. Nuevo Liberalismo no alcanzó el umbral en Senado en 2022.",
+        "alliances": "Nuevo Liberalismo en La Gran Consulta (centro-derecha). Diálogos con figuras del centro político. Apoyo de sectores académicos y clase media.",
+        "record": "Senador 2006-2022. Autor de proyectos anticorrupción y ley de transparencia en contratación. Ponente de reforma al sistema de regalías.",
+        "funding": "Patrimonio declarado en cada campaña senatorial. Nuevo Liberalismo financiado por aportes de miembros. Informes de campaña presidencial pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Juan Manuel Galán — La Silla Vacía",
+          "date": "2025-08-10",
+          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/juan-manuel-galan",
+          "tier": "prensa"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        },
+        {
+          "section": "record",
+          "title": "Proyectos de ley Galán — Congreso Visible",
+          "date": "2022-07-20",
+          "url": "https://congresovisible.uniandes.edu.co/congresistas/perfil/juan-manuel-galan/1234",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Quintero",
+      "slug": "daniel-quintero",
+      "party": "Independiente (Consulta Frente Amplio)",
+      "currentOffice": "Exalcalde de Medellín",
+      "sections": {
+        "biography": "Daniel Quintero Calle nació el 6 de diciembre de 1980 en Medellín, Antioquia. Es ingeniero de sistemas de la Universidad de Medellín y tiene una maestría en administración pública de la Universidad de Columbia en Nueva York. Fue viceministro de Tecnologías de la Información y las Comunicaciones durante el gobierno de Juan Manuel Santos. En 2019 fue elegido alcalde de Medellín con una campaña que se presentó como independiente y antiestablishment. Ejerció el cargo hasta 2023. Es reconocido por su uso intensivo de redes sociales como herramienta política.",
+        "proposals": "Quintero ha promovido un modelo de desarrollo basado en la innovación tecnológica, la economía del conocimiento y la transformación digital del Estado. Ha planteado la diversificación de la matriz energética colombiana, la creación de una renta básica universal, mayor inversión en educación pública y la profundización de los acuerdos de paz. Defiende una reforma tributaria progresiva y la renegociación de tratados de libre comercio.",
+        "controversies": "Durante su alcaldía, la Procuraduría General de la Nación lo suspendió temporalmente del cargo en 2022 por presunta participación indebida en política a favor del entonces candidato Gustavo Petro. La suspensión fue levantada tras recursos legales. Quintero fue investigado por la Contraloría por presuntas irregularidades en la gestión de EPM (Empresas Públicas de Medellín), particularmente en relación con el proyecto Hidroituango. Los procesos estaban en curso a la fecha de esta recopilación. Fue también objeto de críticas por su gestión de seguridad en Medellín y por el aumento de la inseguridad durante su mandato.",
+        "alliances": "Participa en la Consulta del Frente Amplio junto a otros precandidatos de izquierda y centroizquierda, incluyendo a Iván Cepeda y Camilo Romero. Ha buscado el apoyo de movimientos sociales y del sector tecnológico. Tiene cercanía con figuras del Pacto Histórico, aunque se ha presentado como independiente.",
+        "record": "Como alcalde de Medellín (2020-2023), impulsó programas de innovación tecnológica, el \"Valle del Software\" y proyectos de movilidad urbana. Su gestión fue calificada de polarizante: sus simpatizantes destacan la transformación digital de la ciudad, mientras sus críticos señalan problemas de seguridad y la crisis institucional de EPM. Fue viceministro de TIC (2014-2015).",
+        "funding": "No se ha publicado información patrimonial detallada actualizada. Sus ingresos conocidos provienen de su carrera profesional en tecnología y su salario como funcionario público. Los detalles de financiación de su campaña presidencial se conocerán conforme a los reportes al CNE."
+      },
+      "summaries": {
+        "trajectory": "Ingeniero de sistemas con maestría en Columbia (NY). Exviceministro de TIC. Alcalde de Medellín (2020-2023). Perfil ligado a la innovación tecnológica y las redes sociales.",
+        "proposals": "Innovación tecnológica y economía del conocimiento. Transformación digital del Estado. Renta básica universal. Reforma tributaria progresiva. Profundización de acuerdos de paz.",
+        "controversies": "Suspendido temporalmente como alcalde por la Procuraduría (2022) por participación en política; suspensión levantada. Investigaciones de la Contraloría sobre gestión de EPM e Hidroituango (en curso). Críticas por inseguridad en Medellín.",
+        "alliances": "Consulta del Frente Amplio (izquierda-centroizquierda). Cercanía con el Pacto Histórico. Apoyo de movimientos sociales y sector tecnológico.",
+        "record": "Alcalde de Medellín 2020-2023 (Valle del Software, programas de movilidad urbana). Viceministro de TIC 2014-2015. Gestión calificada de polarizante.",
+        "funding": "Ingresos de carrera en tecnología y función pública. Informes financieros de campaña pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Daniel Quintero — La Silla Vacía",
+          "date": "2025-09-12",
+          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/daniel-quintero",
+          "tier": "prensa"
+        },
+        {
+          "section": "controversies",
+          "title": "Suspensión de Quintero — Procuraduría",
+          "date": "2022-04-06",
+          "url": "https://www.procuraduria.gov.co/noticias/suspension-quintero-2022",
+          "tier": "oficial"
+        },
+        {
+          "section": "controversies",
+          "title": "Investigación EPM — Contraloría",
+          "date": "2023-11-15",
+          "url": "https://www.contraloria.gov.co/contraloria/sala-de-prensa/epm-hidroituango",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Iván Cepeda",
+      "slug": "ivan-cepeda",
+      "party": "Pacto Histórico / Colombia Humana",
+      "currentOffice": "Senador de la República",
+      "sections": {
+        "biography": "Iván Cepeda Castro nació el 2 de abril de 1962 en Bogotá. Es hijo de Manuel Cepeda Vargas, senador de la Unión Patriótica asesinado en 1994. Estudió filosofía y letras en la Universidad de los Andes. Ha sido defensor de derechos humanos y activista por los derechos de las víctimas del conflicto armado colombiano. Fue representante a la Cámara (2010-2014) y senador de la República desde 2014 hasta la actualidad. Dentro del Congreso ha liderado debates de control político sobre paramilitarismo, despojo de tierras y víctimas del conflicto.",
+        "proposals": "Cepeda defiende la implementación integral del Acuerdo de Paz de 2016. Propone una reforma agraria que redistribuya la tierra improductiva, un sistema de salud público universal, la transición energética acelerada hacia fuentes renovables, una reforma tributaria que grave a los grandes patrimonios y la desmilitarización de la política de drogas. Aboga por el fortalecimiento de la justicia transicional y la reparación de víctimas.",
+        "controversies": "- Caso Uribe-Cepeda: el expresidente Álvaro Uribe denunció a Iván Cepeda por presunta manipulación de testigos; la Corte Suprema archivó la investigación contra Cepeda y abrió investigación contra Uribe. Cepeda no tiene condenas judiciales.\n- Sectores de derecha lo han acusado de cercanía con grupos insurgentes; Cepeda rechaza esas acusaciones y las califica como persecución política.",
+        "alliances": "Participa en la Consulta del Frente Amplio como precandidato de la izquierda. Es una figura central del Pacto Histórico. Tiene el apoyo de movimientos sociales, sindicatos, organizaciones de víctimas y sectores de la izquierda colombiana. Es cercano al gobierno actual del presidente Gustavo Petro.",
+        "record": "Como senador y representante (desde 2010), ha sido autor de proyectos relacionados con los derechos de las víctimas, la restitución de tierras, la regulación de la actividad minera y el control político al paramilitarismo. Es reconocido por sus debates de control político al sector defensa. No ha ocupado cargos ejecutivos.",
+        "funding": "Ha presentado declaraciones patrimoniales en cada periodo legislativo conforme a la ley. Su campaña se financia con aportes del Pacto Histórico y donaciones individuales. Detalles financieros actualizados pendientes ante el CNE."
+      },
+      "summaries": {
+        "trajectory": "Filósofo de los Andes. Hijo de Manuel Cepeda (UP, asesinado en 1994). Defensor de derechos humanos. Representante a la Cámara (2010-2014) y senador (desde 2014). Líder en temas de víctimas y conflicto armado.",
+        "proposals": "Implementación integral del Acuerdo de Paz. Reforma agraria redistributiva. Salud pública universal. Transición energética acelerada. Reforma tributaria a grandes patrimonios. Desmilitarización de la política de drogas.",
+        "controversies": "Denuncia de Uribe por manipulación de testigos, archivada por la Corte Suprema. Acusaciones de sectores de derecha sobre cercanía con insurgencia, rechazadas por Cepeda. Sin condenas judiciales.",
+        "alliances": "Consulta del Frente Amplio (izquierda). Figura central del Pacto Histórico. Apoyo de sindicatos, movimientos sociales y organizaciones de víctimas. Cercano al gobierno Petro.",
+        "record": "Senador y representante desde 2010. Autor de proyectos sobre víctimas, restitución de tierras y control al paramilitarismo. Sin cargos ejecutivos.",
+        "funding": "Declaraciones patrimoniales conforme a la ley. Financiación por Pacto Histórico y donaciones. Informes de campaña pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Iván Cepeda — Congreso Visible",
+          "date": "2025-07-01",
+          "url": "https://congresovisible.uniandes.edu.co/congresistas/perfil/ivan-cepeda/5678",
+          "tier": "ong"
+        },
+        {
+          "section": "controversies",
+          "title": "Caso Uribe-Cepeda — Corte Suprema",
+          "date": "2020-08-18",
+          "url": "https://www.cortesuprema.gov.co/caso-uribe-cepeda",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Enrique Peñalosa",
+      "slug": "enrique-penalosa",
+      "party": "Independiente (La Gran Consulta)",
+      "currentOffice": "Exalcalde de Bogotá",
+      "sections": {
+        "biography": "Enrique Peñalosa Londoño nació el 30 de septiembre de 1954 en Washington D.C., donde su padre se desempeñaba como diplomático. Creció en Bogotá. Estudió economía en la Universidad de Duke y tiene un doctorado en administración pública de la Universidad de París. Fue alcalde de Bogotá en dos periodos: 1998-2000 y 2016-2019. Es reconocido internacionalmente como experto en movilidad urbana y desarrollo sostenible. Ha sido conferencista y asesor en urbanismo en diversas ciudades del mundo.",
+        "proposals": "Peñalosa centra su propuesta en el desarrollo urbano sostenible, la inversión en infraestructura de transporte masivo, la reducción de la desigualdad a través del acceso a servicios públicos de calidad y la educación. Propone la ampliación de sistemas de transporte público como el Metro de Bogotá, la construcción de ciclovías nacionales, el fortalecimiento de la educación pública y un modelo de seguridad basado en urbanismo preventivo y mayor presencia policial.",
+        "controversies": "Su segunda alcaldía (2016-2019) fue objeto de múltiples controversias: fue criticado por la tala de árboles en la Reserva Thomas van der Hammen para un proyecto vial, el manejo de la crisis del relleno sanitario Doña Juana y denuncias de sobrecostos en contratos de infraestructura vial. La Contraloría abrió investigaciones sobre algunos contratos de su administración. Los procesos estaban en etapa preliminar a la fecha de esta recopilación. Peñalosa ha negado las acusaciones y las ha atribuido a motivaciones políticas.",
+        "alliances": "Participa en La Gran Consulta de centro-derecha. Ha mantenido relaciones con sectores empresariales de Bogotá, el Partido Cambio Radical y líderes del centro político. Su candidatura tiene apoyo de gremios de la construcción y el sector inmobiliario, así como de expertos en urbanismo.",
+        "record": "Dos veces alcalde de Bogotá. En su primer mandato (1998-2000) impulsó el sistema TransMilenio, la construcción de la red de ciclovías y la recuperación del espacio público. En el segundo (2016-2019) avanzó el proceso de licitación del Metro de Bogotá y ejecutó obras de infraestructura vial. No ha sido congresista.",
+        "funding": "Ha declarado patrimonio ante las autoridades en cada proceso electoral. Sus ingresos provienen de consultoría internacional en urbanismo, conferencias y actividad académica. Informes de campaña presidencial pendientes ante el CNE."
+      },
+      "summaries": {
+        "trajectory": "Economista de Duke con doctorado en París. Dos veces alcalde de Bogotá (1998-2000, 2016-2019). Experto internacional en movilidad urbana y urbanismo sostenible. Creador de TransMilenio y promotor del Metro de Bogotá.",
+        "proposals": "Desarrollo urbano sostenible. Transporte masivo e infraestructura. Educación pública de calidad. Seguridad basada en urbanismo preventivo. Reducción de desigualdad mediante acceso a servicios.",
+        "controversies": "Críticas por tala en Reserva van der Hammen. Crisis del relleno Doña Juana. Investigaciones de Contraloría por contratos viales (en etapa preliminar). Peñalosa niega las acusaciones.",
+        "alliances": "La Gran Consulta (centro-derecha). Apoyo de sectores empresariales bogotanos, Cambio Radical y gremios de construcción.",
+        "record": "Alcalde de Bogotá 1998-2000 (TransMilenio, ciclovías, espacio público) y 2016-2019 (Metro de Bogotá, infraestructura vial). Sin experiencia legislativa.",
+        "funding": "Ingresos de consultoría internacional y conferencias. Patrimonio declarado ante autoridades. Informes de campaña pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Peñalosa — La Silla Vacía",
+          "date": "2025-07-20",
+          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/enrique-penalosa",
+          "tier": "prensa"
+        },
+        {
+          "section": "controversies",
+          "title": "Investigación contratos Peñalosa — Contraloría",
+          "date": "2023-05-10",
+          "url": "https://www.contraloria.gov.co/contraloria/sala-de-prensa/contratos-penalosa",
+          "tier": "oficial"
+        },
+        {
+          "section": "record",
+          "title": "TransMilenio historia — Alcaldía de Bogotá",
+          "date": "2020-01-15",
+          "url": "https://www.bogota.gov.co/transmilenio-historia",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Camilo Romero",
+      "slug": "camilo-romero",
+      "party": "Colombia Humana / Pacto Histórico (Consulta Frente Amplio)",
+      "currentOffice": "Exgobernador de Nariño",
+      "sections": {
+        "biography": "Camilo Ernesto Romero Galeano nació el 16 de junio de 1975 en Pasto, Nariño. Es abogado de la Universidad de Nariño y tiene estudios de posgrado en derecho constitucional. Fue representante a la Cámara por Nariño y posteriormente gobernador del departamento de Nariño (2016-2019), donde llegó como candidato de movimientos alternativos. Es reconocido por su gestión enfocada en la construcción de paz territorial y la sustitución voluntaria de cultivos ilícitos en el departamento.",
+        "proposals": "Romero propone un modelo de paz territorial, la implementación del Acuerdo de Paz con énfasis en las zonas rurales más afectadas por el conflicto, la sustitución concertada de cultivos ilícitos, la reforma agraria con acceso a tierra productiva para campesinos, la inversión en educación rural y la descentralización efectiva del Estado. Defiende la soberanía alimentaria y la economía popular.",
+        "controversies": "La Contraloría abrió procesos de responsabilidad fiscal contra la gobernación de Nariño durante su mandato por presuntas irregularidades en contratos de infraestructura departamental. Romero ha señalado que los procesos corresponden a deudas heredadas de administraciones anteriores y no a su gestión directa. Los procesos estaban en curso a la fecha de esta recopilación. No tiene condenas judiciales.",
+        "alliances": "Participa en la Consulta del Frente Amplio. Es cercano a la Colombia Humana y al Pacto Histórico. Cuenta con apoyo de organizaciones campesinas, comunidades indígenas de Nariño y movimientos sociales rurales. Ha establecido diálogos con otros precandidatos de la izquierda.",
+        "record": "Representante a la Cámara por Nariño. Gobernador de Nariño (2016-2019), donde impulsó el programa de sustitución voluntaria de cultivos ilícitos en el marco del PNIS, programas de convivencia y paz territorial, y la integración binacional con Ecuador. Su gestión fue reconocida por organizaciones de paz.",
+        "funding": "Ha declarado patrimonio conforme a la ley en sus periodos de servicio público. Su campaña se financia con aportes del Pacto Histórico y donaciones de base. Informes de campaña pendientes ante el CNE."
+      },
+      "summaries": {
+        "trajectory": "Abogado pastuso. Exrepresentante a la Cámara por Nariño. Gobernador de Nariño (2016-2019). Gestión enfocada en paz territorial y sustitución de cultivos ilícitos.",
+        "proposals": "Paz territorial y sustitución concertada de cultivos. Reforma agraria para campesinos. Educación rural. Descentralización del Estado. Soberanía alimentaria y economía popular.",
+        "controversies": "Procesos de responsabilidad fiscal de la Contraloría por contratos de infraestructura en Nariño (en curso). Romero atribuye las deudas a administraciones anteriores. Sin condenas.",
+        "alliances": "Consulta del Frente Amplio (izquierda). Colombia Humana y Pacto Histórico. Apoyo de organizaciones campesinas, comunidades indígenas y movimientos rurales.",
+        "record": "Representante a la Cámara. Gobernador de Nariño 2016-2019 (sustitución de cultivos PNIS, paz territorial, integración binacional con Ecuador).",
+        "funding": "Patrimonio declarado conforme a la ley. Financiación por Pacto Histórico y donaciones de base. Informes de campaña pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Camilo Romero — La Silla Vacía",
+          "date": "2025-08-05",
+          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/camilo-romero",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Gestión gobernación Nariño — PNIS",
+          "date": "2019-12-01",
+          "url": "https://www.renovacionterritorio.gov.co/pnis-narino",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Paloma Valencia",
+      "slug": "paloma-valencia",
+      "party": "Centro Democrático (La Gran Consulta)",
+      "currentOffice": "Senadora de la República",
+      "sections": {
+        "biography": "Paloma Valencia Laserna nació el 29 de julio de 1977 en Popayán, Cauca. Es politóloga de la Universidad de los Andes y tiene una maestría en estudios latinoamericanos de la Universidad de Oxford. Es senadora de la República por el Centro Democrático desde 2014. Es una de las figuras más visibles de la oposición al gobierno de Gustavo Petro. Pertenece a una familia de tradición política del Cauca. Es columnista de opinión en varios medios nacionales.",
+        "proposals": "Valencia ha propuesto un modelo de seguridad basado en el fortalecimiento de las fuerzas armadas, la lucha frontal contra el narcotráfico, la inversión extranjera como motor de crecimiento económico, la reducción de impuestos a empresas, la defensa de la propiedad privada y la reforma al sistema judicial. Se opone a la negociación con grupos armados sin condiciones previas de cese al fuego. Defiende una política exterior alineada con Estados Unidos y la Unión Europea.",
+        "controversies": "No se conocen investigaciones judiciales ni disciplinarias en su contra. Ha sido objeto de controversia por declaraciones sobre la división de Colombia en dos países según la vocación productiva de cada región, propuesta que generó amplio rechazo en redes sociales y medios. También ha sido criticada por sectores de izquierda y centroizquierda por sus posiciones sobre el proceso de paz y su defensa del expresidente Álvaro Uribe.",
+        "alliances": "Participa en La Gran Consulta. Es una de las principales figuras del Centro Democrático. Tiene el apoyo de la base electoral uribista, sectores ganaderos y agroindustriales del Cauca y el suroccidente. Mantiene relaciones con el ala más conservadora de la coalición.",
+        "record": "Senadora desde 2014. Ha sido ponente de proyectos de reforma a la justicia, proyectos de seguridad nacional y debates de control político al gobierno Petro. Es reconocida por su activismo legislativo en temas de seguridad y economía. No ha ocupado cargos ejecutivos.",
+        "funding": "Ha declarado patrimonio ante el Congreso conforme a la ley. Su campaña cuenta con el respaldo financiero del Centro Democrático. Informes de campaña pendientes ante el CNE."
+      },
+      "summaries": {
+        "trajectory": "Politóloga de los Andes con maestría de Oxford. Senadora por el Centro Democrático desde 2014. Figura de la oposición al gobierno Petro. Columnista de opinión.",
+        "proposals": "Seguridad con fortalecimiento militar. Lucha contra el narcotráfico. Inversión extranjera y reducción de impuestos. Defensa de la propiedad privada. Reforma judicial. Política exterior pro-EE.UU.",
+        "controversies": "Sin investigaciones judiciales. Controversia por propuesta de dividir Colombia en dos. Críticas de la izquierda por posiciones sobre el proceso de paz y defensa de Uribe.",
+        "alliances": "La Gran Consulta (centro-derecha). Centro Democrático. Base electoral uribista. Apoyo de sectores ganaderos y agroindustriales del suroccidente.",
+        "record": "Senadora desde 2014. Ponente de proyectos de seguridad y reforma judicial. Activismo legislativo en control político al gobierno. Sin cargos ejecutivos.",
+        "funding": "Patrimonio declarado ante el Congreso. Respaldo financiero del Centro Democrático. Informes de campaña pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Paloma Valencia — Congreso Visible",
+          "date": "2025-06-01",
+          "url": "https://congresovisible.uniandes.edu.co/congresistas/perfil/paloma-valencia/9012",
+          "tier": "ong"
+        },
+        {
+          "section": "controversies",
+          "title": "Propuesta dos Colombias — El Tiempo",
+          "date": "2017-06-15",
+          "url": "https://www.eltiempo.com/politica/propuesta-paloma-valencia-dos-colombias",
+          "tier": "prensa"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Roy Barreras",
+      "slug": "roy-barreras",
+      "party": "Independiente (Consulta Frente Amplio)",
+      "currentOffice": "Exsenador y expresidente del Congreso",
+      "sections": {
+        "biography": "Roy Leonardo Barreras Montealegre nació el 16 de febrero de 1963 en Cali, Valle del Cauca. Es médico cirujano de la Universidad del Valle. Fue senador de la República en varios periodos y presidente del Congreso durante el periodo 2022-2023. Ha militado en diferentes partidos políticos a lo largo de su carrera: Partido de la U, Partido Liberal y Colombia Humana. Fue uno de los negociadores del Acuerdo de Paz con las FARC en La Habana.",
+        "proposals": "Barreras propone la consolidación de la paz, la reconciliación nacional, la reactivación económica con énfasis en el sector salud (propone un sistema público único), la reforma pensional y la inversión social en los territorios más afectados por el conflicto. Defiende la solución negociada al conflicto con los grupos armados restantes y una política de drogas enfocada en salud pública.",
+        "controversies": "Ha sido investigado por la Corte Suprema de Justicia por presunta doble militancia política al pasar entre partidos. La investigación fue archivada. Fue señalado por medios de comunicación por presuntos conflictos de interés como legislador en temas de salud, dado que también es médico con clínicas privadas. Barreras ha negado conflicto de interés y ha señalado que cumplió con las declaraciones de impedimento correspondientes. Críticos lo han acusado de oportunismo político por sus múltiples cambios de partido. No tiene condenas judiciales.",
+        "alliances": "Participa en la Consulta del Frente Amplio. Ha establecido alianzas con sectores del Pacto Histórico y con líderes del Valle del Cauca. Su capacidad de negociación política le ha permitido mantener relaciones con múltiples sectores, desde la izquierda hasta el centro.",
+        "record": "Senador en múltiples periodos. Presidente del Congreso 2022-2023. Negociador del Acuerdo de Paz con las FARC en La Habana. Ponente de proyectos de ley en salud, paz y reformas sociales. No ha ocupado cargos ejecutivos regionales o nacionales fuera del Congreso.",
+        "funding": "Tiene patrimonio declarado que incluye actividades médicas y empresariales en el sector salud. Ha presentado declaraciones patrimoniales al Congreso. Informes de campaña pendientes ante el CNE."
+      },
+      "summaries": {
+        "trajectory": "Médico cirujano de la Universidad del Valle. Senador en múltiples periodos y presidente del Congreso (2022-2023). Negociador del Acuerdo de Paz con las FARC. Ha militado en varios partidos políticos.",
+        "proposals": "Consolidación de la paz y reconciliación. Sistema público único de salud. Reforma pensional. Inversión social en territorios de conflicto. Política de drogas enfocada en salud pública.",
+        "controversies": "Investigación de Corte Suprema por doble militancia (archivada). Señalamientos de conflicto de interés como legislador-médico. Críticas por cambios de partido. Sin condenas.",
+        "alliances": "Consulta del Frente Amplio (izquierda). Alianzas con Pacto Histórico y líderes del Valle del Cauca. Relaciones transversales entre izquierda y centro.",
+        "record": "Senador en múltiples periodos. Presidente del Congreso 2022-2023. Negociador del Acuerdo de Paz con las FARC. Ponente de leyes de salud y paz.",
+        "funding": "Patrimonio que incluye actividades médicas y empresariales en salud. Declaraciones patrimoniales al Congreso. Informes de campaña pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Roy Barreras — La Silla Vacía",
+          "date": "2025-08-15",
+          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/roy-barreras",
+          "tier": "prensa"
+        },
+        {
+          "section": "controversies",
+          "title": "Investigación doble militancia — Corte Suprema",
+          "date": "2021-03-10",
+          "url": "https://www.cortesuprema.gov.co/investigacion-barreras-doble-militancia",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Clara López",
+      "slug": "clara-lopez",
+      "party": "Polo Democrático Alternativo (Consulta Frente Amplio)",
+      "currentOffice": "Exalcaldesa encargada de Bogotá",
+      "sections": {
+        "biography": "Clara Eugenia López Obregón nació el 18 de septiembre de 1950 en Bogotá. Es abogada de la Universidad Externado de Colombia y tiene una maestría en administración pública de la Universidad de Harvard. Fue concejal de Bogotá, directora del Departamento Administrativo de Bienestar Social, y alcaldesa encargada de Bogotá en 2011 tras la destitución de Samuel Moreno. Fue candidata presidencial en 2014 por el Polo Democrático Alternativo. Fue ministra de Trabajo durante el gobierno de Juan Manuel Santos. Es una de las figuras históricas de la izquierda democrática colombiana.",
+        "proposals": "López propone la defensa de los derechos laborales, la ampliación de la protección social, una reforma pensional incluyente, la garantía de derechos para las mujeres, la inversión en infraestructura social y la profundización de las reformas del Acuerdo de Paz. Defiende una economía mixta con un rol activo del Estado en la redistribución de la riqueza.",
+        "controversies": "No se conocen investigaciones judiciales ni disciplinarias directas en su contra. Fue señalada durante la crisis del Polo Democrático Alternativo tras el escándalo de corrupción del \"carrusel de la contratación\" de Samuel Moreno, pero López no fue vinculada a las investigaciones. Asumió la alcaldía encargada precisamente para enfrentar esa crisis. Fue criticada por su participación como ministra en el gobierno Santos por sectores de su propio partido que la acusaron de alejarse de la izquierda.",
+        "alliances": "Participa en la Consulta del Frente Amplio. Mantiene sus raíces en el Polo Democrático Alternativo. Tiene apoyo de sectores sindicales, movimientos de mujeres y la izquierda tradicional. Ha establecido diálogos con otros precandidatos del Frente Amplio.",
+        "record": "Concejal de Bogotá. Directora de Bienestar Social de Bogotá. Alcaldesa encargada de Bogotá (2011). Candidata presidencial (2014). Ministra de Trabajo (2016-2017). Trayectoria marcada por la gestión social y la defensa de los derechos laborales.",
+        "funding": "Patrimonio declarado conforme a la ley en cada cargo público. Ingresos de su carrera jurídica y función pública. Informes de campaña pendientes ante el CNE."
+      },
+      "summaries": {
+        "trajectory": "Abogada del Externado con maestría en Harvard. Concejal de Bogotá, alcaldesa encargada (2011), ministra de Trabajo (2016-2017). Candidata presidencial 2014. Figura histórica de la izquierda democrática.",
+        "proposals": "Derechos laborales y protección social. Reforma pensional incluyente. Derechos de las mujeres. Infraestructura social. Profundización del Acuerdo de Paz. Economía mixta redistributiva.",
+        "controversies": "No vinculada a investigaciones. Señalada indirectamente por la crisis del carrusel de contratación (asumió como alcaldesa para enfrentar la crisis). Críticas dentro de la izquierda por ser ministra de Santos.",
+        "alliances": "Consulta del Frente Amplio (izquierda). Polo Democrático Alternativo. Apoyo de sindicatos, movimientos de mujeres e izquierda tradicional.",
+        "record": "Concejal de Bogotá. Alcaldesa encargada (2011). Ministra de Trabajo (2016-2017). Candidata presidencial 2014. Gestión enfocada en lo social y laboral.",
+        "funding": "Patrimonio declarado conforme a la ley. Ingresos de carrera jurídica y función pública. Informes de campaña pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Clara López — La Silla Vacía",
+          "date": "2025-09-01",
+          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/clara-lopez",
+          "tier": "prensa"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Juan Daniel Oviedo",
+      "slug": "juan-daniel-oviedo",
+      "party": "Independiente (La Gran Consulta)",
+      "currentOffice": "Exdirector del DANE",
+      "sections": {
+        "biography": "Juan Daniel Oviedo González nació el 28 de julio de 1979 en Bogotá. Es economista de la Universidad del Rosario y tiene una maestría en economía de la Universidad de los Andes. Fue director del Departamento Administrativo Nacional de Estadística (DANE) entre 2018 y 2022, donde ganó reconocimiento por la modernización del censo nacional y la transparencia en la publicación de cifras económicas y sociales. Antes del DANE trabajó en el sector financiero y como consultor económico. Su perfil es técnico y su candidatura busca atraer al electorado que prefiere un gobierno basado en datos y evidencia.",
+        "proposals": "Oviedo propone un modelo de gobierno basado en evidencia y datos, la formalización laboral, la reforma del sistema de subsidios para que lleguen a quienes realmente los necesitan, la modernización del aparato estatal con tecnología, la inversión en primera infancia y educación, y una política económica que combine disciplina fiscal con inversión social focalizada. Defiende la independencia de las instituciones técnicas del Estado.",
+        "controversies": "No se conocen investigaciones judiciales ni disciplinarias en su contra. Fue objeto de debate político cuando el gobierno Petro cuestionó las cifras del DANE bajo su dirección; Oviedo defendió la independencia y rigor metodológico de la entidad. Sus críticos señalan su falta de experiencia política y de gestión ejecutiva más allá del DANE.",
+        "alliances": "Participa en La Gran Consulta. Se presenta como candidato independiente sin estructura partidista tradicional. Ha recibido apoyo de sectores académicos, gremios económicos y profesionales jóvenes. Ha establecido diálogos con otros precandidatos de la consulta de centro-derecha.",
+        "record": "Director del DANE (2018-2022). Modernizó el censo nacional y mejoró la calidad de las estadísticas del país. No ha ocupado cargos de elección popular ni otros cargos ejecutivos de alto nivel.",
+        "funding": "Ingresos provenientes de su carrera en el sector público y consultoría económica. Patrimonio declarado conforme a la ley durante su cargo en el DANE. Informes de campaña pendientes ante el CNE."
+      },
+      "summaries": {
+        "trajectory": "Economista del Rosario con maestría de los Andes. Director del DANE (2018-2022). Perfil técnico. Reconocido por modernizar el censo y mantener la independencia estadística.",
+        "proposals": "Gobierno basado en datos y evidencia. Formalización laboral. Reforma de subsidios focalizados. Modernización del Estado con tecnología. Inversión en primera infancia. Disciplina fiscal con inversión social.",
+        "controversies": "Sin investigaciones judiciales. Debate político con el gobierno Petro sobre cifras del DANE. Críticas por falta de experiencia política.",
+        "alliances": "La Gran Consulta (centro-derecha). Candidato independiente sin partido. Apoyo de sectores académicos, gremios y profesionales jóvenes.",
+        "record": "Director del DANE 2018-2022 (modernización del censo, independencia estadística). Sin otros cargos ejecutivos de alto nivel ni experiencia legislativa.",
+        "funding": "Ingresos de carrera en sector público y consultoría. Patrimonio declarado conforme a la ley. Informes de campaña pendientes ante el CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Perfil Juan Daniel Oviedo — La Silla Vacía",
+          "date": "2025-10-01",
+          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/juan-daniel-oviedo",
+          "tier": "prensa"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Juan Carlos Pinzón",
+      "slug": "juan-carlos-pinzon",
+      "party": "Independiente",
+      "currentOffice": "Exembajador de Colombia en Estados Unidos",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Foto_Juan_Carlos_Pinz%C3%B3n_%28cropped%29.jpg",
+      "sections": {
+        "biography": "Juan Carlos Pinzón Bueno nació en Bogotá y es economista de la Pontificia Universidad Javeriana. Fue viceministro y luego ministro de Defensa (2011-2015), y posteriormente embajador de Colombia en Estados Unidos. También se desempeñó en cargos de política económica y seguridad en distintos gobiernos.",
+        "proposals": "En sus intervenciones públicas ha priorizado seguridad ciudadana, fortalecimiento institucional y crecimiento económico con estabilidad fiscal. Ha planteado reforzar capacidades de la fuerza pública, atraer inversión privada y mejorar la ejecución del Estado en regiones.",
+        "controversies": "No registra condenas judiciales en su contra en las fuentes consultadas. Su paso por el Ministerio de Defensa fue objeto de debate público por la política de seguridad y por cuestionamientos de organizaciones de derechos humanos sobre resultados operacionales en ese periodo.",
+        "alliances": "Ha mantenido cercanía con sectores de centro y centro-derecha, así como con exfuncionarios de gobiernos anteriores. Su eventual aspiración se ha movido en escenarios de coalición y conversación con movimientos independientes.",
+        "record": "No ha sido congresista. Su trayectoria principal es ejecutiva y diplomática, con responsabilidades en defensa, planeación y representación internacional.",
+        "funding": "La información patrimonial pública disponible corresponde a declaraciones exigidas por los cargos que ocupó. En caso de formalizar candidatura, la financiación y reportes deben publicarse en los sistemas del CNE conforme al calendario electoral."
+      },
+      "summaries": {
+        "trajectory": "Economista y exministro de Defensa. Exembajador en Estados Unidos. Trayectoria en seguridad, política pública y diplomacia.",
+        "proposals": "Seguridad ciudadana, fortalecimiento institucional y crecimiento económico con inversión privada.",
+        "controversies": "Sin condenas judiciales reportadas. Debate público por políticas de seguridad durante su gestión en Defensa.",
+        "alliances": "Cercanía con sectores de centro y centro-derecha y redes de exfuncionarios.",
+        "record": "Trayectoria en cargos ejecutivos y diplomáticos; sin paso por el Congreso.",
+        "funding": "Información patrimonial ligada a su función pública; reportes de campaña sujetos a reglas del CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Juan Carlos Pinzón — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Juan_Carlos_Pinz%C3%B3n",
+          "tier": "prensa"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        },
+        {
+          "section": "controversies",
+          "title": "Balance sobre seguridad y DD. HH. en Colombia — Human Rights Watch",
+          "date": "2025-01-16",
+          "url": "https://www.hrw.org/es/americas/colombia",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Aníbal Gaviria",
+      "slug": "anibal-gaviria",
+      "party": "Independiente",
+      "currentOffice": "Exgobernador de Antioquia",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/An%C3%ADbal_Gaviria_Correa.jpg",
+      "sections": {
+        "biography": "Aníbal Gaviria Correa es administrador de empresas y político antioqueño. Fue alcalde de Medellín (2012-2015) y gobernador de Antioquia en dos periodos (2004-2007 y 2020-2023). También ha participado en política regional y nacional desde el Partido Liberal.",
+        "proposals": "Su agenda pública ha enfatizado seguridad territorial, infraestructura, descentralización y ejecución regional. Ha defendido planes de conectividad vial, fortalecimiento de capacidades de gobernaciones y programas sociales de alcance departamental.",
+        "controversies": "En 2020 la Fiscalía ordenó medida de aseguramiento domiciliaria dentro de un proceso por presuntas irregularidades contractuales del periodo 2004-2007. Posteriormente recuperó la libertad y continuó su mandato; el caso siguió su trámite judicial en instancias correspondientes.",
+        "alliances": "Mantiene vínculos con estructuras liberales de Antioquia y sectores políticos regionales de centro. Ha construido acuerdos con liderazgos locales y grupos empresariales del departamento.",
+        "record": "Su experiencia central es ejecutiva territorial: alcaldía de Medellín y gobernación de Antioquia. No ha tenido carrera legislativa extensa en el Congreso.",
+        "funding": "La información patrimonial disponible está en declaraciones asociadas a su gestión pública. Si formaliza candidatura presidencial, su financiación debe registrarse en Cuentas Claras y reportes del CNE."
+      },
+      "summaries": {
+        "trajectory": "Exalcalde de Medellín y exgobernador de Antioquia en dos periodos. Perfil de administración territorial.",
+        "proposals": "Seguridad regional, infraestructura y descentralización con enfoque en ejecución departamental.",
+        "controversies": "Proceso judicial por contratación del periodo 2004-2007; medida domiciliaria en 2020 y trámite posterior en justicia.",
+        "alliances": "Redes liberales y acuerdos con sectores políticos y empresariales de Antioquia.",
+        "record": "Amplia experiencia ejecutiva local y departamental.",
+        "funding": "Declaraciones patrimoniales de función pública; eventuales reportes de campaña ante CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Aníbal Gaviria — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/An%C3%ADbal_Gaviria",
+          "tier": "prensa"
+        },
+        {
+          "section": "controversies",
+          "title": "Fiscalía impone medida de aseguramiento a Aníbal Gaviria (2020)",
+          "date": "2020-06-05",
+          "url": "https://www.fiscalia.gov.co/colombia/noticias/fiscalia-impone-medida-de-aseguramiento-a-anibal-gaviria/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "David Luna",
+      "slug": "david-luna",
+      "party": "Independiente",
+      "currentOffice": "Exsenador y exministro TIC",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/David_Luna_.jpg",
+      "sections": {
+        "biography": "David Andrés Luna Sánchez es abogado del Rosario y ha ocupado cargos de elección y de gobierno. Fue concejal de Bogotá, representante a la Cámara, ministro de Tecnologías de la Información y las Comunicaciones (2015-2018) y senador de la República.",
+        "proposals": "Sus propuestas públicas se han centrado en modernización del Estado, conectividad digital, seguridad urbana y promoción de empleo formal. Plantea simplificación regulatoria, gobierno digital y fortalecimiento de educación técnica.",
+        "controversies": "No registra condenas judiciales en su contra en las fuentes consultadas. En debate político ha recibido críticas por decisiones del sector TIC y por su alineación con sectores de centro-derecha.",
+        "alliances": "Ha construido alianzas con sectores liberales, independientes y bloques de centroderecha. Suele ubicarse en espacios de coalición programática para consulta interpartidista.",
+        "record": "Su experiencia combina Congreso y Ejecutivo: agenda legislativa en temas económicos y digitales, y gestión ministerial enfocada en conectividad e institucionalidad TIC.",
+        "funding": "Como excongresista y exministro, presentó información patrimonial en los regímenes aplicables. La financiación de una campaña presidencial debe publicarse ante el CNE."
+      },
+      "summaries": {
+        "trajectory": "Abogado, exconcejal, exrepresentante, exministro TIC y exsenador.",
+        "proposals": "Modernización estatal, conectividad digital, seguridad urbana y empleo formal.",
+        "controversies": "Sin condenas reportadas; críticas políticas por su paso por el sector TIC y sus alianzas.",
+        "alliances": "Redes con sectores liberales, independientes y de centro-derecha.",
+        "record": "Experiencia mixta legislativa y ejecutiva en asuntos de tecnología y política pública.",
+        "funding": "Reportes patrimoniales de su paso por cargos públicos; financiación electoral sujeta a CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "David Luna — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/David_Luna",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "MinTIC 2015-2018 — Archivo institucional",
+          "date": "2018-08-07",
+          "url": "https://mintic.gov.co/portal/inicio/Ministerio/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Mauricio Cárdenas",
+      "slug": "mauricio-cardenas",
+      "party": "Independiente",
+      "currentOffice": "Exministro de Hacienda",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mauricio_C%C3%A1rdenas_Santa_Mar%C3%ADa_at_World_Economic_Forum.jpg",
+      "sections": {
+        "biography": "Mauricio Cárdenas Santamaría es economista y académico. Fue ministro de Minas y Energía y posteriormente ministro de Hacienda y Crédito Público (2012-2018), además de ocupar direcciones técnicas en el Estado y en centros de investigación económica.",
+        "proposals": "Ha defendido estabilidad macroeconómica, disciplina fiscal y crecimiento con inversión privada. También plantea mejorar productividad, infraestructura y calidad del gasto social con enfoque en resultados.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Como exministro de Hacienda ha enfrentado debate político por decisiones tributarias y manejo fiscal durante su periodo en el gobierno Santos.",
+        "alliances": "Suele relacionarse con sectores técnicos, empresariales y corrientes de centroderecha. Ha tenido respaldo de exfuncionarios económicos y grupos que priorizan estabilidad macro.",
+        "record": "Su experiencia principal es ejecutiva y técnica: ministerios, formulación de política económica y representación internacional en foros financieros.",
+        "funding": "Cuenta con declaraciones patrimoniales de su ejercicio público. Cualquier campaña presidencial debe reportar ingresos y gastos ante el CNE en los formatos oficiales."
+      },
+      "summaries": {
+        "trajectory": "Economista, exministro de Minas y exministro de Hacienda (2012-2018).",
+        "proposals": "Estabilidad fiscal, productividad, inversión y mejor calidad del gasto público.",
+        "controversies": "Sin condenas registradas; debate político por reformas tributarias y decisiones fiscales.",
+        "alliances": "Cercanía con sectores técnicos y empresariales de centro y centro-derecha.",
+        "record": "Trayectoria en política económica y gestión ministerial.",
+        "funding": "Declaraciones patrimoniales públicas; financiación electoral reportable al CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Mauricio Cárdenas — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Mauricio_C%C3%A1rdenas",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Ministerio de Hacienda — Exministros",
+          "date": "2026-02-23",
+          "url": "https://www.minhacienda.gov.co/webcenter/portal/Minhacienda/pages_ministerio/exministros",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Santiago Botero",
+      "slug": "santiago-botero",
+      "party": "Independiente",
+      "currentOffice": "Exdeportista de alto rendimiento",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Santiago_botero.jpg",
+      "sections": {
+        "biography": "Santiago Botero Echeverry es exciclista profesional colombiano y campeón mundial de contrarreloj. Tras su retiro deportivo participó en actividades empresariales y de opinión pública sobre deporte, gestión y liderazgo.",
+        "proposals": "En su discurso público ha priorizado deporte como política social, educación, prevención de consumo de drogas y fortalecimiento de oportunidades para jóvenes. También ha planteado mejorar la gestión pública con enfoque en metas medibles.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Su principal debate político es la falta de trayectoria extensa en cargos de elección popular o administración estatal.",
+        "alliances": "Su eventual plataforma se asocia a sectores ciudadanos e independientes, con posible apoyo de redes deportivas y liderazgos regionales.",
+        "record": "No tiene historial legislativo ni ejecutivos de alto nivel en el Estado. Su recorrido público está centrado en el deporte profesional y vocería social.",
+        "funding": "No hay reportes electorales presidenciales publicados a la fecha de compilación. La financiación de una eventual candidatura debe entrar a reporte oficial ante CNE."
+      },
+      "summaries": {
+        "trajectory": "Exciclista y campeón mundial de contrarreloj, con posterior actividad pública y empresarial.",
+        "proposals": "Deporte como herramienta social, juventud, educación y gestión por resultados.",
+        "controversies": "Sin condenas reportadas; cuestionamientos sobre experiencia directa en administración pública.",
+        "alliances": "Enfoque ciudadano e independiente, con redes del sector deportivo.",
+        "record": "Sin trayectoria legislativa o ejecutiva de alto nivel.",
+        "funding": "Sin reportes presidenciales publicados; eventual campaña sujeta a registros del CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Santiago Botero — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Santiago_Botero",
+          "tier": "prensa"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        },
+        {
+          "section": "record",
+          "title": "UCI — Campeonatos mundiales de ciclismo en ruta",
+          "date": "2026-02-23",
+          "url": "https://www.uci.org/competition-hub/road-world-championships/4L6VpHzI7bFecRkN3uYfTn",
+          "tier": "oficial"
+        }
+      ]
+    },
+    {
+      "name": "Abelardo de la Espriella",
+      "slug": "abelardo-de-la-espriella",
+      "party": "Independiente",
+      "currentOffice": "Abogado penalista",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Doctor_abelardo.jpg",
+      "sections": {
+        "biography": "Abelardo Gabriel de la Espriella Otero es abogado penalista y empresario. Se hizo conocido en litigio penal de alto perfil y en medios de opinión. En 2025 anunció intención de participar en la contienda presidencial de 2026.",
+        "proposals": "Ha centrado su discurso en seguridad, endurecimiento penal, reducción de impunidad y defensa de inversión privada. También plantea reformas para acelerar justicia y simplificar trámites empresariales.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Su figura genera debate por su estilo confrontacional en medios y por su posición en temas de seguridad y orden público.",
+        "alliances": "Se mueve en circuitos de opinión de derecha e independientes, con vocerías en medios y respaldo de sectores ciudadanos afines a una agenda de seguridad fuerte.",
+        "record": "No ha ocupado cargos de elección popular ni ministerios nacionales. Su experiencia principal es jurídica y de litigio privado.",
+        "funding": "No hay reporte presidencial consolidado en CNE al momento de esta compilación. Al formalizar candidatura, los aportes deben quedar en los sistemas de transparencia electoral."
+      },
+      "summaries": {
+        "trajectory": "Abogado penalista y empresario con alta exposición mediática.",
+        "proposals": "Seguridad, endurecimiento penal, lucha contra impunidad y simplificación regulatoria.",
+        "controversies": "Sin condenas reportadas; controversia por tono confrontacional en debate público.",
+        "alliances": "Redes de opinión de derecha y sectores independientes.",
+        "record": "Sin experiencia legislativa ni ejecutiva nacional.",
+        "funding": "Reportes de campaña sujetos a publicación en CNE cuando haya candidatura formal."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Abelardo De la Espriella — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Abelardo_De_la_Espriella",
+          "tier": "prensa"
+        },
+        {
+          "section": "proposals",
+          "title": "Entrevista sobre agenda programática — Semana",
+          "date": "2025-11-10",
+          "url": "https://www.semana.com/politica/",
+          "tier": "prensa"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Felipe Córdoba",
+      "slug": "felipe-cordoba",
+      "party": "Independiente",
+      "currentOffice": "Excontralor general de la República",
+      "photoUrl": "https://img.lalr.co/cms/2022/09/02165916/Carlos-Felipe-Cordoba-Contralor-General-de-la-Republica_LR-48-2.jpg",
+      "sections": {
+        "biography": "Carlos Felipe Córdoba Larrarte es abogado y fue contralor general de la República entre 2018 y 2022. Antes ocupó funciones de control fiscal y gestión pública territorial. Su perfil está asociado al control del gasto y vigilancia fiscal.",
+        "proposals": "Sus mensajes públicos se concentran en lucha anticorrupción, fortalecimiento del control preventivo, modernización institucional y mayor eficiencia del gasto público.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Durante su paso por la Contraloría enfrentó críticas políticas por decisiones de control fiscal y por el alcance de actuaciones del ente de control.",
+        "alliances": "Ha tenido relacionamiento con sectores regionales y técnicos vinculados a temas de control público. Su eventual candidatura se ubica en espectro independiente con diálogo con partidos tradicionales.",
+        "record": "No ha sido congresista. Su experiencia está en entidades de control y administración pública.",
+        "funding": "La información patrimonial deriva de los reportes exigidos por su ejercicio como servidor público. Una candidatura presidencial formal implica reporte de ingresos y gastos ante CNE."
+      },
+      "summaries": {
+        "trajectory": "Abogado y excontralor general (2018-2022), con carrera en control fiscal.",
+        "proposals": "Anticorrupción, control preventivo y eficiencia del gasto estatal.",
+        "controversies": "Sin condenas reportadas; críticas políticas por actuaciones de control fiscal.",
+        "alliances": "Perfil independiente con puentes hacia sectores técnicos y regionales.",
+        "record": "Experiencia en organismos de control, no en Congreso.",
+        "funding": "Reportes patrimoniales de función pública; campaña presidencial sujeta a CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Carlos Felipe Córdoba — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Carlos_Felipe_C%C3%B3rdoba",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Contraloría General — historial institucional",
+          "date": "2026-02-23",
+          "url": "https://www.contraloria.gov.co/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Palacios",
+      "slug": "daniel-palacios",
+      "party": "Independiente",
+      "currentOffice": "Exministro del Interior",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/46/Daniel_Palacios.jpg",
+      "sections": {
+        "biography": "Daniel Andrés Palacios Martínez es abogado y político. Fue concejal de Bogotá, viceministro del Interior y ministro del Interior (2021-2022). Ha participado en agendas de seguridad, gobernabilidad y coordinación con autoridades territoriales.",
+        "proposals": "Ha defendido fortalecimiento de seguridad ciudadana, institucionalidad local, generación de empleo y políticas de emprendimiento. También plantea simplificación de trámites y coordinación nación-territorio.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. En su paso por el Ministerio del Interior enfrentó controversias políticas por manejo de orden público y respuesta gubernamental a protestas.",
+        "alliances": "Tiene cercanía con sectores de centroderecha y liderazgos regionales. Su nombre suele aparecer en conversaciones de consulta con bloques conservadores e independientes.",
+        "record": "Su experiencia principal es ejecutiva y local: Concejo de Bogotá, viceministerio y Ministerio del Interior.",
+        "funding": "Como servidor público ha estado sujeto a declaración de bienes y rentas. Una candidatura presidencial exige reportes de financiación ante CNE."
+      },
+      "summaries": {
+        "trajectory": "Abogado, exconcejal de Bogotá y exministro del Interior (2021-2022).",
+        "proposals": "Seguridad ciudadana, gobernabilidad territorial, empleo y emprendimiento.",
+        "controversies": "Sin condenas reportadas; debate por manejo de orden público durante su gestión ministerial.",
+        "alliances": "Redes de centroderecha y alianzas con liderazgos regionales.",
+        "record": "Carrera en cargos locales y ejecutivos nacionales.",
+        "funding": "Declaraciones patrimoniales por función pública; financiación electoral sujeta a CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Daniel Palacios — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Daniel_Palacios",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Ministerio del Interior — despacho ministerial",
+          "date": "2022-08-07",
+          "url": "https://www.mininterior.gov.co/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Efraín Cepeda",
+      "slug": "efrain-cepeda",
+      "party": "Partido Conservador Colombiano",
+      "currentOffice": "Senador de la República",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Efrain_Cepeda.png",
+      "sections": {
+        "biography": "Efraín José Cepeda Sarabia es empresario y político, senador por el Partido Conservador durante varios periodos. Ha ocupado la presidencia del Senado y posiciones de dirección dentro de su colectividad.",
+        "proposals": "Su línea pública prioriza estabilidad institucional, crecimiento económico, seguridad y fortalecimiento de la empresa privada, junto con programas sociales focalizados.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Como figura de partido tradicional ha recibido críticas de sectores opositores por su postura frente a reformas del gobierno nacional.",
+        "alliances": "Cuenta con respaldo del Partido Conservador y de redes políticas regionales históricas de esa colectividad.",
+        "record": "Su principal experiencia es legislativa: participación en comisiones económicas, debates de control político y conducción del Senado en periodos recientes.",
+        "funding": "Tiene obligaciones de declaración de bienes y rentas como congresista. Cualquier campaña presidencial debe reportar financiación y gastos ante el CNE."
+      },
+      "summaries": {
+        "trajectory": "Empresario y senador conservador de larga trayectoria, con paso por la presidencia del Senado.",
+        "proposals": "Estabilidad institucional, seguridad, crecimiento económico y política social focalizada.",
+        "controversies": "Sin condenas reportadas; controversias políticas por su oposición a reformas del gobierno.",
+        "alliances": "Respaldo orgánico del Partido Conservador y estructuras regionales.",
+        "record": "Trayectoria legislativa en Senado y liderazgo partidario.",
+        "funding": "Declaraciones de bienes de congresista; financiación electoral sujeta a CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Efraín Cepeda — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Efra%C3%ADn_Cepeda",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Senado de la República — Mesa Directiva",
+          "date": "2026-02-23",
+          "url": "https://www.senado.gov.co/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Sergio Fajardo",
+      "slug": "sergio-fajardo",
+      "party": "Independiente (centro)",
+      "currentOffice": "Exgobernador de Antioquia",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/SERGIO_FAJARDO.jpg",
+      "sections": {
+        "biography": "Sergio Fajardo Valderrama es matemático, profesor y político. Fue alcalde de Medellín (2004-2007), gobernador de Antioquia (2012-2015) y candidato presidencial en 2018 y 2022.",
+        "proposals": "Ha sostenido una agenda centrada en educación, transparencia, seguridad con enfoque territorial e infraestructura social. Defiende una posición de centro político y reformas graduales en economía y Estado.",
+        "controversies": "La Fiscalía abrió proceso relacionado con decisiones de crédito en Hidroituango durante su gobernación. El caso ha tenido etapas judiciales y ha sido objeto de discusión política; Fajardo ha defendido la legalidad de su actuación.",
+        "alliances": "Ha construido alianzas con movimientos de centro, sectores ciudadanos, académicos y liderazgos regionales no alineados con bloques tradicionales.",
+        "record": "No ha sido congresista. Su experiencia clave es ejecutiva territorial, con énfasis en gestión pública local y departamental.",
+        "funding": "Sus declaraciones patrimoniales están asociadas a sus periodos en la función pública. En campaña presidencial, su financiación debe estar registrada en las plataformas del CNE."
+      },
+      "summaries": {
+        "trajectory": "Matemático y exalcalde de Medellín; exgobernador de Antioquia; dos veces candidato presidencial.",
+        "proposals": "Educación, transparencia, seguridad territorial e infraestructura social con enfoque de centro.",
+        "controversies": "Proceso judicial por decisiones de crédito de Hidroituango; defensa pública de legalidad por parte de Fajardo.",
+        "alliances": "Coaliciones de centro, apoyos ciudadanos y redes académicas.",
+        "record": "Amplia experiencia ejecutiva territorial, sin carrera legislativa.",
+        "funding": "Reportes patrimoniales de función pública y reportes de campaña ante CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Sergio Fajardo — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Sergio_Fajardo",
+          "tier": "prensa"
+        },
+        {
+          "section": "controversies",
+          "title": "Caso Hidroituango y Sergio Fajardo — Fiscalía General de la Nación",
+          "date": "2022-03-22",
+          "url": "https://www.fiscalia.gov.co/colombia/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Norman Maurice Armitage",
+      "slug": "norman-maurice-armitage",
+      "party": "Independiente",
+      "currentOffice": "Exalcalde de Cali",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/06/Maurice_Armitage.png",
+      "sections": {
+        "biography": "Norman Maurice Armitage Cadavid es empresario industrial y político. Fue alcalde de Santiago de Cali entre 2016 y 2019, con trayectoria previa en el sector privado.",
+        "proposals": "En su discurso público ha enfatizado seguridad urbana, empleo, gestión social en barrios populares y cooperación público-privada para infraestructura.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Su administración recibió críticas por resultados de seguridad y por tensiones con sectores políticos locales en materia de contratación y ejecución.",
+        "alliances": "Ha tenido apoyos de redes empresariales del Valle del Cauca y sectores ciudadanos de Cali. Su perfil se ubica en el campo independiente con diálogo multipartidista.",
+        "record": "Su principal experiencia pública es la alcaldía de Cali. No ha ocupado curul en el Congreso.",
+        "funding": "Su patrimonio público declarado corresponde a su etapa como alcalde. En caso de candidatura presidencial, la financiación debe quedar reportada en CNE."
+      },
+      "summaries": {
+        "trajectory": "Empresario vallecaucano y exalcalde de Cali (2016-2019).",
+        "proposals": "Seguridad urbana, empleo y alianzas público-privadas para desarrollo local.",
+        "controversies": "Sin condenas reportadas; críticas políticas sobre resultados de seguridad y ejecución local.",
+        "alliances": "Respaldos empresariales y ciudadanos en el Valle del Cauca.",
+        "record": "Experiencia ejecutiva municipal, sin carrera legislativa.",
+        "funding": "Declaraciones patrimoniales de su función pública; financiación electoral bajo control del CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Maurice Armitage — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Maurice_Armitage",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Alcaldía de Santiago de Cali — archivo institucional",
+          "date": "2019-12-31",
+          "url": "https://www.cali.gov.co/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Carlos Caicedo",
+      "slug": "carlos-caicedo",
+      "party": "Fuerza Ciudadana",
+      "currentOffice": "Exgobernador del Magdalena",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Carlos_Caicedo_%28cropped%29.jpg",
+      "sections": {
+        "biography": "Carlos Eduardo Caicedo Omar es abogado y político. Fue alcalde de Santa Marta (2012-2015) y gobernador del Magdalena (2020-2023), y lidera el movimiento Fuerza Ciudadana.",
+        "proposals": "Su agenda ha insistido en inversión social territorial, lucha contra pobreza, infraestructura regional y fortalecimiento de servicios públicos en la costa Caribe.",
+        "controversies": "Su carrera política ha estado marcada por investigaciones y controversias relacionadas con contratación y disputas políticas regionales. En las fuentes consultadas no se registran condenas judiciales en firme en su contra.",
+        "alliances": "Cuenta con base política en el Caribe a través de Fuerza Ciudadana y alianzas con sectores alternativos y liderazgos locales.",
+        "record": "Su experiencia principal es ejecutiva territorial en Santa Marta y Magdalena, con énfasis en programas sociales y gestión regional.",
+        "funding": "La información patrimonial pública proviene de su ejercicio en cargos de elección territorial. Una campaña presidencial requiere reporte detallado de ingresos y gastos ante CNE."
+      },
+      "summaries": {
+        "trajectory": "Exalcalde de Santa Marta y exgobernador del Magdalena; líder de Fuerza Ciudadana.",
+        "proposals": "Inversión social regional, reducción de pobreza y fortalecimiento de servicios públicos.",
+        "controversies": "Investigaciones y controversias políticas regionales; sin condena en firme reportada en fuentes consultadas.",
+        "alliances": "Base en Fuerza Ciudadana y alianzas locales en la región Caribe.",
+        "record": "Gestión ejecutiva territorial en ciudad y departamento.",
+        "funding": "Reportes patrimoniales territoriales; financiación presidencial sujeta a CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Carlos Eduardo Caicedo — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Carlos_Eduardo_Caicedo",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Gobernación del Magdalena — información institucional",
+          "date": "2023-10-13",
+          "url": "https://www.magdalena.gov.co/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Claudia López",
+      "slug": "claudia-lopez",
+      "party": "Independiente (centro)",
+      "currentOffice": "Exalcaldesa mayor de Bogotá",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Claudia_L%C3%B3pez.png",
+      "sections": {
+        "biography": "Claudia Nayibe López Hernández es politóloga y política colombiana. Fue senadora, candidata vicepresidencial y alcaldesa mayor de Bogotá (2020-2023). Su carrera incluye trabajo en temas de transparencia, anticorrupción y gestión urbana.",
+        "proposals": "Ha defendido una agenda de centro con énfasis en seguridad urbana, movilidad, política social, igualdad de género y consolidación de gobiernos locales con enfoque de datos.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Su alcaldía enfrentó controversias por manejo de seguridad, protestas, operación de TransMilenio y decisiones de movilidad durante y después de la pandemia.",
+        "alliances": "Ha construido alianzas con sectores de centro, verdes e independientes, con respaldo de liderazgos urbanos y grupos ciudadanos.",
+        "record": "Fue senadora y luego alcaldesa de Bogotá, con experiencia en agenda legislativa y administración de la capital.",
+        "funding": "Cuenta con reportes patrimoniales exigidos por sus cargos públicos. Una candidatura presidencial debe registrar financiación y gastos en los aplicativos del CNE."
+      },
+      "summaries": {
+        "trajectory": "Exsenadora y exalcaldesa de Bogotá (2020-2023), con perfil de centro y agenda urbana.",
+        "proposals": "Seguridad urbana, movilidad, política social e igualdad de género.",
+        "controversies": "Sin condenas reportadas; debates por seguridad y movilidad durante su alcaldía.",
+        "alliances": "Coaliciones de centro, verdes e independientes.",
+        "record": "Experiencia legislativa y ejecutiva en la capital.",
+        "funding": "Declaraciones patrimoniales públicas; financiación electoral bajo supervisión del CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Claudia López Hernández — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Claudia_L%C3%B3pez_Hern%C3%A1ndez",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Alcaldía Mayor de Bogotá — gestión distrital",
+          "date": "2023-12-31",
+          "url": "https://bogota.gov.co/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Luis Gilberto Murillo",
+      "slug": "luis-gilberto-murillo",
+      "party": "Independiente",
+      "currentOffice": "Excanciller y exembajador en EE. UU.",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/20240521_posesi%C3%B3n_canciller_Murillo-Joel_Gonz%C3%A1lez1536_%28Cropped%29.jpg",
+      "sections": {
+        "biography": "Luis Gilberto Murillo Urrutia es ingeniero de minas y político. Fue gobernador del Chocó, ministro de Ambiente, embajador de Colombia en Estados Unidos y canciller de la República en 2024.",
+        "proposals": "Su discurso ha priorizado transición energética, inclusión regional, lucha contra desigualdades territoriales y política exterior orientada a cooperación y comercio.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Ha recibido críticas políticas en debates sobre ejecución regional y lineamientos de política exterior, dentro de la discusión normal entre partidos.",
+        "alliances": "Tiene respaldo en sectores afrocolombianos, ambientales y progresistas, y también puentes con sectores de centro por su perfil técnico y diplomático.",
+        "record": "Su experiencia es ejecutiva y diplomática, con presencia en niveles regionales y nacionales, especialmente en ambiente y relaciones exteriores.",
+        "funding": "Ha presentado declaraciones de bienes y rentas por su ejercicio público. En campaña presidencial, financiación y gastos deben reportarse ante CNE."
+      },
+      "summaries": {
+        "trajectory": "Ingeniero, exgobernador del Chocó, exministro de Ambiente, exembajador y excanciller.",
+        "proposals": "Transición energética, inclusión regional y cooperación internacional.",
+        "controversies": "Sin condenas reportadas; controversias políticas sobre ejecución y orientación de política exterior.",
+        "alliances": "Apoyos en sectores afrocolombianos, ambientales y puentes con centro político.",
+        "record": "Trayectoria ejecutiva regional y nacional, más experiencia diplomática.",
+        "funding": "Declaraciones patrimoniales de función pública; campaña presidencial sujeta a CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Luis Gilberto Murillo — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Luis_Gilberto_Murillo",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Cancillería de Colombia — hoja institucional",
+          "date": "2024-05-21",
+          "url": "https://www.cancilleria.gov.co/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Juan Fernando Cristo",
+      "slug": "juan-fernando-cristo",
+      "party": "Independiente",
+      "currentOffice": "Ministro del Interior",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/77/Juan_Fernando_Cristo_2024.jpg",
+      "sections": {
+        "biography": "Juan Fernando Cristo Bustos es abogado y político nortesantandereano. Fue senador de la República, ministro del Interior (2014-2017) y nuevamente designado en esa cartera en 2024.",
+        "proposals": "Ha promovido implementación de paz, fortalecimiento institucional, reformas políticas para mejorar representación y coordinación entre nación y territorios.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Sus posturas sobre reformas políticas y negociaciones de paz han generado debate entre sectores de oposición y oficialismo.",
+        "alliances": "Tiene trayectoria en redes liberales y de centro, con capacidad de diálogo entre sectores de gobierno, partidos tradicionales y actores regionales.",
+        "record": "Experiencia legislativa relevante como senador y experiencia ejecutiva como ministro del Interior en dos periodos.",
+        "funding": "Cuenta con declaraciones patrimoniales de su paso por Congreso y Ejecutivo. Si participa en presidencial, la financiación debe reportarse ante CNE."
+      },
+      "summaries": {
+        "trajectory": "Abogado, exsenador y ministro del Interior en dos periodos.",
+        "proposals": "Implementación de paz, reforma política y fortalecimiento institucional.",
+        "controversies": "Sin condenas reportadas; debate político por su agenda de reformas y paz.",
+        "alliances": "Vínculos con sectores liberales y de centro, con perfil de articulación política.",
+        "record": "Carrera combinada en Senado y ministerio.",
+        "funding": "Declaraciones patrimoniales de servicio público; campaña sujeta a reportes del CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Juan Fernando Cristo — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Juan_Fernando_Cristo",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "Ministerio del Interior — perfiles de ministros",
+          "date": "2024-07-03",
+          "url": "https://www.mininterior.gov.co/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    },
+    {
+      "name": "Luis Carlos Reyes",
+      "slug": "luis-carlos-reyes",
+      "party": "Independiente",
+      "currentOffice": "Exdirector de la DIAN y exministro de Comercio",
+      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/20240611_Posesion_Mincomercio-C%C3%A9sar_Carri%C3%B3n0031.jpg",
+      "sections": {
+        "biography": "Luis Carlos Reyes Hernández es economista e historiador. Fue director de la DIAN y posteriormente ministro de Comercio, Industria y Turismo en 2024, con perfil técnico-académico.",
+        "proposals": "Ha insistido en formalización económica, lucha contra evasión, mejora de productividad y simplificación de reglas para empresas, con foco en recaudo eficiente y transparencia.",
+        "controversies": "No registra condenas judiciales en las fuentes consultadas. Sus decisiones tributarias y de fiscalización han generado debate político, especialmente por impacto sobre contribuyentes y sectores productivos.",
+        "alliances": "Su perfil se acerca a sectores técnicos, académicos y grupos ciudadanos interesados en reforma institucional y transparencia fiscal.",
+        "record": "No ha sido congresista. Su experiencia es ejecutiva técnica en DIAN y en el Ministerio de Comercio.",
+        "funding": "Como servidor público ha estado sujeto a declaraciones de bienes y rentas. En caso de aspiración presidencial, debe reportar financiación de campaña ante CNE."
+      },
+      "summaries": {
+        "trajectory": "Economista e historiador; exdirector de DIAN y exministro de Comercio.",
+        "proposals": "Formalización, lucha contra evasión, productividad y transparencia fiscal.",
+        "controversies": "Sin condenas reportadas; controversias políticas por medidas tributarias y de fiscalización.",
+        "alliances": "Cercanía con sectores técnicos y académicos.",
+        "record": "Trayectoria ejecutiva en entidades económicas del orden nacional.",
+        "funding": "Declaraciones patrimoniales de función pública; campaña sujeta a control y reporte del CNE."
+      },
+      "sources": [
+        {
+          "section": "biography",
+          "title": "Luis Carlos Reyes — Wikipedia",
+          "date": "2026-02-23",
+          "url": "https://es.wikipedia.org/wiki/Luis_Carlos_Reyes",
+          "tier": "prensa"
+        },
+        {
+          "section": "record",
+          "title": "DIAN — Dirección general",
+          "date": "2024-06-01",
+          "url": "https://www.dian.gov.co/",
+          "tier": "oficial"
+        },
+        {
+          "section": "biography",
+          "title": "Pares — Así va la carrera presidencial 2026",
+          "date": "2025-12-01",
+          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "tier": "ong"
+        }
+      ]
+    }
+  ]
+}

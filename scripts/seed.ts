@@ -9,7 +9,7 @@ import type { Candidate } from '../src/payload-types'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
-const CANDIDATES_DATA_PATH = path.resolve(dirname, '../data/candidates.md')
+const CANDIDATES_DATA_PATH = path.resolve(dirname, '../data/candidates.json')
 const CORRECTIONS_DATA_PATH = path.resolve(dirname, '../data/corrections.json')
 const PLACEHOLDER_ALT = '__seed_placeholder_candidate_photo__'
 const CANDIDATE_PHOTO_ALT_PREFIX = '__seed_candidate_photo__'
@@ -92,10 +92,7 @@ const ALLIANCE_DATA_BY_SLUG: Record<
     endorsers: [],
   },
   'clara-lopez': {
-    parties: [
-      { name: 'Consulta del Frente Amplio' },
-      { name: 'Polo Democrático Alternativo' },
-    ],
+    parties: [{ name: 'Consulta del Frente Amplio' }, { name: 'Polo Democrático Alternativo' }],
     endorsers: [],
   },
   'juan-daniel-oviedo': {
@@ -202,14 +199,15 @@ const CANDIDATE_DIRECTORY_ORDER_BY_SLUG: Record<string, number> = {
 const ENV_PATH = path.resolve(dirname, '../.env')
 const ENV_LOCAL_PATH = path.resolve(dirname, '../.env.local')
 
-type SourceSection = 'biography' | 'proposals' | 'controversies' | 'alliances' | 'record' | 'funding'
+type SourceSection =
+  | 'biography'
+  | 'proposals'
+  | 'controversies'
+  | 'alliances'
+  | 'record'
+  | 'funding'
 type SourceTier = 'oficial' | 'prensa' | 'ong' | 'redes'
-type ControversyStatus =
-  | 'suspicion'
-  | 'under_investigation'
-  | 'indicted'
-  | 'cleared'
-  | 'convicted'
+type ControversyStatus = 'suspicion' | 'under_investigation' | 'indicted' | 'cleared' | 'convicted'
 
 type SourceSeed = {
   section: SourceSection
@@ -278,26 +276,41 @@ type CorrectionSeed = {
   correctedAt: string
 }
 
-function normalizeMarkdown(value: string): string {
-  return value.replace(/\r\n/g, '\n')
+type JsonSource = {
+  section: string
+  title: string
+  date: string
+  url: string
+  tier: string
 }
 
-function getMatch(source: string, regex: RegExp): string | undefined {
-  const match = source.match(regex)
-  return match?.[1]?.trim()
+type JsonCandidate = {
+  name: string
+  slug: string
+  party: string
+  currentOffice?: string
+  photoUrl?: string
+  sections: {
+    biography: string
+    proposals: string
+    controversies: string
+    alliances: string
+    record: string
+    funding: string
+  }
+  summaries: {
+    trajectory: string
+    proposals: string
+    controversies: string
+    alliances: string
+    record: string
+    funding: string
+  }
+  sources: JsonSource[]
 }
 
-function getSection(block: string, heading: string, nextHeadings: string[]): string {
-  const escapedHeading = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  const nextPart = nextHeadings
-    .map((nextHeading) => nextHeading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
-    .join('|')
-
-  const sectionRegex = nextPart
-    ? new RegExp(`### ${escapedHeading}\\n\\n([\\s\\S]*?)(?=\\n### (?:${nextPart})\\n|$)`)
-    : new RegExp(`### ${escapedHeading}\\n\\n([\\s\\S]*)$`)
-
-  return getMatch(block, sectionRegex) ?? ''
+type JsonDataFile = {
+  candidates: JsonCandidate[]
 }
 
 function toLexicalRichText(text: string): Candidate['biography'] {
@@ -338,33 +351,78 @@ function toLexicalRichText(text: string): Candidate['biography'] {
   }
 }
 
-function parseSources(tableContent: string): SourceSeed[] {
-  const rows = tableContent
-    .split('\n')
-    .map((line) => line.trim())
-    .filter((line) => line.startsWith('|') && !line.includes('---'))
+function parseCandidatesFromJson(jsonData: JsonDataFile): CandidateSeed[] {
+  return jsonData.candidates.reduce<CandidateSeed[]>((acc, candidate) => {
+    const { slug, party } = candidate
+    if (!slug || !party) return acc
 
-  // Drop header row if present.
-  const dataRows =
-    rows.length > 0 && rows[0].toLowerCase().includes('sección')
-      ? rows.slice(1)
-      : rows
+    const directoryOrder = CANDIDATE_DIRECTORY_ORDER_BY_SLUG[slug]
 
-  return dataRows
-    .map((line) => line.slice(1, -1).split('|').map((cell) => cell.trim()))
-    .filter((cells) => cells.length >= 5)
-    .map((cells) => ({
-      section: cells[0].toLowerCase() as SourceSection,
-      title: cells[1],
-      publishedAt: cells[2],
-      url: cells[3],
-      tier: cells[4].toLowerCase() as SourceTier,
-    }))
-    .filter((source) =>
-      ['biography', 'proposals', 'controversies', 'alliances', 'record', 'funding'].includes(
-        source.section,
-      ),
-    )
+    const sources: SourceSeed[] = candidate.sources
+      .filter((s) =>
+        ['biography', 'proposals', 'controversies', 'alliances', 'record', 'funding'].includes(
+          s.section.toLowerCase(),
+        ),
+      )
+      .map((s) => ({
+        section: s.section.toLowerCase() as SourceSection,
+        title: s.title,
+        publishedAt: s.date,
+        url: s.url,
+        tier: s.tier.toLowerCase() as SourceTier,
+      }))
+
+    const summaryTrajectory = candidate.summaries.trajectory
+    const summaryProposals = candidate.summaries.proposals
+    const summaryControversies = candidate.summaries.controversies
+    const summaryAlliances = candidate.summaries.alliances
+    const summaryRecord = candidate.summaries.record
+    const summaryFunding = candidate.summaries.funding
+
+    if (
+      !directoryOrder ||
+      !summaryTrajectory ||
+      !summaryProposals ||
+      !summaryControversies ||
+      !summaryAlliances ||
+      !summaryRecord ||
+      !summaryFunding
+    ) {
+      throw new Error(
+        `Missing summary fields or directory order for candidate "${candidate.name}" (${slug}).`,
+      )
+    }
+
+    const allianceData = ALLIANCE_DATA_BY_SLUG[slug] ?? { parties: [], endorsers: [] }
+
+    acc.push({
+      name: candidate.name,
+      slug,
+      directoryOrder,
+      party,
+      currentOffice: candidate.currentOffice,
+      photoUrl: candidate.photoUrl,
+      biography: candidate.sections.biography,
+      proposals: candidate.sections.proposals,
+      controversies: candidate.sections.controversies,
+      alliances: candidate.sections.alliances,
+      record: candidate.sections.record,
+      funding: candidate.sections.funding,
+      summaryTrajectory,
+      summaryProposals,
+      summaryControversies,
+      summaryAlliances,
+      summaryRecord,
+      summaryFunding,
+      sources,
+      proposalItems: buildProposalItems(candidate.sections.proposals, sources),
+      controversyItems: buildControversyItems(candidate.sections.controversies, sources),
+      allianceParties: allianceData.parties,
+      endorsers: allianceData.endorsers,
+    })
+
+    return acc
+  }, [])
 }
 
 const DEFAULT_SOURCE: Omit<SourceSeed, 'section' | 'publishedAt'> & { publishedAt: string } = {
@@ -385,7 +443,11 @@ function normalizeItemText(value: string): string {
   return cleaned[0].toUpperCase() + cleaned.slice(1)
 }
 
-function splitSectionIntoItems(sectionText: string): string[] {
+function splitSectionIntoItems(
+  sectionText: string,
+  options?: { splitByCommaClauses?: boolean },
+): string[] {
+  const splitByCommaClauses = options?.splitByCommaClauses ?? true
   const lines = sectionText
     .split('\n')
     .map((line) => line.trim())
@@ -409,14 +471,16 @@ function splitSectionIntoItems(sectionText: string): string[] {
   const items: string[] = []
 
   for (const segment of sentenceSegments) {
-    const commaSegments = segment
-      .split(',')
-      .map((part) => normalizeItemText(part))
-      .filter((part) => part.length >= 24)
+    if (splitByCommaClauses) {
+      const commaSegments = segment
+        .split(',')
+        .map((part) => normalizeItemText(part))
+        .filter((part) => part.length >= 24)
 
-    if (commaSegments.length >= 2) {
-      for (const part of commaSegments) items.push(part)
-      continue
+      if (commaSegments.length >= 2) {
+        for (const part of commaSegments) items.push(part)
+        continue
+      }
     }
 
     const normalized = normalizeItemText(segment)
@@ -465,7 +529,11 @@ function inferControversyStatus(text: string): ControversyStatus {
 
   if (/(condenad|sentenciad)/.test(value)) return 'convicted'
   if (/(imputad|acusaci[oó]n formal|llamamiento a juicio|indict)/.test(value)) return 'indicted'
-  if (/(investigaci[oó]n|indagaci[oó]n|proceso en curso|procuradur[ií]a|contralor[ií]a|fiscal[ií]a)/.test(value)) {
+  if (
+    /(investigaci[oó]n|indagaci[oó]n|proceso en curso|procuradur[ií]a|contralor[ií]a|fiscal[ií]a)/.test(
+      value,
+    )
+  ) {
     return 'under_investigation'
   }
   if (/(absuelt|archiv|sin cargos|no result[oó] en cargos|caso cerrado|preclu)/.test(value)) {
@@ -523,7 +591,7 @@ function buildControversyItems(
   controversiesText: string,
   sources: SourceSeed[],
 ): ControversyItemSeed[] {
-  const items = splitSectionIntoItems(controversiesText)
+  const items = splitSectionIntoItems(controversiesText, { splitByCommaClauses: false })
   return items.map((itemText, index) => {
     const source = getItemSource(sources, 'controversies', index)
     return {
@@ -536,99 +604,6 @@ function buildControversyItems(
   })
 }
 
-function parseCandidates(markdown: string): CandidateSeed[] {
-  const normalized = normalizeMarkdown(markdown)
-  const blocks = normalized.split(/\n## \d+\.\s+/).slice(1)
-
-  return blocks.reduce<CandidateSeed[]>((acc, block) => {
-      const name = block.split('\n', 1)[0].trim()
-      const slug = getMatch(block, /- \*\*slug:\*\*\s*(.+)/)
-      const party = getMatch(block, /- \*\*party:\*\*\s*(.+)/)
-      const currentOffice = getMatch(block, /- \*\*currentOffice:\*\*\s*(.+)/)
-      const photoUrl = getMatch(block, /- \*\*photoUrl:\*\*\s*(.+)/)
-
-      const biography = getSection(block, 'Biografía y trayectoria', [
-        'Plan de gobierno y propuestas',
-      ])
-      const proposals = getSection(block, 'Plan de gobierno y propuestas', [
-        'Escándalos y controversias',
-      ])
-      const controversies = getSection(block, 'Escándalos y controversias', ['Alianzas y avales'])
-      const alliances = getSection(block, 'Alianzas y avales', [
-        'Registro legislativo y de gobierno',
-      ])
-      const record = getSection(block, 'Registro legislativo y de gobierno', [
-        'Patrimonio, financiación y campaña',
-      ])
-      const funding = getSection(block, 'Patrimonio, financiación y campaña', [
-        'Resúmenes para comparar',
-      ])
-      const summarySection = getSection(block, 'Resúmenes para comparar', ['Fuentes'])
-      const sourcesSection = getSection(block, 'Fuentes', [])
-      const parsedSources = parseSources(sourcesSection)
-
-      if (!slug || !party) {
-        return acc
-      }
-
-      const summaryTrajectory = getMatch(summarySection, /- \*\*summaryTrajectory:\*\*\s*(.+)/)
-      const summaryProposals = getMatch(summarySection, /- \*\*summaryProposals:\*\*\s*(.+)/)
-      const summaryControversies = getMatch(
-        summarySection,
-        /- \*\*summaryControversies:\*\*\s*(.+)/,
-      )
-      const summaryAlliances = getMatch(summarySection, /- \*\*summaryAlliances:\*\*\s*(.+)/)
-      const summaryRecord = getMatch(summarySection, /- \*\*summaryRecord:\*\*\s*(.+)/)
-      const summaryFunding = getMatch(summarySection, /- \*\*summaryFunding:\*\*\s*(.+)/)
-      const directoryOrder = CANDIDATE_DIRECTORY_ORDER_BY_SLUG[slug]
-
-      if (
-        !directoryOrder ||
-        !summaryTrajectory ||
-        !summaryProposals ||
-        !summaryControversies ||
-        !summaryAlliances ||
-        !summaryRecord ||
-        !summaryFunding
-      ) {
-        throw new Error(`Missing summary fields for candidate "${name}" (${slug}).`)
-      }
-
-      const allianceData = ALLIANCE_DATA_BY_SLUG[slug] ?? {
-        parties: [],
-        endorsers: [],
-      }
-
-      acc.push({
-        name,
-        slug,
-        directoryOrder,
-        party,
-        currentOffice,
-        photoUrl,
-        biography,
-        proposals,
-        controversies,
-        alliances,
-        record,
-        funding,
-        summaryTrajectory,
-        summaryProposals,
-        summaryControversies,
-        summaryAlliances,
-        summaryRecord,
-        summaryFunding,
-        sources: parsedSources,
-        proposalItems: buildProposalItems(proposals, parsedSources),
-        controversyItems: buildControversyItems(controversies, parsedSources),
-        allianceParties: allianceData.parties,
-        endorsers: allianceData.endorsers,
-      })
-
-      return acc
-    }, [])
-}
-
 async function exists(filePath: string): Promise<boolean> {
   try {
     await fs.access(filePath)
@@ -638,7 +613,9 @@ async function exists(filePath: string): Promise<boolean> {
   }
 }
 
-async function ensurePlaceholderMedia(payload: Awaited<ReturnType<typeof getPayload>>): Promise<number> {
+async function ensurePlaceholderMedia(
+  payload: Awaited<ReturnType<typeof getPayload>>,
+): Promise<number> {
   const existing = await payload.find({
     collection: 'media',
     where: {
@@ -932,11 +909,12 @@ async function main() {
   const payload = await getPayload({ config })
 
   try {
-    const markdown = await fs.readFile(CANDIDATES_DATA_PATH, 'utf8')
-    const candidates = parseCandidates(markdown)
+    const raw = await fs.readFile(CANDIDATES_DATA_PATH, 'utf8')
+    const jsonData = JSON.parse(raw) as JsonDataFile
+    const candidates = parseCandidatesFromJson(jsonData)
 
     if (candidates.length === 0) {
-      throw new Error('No candidates were parsed from data/candidates.md.')
+      throw new Error('No candidates were parsed from data/candidates.json.')
     }
 
     const placeholderMediaId = await ensurePlaceholderMedia(payload)
@@ -948,12 +926,7 @@ async function main() {
         candidate,
         placeholderMediaId,
       )
-      const id = await upsertCandidate(
-        payload,
-        candidate,
-        candidatePhotoId,
-        placeholderMediaId,
-      )
+      const id = await upsertCandidate(payload, candidate, candidatePhotoId, placeholderMediaId)
       candidateIdBySlug.set(candidate.slug, id)
       payload.logger.info(`Seeded candidate: ${candidate.slug}`)
     }

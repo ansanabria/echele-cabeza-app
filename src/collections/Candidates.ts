@@ -29,6 +29,64 @@ const inlineSourceFields: Field[] = [
   },
 ]
 
+const trajectoryItemFields: Field[] = [
+  {
+    name: 'role',
+    type: 'text',
+    required: true,
+    label: 'Cargo o rol',
+  },
+  {
+    name: 'organization',
+    type: 'text',
+    required: true,
+    label: 'Organización o institución',
+  },
+  {
+    name: 'startYear',
+    type: 'text',
+    required: true,
+    label: 'Año de inicio (ej: 2015)',
+  },
+  {
+    name: 'endYear',
+    type: 'text',
+    label: 'Año de fin (dejar vacío si es cargo actual)',
+  },
+  {
+    name: 'location',
+    type: 'text',
+    label: 'Lugar (ej: Bogotá, Colombia)',
+  },
+  {
+    name: 'description',
+    type: 'textarea',
+    label: 'Descripción breve (opcional)',
+  },
+]
+
+const publicTrajectoryItemsField: Field = {
+  name: 'publicTrajectoryItems',
+  type: 'array',
+  label: 'Trayectoria pública (línea de tiempo)',
+  admin: {
+    description:
+      'Cargos y roles en el sector público, gobierno, legislativo o vida política. Cada entrada aparece como un hito en la línea de tiempo de trayectoria pública.',
+  },
+  fields: trajectoryItemFields,
+}
+
+const privateTrajectoryItemsField: Field = {
+  name: 'privateTrajectoryItems',
+  type: 'array',
+  label: 'Trayectoria privada (línea de tiempo)',
+  admin: {
+    description:
+      'Cargos y roles en el sector privado, académico o empresarial. Cada entrada aparece como un hito en la línea de tiempo de trayectoria privada.',
+  },
+  fields: trajectoryItemFields,
+}
+
 const proposalItemsField: Field = {
   name: 'proposalItems',
   type: 'array',
@@ -215,6 +273,8 @@ export const Candidates: CollectionConfig = {
               required: true,
               label: 'Biografia y trayectoria',
             },
+            publicTrajectoryItemsField,
+            privateTrajectoryItemsField,
             {
               name: 'proposals',
               type: 'richText',

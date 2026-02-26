@@ -194,6 +194,34 @@ export interface Candidate {
     };
     [k: string]: unknown;
   };
+  /**
+   * Cargos y roles en el sector público, gobierno, legislativo o vida política. Cada entrada aparece como un hito en la línea de tiempo de trayectoria pública.
+   */
+  publicTrajectoryItems?:
+    | {
+        role: string;
+        organization: string;
+        startYear: string;
+        endYear?: string | null;
+        location?: string | null;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Cargos y roles en el sector privado, académico o empresarial. Cada entrada aparece como un hito en la línea de tiempo de trayectoria privada.
+   */
+  privateTrajectoryItems?:
+    | {
+        role: string;
+        organization: string;
+        startYear: string;
+        endYear?: string | null;
+        location?: string | null;
+        description?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   proposals: {
     root: {
       type: string;
@@ -485,6 +513,28 @@ export interface CandidatesSelect<T extends boolean = true> {
   photo?: T;
   lastUpdated?: T;
   biography?: T;
+  publicTrajectoryItems?:
+    | T
+    | {
+        role?: T;
+        organization?: T;
+        startYear?: T;
+        endYear?: T;
+        location?: T;
+        description?: T;
+        id?: T;
+      };
+  privateTrajectoryItems?:
+    | T
+    | {
+        role?: T;
+        organization?: T;
+        startYear?: T;
+        endYear?: T;
+        location?: T;
+        description?: T;
+        id?: T;
+      };
   proposals?: T;
   proposalItems?:
     | T

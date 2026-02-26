@@ -8,6 +8,7 @@ import { EndorserCard } from '@/components/site/EndorserCard'
 import { ProposalCard } from '@/components/site/ProposalCard'
 import { SectionNav } from '@/components/site/SectionNav'
 import { SourcesAccordion } from '@/components/site/SourcesAccordion'
+import { TrajectoryTimeline } from '@/components/site/TrajectoryTimeline'
 import { Button } from '@/components/ui/button'
 import {
   formatDate,
@@ -77,6 +78,65 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
         {SECTION_CONFIG.map((section) => {
           const content = lexicalToPlainText(candidate[section.field])
           const sources = getSourcesForSection(candidate, section.id)
+
+          if (section.id === 'biography') {
+            const publicItems = candidate.publicTrajectoryItems ?? []
+            const privateItems = candidate.privateTrajectoryItems ?? []
+
+            return (
+              <article
+                key={section.id}
+                id={section.id}
+                className="mb-4 scroll-mt-20 rounded-lg border border-border bg-card p-5"
+              >
+                <h2 className="mb-3 text-xl leading-snug">{section.heading}</h2>
+
+                {content && (
+                  <p className="mb-8 whitespace-pre-wrap leading-relaxed text-muted-foreground">
+                    {content}
+                  </p>
+                )}
+
+                <div className="grid gap-8 sm:grid-cols-2">
+                  {/* Public trajectory */}
+                  <div>
+                    <div className="mb-4 flex items-center gap-3">
+                      <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                        Trayectoria pública
+                      </p>
+                      <span className="h-px flex-1 bg-border" aria-hidden />
+                    </div>
+                    <TrajectoryTimeline
+                      items={publicItems}
+                      emptyMessage="Este candidato no registra trayectoria en el sector público."
+                    />
+                  </div>
+
+                  {/* Private trajectory */}
+                  <div>
+                    <div className="mb-4 flex items-center gap-3">
+                      <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                        Trayectoria privada
+                      </p>
+                      <span className="h-px flex-1 bg-border" aria-hidden />
+                    </div>
+                    <TrajectoryTimeline
+                      items={privateItems}
+                      emptyMessage="Este candidato no registra trayectoria en el sector privado."
+                    />
+                  </div>
+                </div>
+
+                {!content && publicItems.length === 0 && privateItems.length === 0 && (
+                  <p className="leading-relaxed text-muted-foreground">
+                    Contenido pendiente de publicación.
+                  </p>
+                )}
+
+                <SourcesAccordion sources={sources} />
+              </article>
+            )
+          }
 
           if (section.id === 'proposals') {
             const allProposals = candidate.proposalItems ?? []

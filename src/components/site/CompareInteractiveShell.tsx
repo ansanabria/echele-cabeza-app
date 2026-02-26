@@ -15,6 +15,7 @@ type CompareInteractiveShellProps = {
   candidates: CandidateOption[]
   selectedA?: string
   selectedB?: string
+  selectedC?: string
   showTable: boolean
   children: ReactNode
 }
@@ -23,12 +24,14 @@ export function CompareInteractiveShell({
   candidates,
   selectedA,
   selectedB,
+  selectedC,
   showTable,
   children,
 }: CompareInteractiveShellProps) {
   const [isPending, setIsPending] = useState(false)
   const [optimisticSelectedA, setOptimisticSelectedA] = useState(selectedA ?? '')
   const [optimisticSelectedB, setOptimisticSelectedB] = useState(selectedB ?? '')
+  const [optimisticSelectedC, setOptimisticSelectedC] = useState(selectedC ?? '')
 
   useEffect(() => {
     setOptimisticSelectedA(selectedA ?? '')
@@ -38,13 +41,18 @@ export function CompareInteractiveShell({
     setOptimisticSelectedB(selectedB ?? '')
   }, [selectedB])
 
+  useEffect(() => {
+    setOptimisticSelectedC(selectedC ?? '')
+  }, [selectedC])
+
   const handlePendingChange = useCallback((nextPending: boolean) => {
     setIsPending(nextPending)
   }, [])
 
-  const handleSelectionChange = useCallback((nextA: string, nextB: string) => {
+  const handleSelectionChange = useCallback((nextA: string, nextB: string, nextC: string) => {
     setOptimisticSelectedA(nextA)
     setOptimisticSelectedB(nextB)
+    setOptimisticSelectedC(nextC)
   }, [])
 
   const shouldShowLoading =
@@ -56,6 +64,7 @@ export function CompareInteractiveShell({
         candidates={candidates}
         selectedA={selectedA}
         selectedB={selectedB}
+        selectedC={selectedC}
         onPendingChange={handlePendingChange}
         onSelectionChange={handleSelectionChange}
       />

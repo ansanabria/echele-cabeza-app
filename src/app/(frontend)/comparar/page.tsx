@@ -13,45 +13,53 @@ type ComparePageProps = {
   searchParams?: Promise<{
     a?: string
     b?: string
+    c?: string
   }>
 }
 
 type TopicRow = {
   label: string
   field: CandidateSummaryField
+  /** Matches the `id` prop on the corresponding <article> in the candidate page */
+  sectionId: string
 }
 
 const TOPIC_ROWS: TopicRow[] = [
-  { label: 'Trayectoria', field: 'summaryTrajectory' },
-  { label: 'Propuestas clave', field: 'summaryProposals' },
-  { label: 'Controversias', field: 'summaryControversies' },
-  { label: 'Alianzas', field: 'summaryAlliances' },
-  { label: 'Registro', field: 'summaryRecord' },
-  { label: 'Patrimonio', field: 'summaryFunding' },
+  { label: 'Trayectoria', field: 'summaryTrajectory', sectionId: 'biography' },
+  { label: 'Propuestas clave', field: 'summaryProposals', sectionId: 'proposals' },
+  { label: 'Controversias', field: 'summaryControversies', sectionId: 'controversies' },
+  { label: 'Alianzas', field: 'summaryAlliances', sectionId: 'alliances' },
+  { label: 'Registro', field: 'summaryRecord', sectionId: 'record' },
+  { label: 'Patrimonio', field: 'summaryFunding', sectionId: 'funding' },
 ]
 
 export default async function ComparePage({ searchParams }: ComparePageProps) {
   const params = (await searchParams) ?? {}
   const selectedA = params.a
   const selectedB = params.b
+  const selectedC = params.c
 
   const candidates = await getCandidatesForDirectory()
-  const selectedSlugs = [selectedA, selectedB].filter(Boolean) as string[]
+  const selectedSlugs = [selectedA, selectedB, selectedC].filter(Boolean) as string[]
   const selectedCandidates = await getCandidatesBySlugs(selectedSlugs)
 
-  const candidateA = selectedCandidates.find(
-    (candidate) => candidate.slug === selectedA,
-  )
-  const candidateB = selectedCandidates.find(
-    (candidate) => candidate.slug === selectedB,
-  )
+  const candidateA = selectedCandidates.find((c) => c.slug === selectedA)
+  const candidateB = selectedCandidates.find((c) => c.slug === selectedB)
+  const candidateC = selectedCandidates.find((c) => c.slug === selectedC)
+
+  const activeCandidates = [candidateA, candidateB, candidateC].filter(Boolean) as Candidate[]
+  const hasTable = Boolean(candidateA && candidateB)
+
+  // Tailwind grid templates are statically analyzed; we pre-define both variants.
+  const desktopGrid =
+    activeCandidates.length === 3 ? 'grid-cols-[180px_1fr_1fr_1fr]' : 'grid-cols-[180px_1fr_1fr]'
 
   return (
     <section>
       <h1 className="mb-1 text-3xl">Comparar candidatos</h1>
       <p className="mb-6 text-muted-foreground">
-        Selecciona dos perfiles para revisar su información en paralelo, con el mismo
-        formato y sin puntuaciones.
+        Selecciona dos a tres perfiles para revisar su información en paralelo, con el mismo formato
+        y sin puntuaciones.
       </p>
 
       <CompareInteractiveShell
@@ -63,32 +71,50 @@ export default async function ComparePage({ searchParams }: ComparePageProps) {
         }))}
         selectedA={selectedA}
         selectedB={selectedB}
-        showTable={Boolean(candidateA && candidateB)}
+        selectedC={selectedC}
+        showTable={hasTable}
       >
-        {candidateA && candidateB ? (
-          <div className="overflow-hidden rounded-lg border border-border" role="table" aria-label="Tabla de comparación">
-            {/* Header */}
-            <div className="hidden grid-cols-[180px_1fr_1fr] bg-secondary md:grid" role="row">
+        {hasTable ? (
+          <div
+            className="overflow-hidden rounded-lg border border-border"
+            role="table"
+            aria-label="Tabla de comparación"
+          >
+            {/* Header — desktop */}
+            <div className={`hidden bg-secondary md:grid ${desktopGrid}`} role="row">
               <div className="border-b border-r border-border p-4" role="columnheader">
                 Tema
               </div>
-              <div className="border-b border-r border-border p-4" role="columnheader">
-                <CandidateHeader candidate={candidateA} />
-              </div>
-              <div className="border-b border-border p-4" role="columnheader">
-                <CandidateHeader candidate={candidateB} />
-              </div>
+              {activeCandidates.map((candidate, i) => (
+                <div
+                  key={candidate.slug}
+                  className={`border-b border-border p-4 ${i < activeCandidates.length - 1 ? 'border-r' : ''}`}
+                  role="columnheader"
+                >
+                  <CandidateHeader candidate={candidate} />
+                </div>
+              ))}
             </div>
 
             {/* Rows — desktop */}
             <div className="hidden md:block">
               {TOPIC_ROWS.map((topic) => (
-                <div key={topic.field} className="grid grid-cols-[180px_1fr_1fr]" role="row">
-                  <div className="border-b border-r border-border p-4 text-sm font-bold" role="cell">
+                <div key={topic.field} className={`grid ${desktopGrid}`} role="row">
+                  <div
+                    className="border-b border-r border-border p-4 text-sm font-bold"
+                    role="cell"
+                  >
                     {topic.label}
                   </div>
-                  <ComparisonCell candidate={candidateA} field={topic.field} borderRight />
-                  <ComparisonCell candidate={candidateB} field={topic.field} />
+                  {activeCandidates.map((candidate, i) => (
+                    <ComparisonCell
+                      key={candidate.slug}
+                      candidate={candidate}
+                      field={topic.field}
+                      sectionId={topic.sectionId}
+                      borderRight={i < activeCandidates.length - 1}
+                    />
+                  ))}
                 </div>
               ))}
             </div>
@@ -100,28 +126,25 @@ export default async function ComparePage({ searchParams }: ComparePageProps) {
                   <div className="border-b border-border bg-secondary p-3 text-sm font-bold">
                     {topic.label}
                   </div>
-                  <div className="border-b border-border p-3">
-                    <p className="mb-1 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-                      {candidateA.name}
-                    </p>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      {candidateA[topic.field] ?? 'Sin resumen disponible.'}
-                    </p>
-                    <Link href={`/candidatos/${candidateA.slug}`} className="mt-2 inline-block text-sm font-medium text-primary">
-                      Ver perfil completo →
-                    </Link>
-                  </div>
-                  <div className="p-3">
-                    <p className="mb-1 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-                      {candidateB.name}
-                    </p>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      {candidateB[topic.field] ?? 'Sin resumen disponible.'}
-                    </p>
-                    <Link href={`/candidatos/${candidateB.slug}`} className="mt-2 inline-block text-sm font-medium text-primary">
-                      Ver perfil completo →
-                    </Link>
-                  </div>
+                  {activeCandidates.map((candidate, i) => (
+                    <div
+                      key={candidate.slug}
+                      className={`p-3 ${i < activeCandidates.length - 1 ? 'border-b border-border' : ''}`}
+                    >
+                      <p className="mb-1 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                        {candidate.name}
+                      </p>
+                      <p className="text-sm leading-relaxed text-muted-foreground">
+                        {candidate[topic.field] ?? 'Sin resumen disponible.'}
+                      </p>
+                      <Link
+                        href={`/candidatos/${candidate.slug}#${topic.sectionId}`}
+                        className="mt-2 inline-block text-sm font-medium text-primary"
+                      >
+                        Ver sección →
+                      </Link>
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>
@@ -150,10 +173,19 @@ function CandidateHeader({ candidate }: { candidate: Candidate }) {
           className="mb-2 aspect-[3/4] w-full max-w-[110px] rounded-lg object-cover"
         />
       ) : (
-        <div className="mb-2 aspect-[3/4] w-full max-w-[110px] rounded-lg bg-secondary" aria-hidden />
+        <div
+          className="mb-2 aspect-[3/4] w-full max-w-[110px] rounded-lg bg-secondary"
+          aria-hidden
+        />
       )}
       <h2 className="font-sans text-sm font-bold">{name}</h2>
       <p className="mt-0.5 text-sm text-muted-foreground">{party}</p>
+      <Link
+        href={`/candidatos/${candidate.slug}`}
+        className="mt-2 inline-block text-sm font-medium text-primary"
+      >
+        Ver perfil completo →
+      </Link>
     </div>
   )
 }
@@ -161,10 +193,12 @@ function CandidateHeader({ candidate }: { candidate: Candidate }) {
 function ComparisonCell({
   candidate,
   field,
+  sectionId,
   borderRight,
 }: {
   candidate: Candidate
   field: CandidateSummaryField
+  sectionId: string
   borderRight?: boolean
 }) {
   const summary = candidate[field] ?? 'Sin resumen disponible.'
@@ -173,8 +207,11 @@ function ComparisonCell({
   return (
     <div className={`border-b border-border p-4 ${borderRight ? 'border-r' : ''}`} role="cell">
       <p className="text-sm leading-relaxed text-muted-foreground">{summary}</p>
-      <Link href={`/candidatos/${slug}`} className="mt-2 inline-block text-sm font-medium text-primary">
-        Ver perfil completo →
+      <Link
+        href={`/candidatos/${slug}#${sectionId}`}
+        className="mt-2 inline-block text-sm font-medium text-primary"
+      >
+        Ver sección →
       </Link>
     </div>
   )

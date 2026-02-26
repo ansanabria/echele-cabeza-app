@@ -9,11 +9,13 @@ import { ProposalCard } from '@/components/site/ProposalCard'
 import { SectionNav } from '@/components/site/SectionNav'
 import { SourcesAccordion } from '@/components/site/SourcesAccordion'
 import { TrajectoryTimeline } from '@/components/site/TrajectoryTimeline'
+import { SocialLinksPanel } from '@/components/site/SocialLinksPanel'
 import { Button } from '@/components/ui/button'
 import {
   formatDate,
   getCandidateBySlug,
   getCandidateImageUrl,
+  getCandidateSocialLinks,
   getCorrectionsForCandidate,
   getSourcesForSection,
   lexicalToPlainText,
@@ -36,10 +38,11 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
 
   const corrections = await getCorrectionsForCandidate(candidate.id)
   const imageUrl = getCandidateImageUrl(candidate)
+  const socialLinks = getCandidateSocialLinks(candidate.slug)
 
   return (
     <section className="grid gap-8 md:grid-cols-[minmax(260px,30%)_1fr]">
-      <aside className="sticky top-6 h-max overflow-hidden rounded-lg border border-border bg-card md:self-start">
+      <aside className="sticky bottom-6 h-max overflow-hidden rounded-lg border border-border bg-card md:self-end">
         <div className="aspect-[3/4] bg-secondary">
           {imageUrl ? (
             <img
@@ -70,6 +73,14 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
             Ver historial de correcciones
           </a>
         </div>
+        {socialLinks.length > 0 && (
+          <div className="border-t border-border p-5">
+            <p className="mb-3 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+              Redes sociales
+            </p>
+            <SocialLinksPanel links={socialLinks} />
+          </div>
+        )}
       </aside>
 
       <div className="min-w-0">

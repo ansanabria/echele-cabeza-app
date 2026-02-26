@@ -2,8 +2,12 @@ import { getPayload } from 'payload'
 
 import type { Candidate, Correction, Media } from '@/payload-types'
 import config from '@/payload.config'
+import candidatesData from '../../data/candidates.json'
 
 type UnknownRecord = Record<string, unknown>
+type CandidatesDataRecord = {
+  candidates?: { slug?: string; xHandle?: string }[]
+}
 
 export type SectionId =
   | 'biography'
@@ -168,6 +172,44 @@ export function getCandidateImageUrl(candidate: Candidate): string | null {
 export function getMediaUrl(media: number | Media | null | undefined): string | null {
   if (!media || typeof media === 'number') return null
   return (media as Media).url ?? null
+}
+
+const xHandleBySlug = new Map<string, string>(
+  ((candidatesData as CandidatesDataRecord).candidates ?? [])
+    .filter((candidate) => typeof candidate.slug === 'string' && typeof candidate.xHandle === 'string')
+    .map((candidate) => [candidate.slug as string, candidate.xHandle as string]),
+)
+
+export function getCandidateXHandle(slug: string): string | null {
+  const handle = xHandleBySlug.get(slug)?.trim()
+  return handle ? handle : null
+}
+
+export type SocialLink = {
+  platform: 'x' | 'instagram' | 'facebook' | 'youtube'
+  label: string
+  url: string
+}
+
+export function getCandidateSocialLinks(slug: string): SocialLink[] {
+  const xHandle = getCandidateXHandle(slug)
+  const normalizedHandle = xHandle?.replace(/^@/, '').trim()
+
+  const all: (SocialLink & { isPlaceholder: boolean })[] = [
+    normalizedHandle
+      ? {
+          platform: 'x',
+          label: 'X',
+          url: `https://twitter.com/${normalizedHandle}`,
+          isPlaceholder: false,
+        }
+      : { platform: 'x', label: 'X', url: '#', isPlaceholder: true },
+    { platform: 'instagram', label: 'Instagram', url: '#', isPlaceholder: true },
+    { platform: 'facebook', label: 'Facebook', url: '#', isPlaceholder: true },
+    { platform: 'youtube', label: 'YouTube', url: '#', isPlaceholder: true },
+  ]
+
+  return all.filter((link) => !link.isPlaceholder)
 }
 
 export function formatDate(dateValue?: unknown): string {

@@ -120,8 +120,16 @@ const ALLIANCE_DATA_BY_SLUG: Record<
     endorsers: [],
   },
   'abelardo-de-la-espriella': {
-    parties: [{ name: 'Sectores de derecha e independientes' }],
-    endorsers: [],
+    parties: [{ name: 'Salvación Nacional' }],
+    endorsers: [
+      { name: 'Enrique Gómez Martínez' },
+      { name: 'Jaime Andrés Beltrán' },
+      { name: 'Marco Acosta' },
+      { name: 'Sara Castellanos' },
+      { name: 'Wilson Ruiz Orejuela' },
+      { name: 'General (r) Jorge Mora' },
+      { name: 'Silvestre Dangond' },
+    ],
   },
   'felipe-cordoba': {
     parties: [{ name: 'Sectores técnicos y regionales' }],

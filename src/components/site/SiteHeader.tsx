@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import logoHorizontal from '@/assets/logo-horizontal.svg'
 
 const NAV_LINKS = [
   { href: '/', label: 'Inicio' },
@@ -9,12 +11,8 @@ const NAV_LINKS = [
 export function SiteHeader() {
   return (
     <header className="flex items-center justify-between border-b border-border pb-4 mb-8">
-      <Link
-        className="inline-flex items-center gap-2 text-foreground no-underline font-bold text-sm tracking-wide"
-        href="/"
-      >
-        <span aria-hidden>🇨🇴</span>
-        <span>Elecciones Colombia</span>
+      <Link className="inline-flex items-center no-underline" href="/">
+        <Image src={logoHorizontal} alt="Elecciones Colombia" height={50} priority />
       </Link>
 
       <nav aria-label="Navegación principal" className="flex items-center gap-1">

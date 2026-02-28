@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { useEffect, useMemo, useState, useTransition } from 'react'
 import {
@@ -214,9 +215,11 @@ function CandidateSelect({ label, candidates, selectedSlug, onSelect }: Candidat
             {selected ? (
               <span className="flex min-w-0 items-center gap-2">
                 {selected.imageUrl ? (
-                  <img
+                  <Image
                     alt={`Foto de ${selected.name}`}
                     src={selected.imageUrl}
+                    width={30}
+                    height={30}
                     className="size-[30px] shrink-0 rounded-full object-cover"
                   />
                 ) : (
@@ -242,9 +245,11 @@ function CandidateSelect({ label, candidates, selectedSlug, onSelect }: Candidat
               <DropdownMenuRadioItem key={`${label}-${candidate.slug}`} value={candidate.slug}>
                 <span className="flex items-center gap-2">
                   {candidate.imageUrl ? (
-                    <img
+                    <Image
                       alt={`Foto de ${candidate.name}`}
                       src={candidate.imageUrl}
+                      width={30}
+                      height={30}
                       className="size-[30px] shrink-0 rounded-full object-cover"
                     />
                   ) : (

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { getMediaUrl } from '@/lib/candidates'
 import type { Media } from '@/payload-types'
 
@@ -23,9 +25,15 @@ export function EndorserCard({ item }: EndorserCardProps) {
       />
 
       {/* Photo */}
-      <div className="aspect-square w-24 shrink-0 overflow-hidden rounded-lg border border-border/50 bg-secondary transition-colors duration-200 group-hover:bg-secondary/80">
+      <div className="relative aspect-square w-24 shrink-0 overflow-hidden rounded-lg border border-border/50 bg-secondary transition-colors duration-200 group-hover:bg-secondary/80">
         {photoUrl ? (
-          <img alt={`Foto de ${item.name}`} src={photoUrl} className="h-full w-full object-cover" />
+          <Image
+            alt={`Foto de ${item.name}`}
+            src={photoUrl}
+            fill
+            sizes="96px"
+            className="object-cover"
+          />
         ) : (
           <div className="h-full w-full bg-muted" aria-hidden />
         )}

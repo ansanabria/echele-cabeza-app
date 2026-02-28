@@ -2,12 +2,8 @@ import { getPayload } from 'payload'
 
 import type { Candidate, Correction, Media } from '@/payload-types'
 import config from '@/payload.config'
-import candidatesData from '../../data/candidates.json'
 
 type UnknownRecord = Record<string, unknown>
-type CandidatesDataRecord = {
-  candidates?: { slug?: string; xHandle?: string }[]
-}
 
 export type SectionId =
   | 'biography'
@@ -174,42 +170,39 @@ export function getMediaUrl(media: number | Media | null | undefined): string | 
   return (media as Media).url ?? null
 }
 
-const xHandleBySlug = new Map<string, string>(
-  ((candidatesData as CandidatesDataRecord).candidates ?? [])
-    .filter((candidate) => typeof candidate.slug === 'string' && typeof candidate.xHandle === 'string')
-    .map((candidate) => [candidate.slug as string, candidate.xHandle as string]),
-)
-
-export function getCandidateXHandle(slug: string): string | null {
-  const handle = xHandleBySlug.get(slug)?.trim()
-  return handle ? handle : null
-}
-
 export type SocialLink = {
   platform: 'x' | 'instagram' | 'facebook' | 'youtube'
   label: string
   url: string
 }
 
-export function getCandidateSocialLinks(slug: string): SocialLink[] {
-  const xHandle = getCandidateXHandle(slug)
-  const normalizedHandle = xHandle?.replace(/^@/, '').trim()
+export function getCandidateSocialLinks(candidate: Candidate): SocialLink[] {
+  const socialLinks = candidate.socialLinks ?? []
+  const mapped: SocialLink[] = []
 
-  const all: (SocialLink & { isPlaceholder: boolean })[] = [
-    normalizedHandle
-      ? {
-          platform: 'x',
-          label: 'X',
-          url: `https://twitter.com/${normalizedHandle}`,
-          isPlaceholder: false,
-        }
-      : { platform: 'x', label: 'X', url: '#', isPlaceholder: true },
-    { platform: 'instagram', label: 'Instagram', url: '#', isPlaceholder: true },
-    { platform: 'facebook', label: 'Facebook', url: '#', isPlaceholder: true },
-    { platform: 'youtube', label: 'YouTube', url: '#', isPlaceholder: true },
-  ]
+  for (const link of socialLinks) {
+    const url = typeof link.url === 'string' ? link.url.trim() : ''
+    if (!url) continue
 
-  return all.filter((link) => !link.isPlaceholder)
+    switch (link.platform) {
+      case 'x':
+        mapped.push({ platform: 'x', label: 'X', url })
+        break
+      case 'instagram':
+        mapped.push({ platform: 'instagram', label: 'Instagram', url })
+        break
+      case 'facebook':
+        mapped.push({ platform: 'facebook', label: 'Facebook', url })
+        break
+      case 'youtube':
+        mapped.push({ platform: 'youtube', label: 'YouTube', url })
+        break
+      default:
+        break
+    }
+  }
+
+  return mapped
 }
 
 export function formatDate(dateValue?: unknown): string {

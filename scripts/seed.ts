@@ -244,6 +244,11 @@ type EndorserSeed = {
   name: string
 }
 
+type SocialLinkSeed = {
+  platform: 'x' | 'instagram' | 'facebook' | 'youtube'
+  url: string
+}
+
 type CandidateSeed = {
   name: string
   slug: string
@@ -268,6 +273,7 @@ type CandidateSeed = {
   controversyItems: ControversyItemSeed[]
   allianceParties: AlliancePartySeed[]
   endorsers: EndorserSeed[]
+  socialLinks: SocialLinkSeed[]
 }
 
 type CorrectionSeed = {
@@ -287,6 +293,7 @@ type JsonSource = {
 type JsonCandidate = {
   name: string
   slug: string
+  xHandle?: string
   party: string
   currentOffice?: string
   photoUrl?: string
@@ -311,6 +318,13 @@ type JsonCandidate = {
 
 type JsonDataFile = {
   candidates: JsonCandidate[]
+}
+
+function getSocialLinksFromJsonCandidate(candidate: JsonCandidate): SocialLinkSeed[] {
+  const normalizedXHandle = candidate.xHandle?.replace(/^@/, '').trim()
+  if (!normalizedXHandle) return []
+
+  return [{ platform: 'x', url: `https://twitter.com/${normalizedXHandle}` }]
 }
 
 function toLexicalRichText(text: string): Candidate['biography'] {
@@ -419,6 +433,7 @@ function parseCandidatesFromJson(jsonData: JsonDataFile): CandidateSeed[] {
       controversyItems: buildControversyItems(candidate.sections.controversies, sources),
       allianceParties: allianceData.parties,
       endorsers: allianceData.endorsers,
+      socialLinks: getSocialLinksFromJsonCandidate(candidate),
     })
 
     return acc
@@ -692,6 +707,7 @@ async function upsertCandidate(
     summaryRecord: candidate.summaryRecord,
     summaryFunding: candidate.summaryFunding,
     sources: candidate.sources,
+    socialLinks: candidate.socialLinks,
   } satisfies Partial<Candidate>
 
   if (existing.docs[0]) {

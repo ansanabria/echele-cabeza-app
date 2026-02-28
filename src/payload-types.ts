@@ -177,6 +177,16 @@ export interface Candidate {
    */
   directoryOrder?: number | null;
   currentOffice?: string | null;
+  /**
+   * Enlaces públicos oficiales del candidato. Se muestran en la ficha pública del perfil.
+   */
+  socialLinks?:
+    | {
+        platform: 'x' | 'instagram' | 'facebook' | 'youtube';
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
   photo: number | Media;
   lastUpdated: string;
   biography: {
@@ -510,6 +520,13 @@ export interface CandidatesSelect<T extends boolean = true> {
   party?: T;
   directoryOrder?: T;
   currentOffice?: T;
+  socialLinks?:
+    | T
+    | {
+        platform?: T;
+        url?: T;
+        id?: T;
+      };
   photo?: T;
   lastUpdated?: T;
   biography?: T;

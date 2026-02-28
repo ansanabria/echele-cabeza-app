@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { getMediaUrl } from '@/lib/candidates'
 import type { Media } from '@/payload-types'
 
@@ -23,12 +25,14 @@ export function AlliancePartyCard({ item }: AlliancePartyCardProps) {
       />
 
       {/* Logo frame */}
-      <div className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-secondary/60 p-2 transition-colors duration-200 group-hover:bg-secondary">
+      <div className="relative flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-secondary/60 p-2 transition-colors duration-200 group-hover:bg-secondary">
         {logoUrl ? (
-          <img
+          <Image
             alt={`Logo de ${item.name}`}
             src={logoUrl}
-            className="h-full w-full object-contain"
+            fill
+            sizes="80px"
+            className="object-contain"
           />
         ) : (
           <div className="h-full w-full rounded bg-muted" aria-hidden />

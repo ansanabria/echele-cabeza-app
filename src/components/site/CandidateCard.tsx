@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 type CandidateCardProps = {
@@ -14,7 +15,13 @@ export function CandidateCard({ href, imageUrl, name, party }: CandidateCardProp
       href={href}
     >
       {imageUrl ? (
-        <img alt={`Foto de ${name}`} src={imageUrl} className="h-full w-full object-cover" />
+        <Image
+          alt={`Foto de ${name}`}
+          src={imageUrl}
+          fill
+          sizes="(max-width: 768px) 100vw, 25vw"
+          className="object-cover"
+        />
       ) : (
         <div className="h-full w-full bg-secondary" aria-hidden />
       )}

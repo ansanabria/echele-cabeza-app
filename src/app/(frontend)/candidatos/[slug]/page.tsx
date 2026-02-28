@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -38,17 +39,19 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
 
   const corrections = await getCorrectionsForCandidate(candidate.id)
   const imageUrl = getCandidateImageUrl(candidate)
-  const socialLinks = getCandidateSocialLinks(candidate.slug)
+  const socialLinks = getCandidateSocialLinks(candidate)
 
   return (
     <section className="grid gap-8 md:grid-cols-[minmax(260px,30%)_1fr]">
       <aside className="sticky bottom-6 h-max overflow-hidden rounded-lg border border-border bg-card md:self-end">
-        <div className="aspect-[3/4] bg-secondary">
+        <div className="relative aspect-[3/4] bg-secondary">
           {imageUrl ? (
-            <img
+            <Image
               alt={`Foto de ${candidate.name}`}
               src={imageUrl}
-              className="block h-full w-full object-cover"
+              fill
+              sizes="(max-width: 768px) 100vw, 30vw"
+              className="block object-cover"
             />
           ) : (
             <div className="h-full w-full bg-secondary" aria-hidden />

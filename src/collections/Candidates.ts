@@ -251,6 +251,35 @@ export const Candidates: CollectionConfig = {
       label: 'Cargo actual o mas reciente',
     },
     {
+      name: 'socialLinks',
+      type: 'array',
+      label: 'Redes sociales',
+      admin: {
+        description:
+          'Enlaces públicos oficiales del candidato. Se muestran en la ficha pública del perfil.',
+      },
+      fields: [
+        {
+          name: 'platform',
+          type: 'select',
+          required: true,
+          label: 'Plataforma',
+          options: [
+            { label: 'X', value: 'x' },
+            { label: 'Instagram', value: 'instagram' },
+            { label: 'Facebook', value: 'facebook' },
+            { label: 'YouTube', value: 'youtube' },
+          ],
+        },
+        {
+          name: 'url',
+          type: 'text',
+          required: true,
+          label: 'URL del perfil',
+        },
+      ],
+    },
+    {
       name: 'photo',
       type: 'upload',
       relationTo: 'media',

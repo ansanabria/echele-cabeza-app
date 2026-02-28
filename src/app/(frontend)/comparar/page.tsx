@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { CompareInteractiveShell } from '@/components/site/CompareInteractiveShell'
@@ -167,11 +168,9 @@ function CandidateHeader({ candidate }: { candidate: Candidate }) {
   return (
     <div>
       {image ? (
-        <img
-          alt={`Foto de ${name}`}
-          src={image}
-          className="mb-2 aspect-[3/4] w-full max-w-[110px] rounded-lg object-cover"
-        />
+        <div className="relative mb-2 aspect-[3/4] w-full max-w-[110px] overflow-hidden rounded-lg">
+          <Image alt={`Foto de ${name}`} src={image} fill sizes="110px" className="object-cover" />
+        </div>
       ) : (
         <div
           className="mb-2 aspect-[3/4] w-full max-w-[110px] rounded-lg bg-secondary"

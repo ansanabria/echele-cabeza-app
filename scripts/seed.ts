@@ -15,54 +15,15 @@ const PLACEHOLDER_ALT = '__seed_placeholder_candidate_photo__'
 const CANDIDATE_PHOTO_ALT_PREFIX = '__seed_candidate_photo__'
 const CANDIDATE_IMAGES_DIR = path.resolve(dirname, '../media')
 const CANDIDATE_LOCAL_PHOTOS_BY_SLUG: Record<string, string> = {
-  'vicky-davila': 'vicky-davila.webp',
-  'juan-manuel-galan': 'juan-manuel-galan.webp',
-  'daniel-quintero': 'daniel-quintero.webp',
   'ivan-cepeda': 'ivan-cepeda.webp',
-  'enrique-penalosa': 'enrique-penalosa.webp',
-  'camilo-romero': 'camilo-romero.webp',
-  'paloma-valencia': 'paloma-valencia.webp',
-  'roy-barreras': 'roy-barreras.webp',
-  'clara-lopez': 'clara-lopez.webp',
-  'juan-daniel-oviedo': 'juan-daniel-oviedo.webp',
-  'juan-carlos-pinzon': 'juan-carlos-pinzon.webp',
-  'anibal-gaviria': 'anibal-gaviria.webp',
-  'david-luna': 'david-luna.webp',
-  'mauricio-cardenas': 'mauricio-cardenas.webp',
-  'santiago-botero': 'santiago-botero.webp',
   'abelardo-de-la-espriella': 'abelardo-espriella.webp',
-  'felipe-cordoba': 'felipe-cordoba.webp',
-  'daniel-palacios': 'daniel-palacios.webp',
-  'efrain-cepeda': 'efrain-cepeda.webp',
   'sergio-fajardo': 'sergio-fajardo.webp',
-  'norman-maurice-armitage': 'armitage.webp',
-  'carlos-caicedo': 'carlos-caicedo.webp',
-  'claudia-lopez': 'claudia-lopez.webp',
-  'luis-gilberto-murillo': 'luis-gilberto-murillo.webp',
-  'juan-fernando-cristo': 'juan-fernando-cristo.webp',
-  'luis-carlos-reyes': 'luis-carlos-reyes.webp',
 }
 /** Parties/coalitions and endorsers per candidate, derived from alliances content. Placeholder media used for logos and photos. */
 const ALLIANCE_DATA_BY_SLUG: Record<
   string,
   { parties: { name: string }[]; endorsers: { name: string }[] }
 > = {
-  'vicky-davila': {
-    parties: [
-      { name: 'La Gran Consulta' },
-      { name: 'Centro Democrático' },
-      { name: 'Partido Conservador' },
-    ],
-    endorsers: [],
-  },
-  'juan-manuel-galan': {
-    parties: [{ name: 'La Gran Consulta' }, { name: 'Nuevo Liberalismo' }],
-    endorsers: [{ name: 'Sergio Fajardo' }],
-  },
-  'daniel-quintero': {
-    parties: [{ name: 'Consulta del Frente Amplio' }, { name: 'Pacto Histórico' }],
-    endorsers: [],
-  },
   'ivan-cepeda': {
     parties: [
       { name: 'Consulta del Frente Amplio' },
@@ -70,54 +31,6 @@ const ALLIANCE_DATA_BY_SLUG: Record<
       { name: 'Colombia Humana' },
     ],
     endorsers: [{ name: 'Gustavo Petro' }],
-  },
-  'enrique-penalosa': {
-    parties: [{ name: 'La Gran Consulta' }, { name: 'Cambio Radical' }],
-    endorsers: [],
-  },
-  'camilo-romero': {
-    parties: [
-      { name: 'Consulta del Frente Amplio' },
-      { name: 'Colombia Humana' },
-      { name: 'Pacto Histórico' },
-    ],
-    endorsers: [],
-  },
-  'paloma-valencia': {
-    parties: [{ name: 'La Gran Consulta' }, { name: 'Centro Democrático' }],
-    endorsers: [{ name: 'Álvaro Uribe' }],
-  },
-  'roy-barreras': {
-    parties: [{ name: 'Consulta del Frente Amplio' }, { name: 'Pacto Histórico' }],
-    endorsers: [],
-  },
-  'clara-lopez': {
-    parties: [{ name: 'Consulta del Frente Amplio' }, { name: 'Polo Democrático Alternativo' }],
-    endorsers: [],
-  },
-  'juan-daniel-oviedo': {
-    parties: [{ name: 'La Gran Consulta' }],
-    endorsers: [],
-  },
-  'juan-carlos-pinzon': {
-    parties: [{ name: 'Coalición de centro-derecha' }],
-    endorsers: [],
-  },
-  'anibal-gaviria': {
-    parties: [{ name: 'Partido Liberal' }],
-    endorsers: [],
-  },
-  'david-luna': {
-    parties: [{ name: 'Partido Liberal' }],
-    endorsers: [],
-  },
-  'mauricio-cardenas': {
-    parties: [{ name: 'Coalición técnica y empresarial' }],
-    endorsers: [],
-  },
-  'santiago-botero': {
-    parties: [{ name: 'Sector ciudadano e independiente' }],
-    endorsers: [],
   },
   'abelardo-de-la-espriella': {
     parties: [{ name: 'Salvación Nacional' }],
@@ -131,78 +44,16 @@ const ALLIANCE_DATA_BY_SLUG: Record<
       { name: 'Silvestre Dangond' },
     ],
   },
-  'felipe-cordoba': {
-    parties: [{ name: 'Sectores técnicos y regionales' }],
-    endorsers: [],
-  },
-  'daniel-palacios': {
-    parties: [{ name: 'Partido Conservador' }, { name: 'Coalición de centro-derecha' }],
-    endorsers: [],
-  },
-  'efrain-cepeda': {
-    parties: [{ name: 'Partido Conservador' }],
-    endorsers: [],
-  },
   'sergio-fajardo': {
     parties: [{ name: 'Coalición de centro' }],
-    endorsers: [],
-  },
-  'norman-maurice-armitage': {
-    parties: [{ name: 'Sector empresarial del Valle del Cauca' }],
-    endorsers: [],
-  },
-  'carlos-caicedo': {
-    parties: [{ name: 'Fuerza Ciudadana' }],
-    endorsers: [],
-  },
-  'claudia-lopez': {
-    parties: [{ name: 'Coalición de centro' }, { name: 'Sectores verdes e independientes' }],
-    endorsers: [],
-  },
-  'luis-gilberto-murillo': {
-    parties: [{ name: 'Sectores afrocolombianos y ambientales' }],
-    endorsers: [],
-  },
-  'juan-fernando-cristo': {
-    parties: [{ name: 'Partido Liberal' }, { name: 'Coalición de centro' }],
-    endorsers: [],
-  },
-  'luis-carlos-reyes': {
-    parties: [{ name: 'Sectores técnicos y académicos' }],
     endorsers: [],
   },
 }
 
 const CANDIDATE_DIRECTORY_ORDER_BY_SLUG: Record<string, number> = {
-  // Ordered by latest complete nationwide intention-to-vote snapshot fetched during this task:
-  // Invamer / Colombia Opina (Noticias Caracol, updated Dec 1, 2025).
   'ivan-cepeda': 1,
   'abelardo-de-la-espriella': 2,
   'sergio-fajardo': 3,
-  'claudia-lopez': 4,
-  'vicky-davila': 5,
-  'juan-carlos-pinzon': 6,
-  'santiago-botero': 7,
-  'juan-manuel-galan': 8,
-  'anibal-gaviria': 9,
-  'enrique-penalosa': 10,
-  'paloma-valencia': 11,
-  'camilo-romero': 12,
-  'luis-gilberto-murillo': 13,
-  'luis-carlos-reyes': 14,
-  'carlos-caicedo': 15,
-  'efrain-cepeda': 16,
-  'roy-barreras': 17,
-  'david-luna': 18,
-  'mauricio-cardenas': 19,
-  'juan-daniel-oviedo': 20,
-  'norman-maurice-armitage': 21,
-  'felipe-cordoba': 22,
-  'daniel-palacios': 23,
-  'juan-fernando-cristo': 24,
-  // Not explicitly listed in that published top-line result set:
-  'daniel-quintero': 25,
-  'clara-lopez': 26,
 }
 const ENV_PATH = path.resolve(dirname, '../.env')
 const ENV_LOCAL_PATH = path.resolve(dirname, '../.env.local')
@@ -939,6 +790,20 @@ async function main() {
 
     if (candidates.length === 0) {
       throw new Error('No candidates were parsed from data/candidates.json.')
+    }
+
+    // Delete any candidates in the DB that are no longer in the JSON file.
+    const keepSlugs = new Set(candidates.map((c) => c.slug))
+    const allInDb = await payload.find({
+      collection: 'candidates',
+      limit: 1000,
+      select: { slug: true },
+    })
+    for (const doc of allInDb.docs) {
+      if (!keepSlugs.has(doc.slug)) {
+        await payload.delete({ collection: 'candidates', id: doc.id })
+        payload.logger.info(`Deleted stale candidate: ${doc.slug}`)
+      }
     }
 
     const placeholderMediaId = await ensurePlaceholderMedia(payload)

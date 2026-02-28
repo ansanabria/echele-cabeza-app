@@ -5,378 +5,83 @@
   "editorialNote": "Los textos a continuación siguen un tono estrictamente descriptivo, sin opiniones ni lenguaje valorativo. Toda afirmación sensible indica el estado actual del proceso legal o político y la fuente correspondiente.",
   "candidates": [
     {
-      "name": "Vicky Dávila",
-      "slug": "vicky-davila",
-      "xHandle": "@VickyDavilaH",
-      "party": "Independiente (con aval de La Gran Consulta)",
-      "currentOffice": "Periodista y exdirectora de la Revista Semana",
+      "name": "Iván Cepeda Castro",
+      "slug": "ivan-cepeda",
+      "xHandle": "@IvanCepedaCast",
+      "party": "Pacto Histórico",
+      "currentOffice": "Senador de la República (Comisión Segunda, 2022–2026); candidato presidencial Pacto Histórico 2026",
       "sections": {
-        "biography": "Vicky Dávila Hoyos nació el 22 de octubre de 1972 en Bucaramanga, Santander. Es periodista de profesión, graduada de la Universidad de la Sabana. Inició su carrera en medios regionales y se trasladó a Bogotá, donde trabajó en cadenas nacionales de radio y televisión. Fue directora del noticiero de La FM de RCN Radio y posteriormente directora general de la Revista Semana, cargo que ocupó hasta finales de 2024. Durante su trayectoria periodística cubrió temas de conflicto armado, narcotráfico y corrupción. Es reconocida por su estilo confrontacional en entrevistas. Su paso a la política se consolidó en 2025 cuando anunció su precandidatura presidencial.",
-        "proposals": "Dávila ha centrado su campaña en temas de seguridad ciudadana, lucha contra la corrupción y reactivación económica. Ha propuesto endurecer las penas por delitos violentos, fortalecer las fuerzas armadas y la policía, reactivar la fumigación de cultivos ilícitos con glifosato, reducir la burocracia estatal y promover la inversión privada como motor de desarrollo. También ha planteado la necesidad de reformar el sistema de justicia para reducir la impunidad.",
-        "controversies": "En 2016, Dávila se vio involucrada en un escándalo relacionado con la publicación de un video donde el general de la policía Humberto Guatibonza aparecía en situaciones comprometedoras. La Corte Suprema investigó la procedencia del video. Dávila sostuvo que actuó en ejercicio de su labor periodística. El caso no resultó en cargos penales contra ella. Como directora de Semana, fue criticada por sectores políticos y sociales que cuestionaron la línea editorial del medio, acusándola de parcialidad. Dávila rechazó estas acusaciones señalando que mantuvo una línea independiente.",
-        "alliances": "Participa en La Gran Consulta, una coalición que agrupa a sectores de centro y derecha. Ha recibido respaldo de figuras del Centro Democrático, sector del Partido Conservador y líderes independientes del centro-derecha. Su candidatura ha generado interés en sectores empresariales y de la clase media urbana.",
-        "record": "Dávila no ha ocupado cargos de elección popular ni funciones públicas ejecutivas. Su trayectoria es exclusivamente periodística. No cuenta con un registro legislativo ni de gobierno previo.",
-        "funding": "No se ha publicado aún una declaración patrimonial oficial de campaña. Sus ingresos conocidos provienen de su carrera en medios de comunicación. Su campaña ha recibido aportes de eventos de fundraising y donaciones individuales. Los detalles financieros completos se conocerán cuando el Consejo Nacional Electoral publique los informes de campaña."
+        "biography": "Filósofo, defensor de derechos humanos y legislador bogotano. Hijo del senador Manuel Cepeda Vargas, asesinado por agentes del Estado en 1994. Representante a la Cámara (2010–2014) y senador desde 2014. Ganó la consulta interna del Pacto Histórico en octubre de 2025 con más de 1,5 millones de votos.",
+        "proposals": "Propone profundizar la agenda del gobierno Petro: continuar la Paz Total, impulsar una reforma agraria, establecer un salario vital y convocar un gran diálogo con el sector empresarial.",
+        "controversies": "Su principal enfrentamiento fue con el expresidente Uribe, quien lo denunció por manipulación de testigos; la Corte Suprema no encontró méritos para investigarlo. Ha sido señalado por su silencio frente a las violaciones de derechos humanos en Venezuela y por tuits con frases guerrilleras publicados y borrados por error.",
+        "alliances": "Es el candidato oficial del Pacto Histórico. Cuenta con el respaldo del presidente Gustavo Petro, la vicepresidenta Francia Márquez y los partidos de la coalición de gobierno.",
+        "record": "Más de 16 años en el Congreso. Autor de la Ley 1719 de 2014 contra la violencia sexual en el conflicto, las curules de paz del Acuerdo de 2016 y el marco jurídico de la Paz Total. Ha liderado mociones de censura contra ministros de defensa y debates sobre paramilitarismo.",
+        "funding": "Ejerce como legislador desde 2010, su principal fuente de ingresos conocida. Su campaña se financia a través del Pacto Histórico. No se han reportado irregularidades en su financiación. Los informes ante el CNE no estaban disponibles al momento de edición."
       },
       "summaries": {
-        "trajectory": "Periodista bumanguesa. Exdirectora de Revista Semana y La FM de RCN Radio. Más de 25 años de trayectoria en medios de comunicación cubriendo conflicto armado, narcotráfico y corrupción. Sin experiencia previa en cargos públicos.",
-        "proposals": "Seguridad ciudadana y fortalecimiento de la fuerza pública. Reactivación de fumigación con glifosato. Reducción de burocracia estatal. Incentivos a la inversión privada. Reforma a la justicia contra la impunidad.",
-        "controversies": "Escándalo del video del general Guatibonza (2016), sin cargos penales resultantes. Críticas a la línea editorial de Revista Semana durante su dirección, que ella rechazó.",
-        "alliances": "Participa en La Gran Consulta (centro-derecha). Apoyo de figuras del Centro Democrático y sector del Partido Conservador. Respaldo de sectores empresariales.",
-        "record": "Sin registro en cargos públicos. Trayectoria exclusivamente periodística.",
-        "funding": "Ingresos provenientes de su carrera en medios. Campaña financiada por eventos de recaudación y donaciones individuales. Informes financieros pendientes ante el CNE."
+        "trajectory": "Filósofo y defensor de derechos humanos, senador desde 2014. Hijo del senador Manuel Cepeda Vargas, asesinado por agentes del Estado en 1994. Ha sido facilitador de los procesos de paz con las FARC y el ELN.",
+        "proposals": "Propone profundizar la agenda del gobierno Petro: continuación de la Paz Total, reforma agraria, reducción de salarios de altos funcionarios y diálogo nacional con el sector empresarial.",
+        "controversies": "Su principal controversia es el enfrentamiento judicial con Álvaro Uribe, quien lo denunció por manipulación de testigos; los tribunales no encontraron méritos para investigar a Cepeda. Ha sido cuestionado por su silencio frente a las violaciones de derechos humanos en Venezuela.",
+        "alliances": "Candidato oficial del Pacto Histórico. Cuenta con el respaldo político del presidente Gustavo Petro y de los partidos de la coalición de gobierno.",
+        "record": "Autor de la Ley 1719 de 2014 contra la violencia sexual en el conflicto y de las curules de paz del Acuerdo de 2016. Ha liderado más de 40 debates de control político y mociones de censura contra ministros.",
+        "funding": "No se encontraron registros públicos de declaración de bienes o financiación de campaña al cierre de esta investigación. No existen reportes de irregularidades en su financiación."
       },
       "sources": [
         {
           "section": "biography",
-          "title": "Perfil Vicky Dávila — Revista Cambio",
-          "date": "2025-06-15",
-          "url": "https://cambiocolombia.com/perfil/vicky-davila",
+          "title": "Quién es Iván Cepeda — La Silla Vacía",
+          "date": "2026-02-19",
+          "url": "https://www.lasillavacia.com/quien-es-quien/ivan-cepeda/",
           "tier": "prensa"
         },
         {
           "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
+          "title": "Perfil de Iván Cepeda Castro — Congreso Visible (Uniandes)",
+          "date": "2024-01-01",
+          "url": "https://congresovisible.uniandes.edu.co/congresistas/perfil/ivan-cepeda-castro/2395/",
           "tier": "ong"
         },
         {
-          "section": "controversies",
-          "title": "Caso video general Guatibonza — El Espectador",
-          "date": "2016-03-20",
-          "url": "https://www.elespectador.com/judicial/caso-guatibonza-vicky-davila/",
+          "section": "record",
+          "title": "Los 16 años de Iván Cepeda en el Congreso: Uribe, Acuerdo Farc y paz total — La Silla Vacía",
+          "date": "2026-01-10",
+          "url": "https://www.lasillavacia.com/silla-nacional/los-16-anos-de-ivan-cepeda-en-el-congreso-uribe-acuerdo-farc-y-paz-total/",
           "tier": "prensa"
         },
         {
           "section": "proposals",
-          "title": "Propuestas de seguridad Vicky Dávila — La Silla Vacía",
-          "date": "2025-10-05",
-          "url": "https://www.lasillavacia.com/propuestas-vicky-davila-seguridad",
-          "tier": "prensa"
-        }
-      ]
-    },
-    {
-      "name": "Juan Manuel Galán",
-      "slug": "juan-manuel-galan",
-      "xHandle": "@juanmanuelgalan",
-      "party": "Nuevo Liberalismo",
-      "currentOffice": "Exsenador de la República",
-      "sections": {
-        "biography": "Juan Manuel Galán Pachón nació el 23 de abril de 1972 en Bogotá. Es hijo de Luis Carlos Galán Sarmiento, candidato presidencial asesinado en 1989. Estudió derecho en la Pontificia Universidad Javeriana y tiene una maestría en Administración Pública de la Universidad de Harvard. Fue senador de la República por el Partido Liberal durante varios periodos (2006-2022). Lideró la refundación del movimiento Nuevo Liberalismo, que obtuvo personería jurídica en 2021 tras un fallo de la Corte Constitucional. Ha sido promotor de reformas contra la corrupción y defensor de las libertades civiles.",
-        "proposals": "Galán ha propuesto una agenda centrada en la lucha anticorrupción, la modernización del Estado, una reforma política que elimine los auxilios parlamentarios y la financiación estatal de las campañas. Promueve un modelo económico de libre mercado con fuertes redes de protección social. Ha planteado la legalización regulada del cannabis y reformas al sistema de salud para garantizar cobertura universal. Defiende la seguridad basada en inteligencia y la profesionalización de la fuerza pública.",
-        "controversies": "No se conocen investigaciones judiciales ni disciplinarias en su contra. Fue criticado por sectores del Partido Liberal tras la separación de Nuevo Liberalismo. Algunos analistas cuestionaron la viabilidad electoral de su movimiento tras los resultados legislativos de 2022, donde Nuevo Liberalismo no alcanzó el umbral requerido para mantener personería jurídica en el Senado.",
-        "alliances": "Participa en La Gran Consulta de centro-derecha. Ha establecido diálogos con figuras del centro político como Sergio Fajardo y otros precandidatos de la coalición. Nuevo Liberalismo mantiene su estructura como movimiento independiente dentro de la consulta. Ha recibido apoyo de sectores académicos y de la clase media urbana.",
-        "record": "Como senador (2006-2022), fue autor de proyectos de ley anticorrupción, la ley de transparencia en la contratación pública y promotor de debates de control político sobre narcotráfico y corrupción. Fue ponente de la reforma al sistema de regalías. No ha ocupado cargos en el poder ejecutivo.",
-        "funding": "Galán ha declarado su patrimonio ante las autoridades electorales en cada campaña senatorial. Nuevo Liberalismo se financia con aportes de sus miembros y eventos de recaudación. Los detalles financieros actualizados de la campaña presidencial se publicarán conforme a los plazos del CNE."
-      },
-      "summaries": {
-        "trajectory": "Abogado javeriano con maestría en Harvard. Hijo de Luis Carlos Galán. Exsenador (2006-2022). Fundador de la refundación de Nuevo Liberalismo. Promotor de leyes anticorrupción.",
-        "proposals": "Lucha anticorrupción y reforma política. Modernización del Estado. Legalización regulada del cannabis. Cobertura universal de salud. Seguridad basada en inteligencia.",
-        "controversies": "Sin investigaciones judiciales conocidas. Críticas por la separación del Partido Liberal. Nuevo Liberalismo no alcanzó el umbral en Senado en 2022.",
-        "alliances": "Nuevo Liberalismo en La Gran Consulta (centro-derecha). Diálogos con figuras del centro político. Apoyo de sectores académicos y clase media.",
-        "record": "Senador 2006-2022. Autor de proyectos anticorrupción y ley de transparencia en contratación. Ponente de reforma al sistema de regalías.",
-        "funding": "Patrimonio declarado en cada campaña senatorial. Nuevo Liberalismo financiado por aportes de miembros. Informes de campaña presidencial pendientes ante el CNE."
-      },
-      "sources": [
-        {
-          "section": "biography",
-          "title": "Perfil Juan Manuel Galán — La Silla Vacía",
-          "date": "2025-08-10",
-          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/juan-manuel-galan",
-          "tier": "prensa"
-        },
-        {
-          "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
-          "tier": "ong"
-        },
-        {
-          "section": "record",
-          "title": "Proyectos de ley Galán — Congreso Visible",
-          "date": "2022-07-20",
-          "url": "https://congresovisible.uniandes.edu.co/congresistas/perfil/juan-manuel-galan/1234",
-          "tier": "ong"
-        }
-      ]
-    },
-    {
-      "name": "Daniel Quintero",
-      "slug": "daniel-quintero",
-      "xHandle": "@QuinteroCalle",
-      "party": "Independiente (Consulta Frente Amplio)",
-      "currentOffice": "Exalcalde de Medellín",
-      "sections": {
-        "biography": "Daniel Quintero Calle nació el 6 de diciembre de 1980 en Medellín, Antioquia. Es ingeniero de sistemas de la Universidad de Medellín y tiene una maestría en administración pública de la Universidad de Columbia en Nueva York. Fue viceministro de Tecnologías de la Información y las Comunicaciones durante el gobierno de Juan Manuel Santos. En 2019 fue elegido alcalde de Medellín con una campaña que se presentó como independiente y antiestablishment. Ejerció el cargo hasta 2023. Es reconocido por su uso intensivo de redes sociales como herramienta política.",
-        "proposals": "Quintero ha promovido un modelo de desarrollo basado en la innovación tecnológica, la economía del conocimiento y la transformación digital del Estado. Ha planteado la diversificación de la matriz energética colombiana, la creación de una renta básica universal, mayor inversión en educación pública y la profundización de los acuerdos de paz. Defiende una reforma tributaria progresiva y la renegociación de tratados de libre comercio.",
-        "controversies": "Durante su alcaldía, la Procuraduría General de la Nación lo suspendió temporalmente del cargo en 2022 por presunta participación indebida en política a favor del entonces candidato Gustavo Petro. La suspensión fue levantada tras recursos legales. Quintero fue investigado por la Contraloría por presuntas irregularidades en la gestión de EPM (Empresas Públicas de Medellín), particularmente en relación con el proyecto Hidroituango. Los procesos estaban en curso a la fecha de esta recopilación. Fue también objeto de críticas por su gestión de seguridad en Medellín y por el aumento de la inseguridad durante su mandato.",
-        "alliances": "Participa en la Consulta del Frente Amplio junto a otros precandidatos de izquierda y centroizquierda, incluyendo a Iván Cepeda y Camilo Romero. Ha buscado el apoyo de movimientos sociales y del sector tecnológico. Tiene cercanía con figuras del Pacto Histórico, aunque se ha presentado como independiente.",
-        "record": "Como alcalde de Medellín (2020-2023), impulsó programas de innovación tecnológica, el \"Valle del Software\" y proyectos de movilidad urbana. Su gestión fue calificada de polarizante: sus simpatizantes destacan la transformación digital de la ciudad, mientras sus críticos señalan problemas de seguridad y la crisis institucional de EPM. Fue viceministro de TIC (2014-2015).",
-        "funding": "No se ha publicado información patrimonial detallada actualizada. Sus ingresos conocidos provienen de su carrera profesional en tecnología y su salario como funcionario público. Los detalles de financiación de su campaña presidencial se conocerán conforme a los reportes al CNE."
-      },
-      "summaries": {
-        "trajectory": "Ingeniero de sistemas con maestría en Columbia (NY). Exviceministro de TIC. Alcalde de Medellín (2020-2023). Perfil ligado a la innovación tecnológica y las redes sociales.",
-        "proposals": "Innovación tecnológica y economía del conocimiento. Transformación digital del Estado. Renta básica universal. Reforma tributaria progresiva. Profundización de acuerdos de paz.",
-        "controversies": "Suspendido temporalmente como alcalde por la Procuraduría (2022) por participación en política; suspensión levantada. Investigaciones de la Contraloría sobre gestión de EPM e Hidroituango (en curso). Críticas por inseguridad en Medellín.",
-        "alliances": "Consulta del Frente Amplio (izquierda-centroizquierda). Cercanía con el Pacto Histórico. Apoyo de movimientos sociales y sector tecnológico.",
-        "record": "Alcalde de Medellín 2020-2023 (Valle del Software, programas de movilidad urbana). Viceministro de TIC 2014-2015. Gestión calificada de polarizante.",
-        "funding": "Ingresos de carrera en tecnología y función pública. Informes financieros de campaña pendientes ante el CNE."
-      },
-      "sources": [
-        {
-          "section": "biography",
-          "title": "Perfil Daniel Quintero — La Silla Vacía",
-          "date": "2025-09-12",
-          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/daniel-quintero",
+          "title": "Iván Cepeda abraza las banderas populares y populistas de Petro — La Silla Vacía",
+          "date": "2026-01-29",
+          "url": "https://www.lasillavacia.com/silla-nacional/ivan-cepeda-abraza-las-banderas-populares-y-populistas-de-petro/",
           "tier": "prensa"
         },
         {
           "section": "controversies",
-          "title": "Suspensión de Quintero — Procuraduría",
-          "date": "2022-04-06",
-          "url": "https://www.procuraduria.gov.co/noticias/suspension-quintero-2022",
-          "tier": "oficial"
-        },
-        {
-          "section": "controversies",
-          "title": "Investigación EPM — Contraloría",
-          "date": "2023-11-15",
-          "url": "https://www.contraloria.gov.co/contraloria/sala-de-prensa/epm-hidroituango",
-          "tier": "oficial"
-        },
-        {
-          "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
-          "tier": "ong"
-        }
-      ]
-    },
-    {
-      "name": "Iván Cepeda",
-      "slug": "ivan-cepeda",
-      "xHandle": "@IvanCepedaCast",
-      "party": "Pacto Histórico / Colombia Humana",
-      "currentOffice": "Senador de la República",
-      "sections": {
-        "biography": "Iván Cepeda Castro nació el 2 de abril de 1962 en Bogotá. Es hijo de Manuel Cepeda Vargas, senador de la Unión Patriótica asesinado en 1994. Estudió filosofía y letras en la Universidad de los Andes. Ha sido defensor de derechos humanos y activista por los derechos de las víctimas del conflicto armado colombiano. Fue representante a la Cámara (2010-2014) y senador de la República desde 2014 hasta la actualidad. Dentro del Congreso ha liderado debates de control político sobre paramilitarismo, despojo de tierras y víctimas del conflicto.",
-        "proposals": "Cepeda defiende la implementación integral del Acuerdo de Paz de 2016. Propone una reforma agraria que redistribuya la tierra improductiva, un sistema de salud público universal, la transición energética acelerada hacia fuentes renovables, una reforma tributaria que grave a los grandes patrimonios y la desmilitarización de la política de drogas. Aboga por el fortalecimiento de la justicia transicional y la reparación de víctimas.",
-        "controversies": "- Caso Uribe-Cepeda: el expresidente Álvaro Uribe denunció a Iván Cepeda por presunta manipulación de testigos; la Corte Suprema archivó la investigación contra Cepeda y abrió investigación contra Uribe. Cepeda no tiene condenas judiciales.\n- Sectores de derecha lo han acusado de cercanía con grupos insurgentes; Cepeda rechaza esas acusaciones y las califica como persecución política.",
-        "alliances": "Participa en la Consulta del Frente Amplio como precandidato de la izquierda. Es una figura central del Pacto Histórico. Tiene el apoyo de movimientos sociales, sindicatos, organizaciones de víctimas y sectores de la izquierda colombiana. Es cercano al gobierno actual del presidente Gustavo Petro.",
-        "record": "Como senador y representante (desde 2010), ha sido autor de proyectos relacionados con los derechos de las víctimas, la restitución de tierras, la regulación de la actividad minera y el control político al paramilitarismo. Es reconocido por sus debates de control político al sector defensa. No ha ocupado cargos ejecutivos.",
-        "funding": "Ha presentado declaraciones patrimoniales en cada periodo legislativo conforme a la ley. Su campaña se financia con aportes del Pacto Histórico y donaciones individuales. Detalles financieros actualizados pendientes ante el CNE."
-      },
-      "summaries": {
-        "trajectory": "Filósofo de los Andes. Hijo de Manuel Cepeda (UP, asesinado en 1994). Defensor de derechos humanos. Representante a la Cámara (2010-2014) y senador (desde 2014). Líder en temas de víctimas y conflicto armado.",
-        "proposals": "Implementación integral del Acuerdo de Paz. Reforma agraria redistributiva. Salud pública universal. Transición energética acelerada. Reforma tributaria a grandes patrimonios. Desmilitarización de la política de drogas.",
-        "controversies": "Denuncia de Uribe por manipulación de testigos, archivada por la Corte Suprema. Acusaciones de sectores de derecha sobre cercanía con insurgencia, rechazadas por Cepeda. Sin condenas judiciales.",
-        "alliances": "Consulta del Frente Amplio (izquierda). Figura central del Pacto Histórico. Apoyo de sindicatos, movimientos sociales y organizaciones de víctimas. Cercano al gobierno Petro.",
-        "record": "Senador y representante desde 2010. Autor de proyectos sobre víctimas, restitución de tierras y control al paramilitarismo. Sin cargos ejecutivos.",
-        "funding": "Declaraciones patrimoniales conforme a la ley. Financiación por Pacto Histórico y donaciones. Informes de campaña pendientes ante el CNE."
-      },
-      "sources": [
-        {
-          "section": "biography",
-          "title": "Perfil Iván Cepeda — Congreso Visible",
-          "date": "2025-07-01",
-          "url": "https://congresovisible.uniandes.edu.co/congresistas/perfil/ivan-cepeda/5678",
-          "tier": "ong"
-        },
-        {
-          "section": "controversies",
-          "title": "Caso Uribe-Cepeda — Corte Suprema",
-          "date": "2020-08-18",
-          "url": "https://www.cortesuprema.gov.co/caso-uribe-cepeda",
-          "tier": "oficial"
-        },
-        {
-          "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
-          "tier": "ong"
-        }
-      ]
-    },
-    {
-      "name": "Paloma Valencia",
-      "slug": "paloma-valencia",
-      "xHandle": "@PalomaValenciaL",
-      "party": "Centro Democrático (La Gran Consulta)",
-      "currentOffice": "Senadora de la República",
-      "sections": {
-        "biography": "Paloma Valencia Laserna nació el 29 de julio de 1977 en Popayán, Cauca. Es politóloga de la Universidad de los Andes y tiene una maestría en estudios latinoamericanos de la Universidad de Oxford. Es senadora de la República por el Centro Democrático desde 2014. Es una de las figuras más visibles de la oposición al gobierno de Gustavo Petro. Pertenece a una familia de tradición política del Cauca. Es columnista de opinión en varios medios nacionales.",
-        "proposals": "Valencia ha propuesto un modelo de seguridad basado en el fortalecimiento de las fuerzas armadas, la lucha frontal contra el narcotráfico, la inversión extranjera como motor de crecimiento económico, la reducción de impuestos a empresas, la defensa de la propiedad privada y la reforma al sistema judicial. Se opone a la negociación con grupos armados sin condiciones previas de cese al fuego. Defiende una política exterior alineada con Estados Unidos y la Unión Europea.",
-        "controversies": "No se conocen investigaciones judiciales ni disciplinarias en su contra. Ha sido objeto de controversia por declaraciones sobre la división de Colombia en dos países según la vocación productiva de cada región, propuesta que generó amplio rechazo en redes sociales y medios. También ha sido criticada por sectores de izquierda y centroizquierda por sus posiciones sobre el proceso de paz y su defensa del expresidente Álvaro Uribe.",
-        "alliances": "Participa en La Gran Consulta. Es una de las principales figuras del Centro Democrático. Tiene el apoyo de la base electoral uribista, sectores ganaderos y agroindustriales del Cauca y el suroccidente. Mantiene relaciones con el ala más conservadora de la coalición.",
-        "record": "Senadora desde 2014. Ha sido ponente de proyectos de reforma a la justicia, proyectos de seguridad nacional y debates de control político al gobierno Petro. Es reconocida por su activismo legislativo en temas de seguridad y economía. No ha ocupado cargos ejecutivos.",
-        "funding": "Ha declarado patrimonio ante el Congreso conforme a la ley. Su campaña cuenta con el respaldo financiero del Centro Democrático. Informes de campaña pendientes ante el CNE."
-      },
-      "summaries": {
-        "trajectory": "Politóloga de los Andes con maestría de Oxford. Senadora por el Centro Democrático desde 2014. Figura de la oposición al gobierno Petro. Columnista de opinión.",
-        "proposals": "Seguridad con fortalecimiento militar. Lucha contra el narcotráfico. Inversión extranjera y reducción de impuestos. Defensa de la propiedad privada. Reforma judicial. Política exterior pro-EE.UU.",
-        "controversies": "Sin investigaciones judiciales. Controversia por propuesta de dividir Colombia en dos. Críticas de la izquierda por posiciones sobre el proceso de paz y defensa de Uribe.",
-        "alliances": "La Gran Consulta (centro-derecha). Centro Democrático. Base electoral uribista. Apoyo de sectores ganaderos y agroindustriales del suroccidente.",
-        "record": "Senadora desde 2014. Ponente de proyectos de seguridad y reforma judicial. Activismo legislativo en control político al gobierno. Sin cargos ejecutivos.",
-        "funding": "Patrimonio declarado ante el Congreso. Respaldo financiero del Centro Democrático. Informes de campaña pendientes ante el CNE."
-      },
-      "sources": [
-        {
-          "section": "biography",
-          "title": "Perfil Paloma Valencia — Congreso Visible",
-          "date": "2025-06-01",
-          "url": "https://congresovisible.uniandes.edu.co/congresistas/perfil/paloma-valencia/9012",
-          "tier": "ong"
-        },
-        {
-          "section": "controversies",
-          "title": "Propuesta dos Colombias — El Tiempo",
-          "date": "2017-06-15",
-          "url": "https://www.eltiempo.com/politica/propuesta-paloma-valencia-dos-colombias",
-          "tier": "prensa"
-        },
-        {
-          "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
-          "tier": "ong"
-        }
-      ]
-    },
-    {
-      "name": "Roy Barreras",
-      "slug": "roy-barreras",
-      "xHandle": "@RoyBarreras",
-      "party": "Independiente (Consulta Frente Amplio)",
-      "currentOffice": "Exsenador y expresidente del Congreso",
-      "sections": {
-        "biography": "Roy Leonardo Barreras Montealegre nació el 16 de febrero de 1963 en Cali, Valle del Cauca. Es médico cirujano de la Universidad del Valle. Fue senador de la República en varios periodos y presidente del Congreso durante el periodo 2022-2023. Ha militado en diferentes partidos políticos a lo largo de su carrera: Partido de la U, Partido Liberal y Colombia Humana. Fue uno de los negociadores del Acuerdo de Paz con las FARC en La Habana.",
-        "proposals": "Barreras propone la consolidación de la paz, la reconciliación nacional, la reactivación económica con énfasis en el sector salud (propone un sistema público único), la reforma pensional y la inversión social en los territorios más afectados por el conflicto. Defiende la solución negociada al conflicto con los grupos armados restantes y una política de drogas enfocada en salud pública.",
-        "controversies": "Ha sido investigado por la Corte Suprema de Justicia por presunta doble militancia política al pasar entre partidos. La investigación fue archivada. Fue señalado por medios de comunicación por presuntos conflictos de interés como legislador en temas de salud, dado que también es médico con clínicas privadas. Barreras ha negado conflicto de interés y ha señalado que cumplió con las declaraciones de impedimento correspondientes. Críticos lo han acusado de oportunismo político por sus múltiples cambios de partido. No tiene condenas judiciales.",
-        "alliances": "Participa en la Consulta del Frente Amplio. Ha establecido alianzas con sectores del Pacto Histórico y con líderes del Valle del Cauca. Su capacidad de negociación política le ha permitido mantener relaciones con múltiples sectores, desde la izquierda hasta el centro.",
-        "record": "Senador en múltiples periodos. Presidente del Congreso 2022-2023. Negociador del Acuerdo de Paz con las FARC en La Habana. Ponente de proyectos de ley en salud, paz y reformas sociales. No ha ocupado cargos ejecutivos regionales o nacionales fuera del Congreso.",
-        "funding": "Tiene patrimonio declarado que incluye actividades médicas y empresariales en el sector salud. Ha presentado declaraciones patrimoniales al Congreso. Informes de campaña pendientes ante el CNE."
-      },
-      "summaries": {
-        "trajectory": "Médico cirujano de la Universidad del Valle. Senador en múltiples periodos y presidente del Congreso (2022-2023). Negociador del Acuerdo de Paz con las FARC. Ha militado en varios partidos políticos.",
-        "proposals": "Consolidación de la paz y reconciliación. Sistema público único de salud. Reforma pensional. Inversión social en territorios de conflicto. Política de drogas enfocada en salud pública.",
-        "controversies": "Investigación de Corte Suprema por doble militancia (archivada). Señalamientos de conflicto de interés como legislador-médico. Críticas por cambios de partido. Sin condenas.",
-        "alliances": "Consulta del Frente Amplio (izquierda). Alianzas con Pacto Histórico y líderes del Valle del Cauca. Relaciones transversales entre izquierda y centro.",
-        "record": "Senador en múltiples periodos. Presidente del Congreso 2022-2023. Negociador del Acuerdo de Paz con las FARC. Ponente de leyes de salud y paz.",
-        "funding": "Patrimonio que incluye actividades médicas y empresariales en salud. Declaraciones patrimoniales al Congreso. Informes de campaña pendientes ante el CNE."
-      },
-      "sources": [
-        {
-          "section": "biography",
-          "title": "Perfil Roy Barreras — La Silla Vacía",
-          "date": "2025-08-15",
-          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/roy-barreras",
+          "title": "Iván Cepeda lleva una década de silencio frente a la opresión del chavismo — La Silla Vacía",
+          "date": "2026-01-21",
+          "url": "https://www.lasillavacia.com/silla-nacional/cepeda-lleva-una-decada-de-silencio-frente-a-la-opresion-del-chavismo/",
           "tier": "prensa"
         },
         {
           "section": "controversies",
-          "title": "Investigación doble militancia — Corte Suprema",
-          "date": "2021-03-10",
-          "url": "https://www.cortesuprema.gov.co/investigacion-barreras-doble-militancia",
-          "tier": "oficial"
-        },
-        {
-          "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
-          "tier": "ong"
-        }
-      ]
-    },
-    {
-      "name": "Juan Daniel Oviedo",
-      "slug": "juan-daniel-oviedo",
-      "xHandle": "@JDOviedoAr",
-      "party": "Independiente (La Gran Consulta)",
-      "currentOffice": "Exdirector del DANE",
-      "sections": {
-        "biography": "Juan Daniel Oviedo González nació el 28 de julio de 1979 en Bogotá. Es economista de la Universidad del Rosario y tiene una maestría en economía de la Universidad de los Andes. Fue director del Departamento Administrativo Nacional de Estadística (DANE) entre 2018 y 2022, donde ganó reconocimiento por la modernización del censo nacional y la transparencia en la publicación de cifras económicas y sociales. Antes del DANE trabajó en el sector financiero y como consultor económico. Su perfil es técnico y su candidatura busca atraer al electorado que prefiere un gobierno basado en datos y evidencia.",
-        "proposals": "Oviedo propone un modelo de gobierno basado en evidencia y datos, la formalización laboral, la reforma del sistema de subsidios para que lleguen a quienes realmente los necesitan, la modernización del aparato estatal con tecnología, la inversión en primera infancia y educación, y una política económica que combine disciplina fiscal con inversión social focalizada. Defiende la independencia de las instituciones técnicas del Estado.",
-        "controversies": "No se conocen investigaciones judiciales ni disciplinarias en su contra. Fue objeto de debate político cuando el gobierno Petro cuestionó las cifras del DANE bajo su dirección; Oviedo defendió la independencia y rigor metodológico de la entidad. Sus críticos señalan su falta de experiencia política y de gestión ejecutiva más allá del DANE.",
-        "alliances": "Participa en La Gran Consulta. Se presenta como candidato independiente sin estructura partidista tradicional. Ha recibido apoyo de sectores académicos, gremios económicos y profesionales jóvenes. Ha establecido diálogos con otros precandidatos de la consulta de centro-derecha.",
-        "record": "Director del DANE (2018-2022). Modernizó el censo nacional y mejoró la calidad de las estadísticas del país. No ha ocupado cargos de elección popular ni otros cargos ejecutivos de alto nivel.",
-        "funding": "Ingresos provenientes de su carrera en el sector público y consultoría económica. Patrimonio declarado conforme a la ley durante su cargo en el DANE. Informes de campaña pendientes ante el CNE."
-      },
-      "summaries": {
-        "trajectory": "Economista del Rosario con maestría de los Andes. Director del DANE (2018-2022). Perfil técnico. Reconocido por modernizar el censo y mantener la independencia estadística.",
-        "proposals": "Gobierno basado en datos y evidencia. Formalización laboral. Reforma de subsidios focalizados. Modernización del Estado con tecnología. Inversión en primera infancia. Disciplina fiscal con inversión social.",
-        "controversies": "Sin investigaciones judiciales. Debate político con el gobierno Petro sobre cifras del DANE. Críticas por falta de experiencia política.",
-        "alliances": "La Gran Consulta (centro-derecha). Candidato independiente sin partido. Apoyo de sectores académicos, gremios y profesionales jóvenes.",
-        "record": "Director del DANE 2018-2022 (modernización del censo, independencia estadística). Sin otros cargos ejecutivos de alto nivel ni experiencia legislativa.",
-        "funding": "Ingresos de carrera en sector público y consultoría. Patrimonio declarado conforme a la ley. Informes de campaña pendientes ante el CNE."
-      },
-      "sources": [
-        {
-          "section": "biography",
-          "title": "Perfil Juan Daniel Oviedo — La Silla Vacía",
-          "date": "2025-10-01",
-          "url": "https://www.lasillavacia.com/la-silla-vacia/quienesquien/juan-daniel-oviedo",
+          "title": "De nuevo, Cepeda trinó por error \"nuestras fuerzas guerrilleras\", y lo borró — La Silla Vacía",
+          "date": "2026-02-26",
+          "url": "https://www.lasillavacia.com/detector-de-mentiras/cierto-pero/de-nuevo-cepeda-trino-por-error-nuestras-fuerzas-guerrilleras-y-lo-borro/",
           "tier": "prensa"
         },
         {
-          "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
-          "tier": "ong"
-        }
-      ]
-    },
-    {
-      "name": "Santiago Botero",
-      "slug": "santiago-botero",
-      "xHandle": "@Santibotero2026",
-      "party": "Independiente",
-      "currentOffice": "Exdeportista de alto rendimiento",
-      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Santiago_botero.jpg",
-      "sections": {
-        "biography": "Santiago Botero Echeverry es exciclista profesional colombiano y campeón mundial de contrarreloj. Tras su retiro deportivo participó en actividades empresariales y de opinión pública sobre deporte, gestión y liderazgo.",
-        "proposals": "En su discurso público ha priorizado deporte como política social, educación, prevención de consumo de drogas y fortalecimiento de oportunidades para jóvenes. También ha planteado mejorar la gestión pública con enfoque en metas medibles.",
-        "controversies": "No registra condenas judiciales en las fuentes consultadas. Su principal debate político es la falta de trayectoria extensa en cargos de elección popular o administración estatal.",
-        "alliances": "Su eventual plataforma se asocia a sectores ciudadanos e independientes, con posible apoyo de redes deportivas y liderazgos regionales.",
-        "record": "No tiene historial legislativo ni ejecutivos de alto nivel en el Estado. Su recorrido público está centrado en el deporte profesional y vocería social.",
-        "funding": "No hay reportes electorales presidenciales publicados a la fecha de compilación. La financiación de una eventual candidatura debe entrar a reporte oficial ante CNE."
-      },
-      "summaries": {
-        "trajectory": "Exciclista y campeón mundial de contrarreloj, con posterior actividad pública y empresarial.",
-        "proposals": "Deporte como herramienta social, juventud, educación y gestión por resultados.",
-        "controversies": "Sin condenas reportadas; cuestionamientos sobre experiencia directa en administración pública.",
-        "alliances": "Enfoque ciudadano e independiente, con redes del sector deportivo.",
-        "record": "Sin trayectoria legislativa o ejecutiva de alto nivel.",
-        "funding": "Sin reportes presidenciales publicados; eventual campaña sujeta a registros del CNE."
-      },
-      "sources": [
-        {
-          "section": "biography",
-          "title": "Santiago Botero — Wikipedia",
+          "section": "controversies",
+          "title": "Mención de Iván Cepeda en computador de las Farc no fue un montaje — La Silla Vacía",
           "date": "2026-02-23",
-          "url": "https://es.wikipedia.org/wiki/Santiago_Botero",
+          "url": "https://www.lasillavacia.com/podcasts/huevos-revueltos-con-politica/mencion-de-ivan-cepeda-en-computador-de-las-farc-no-fue-un-montaje-2/",
           "tier": "prensa"
         },
         {
-          "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
-          "tier": "ong"
-        },
-        {
-          "section": "record",
-          "title": "UCI — Campeonatos mundiales de ciclismo en ruta",
-          "date": "2026-02-23",
-          "url": "https://www.uci.org/competition-hub/road-world-championships/4L6VpHzI7bFecRkN3uYfTn",
-          "tier": "oficial"
+          "section": "alliances",
+          "title": "De correría con Iván Cepeda: militancia radical y multitudes del Pacto — La Silla Vacía",
+          "date": "2026-02-17",
+          "url": "https://www.lasillavacia.com/silla-nacional/de-correria-con-ivan-cepeda-militancia-radical-y-multitudes-del-pacto/",
+          "tier": "prensa"
         }
       ]
     },
@@ -387,12 +92,12 @@
       "party": "Salvación Nacional",
       "currentOffice": "Ninguno — abogado penalista, empresario y candidato presidencial independiente 2026",
       "sections": {
-        "biography": "Abelardo de la Espriella Romero nació en Barranquilla. Es abogado penalista de amplia trayectoria, conocido popularmente como \"El Tigre de la Patria\". Cursó su carrera de Derecho y obtuvo posteriormente una maestría en derecho, cuyo director de tesis fue Wilson Ruiz Orejuela, exministro de Justicia del gobierno de Iván Duque. Vivió una temporada en Italia, experiencia que incorporó a su identidad pública y a la marca de su firma de abogados.\n\nFundó en 2004 el bufete De la Espriella Lawyers, que se convirtió en una de las firmas de defensa penal más reconocidas del país. A lo largo de su carrera representó a clientes de alto perfil en casos de gran resonancia pública, incluyendo a David Murcia Guzmán, fundador de la pirámide DMG (2008), y a Álex Saab, ciudadano venezolano-colombiano detenido en Estados Unidos y señalado de ser testaferro del régimen de Nicolás Maduro. Paralelamente desarrolló una faceta como escritor, cantante, diseñador de moda (De la Espriella Style) y empresario del entretenimiento, co-lanzando en 2022 el ron Ron Defensor junto al cantante de vallenato Silvestre Dangond.\n\nEn 2026 lanzó su primera candidatura a la presidencia de la República, sin haber ocupado antes ningún cargo de elección popular. Se presenta como outsider político, con un discurso marcadamente anti-petrista, de defensa de los valores familiares y religiosos tradicionales, y de autoridad estatal frente a los grupos armados ilegales. Obtuvo el aval del partido Salvación Nacional, dirigido por Enrique Gómez Martínez, y construyó una base electoral importante entre comunidades evangélicas y cristianas. Su campaña se distingue por un estilo de evento cercano al espectáculo: jingle urbano, producción escénica y rituales de participación con el público.",
-        "proposals": "Las propuestas de De la Espriella han sido presentadas principalmente en actos de campaña, entrevistas y en su programa de gobierno publicado en redes sociales. Se estructuran en torno a cuatro ejes: reducción del Estado y rebaja de impuestos, defensa de los valores familiares y religiosos, seguridad con mano dura y desmonte del proyecto político de Gustavo Petro.\n\nPropone reducir el tamaño del aparato estatal y disminuir la carga tributaria sobre las empresas y ciudadanos, defendiendo que los bancos deben poder prestar a tasas cercanas al 2%. En materia social, propone reformar la Constitución para prohibir el aborto y proteger la definición de familia como unidad entre hombre y mujer, rechazando lo que denomina \"ideología de género\" en las escuelas.\n\nEn justicia, propone suspender o abolir la Jurisdicción Especial para la Paz (JEP), afirmando tener listo un decreto presidencial para ejecutar esta medida desde el primer día de gobierno. En seguridad, rechaza los diálogos de paz con organizaciones armadas ilegales y propone el uso de la fuerza militar como respuesta prioritaria. Se opone a la reforma de salud de Petro y propone mantener el esquema de EPS. Adicionalmente propone reformar la Constitución para permitir que los miembros activos de las Fuerzas Militares y la Policía ejerzan el derecho al voto, y descentralizar funciones del Estado central hacia las regiones.",
-        "controversies": "Las principales controversias que rodean la campaña de De la Espriella se derivan de su trayectoria como abogado defensor de clientes de alto perfil —incluyendo personas condenadas o investigadas por narcotráfico, paramilitarismo o corrupción— y de la composición de su entorno empresarial.\n\nEn 2008 fue el principal abogado defensor de David Murcia Guzmán, fundador de la pirámide financiera DMG que defraudó a decenas de miles de colombianos. En febrero de 2026, Murcia hizo declaraciones públicas acusando a De la Espriella de conductas no especificadas; De la Espriella respondió denunciándolo por injuria y calumnia ante la Fiscalía General de la Nación.\n\nDe la Espriella representó legalmente a Álex Saab, ciudadano de origen libanés-colombiano acusado por el Departamento de Justicia de Estados Unidos de ser un testaferro del régimen venezolano de Nicolás Maduro.\n\nLa Silla Vacía identificó que entre los 14 accionistas de Dominio De la Espriella SAS (empresa del ron Ron Defensor) varios tienen antecedentes graves: Hugues Rodríguez Fuentes, condenado por paramilitarismo; Aniano Iglesias, señalado de vínculos con narcotráfico; y Juan Carlos Gossaín, exgobernador de Bolívar destituido e inhabilitado por el escándalo del \"cartel de la hemofilia\". La campaña se negó a responder preguntas al respecto.\n\nLa investigación de La Silla Vacía (enero 2026) encontró que el conjunto de empresas colombianas de De la Espriella cerró el año 2024 con una pérdida neta de 159 millones de pesos, pese a ingresos totales de 16,1 mil millones, contradiciendo el relato de emprendedor próspero que proyecta la campaña.\n\nEl abogado de la campaña, Germán Calderón España, ha enviado requerimientos legales y amenazas de demanda a periodistas que han cubierto críticamente a De la Espriella. La Fundación para la Libertad de Prensa (FLIP) ha caracterizado estas acciones como hostigamiento judicial contra medios de comunicación.\n\nLa campaña difundió la afirmación de que La Silla Vacía y otros medios críticos reciben financiamiento de George Soros y la Open Society Foundations. La directora de La Silla Vacía, Juanita León, publicó el 17 de enero de 2026 una solicitud pública de rectificación demostrando que la afirmación era falsa.",
-        "alliances": "El soporte político de De la Espriella descansa sobre tres pilares: el partido Salvación Nacional (que le da personería jurídica para la candidatura), el sector evangélico y cristiano (su mayor activo electoral según analistas), y figuras del establecimiento de centro-derecha y uribismo que le han dado señales de simpatía sin un respaldo formal.\n\nEnrique Gómez Martínez, director de Salvación Nacional y candidato al Senado, está presente en todos los eventos de campaña. Wilson Ruiz Orejuela, exministro de Justicia del gobierno Duque y director de tesis de maestría de De la Espriella, también es candidato al Senado por Salvación Nacional.\n\nEl sector evangélico está articulado por el pastor Marco Acosta, de la iglesia \"Dios está Formando un Pueblo\" y concejal de Bogotá, quien actúa como gerente nacional de la \"fe\" de la campaña. El pastor Jaime Andrés Beltrán, exalcalde de Bucaramanga, opera como gerente regional en Santander. Sara Castellanos, candidata al Congreso e hija de los fundadores de la Misión Carismática Internacional, acompañó a De la Espriella en tarima.\n\nEl General (r) Jorge Mora, excomandante de las Fuerzas Militares, ha expresado apoyo público a la candidatura. Silvestre Dangond, cantante de vallenato y socio empresarial en Ron Defensor y el restaurante Místico en Miami, es un referente de la imagen de la campaña.\n\nDe la Espriella optó deliberadamente por no entrar a la consulta de la centro-derecha del 8 de marzo de 2026, apostando a que Salvación Nacional supere el umbral electoral con sus propias listas al Congreso.",
-        "record": "Abelardo de la Espriella no ha ocupado ningún cargo de elección popular ni cargo público de carrera administrativa en ningún nivel de gobierno. No tiene registro legislativo, votaciones, proyectos de ley ni gestión ejecutiva que reseñar.\n\nSu trayectoria verificable es enteramente privada: más de 20 años como abogado penalista, con representación de clientes en casos de alta complejidad ante los tribunales colombianos y en el plano internacional. Su firma, De la Espriella Lawyers, es reconocida en el ámbito del derecho penal de alto perfil.\n\nEsta candidatura presidencial de 2026 es su primera participación formal en política electoral.",
-        "funding": "De la Espriella ha sostenido en campaña que se financia de manera independiente, sin depender de los partidos o grupos políticos tradicionales. No existe declaración de bienes ante el SIGEP (Sistema de Información y Gestión del Empleo Público) porque nunca ha sido servidor público.\n\nLa investigación publicada por La Silla Vacía el 13 de enero de 2026 documentó su universo patrimonial a partir de registros públicos en Colombia, Estados Unidos (Florida) y Panamá. En Colombia tiene 19 propiedades en Bogotá (zona T), Barranquilla (centro histórico), Puerto Colombia, Galapa, Montería, Cereté, Santa Marta y Purificación. El patrimonio combinado de sus empresas colombianas asciende a aproximadamente 19,7 mil millones de pesos (unos 5,2 millones de dólares), aunque dos de ellas tienen patrimonio negativo. Sus empresas colombianas cerraron el año 2024 con una pérdida neta de 159 millones de pesos a pesar de ingresos totales de 16,1 mil millones.\n\nEn Florida (Estados Unidos) posee una mansión en Miami-Dade County valorada en 5,1 millones de dólares, inscrita a nombre de De la Espriella y su esposa Ana Lucía Pineda Aruachan, y una segunda propiedad valuada en 628.000 dólares adquirida a través de la empresa SGS Investments Global LLC. Tiene 14 empresas en Florida constituidas entre 2013 y 2023, de las cuales 7 permanecían activas al momento de la publicación. En Panamá tiene 3 empresas; 1 activa al momento de la investigación.\n\nLos informes de financiación de campaña ante el Consejo Nacional Electoral (CNE) no estaban disponibles al momento de edición de este perfil (campaña en curso)."
+        "biography": "Abogado penalista barranquillero. Fundó en 2004 el bufete De la Espriella Lawyers y defendió casos de alto perfil como el de la pirámide DMG y el de Álex Saab. Esta es su primera candidatura a un cargo de elección popular.",
+        "proposals": "Sus propuestas giran en torno a cuatro ejes: reducir el Estado y bajar impuestos, defender los valores familiares y religiosos, aplicar mano dura en seguridad, y desmontar las políticas del gobierno de Petro.",
+        "controversies": "Las principales señalamientos provienen de sus clientes como abogado defensor y de la composición de su entorno empresarial. También ha sido cuestionado por la situación financiera de sus empresas y por acciones de su campaña contra periodistas.",
+        "alliances": "Su respaldo político viene de tres fuentes: el partido Salvación Nacional, el sector evangélico y cristiano, y figuras del uribismo y la centro-derecha que le han expresado simpatía.",
+        "record": "No ha ocupado ningún cargo público ni de elección popular. Toda su carrera ha sido en el ejercicio privado del derecho penal.",
+        "funding": "Afirma autofinanciarse. Según una investigación de La Silla Vacía (enero 2026), tiene propiedades en Colombia, una mansión valorada en 5,1 millones de dólares en Miami y empresas en Florida y Panamá. Sus empresas colombianas cerraron 2024 con pérdidas netas pese a tener ingresos importantes. Los informes de financiación ante el CNE no estaban disponibles al momento de edición."
       },
       "summaries": {
         "trajectory": "Abogado penalista barranquillero sin cargos de elección popular previos. Fundó en 2004 el bufete De la Espriella Lawyers y es conocido por defender casos de alto perfil. Esta es su primera candidatura política.",
@@ -511,100 +216,6 @@
           "title": "Caso Hidroituango y Sergio Fajardo — Fiscalía General de la Nación",
           "date": "2022-03-22",
           "url": "https://www.fiscalia.gov.co/colombia/",
-          "tier": "oficial"
-        },
-        {
-          "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
-          "tier": "ong"
-        }
-      ]
-    },
-    {
-      "name": "Claudia López",
-      "slug": "claudia-lopez",
-      "xHandle": "@ClaudiaLopez",
-      "party": "Independiente (centro)",
-      "currentOffice": "Exalcaldesa mayor de Bogotá",
-      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Claudia_L%C3%B3pez.png",
-      "sections": {
-        "biography": "Claudia Nayibe López Hernández es politóloga y política colombiana. Fue senadora, candidata vicepresidencial y alcaldesa mayor de Bogotá (2020-2023). Su carrera incluye trabajo en temas de transparencia, anticorrupción y gestión urbana.",
-        "proposals": "Ha defendido una agenda de centro con énfasis en seguridad urbana, movilidad, política social, igualdad de género y consolidación de gobiernos locales con enfoque de datos.",
-        "controversies": "No registra condenas judiciales en las fuentes consultadas. Su alcaldía enfrentó controversias por manejo de seguridad, protestas, operación de TransMilenio y decisiones de movilidad durante y después de la pandemia.",
-        "alliances": "Ha construido alianzas con sectores de centro, verdes e independientes, con respaldo de liderazgos urbanos y grupos ciudadanos.",
-        "record": "Fue senadora y luego alcaldesa de Bogotá, con experiencia en agenda legislativa y administración de la capital.",
-        "funding": "Cuenta con reportes patrimoniales exigidos por sus cargos públicos. Una candidatura presidencial debe registrar financiación y gastos en los aplicativos del CNE."
-      },
-      "summaries": {
-        "trajectory": "Exsenadora y exalcaldesa de Bogotá (2020-2023), con perfil de centro y agenda urbana.",
-        "proposals": "Seguridad urbana, movilidad, política social e igualdad de género.",
-        "controversies": "Sin condenas reportadas; debates por seguridad y movilidad durante su alcaldía.",
-        "alliances": "Coaliciones de centro, verdes e independientes.",
-        "record": "Experiencia legislativa y ejecutiva en la capital.",
-        "funding": "Declaraciones patrimoniales públicas; financiación electoral bajo supervisión del CNE."
-      },
-      "sources": [
-        {
-          "section": "biography",
-          "title": "Claudia López Hernández — Wikipedia",
-          "date": "2026-02-23",
-          "url": "https://es.wikipedia.org/wiki/Claudia_L%C3%B3pez_Hern%C3%A1ndez",
-          "tier": "prensa"
-        },
-        {
-          "section": "record",
-          "title": "Alcaldía Mayor de Bogotá — gestión distrital",
-          "date": "2023-12-31",
-          "url": "https://bogota.gov.co/",
-          "tier": "oficial"
-        },
-        {
-          "section": "biography",
-          "title": "Pares — Así va la carrera presidencial 2026",
-          "date": "2025-12-01",
-          "url": "https://www.pares.com.co/elecciones-colombia-2026/",
-          "tier": "ong"
-        }
-      ]
-    },
-    {
-      "name": "Luis Carlos Reyes",
-      "slug": "luis-carlos-reyes",
-      "xHandle": "@luiscrh",
-      "party": "Independiente",
-      "currentOffice": "Exdirector de la DIAN y exministro de Comercio",
-      "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/20240611_Posesion_Mincomercio-C%C3%A9sar_Carri%C3%B3n0031.jpg",
-      "sections": {
-        "biography": "Luis Carlos Reyes Hernández es economista e historiador. Fue director de la DIAN y posteriormente ministro de Comercio, Industria y Turismo en 2024, con perfil técnico-académico.",
-        "proposals": "Ha insistido en formalización económica, lucha contra evasión, mejora de productividad y simplificación de reglas para empresas, con foco en recaudo eficiente y transparencia.",
-        "controversies": "No registra condenas judiciales en las fuentes consultadas. Sus decisiones tributarias y de fiscalización han generado debate político, especialmente por impacto sobre contribuyentes y sectores productivos.",
-        "alliances": "Su perfil se acerca a sectores técnicos, académicos y grupos ciudadanos interesados en reforma institucional y transparencia fiscal.",
-        "record": "No ha sido congresista. Su experiencia es ejecutiva técnica en DIAN y en el Ministerio de Comercio.",
-        "funding": "Como servidor público ha estado sujeto a declaraciones de bienes y rentas. En caso de aspiración presidencial, debe reportar financiación de campaña ante CNE."
-      },
-      "summaries": {
-        "trajectory": "Economista e historiador; exdirector de DIAN y exministro de Comercio.",
-        "proposals": "Formalización, lucha contra evasión, productividad y transparencia fiscal.",
-        "controversies": "Sin condenas reportadas; controversias políticas por medidas tributarias y de fiscalización.",
-        "alliances": "Cercanía con sectores técnicos y académicos.",
-        "record": "Trayectoria ejecutiva en entidades económicas del orden nacional.",
-        "funding": "Declaraciones patrimoniales de función pública; campaña sujeta a control y reporte del CNE."
-      },
-      "sources": [
-        {
-          "section": "biography",
-          "title": "Luis Carlos Reyes — Wikipedia",
-          "date": "2026-02-23",
-          "url": "https://es.wikipedia.org/wiki/Luis_Carlos_Reyes",
-          "tier": "prensa"
-        },
-        {
-          "section": "record",
-          "title": "DIAN — Dirección general",
-          "date": "2024-06-01",
-          "url": "https://www.dian.gov.co/",
           "tier": "oficial"
         },
         {

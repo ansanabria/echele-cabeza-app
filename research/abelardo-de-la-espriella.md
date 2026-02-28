@@ -19,14 +19,12 @@
 
 ### Redes sociales (`socialLinks`)
 
-| Plataforma  | URL                                      |
-| ----------- | ---------------------------------------- |
-| `x`         | https://twitter.com/delaespriellae       |
-| `instagram` | https://www.instagram.com/delaespriellae |
-| `facebook`  | https://www.facebook.com/delaespriellae  |
-| `youtube`   | https://www.youtube.com/@delaespriellae  |
-
-> Nota de investigación: Los handles de Facebook y YouTube se basan en el patrón del resto de sus cuentas confirmadas. Verificar en el admin antes de publicar.
+| Plataforma  | URL                                            |
+| ----------- | ---------------------------------------------- |
+| `x`         | https://x.com/ABDELAESPRIELLA                  |
+| `instagram` | https://www.instagram.com/delaespriella_style/ |
+| `facebook`  | https://www.facebook.com/abdelaespriella       |
+| `youtube`   | https://www.youtube.com/@DELAESPRIELLASTYLE    |
 
 ---
 
@@ -34,13 +32,7 @@
 
 ### `biography` (texto narrativo)
 
-Abelardo de la Espriella Romero nació en Barranquilla. Es abogado penalista de amplia trayectoria, conocido popularmente como "El Tigre de la Patria". Cursó su carrera de Derecho y obtuvo posteriormente una maestría en derecho, cuyo director de tesis fue Wilson Ruiz Orejuela, exministro de Justicia del gobierno de Iván Duque. Vivió una temporada en Italia, experiencia que incorporó a su identidad pública y a la marca de su firma de abogados.
-
-Fundó en 2004 el bufete De la Espriella Lawyers, que se convirtió en una de las firmas de defensa penal más reconocidas del país. A lo largo de su carrera representó a clientes de alto perfil en casos de gran resonancia pública, incluyendo a David Murcia Guzmán, fundador de la pirámide DMG (2008), y a Álex Saab, ciudadano venezolano-colombiano detenido en Estados Unidos y señalado de ser testaferro del régimen de Nicolás Maduro. Paralelamente desarrolló una faceta como escritor, cantante, diseñador de moda (De la Espriella Style) y empresario del entretenimiento, co-lanzando en 2022 el ron Ron Defensor junto al cantante de vallenato Silvestre Dangond.
-
-En 2026 lanzó su primera candidatura a la presidencia de la República, sin haber ocupado antes ningún cargo de elección popular. Se presenta como outsider político, con un discurso marcadamente anti-petrista, de defensa de los valores familiares y religiosos tradicionales, y de autoridad estatal frente a los grupos armados ilegales. Obtuvo el aval del partido Salvación Nacional, dirigido por Enrique Gómez Martínez, y construyó una base electoral importante entre comunidades evangélicas y cristianas. Su campaña se distingue por un estilo de evento cercano al espectáculo: jingle urbano, producción escénica y rituales de participación con el público.
-
-> Nota de investigación: Fecha exacta de nacimiento (día y mes) no confirmada en las fuentes consultadas. Verificar con documentos oficiales o comunicado de campaña antes de publicar.
+Abogado penalista barranquillero conocido como "El Tigre de la Patria". Fundó en 2004 el bufete De la Espriella Lawyers y defendió casos de alto perfil como el de la pirámide DMG y el de Álex Saab. Esta es su primera candidatura a un cargo de elección popular.
 
 ### `publicTrajectoryItems`
 
@@ -91,9 +83,7 @@ En 2026 lanzó su primera candidatura a la presidencia de la República, sin hab
 
 ### `proposals` (texto introductorio)
 
-Las propuestas de De la Espriella han sido presentadas principalmente en actos de campaña, entrevistas y en su programa de gobierno publicado en redes sociales. Se estructuran en torno a cuatro ejes: reducción del Estado y rebaja de impuestos, defensa de los valores familiares y religiosos, seguridad con mano dura y desmonte del proyecto político de Gustavo Petro. Al momento de edición de este perfil no existe un documento de programa de gobierno oficial y exhaustivo publicado en su sitio web.
-
-> Nota de investigación: El sitio web oficial de la campaña (www.delaespriella.com.co) no respondió durante la consulta (28 de febrero de 2026). Las propuestas a continuación se basan en declaraciones públicas registradas por La Silla Vacía y otros medios. Actualizar cuando el programa oficial esté disponible.
+Sus propuestas giran en torno a cuatro ejes: reducir el Estado y bajar impuestos, defender los valores familiares y religiosos, aplicar mano dura en seguridad, y desmontar las políticas del gobierno de Petro.
 
 ### `proposalItems`
 
@@ -161,7 +151,7 @@ Las propuestas de De la Espriella han sido presentadas principalmente en actos d
 
 ### `controversies` (texto introductorio)
 
-Las principales controversias que rodean la campaña de De la Espriella se derivan de su trayectoria como abogado defensor de clientes de alto perfil —incluyendo personas condenadas o investigadas por narcotráfico, paramilitarismo o corrupción— y de la composición de su entorno empresarial. La investigación publicada por La Silla Vacía en enero de 2026 documentó en detalle su universo de empresas en Colombia, Estados Unidos y Panamá, con hallazgos que contradicen el relato de "empresario exitoso" que la campaña proyecta. Adicionalmente, la campaña ha sido señalada por ejercer presión judicial contra periodistas y por difundir información falsa sobre el financiamiento de medios críticos.
+Los principales señalamientos provienen de sus clientes como abogado defensor y de la composición de su entorno empresarial. También ha sido cuestionado por la situación financiera de sus empresas y por acciones de su campaña contra periodistas.
 
 ### `controversyItems`
 
@@ -227,7 +217,9 @@ Las principales controversias que rodean la campaña de De la Espriella se deriv
 
 ### `alliances` (texto introductorio)
 
-El soporte político de De la Espriella descansa sobre tres pilares: el partido Salvación Nacional (que le da personería jurídica para la candidatura), el sector evangélico y cristiano (su mayor activo electoral según analistas), y figuras del establecimiento de centro-derecha y uribismo que le han dado señales de simpatía sin un respaldo formal. De la Espriella optó deliberadamente por no entrar a la consulta de la centro-derecha del 8 de marzo de 2026, apostando a que Salvación Nacional supere el umbral electoral con sus propias listas al Congreso.
+Su respaldo político viene de tres fuentes: el partido Salvación Nacional, el sector evangélico y cristiano, y figuras del uribismo y la centro-derecha que le han expresado simpatía.
+
+> Nota de investigación: Dilian Francisca Toro (Partido de la U), Hernán Andrade (Conservador), Carlos Fernando Mejía y Juan Camilo Ostos han dado señales de simpatía pero sin respaldo formal confirmado a la fecha de este perfil. No incluir como avales hasta confirmación.
 
 ### `allianceParties`
 
@@ -278,11 +270,7 @@ El soporte político de De la Espriella descansa sobre tres pilares: el partido 
 
 ### `record` (texto narrativo)
 
-Abelardo de la Espriella no ha ocupado ningún cargo de elección popular ni cargo público de carrera administrativa en ningún nivel de gobierno. No tiene registro legislativo, votaciones, proyectos de ley ni gestión ejecutiva que reseñar.
-
-Su trayectoria verificable es enteramente privada: más de 20 años como abogado penalista, con representación de clientes en casos de alta complejidad ante los tribunales colombianos y en el plano internacional. Su firma, De la Espriella Lawyers, es reconocida en el ámbito del derecho penal de alto perfil.
-
-Esta candidatura presidencial de 2026 es su primera participación formal en política electoral.
+No ha ocupado ningún cargo público ni de elección popular. Toda su carrera ha sido en el ejercicio privado del derecho penal.
 
 ---
 
@@ -290,27 +278,7 @@ Esta candidatura presidencial de 2026 es su primera participación formal en pol
 
 ### `funding` (texto narrativo)
 
-De la Espriella ha sostenido en campaña que se financia de manera independiente, sin depender de los partidos o grupos políticos tradicionales. No existe declaración de bienes ante el SIGEP (Sistema de Información y Gestión del Empleo Público) porque nunca ha sido servidor público.
-
-La investigación publicada por La Silla Vacía el 13 de enero de 2026 documentó su universo patrimonial a partir de registros públicos en Colombia, Estados Unidos (Florida) y Panamá. Los hallazgos principales son:
-
-**Colombia:**
-
-- 19 propiedades en Bogotá (zona T), Barranquilla (centro histórico), Puerto Colombia, Galapa, Montería, Cereté, Santa Marta y Purificación.
-- El patrimonio combinado de sus empresas colombianas asciende a aproximadamente 19,7 mil millones de pesos (unos 5,2 millones de dólares), aunque dos de ellas tienen patrimonio negativo.
-- Sus empresas colombianas cerraron el año 2024 con una pérdida neta de 159 millones de pesos a pesar de ingresos totales de 16,1 mil millones.
-
-**Estados Unidos (Florida):**
-
-- Una mansión en Miami-Dade County valorada en **5,1 millones de dólares**, inscrita a nombre de De la Espriella y su esposa Ana Lucía Pineda Aruachan.
-- Una segunda propiedad en Florida valuada en 628.000 dólares, adquirida a través de la empresa SGS Investments Global LLC.
-- 14 empresas en Florida constituidas entre 2013 y 2023, de las cuales 7 permanecían activas al momento de la publicación.
-
-**Panamá:**
-
-- 3 empresas; 1 activa al momento de la investigación (Reva Entreprises, suspendida temporalmente por no actualizar registros).
-
-Los informes de financiación de campaña ante el Consejo Nacional Electoral (CNE) no estaban disponibles al momento de edición de este perfil (campaña en curso).
+Afirma autofinanciarse. Según una investigación de La Silla Vacía (enero 2026), tiene propiedades en Colombia, una mansión valorada en 5,1 millones de dólares en Miami y empresas en Florida y Panamá. Sus empresas colombianas cerraron 2024 con pérdidas netas pese a tener ingresos importantes. Los informes de financiación ante el CNE no estaban disponibles al momento de edición.
 
 ---
 

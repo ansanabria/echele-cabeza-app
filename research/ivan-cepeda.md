@@ -19,11 +19,12 @@
 
 ### Redes sociales (`socialLinks`)
 
-| Plataforma | URL                                           |
-| ---------- | --------------------------------------------- |
-| `x`        | https://twitter.com/IvanCepedaCast            |
-| `facebook` | https://www.facebook.com/IvanCepedaCastro     |
-| `youtube`  | https://www.youtube.com/user/IvanCepedaCastro |
+| Plataforma  | URL                                       |
+| ----------- | ----------------------------------------- |
+| `x`         | https://x.com/IvanCepedaCast              |
+| `instagram` | https://instagram.com/ivancepedacastr/    |
+| `facebook`  | https://www.facebook.com/IvanCepedaCastro |
+| `youtube`   | https://www.youtube.com/@IvanCepedaCastro |
 
 ---
 
@@ -31,15 +32,7 @@
 
 ### `biography` (texto narrativo)
 
-Iván Cepeda Castro nació el 24 de octubre de 1962 en Bogotá. Es filósofo de formación, defensor de derechos humanos y legislador con más de una década de carrera parlamentaria. Creció parcialmente en el exilio —Checoslovaquia y Cuba— por la persecución política que sufrió su familia. Su padre, Manuel Cepeda Vargas, fue senador de la Unión Patriótica y fue asesinado el 9 de agosto de 1994 por agentes del Estado en complicidad con grupos paramilitares. Su madre, Yira Castro, fue concejal de Bogotá por la Unión Nacional de Oposición y murió en agosto de 1981.
-
-Cepeda estudió filosofía en la Universidad San Clemente de Ohrid, en Sofía, Bulgaria, donde se graduó en 1987. Años después obtuvo una maestría en Derecho Internacional Humanitario en la Universidad Católica de Lyon, Francia (2002), cursada durante un segundo periodo de exilio provocado por amenazas de muerte.
-
-Es cofundador del Movimiento Nacional de Víctimas de Crímenes de Estado (MOVICE, 2003) y de la Fundación Manuel Cepeda Vargas (1994). En 2010 obtuvo ante la Corte Interamericana de Derechos Humanos la sentencia que declaró al Estado colombiano responsable del asesinato de su padre.
-
-En 2010 ingresó al Congreso como Representante a la Cámara por Bogotá (Polo Democrático), con cerca de 35.000 votos. En 2014 fue elegido senador con 84.126 votos; en 2018 fue reelegido con 77.842 votos; y en 2022 volvió al Senado bajo el Pacto Histórico. Ha sido reconocido en múltiples ocasiones como uno de los mejores congresistas del país según encuestas de la firma Cifras & Conceptos.
-
-En agosto de 2025 anunció su candidatura presidencial desde Pasto. En octubre de 2025 ganó la consulta interna del Pacto Histórico con 1.540.391 votos. Lleva medidas de protección ordenadas por la Corte Interamericana de Derechos Humanos por las amenazas que ha recibido a lo largo de su carrera.
+Filósofo, defensor de derechos humanos y legislador bogotano. Hijo del senador Manuel Cepeda Vargas, asesinado por agentes del Estado en 1994. Representante a la Cámara (2010–2014) y senador desde 2014. Ganó la consulta interna del Pacto Histórico en octubre de 2025 con más de 1,5 millones de votos.
 
 ### `publicTrajectoryItems`
 
@@ -167,7 +160,7 @@ En agosto de 2025 anunció su candidatura presidencial desde Pasto. En octubre d
 
 ### `proposals` (texto introductorio)
 
-Cepeda ha presentado su plataforma presidencial como una continuación y profundización de las políticas del gobierno Petro, con énfasis en la paz, la redistribución económica y la reforma del Estado. Sus propuestas centrales son:
+Propone profundizar la agenda del gobierno Petro: continuar la Paz Total, impulsar una reforma agraria, establecer un salario vital y convocar un gran diálogo con el sector empresarial.
 
 ### `proposalItems`
 
@@ -227,7 +220,7 @@ Cepeda ha presentado su plataforma presidencial como una continuación y profund
 
 ### `controversies` (texto introductorio)
 
-La trayectoria de Cepeda ha estado marcada por su enfrentamiento político y judicial con el expresidente Álvaro Uribe, así como por polémicas relacionadas con sus vínculos con actores del conflicto armado.
+Su principal enfrentamiento fue con el expresidente Uribe, quien lo denunció por manipulación de testigos; la Corte Suprema no encontró méritos para investigarlo. Ha sido señalado por su silencio frente a las violaciones de derechos humanos en Venezuela y por tuits con frases guerrilleras publicados y borrados por error.
 
 ### `controversyItems`
 
@@ -293,7 +286,7 @@ La trayectoria de Cepeda ha estado marcada por su enfrentamiento político y jud
 
 ### `alliances` (texto introductorio)
 
-Cepeda es el candidato oficial del Pacto Histórico para las elecciones presidenciales de 2026. La coalición agrupa a partidos y movimientos de izquierda que respaldaron al presidente Gustavo Petro en 2022.
+Es el candidato oficial del Pacto Histórico. Cuenta con el respaldo del presidente Gustavo Petro, la vicepresidenta Francia Márquez y los partidos de la coalición de gobierno.
 
 ### `allianceParties` (logos se suben manualmente)
 
@@ -323,32 +316,7 @@ Cepeda es el candidato oficial del Pacto Histórico para las elecciones presiden
 
 ### `record` (texto narrativo)
 
-Cepeda lleva más de 16 años en el Congreso (2010–2026) y es uno de los parlamentarios más activos en debates de control político del país.
-
-**Legislación destacada:**
-
-- **Ley 1719 de 2014** (autoría): Ley contra la impunidad en casos de violencia sexual cometida en el marco del conflicto armado. Tipifica y sanciona estos crímenes con mayor rigor y reconoce a las mujeres como víctimas especialmente protegidas.
-- **Curules de paz**: Fue el autor de las 16 circunscripciones especiales de paz para comunidades históricamente excluidas, incluidas en el Acuerdo de Paz de 2016 como mecanismo de representación.
-- **Ley de Paz Total** (Marco jurídico): Impulsó la arquitectura legislativa que habilita las negociaciones simultáneas del gobierno Petro con distintos grupos armados.
-- **Reconocimiento de campesinos como sujetos de derecho**: Promovió proyectos para que las comunidades campesinas tengan reconocimiento legal especial y acceso a derechos diferenciales.
-- **Servicio social para la paz**: Promovió una alternativa al servicio militar obligatorio basada en trabajo comunitario.
-- **Reformas de pensiones y laborales**: Votó a favor de las reformas pensional y laboral del gobierno Petro.
-- **Oposición al fuero penal militar ampliado**: Lideró la oposición parlamentaria a la expansión del fuero castrense; la Corte Constitucional terminó limitando ese fuero.
-
-**Debates de control político notables:**
-
-- **Paramilitarismo en Antioquia y hacienda Guacharacas (abril 2012)**: Presentó documentos y testimonios sobre presuntos vínculos entre el expresidente Uribe y grupos paramilitares.
-- **Nexos Uribe–paramilitares (septiembre 2014)**: Debate que derivó en la investigación penal contra Uribe ante la Corte Suprema.
-- **Moción de censura al ministro Carlos Holmes Trujillo (2020)**: Por la presencia de instructores militares estadounidenses en Colombia sin aval del Congreso.
-- **Moción de censura al ministro Diego Molano (2021)**: Por el uso de la fuerza durante el Paro Nacional de 2021, en el que murieron decenas de civiles.
-- **Denuncia contra el gobierno Duque ante la CPI (2021)**: Junto con otras organizaciones, presentó ante la Corte Penal Internacional una denuncia por crímenes contra la humanidad durante el Paro Nacional.
-
-**Reconocimientos:**
-
-- Mejor Representante a la Cámara 2010–2014, según encuesta de Cifras & Conceptos con líderes de opinión.
-- Elegido entre los cinco mejores congresistas de la legislatura 2010–2014 por la Revista Semana (2012).
-- Premio Medalla de la Libertad "Roger Baldwin" — Human Rights First (2007).
-- Premio Franco-Alemán de Derechos Humanos "Antonio Nariño" — reconocimiento especial (2015).
+Más de 16 años en el Congreso. Autor de la Ley 1719 de 2014 contra la violencia sexual en el conflicto, las curules de paz del Acuerdo de 2016 y el marco jurídico de la Paz Total. Ha liderado mociones de censura contra ministros de defensa y debates sobre paramilitarismo.
 
 ---
 
@@ -356,19 +324,7 @@ Cepeda lleva más de 16 años en el Congreso (2010–2026) y es uno de los parla
 
 ### `funding` (texto narrativo)
 
-> **Nota de investigación:** Al cierre de esta investigación (febrero 28 de 2026), no se encontraron declaraciones de bienes y renta públicamente accesibles de Iván Cepeda como congresista en el portal de Congreso Visible ni en el SIGEP. Tampoco se encontraron informes de ingresos y gastos de campaña presidencial registrados ante el CNE (Cuentas Claras), dado que la campaña está en curso y los cortes de reporte aún no han sido publicados.
-
-Lo que se conoce públicamente:
-
-- Cepeda ha ejercido como legislador durante más de 16 años, lo que constituye su principal fuente de ingresos. El salario mensual de un senador colombiano es de aproximadamente 36 millones de pesos (2024).
-- Su campaña presidencial de 2026 se financia a través del Pacto Histórico. En diciembre de 2025 se lanzó una convocatoria pública de voluntarios, indicando que la campaña tiene una estructura de base amplia.
-- No se han reportado controversias públicas relacionadas con financiación irregular de su campaña o de sus campañas legislativas anteriores.
-- Su esposa, Blanca del Pilar Rueda, trabaja como asesora en la Unidad de Investigación y Acusación (UIA) de la JEP. Esto ha sido señalado públicamente como un posible conflicto de interés, dado que la JEP evalúa casos relacionados con el conflicto armado en el que Cepeda tiene un rol político activo, aunque no se ha abierto investigación formal al respecto.
-
-**Pendiente de verificación:**
-
-- Declaración de bienes y renta ante la DIAN o el SIGEP (consultar https://www.sigep.gov.co).
-- Informe de financiación de campaña presidencial 2026 ante el CNE (consultar https://www.cnecuentasclaras.gov.co una vez disponible).
+Ejerce como legislador desde 2010, su principal fuente de ingresos conocida. Su campaña se financia a través del Pacto Histórico. No se han reportado irregularidades en su financiación. Los informes ante el CNE no estaban disponibles al momento de edición.
 
 ---
 

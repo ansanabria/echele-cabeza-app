@@ -261,7 +261,7 @@ export default async function CandidatePage({ params }: CandidatePageProps) {
                 )}
 
                 {allianceParties.length > 0 && (
-                  <div className="mb-8">
+                  <div className={allEndorsers.length > 0 ? 'mb-8' : ''}>
                     <div className="mb-4 flex items-center gap-3">
                       <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
                         Partidos y coaliciones

@@ -40,6 +40,8 @@ This file stays thin on purpose. If a task requires deeper knowledge, load the m
 
 - Payload schemas, access control, hooks, queries, or transactions → load the **`payload`** skill.
 - UI components, page layouts, or visual design → load the **`frontend-design`** skill **and** the design system at `.agents/skills/frontend-design/DESIGN_SYSTEM.md`.
+- Turning `research/*.md` into per-candidate `data/*.json` files → load the **`research-to-json`** skill.
+- Building a new candidate research draft from trusted sources → load the **`research-candidate`** skill.
 - Only load other skills when they are directly relevant to the task at hand.
 
 ---
@@ -126,6 +128,20 @@ Every profile must include all six sections below — no exceptions:
 
 - A neutrality and editorial disclaimer must appear in both the footer and the About page.
 - Analytics must be privacy-first — no invasive personal tracking.
+
+## Research & Data Workflow (Required)
+
+Use this workflow for candidate content:
+
+1. **Research draft first** — create or update `research/<candidate-slug>.md` with neutral, source-backed content aligned to the `Candidates` collection fields.
+2. **Transform to structured JSON** — generate **one file per candidate** in `data/` (for example `data/ivan-cepeda.json`), not one large combined candidates file.
+3. **Seed from JSON** — run the seed process using candidate JSON files as the source of truth for CMS ingestion.
+
+Guardrails:
+
+- Research remains the editable working layer; do not treat CMS as the drafting surface.
+- Keep facts descriptive and cited; controversies must include allegation, status, and known outcome.
+- Preserve consistent field mapping with `src/collections/Candidates.ts` so frontend rendering stays uniform.
 
 ---
 

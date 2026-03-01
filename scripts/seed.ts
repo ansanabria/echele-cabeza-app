@@ -9,7 +9,7 @@ import type { Candidate } from '../src/payload-types'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
-const CANDIDATES_DATA_PATH = path.resolve(dirname, '../data/candidates.json')
+const DATA_DIR = path.resolve(dirname, '../data')
 const CORRECTIONS_DATA_PATH = path.resolve(dirname, '../data/corrections.json')
 const PLACEHOLDER_ALT = '__seed_placeholder_candidate_photo__'
 const CANDIDATE_PHOTO_ALT_PREFIX = '__seed_candidate_photo__'
@@ -18,36 +18,6 @@ const CANDIDATE_LOCAL_PHOTOS_BY_SLUG: Record<string, string> = {
   'ivan-cepeda': 'ivan-cepeda.webp',
   'abelardo-de-la-espriella': 'abelardo-espriella.webp',
   'sergio-fajardo': 'sergio-fajardo.webp',
-}
-/** Parties/coalitions and endorsers per candidate, derived from alliances content. Placeholder media used for logos and photos. */
-const ALLIANCE_DATA_BY_SLUG: Record<
-  string,
-  { parties: { name: string }[]; endorsers: { name: string }[] }
-> = {
-  'ivan-cepeda': {
-    parties: [
-      { name: 'Consulta del Frente Amplio' },
-      { name: 'Pacto Histórico' },
-      { name: 'Colombia Humana' },
-    ],
-    endorsers: [{ name: 'Gustavo Petro' }],
-  },
-  'abelardo-de-la-espriella': {
-    parties: [{ name: 'Salvación Nacional' }],
-    endorsers: [
-      { name: 'Enrique Gómez Martínez' },
-      { name: 'Jaime Andrés Beltrán' },
-      { name: 'Marco Acosta' },
-      { name: 'Sara Castellanos' },
-      { name: 'Wilson Ruiz Orejuela' },
-      { name: 'General (r) Jorge Mora' },
-      { name: 'Silvestre Dangond' },
-    ],
-  },
-  'sergio-fajardo': {
-    parties: [{ name: 'Coalición de centro' }],
-    endorsers: [],
-  },
 }
 
 const CANDIDATE_DIRECTORY_ORDER_BY_SLUG: Record<string, number> = {
@@ -74,6 +44,15 @@ type SourceSeed = {
   publishedAt: string
   url: string
   tier: SourceTier
+}
+
+type TrajectoryItemSeed = {
+  role: string
+  organization: string
+  startYear: string
+  endYear?: string
+  location?: string
+  description?: string
 }
 
 type ProposalItemSeed = {
@@ -116,9 +95,15 @@ type CandidateSeed = {
   currentOffice?: string
   photoUrl?: string
   biography: string
+  publicTrajectoryItems: TrajectoryItemSeed[]
+  privateTrajectoryItems: TrajectoryItemSeed[]
   proposals: string
+  proposalItems: ProposalItemSeed[]
   controversies: string
+  controversyItems: ControversyItemSeed[]
   alliances: string
+  allianceParties: AlliancePartySeed[]
+  endorsers: EndorserSeed[]
   record: string
   funding: string
   summaryTrajectory: string
@@ -128,10 +113,6 @@ type CandidateSeed = {
   summaryRecord: string
   summaryFunding: string
   sources: SourceSeed[]
-  proposalItems: ProposalItemSeed[]
-  controversyItems: ControversyItemSeed[]
-  allianceParties: AlliancePartySeed[]
-  endorsers: EndorserSeed[]
   socialLinks: SocialLinkSeed[]
 }
 
@@ -141,49 +122,241 @@ type CorrectionSeed = {
   correctedAt: string
 }
 
-type JsonSource = {
-  section: string
-  title: string
-  date: string
-  url: string
-  tier: string
-}
-
-type JsonCandidate = {
+/** Shape of a per-candidate JSON file in data/<slug>.json */
+type JsonCandidateFile = {
   name: string
   slug: string
-  xHandle?: string
   party: string
   currentOffice?: string
   photoUrl?: string
-  sections: {
-    biography: string
-    proposals: string
-    controversies: string
-    alliances: string
-    record: string
-    funding: string
-  }
-  summaries: {
-    trajectory: string
-    proposals: string
-    controversies: string
-    alliances: string
-    record: string
-    funding: string
-  }
-  sources: JsonSource[]
+  lastUpdated?: string
+  socialLinks?: { platform: string; url: string }[]
+  biography: string
+  publicTrajectoryItems?: {
+    role: string
+    organization: string
+    startYear: string
+    endYear?: string
+    location?: string
+    description?: string
+  }[]
+  privateTrajectoryItems?: {
+    role: string
+    organization: string
+    startYear: string
+    endYear?: string
+    location?: string
+    description?: string
+  }[]
+  proposals: string
+  proposalItems?: {
+    title: string
+    description: string
+    topic?: string
+    sourceTitle: string
+    sourceUrl: string
+    sourceTier: string
+  }[]
+  controversies: string
+  controversyItems?: {
+    title: string
+    description: string
+    status: string
+    year?: string
+    sourceTitle: string
+    sourceUrl: string
+    sourceTier: string
+  }[]
+  alliances: string
+  allianceParties?: { name: string }[]
+  endorsers?: { name: string }[]
+  record: string
+  funding: string
+  summaryTrajectory: string
+  summaryProposals: string
+  summaryControversies: string
+  summaryAlliances: string
+  summaryRecord: string
+  summaryFunding: string
+  sources: {
+    section: string
+    title: string
+    publishedAt: string
+    url: string
+    tier: string
+  }[]
 }
 
-type JsonDataFile = {
-  candidates: JsonCandidate[]
+const VALID_SOURCE_SECTIONS = new Set([
+  'biography',
+  'proposals',
+  'controversies',
+  'alliances',
+  'record',
+  'funding',
+])
+
+const VALID_SOURCE_TIERS = new Set(['oficial', 'prensa', 'ong', 'redes'])
+
+const VALID_CONTROVERSY_STATUSES = new Set([
+  'suspicion',
+  'under_investigation',
+  'indicted',
+  'cleared',
+  'convicted',
+])
+
+const VALID_SOCIAL_PLATFORMS = new Set(['x', 'instagram', 'facebook', 'youtube'])
+
+function parseCandidateFromJsonFile(raw: JsonCandidateFile): CandidateSeed {
+  const { slug, party, name } = raw
+
+  if (!slug || !party || !name) {
+    throw new Error(`Candidate JSON is missing required field(s): name, slug, or party.`)
+  }
+
+  const directoryOrder = CANDIDATE_DIRECTORY_ORDER_BY_SLUG[slug]
+
+  const sources: SourceSeed[] = (raw.sources ?? [])
+    .filter((s) => VALID_SOURCE_SECTIONS.has(s.section.toLowerCase()))
+    .map((s) => ({
+      section: s.section.toLowerCase() as SourceSection,
+      title: s.title,
+      publishedAt: s.publishedAt,
+      url: s.url,
+      tier: (VALID_SOURCE_TIERS.has(s.tier.toLowerCase())
+        ? s.tier.toLowerCase()
+        : 'prensa') as SourceTier,
+    }))
+
+  const socialLinks: SocialLinkSeed[] = (raw.socialLinks ?? [])
+    .filter((sl) => VALID_SOCIAL_PLATFORMS.has(sl.platform))
+    .map((sl) => ({ platform: sl.platform as SocialLinkSeed['platform'], url: sl.url }))
+
+  const publicTrajectoryItems: TrajectoryItemSeed[] = (raw.publicTrajectoryItems ?? []).map(
+    (item) => ({
+      role: item.role,
+      organization: item.organization,
+      startYear: item.startYear,
+      endYear: item.endYear || undefined,
+      location: item.location || undefined,
+      description: item.description || undefined,
+    }),
+  )
+
+  const privateTrajectoryItems: TrajectoryItemSeed[] = (raw.privateTrajectoryItems ?? []).map(
+    (item) => ({
+      role: item.role,
+      organization: item.organization,
+      startYear: item.startYear,
+      endYear: item.endYear || undefined,
+      location: item.location || undefined,
+      description: item.description || undefined,
+    }),
+  )
+
+  const proposalItems: ProposalItemSeed[] = (raw.proposalItems ?? []).map((item) => ({
+    title: item.title,
+    description: item.description,
+    topic: item.topic || undefined,
+    sourceTitle: item.sourceTitle,
+    sourceUrl: item.sourceUrl,
+    sourceTier: (VALID_SOURCE_TIERS.has(item.sourceTier.toLowerCase())
+      ? item.sourceTier.toLowerCase()
+      : 'prensa') as SourceTier,
+  }))
+
+  const controversyItems: ControversyItemSeed[] = (raw.controversyItems ?? []).map((item) => ({
+    title: item.title,
+    description: item.description,
+    status: (VALID_CONTROVERSY_STATUSES.has(item.status)
+      ? item.status
+      : 'suspicion') as ControversyStatus,
+    year: item.year || undefined,
+    sourceTitle: item.sourceTitle,
+    sourceUrl: item.sourceUrl,
+    sourceTier: (VALID_SOURCE_TIERS.has(item.sourceTier.toLowerCase())
+      ? item.sourceTier.toLowerCase()
+      : 'prensa') as SourceTier,
+  }))
+
+  const allianceParties: AlliancePartySeed[] = (raw.allianceParties ?? []).map((p) => ({
+    name: p.name,
+  }))
+
+  const endorsers: EndorserSeed[] = (raw.endorsers ?? []).map((e) => ({ name: e.name }))
+
+  const {
+    summaryTrajectory,
+    summaryProposals,
+    summaryControversies,
+    summaryAlliances,
+    summaryRecord,
+    summaryFunding,
+  } = raw
+
+  if (
+    !directoryOrder ||
+    !summaryTrajectory ||
+    !summaryProposals ||
+    !summaryControversies ||
+    !summaryAlliances ||
+    !summaryRecord ||
+    !summaryFunding
+  ) {
+    throw new Error(`Missing summary fields or directory order for candidate "${name}" (${slug}).`)
+  }
+
+  return {
+    name,
+    slug,
+    directoryOrder,
+    party,
+    currentOffice: raw.currentOffice,
+    photoUrl: raw.photoUrl,
+    biography: raw.biography,
+    publicTrajectoryItems,
+    privateTrajectoryItems,
+    proposals: raw.proposals,
+    proposalItems,
+    controversies: raw.controversies,
+    controversyItems,
+    alliances: raw.alliances,
+    allianceParties,
+    endorsers,
+    record: raw.record,
+    funding: raw.funding,
+    summaryTrajectory,
+    summaryProposals,
+    summaryControversies,
+    summaryAlliances,
+    summaryRecord,
+    summaryFunding,
+    sources,
+    socialLinks,
+  }
 }
 
-function getSocialLinksFromJsonCandidate(candidate: JsonCandidate): SocialLinkSeed[] {
-  const normalizedXHandle = candidate.xHandle?.replace(/^@/, '').trim()
-  if (!normalizedXHandle) return []
+async function loadCandidatesFromDataDir(): Promise<CandidateSeed[]> {
+  const entries = await fs.readdir(DATA_DIR)
+  const candidateFiles = entries.filter(
+    (f) => f.endsWith('.json') && !f.startsWith('corrections') && f !== 'candidates.json',
+  )
 
-  return [{ platform: 'x', url: `https://twitter.com/${normalizedXHandle}` }]
+  if (candidateFiles.length === 0) {
+    throw new Error(`No candidate JSON files found in ${DATA_DIR}.`)
+  }
+
+  const candidates: CandidateSeed[] = []
+
+  for (const file of candidateFiles) {
+    const filePath = path.join(DATA_DIR, file)
+    const raw = await fs.readFile(filePath, 'utf8')
+    const parsed = JSON.parse(raw) as JsonCandidateFile
+    candidates.push(parseCandidateFromJsonFile(parsed))
+  }
+
+  return candidates
 }
 
 function toLexicalRichText(text: string): Candidate['biography'] {
@@ -222,260 +395,6 @@ function toLexicalRichText(text: string): Candidate['biography'] {
       version: 1,
     },
   }
-}
-
-function parseCandidatesFromJson(jsonData: JsonDataFile): CandidateSeed[] {
-  return jsonData.candidates.reduce<CandidateSeed[]>((acc, candidate) => {
-    const { slug, party } = candidate
-    if (!slug || !party) return acc
-
-    const directoryOrder = CANDIDATE_DIRECTORY_ORDER_BY_SLUG[slug]
-
-    const sources: SourceSeed[] = candidate.sources
-      .filter((s) =>
-        ['biography', 'proposals', 'controversies', 'alliances', 'record', 'funding'].includes(
-          s.section.toLowerCase(),
-        ),
-      )
-      .map((s) => ({
-        section: s.section.toLowerCase() as SourceSection,
-        title: s.title,
-        publishedAt: s.date,
-        url: s.url,
-        tier: s.tier.toLowerCase() as SourceTier,
-      }))
-
-    const summaryTrajectory = candidate.summaries.trajectory
-    const summaryProposals = candidate.summaries.proposals
-    const summaryControversies = candidate.summaries.controversies
-    const summaryAlliances = candidate.summaries.alliances
-    const summaryRecord = candidate.summaries.record
-    const summaryFunding = candidate.summaries.funding
-
-    if (
-      !directoryOrder ||
-      !summaryTrajectory ||
-      !summaryProposals ||
-      !summaryControversies ||
-      !summaryAlliances ||
-      !summaryRecord ||
-      !summaryFunding
-    ) {
-      throw new Error(
-        `Missing summary fields or directory order for candidate "${candidate.name}" (${slug}).`,
-      )
-    }
-
-    const allianceData = ALLIANCE_DATA_BY_SLUG[slug] ?? { parties: [], endorsers: [] }
-
-    acc.push({
-      name: candidate.name,
-      slug,
-      directoryOrder,
-      party,
-      currentOffice: candidate.currentOffice,
-      photoUrl: candidate.photoUrl,
-      biography: candidate.sections.biography,
-      proposals: candidate.sections.proposals,
-      controversies: candidate.sections.controversies,
-      alliances: candidate.sections.alliances,
-      record: candidate.sections.record,
-      funding: candidate.sections.funding,
-      summaryTrajectory,
-      summaryProposals,
-      summaryControversies,
-      summaryAlliances,
-      summaryRecord,
-      summaryFunding,
-      sources,
-      proposalItems: buildProposalItems(candidate.sections.proposals, sources),
-      controversyItems: buildControversyItems(candidate.sections.controversies, sources),
-      allianceParties: allianceData.parties,
-      endorsers: allianceData.endorsers,
-      socialLinks: getSocialLinksFromJsonCandidate(candidate),
-    })
-
-    return acc
-  }, [])
-}
-
-const DEFAULT_SOURCE: Omit<SourceSeed, 'section' | 'publishedAt'> & { publishedAt: string } = {
-  title: 'Pares — Así va la carrera presidencial 2026',
-  url: 'https://www.pares.com.co/elecciones-colombia-2026/',
-  tier: 'ong',
-  publishedAt: '2025-12-01',
-}
-
-function normalizeItemText(value: string): string {
-  const cleaned = value
-    .replace(/^[-*•]\s+/, '')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .replace(/\s+[.;,:]$/, '')
-
-  if (!cleaned) return ''
-  return cleaned[0].toUpperCase() + cleaned.slice(1)
-}
-
-function splitSectionIntoItems(
-  sectionText: string,
-  options?: { splitByCommaClauses?: boolean },
-): string[] {
-  const splitByCommaClauses = options?.splitByCommaClauses ?? true
-  const lines = sectionText
-    .split('\n')
-    .map((line) => line.trim())
-    .filter(Boolean)
-
-  const explicitBullets = lines
-    .filter((line) => /^[-*•]\s+/.test(line))
-    .map((line) => normalizeItemText(line))
-    .filter(Boolean)
-
-  if (explicitBullets.length >= 2) {
-    return explicitBullets
-  }
-
-  const paragraph = lines.join(' ')
-  const sentenceSegments = paragraph
-    .split(/(?<=[.?!])\s+/)
-    .map((segment) => segment.trim())
-    .filter(Boolean)
-
-  const items: string[] = []
-
-  for (const segment of sentenceSegments) {
-    if (splitByCommaClauses) {
-      const commaSegments = segment
-        .split(',')
-        .map((part) => normalizeItemText(part))
-        .filter((part) => part.length >= 24)
-
-      if (commaSegments.length >= 2) {
-        for (const part of commaSegments) items.push(part)
-        continue
-      }
-    }
-
-    const normalized = normalizeItemText(segment)
-    if (normalized.length >= 24) {
-      items.push(normalized)
-    }
-  }
-
-  if (items.length >= 2) return items
-
-  const fallback = normalizeItemText(paragraph)
-  return fallback ? [fallback] : []
-}
-
-function deriveTitleFromItem(text: string, fallbackPrefix: string, index: number): string {
-  const noPeriod = text.replace(/[.;]+$/, '').trim()
-  const beforeColon = noPeriod.split(':')[0]?.trim() ?? ''
-
-  if (beforeColon && beforeColon.length <= 72) {
-    return beforeColon
-  }
-
-  const words = noPeriod.split(/\s+/).filter(Boolean)
-  if (words.length === 0) {
-    return `${fallbackPrefix} ${index + 1}`
-  }
-
-  return words.slice(0, 8).join(' ')
-}
-
-function deriveProposalTopic(text: string): string | undefined {
-  const value = text.toLowerCase()
-  if (/(seguridad|militar|polic|fuerza p[uú]blica|orden)/.test(value)) return 'Seguridad'
-  if (/(salud|hospital|eps|medic)/.test(value)) return 'Salud'
-  if (/(educaci[oó]n|universidad|colegio|docent)/.test(value)) return 'Educacion'
-  if (/(empleo|econom[ií]a|empresa|inversi[oó]n|tributari)/.test(value)) return 'Economia'
-  if (/(justicia|corrupci[oó]n|impunidad|fiscal[ií]a)/.test(value)) return 'Justicia'
-  if (/(paz|v[ií]ctima|conflicto|reconciliaci[oó]n)/.test(value)) return 'Paz'
-  if (/(clima|ambient|energ[ií]a|renovable)/.test(value)) return 'Medio ambiente'
-  if (/(infraestructura|metro|vial|transporte|movilidad)/.test(value)) return 'Infraestructura'
-  return undefined
-}
-
-function inferControversyStatus(text: string): ControversyStatus {
-  const value = text.toLowerCase()
-
-  if (/(condenad|sentenciad)/.test(value)) return 'convicted'
-  if (/(imputad|acusaci[oó]n formal|llamamiento a juicio|indict)/.test(value)) return 'indicted'
-  if (
-    /(investigaci[oó]n|indagaci[oó]n|proceso en curso|procuradur[ií]a|contralor[ií]a|fiscal[ií]a)/.test(
-      value,
-    )
-  ) {
-    return 'under_investigation'
-  }
-  if (/(absuelt|archiv|sin cargos|no result[oó] en cargos|caso cerrado|preclu)/.test(value)) {
-    return 'cleared'
-  }
-
-  return 'suspicion'
-}
-
-function inferControversyYear(text: string): string | undefined {
-  const years = text.match(/\b(19|20)\d{2}\b/g)
-  if (!years || years.length === 0) return undefined
-  if (years.length === 1) return years[0]
-  return `${years[0]}-${years[years.length - 1]}`
-}
-
-function getItemSource(
-  sources: SourceSeed[],
-  section: SourceSection,
-  itemIndex: number,
-): Pick<ProposalItemSeed, 'sourceTitle' | 'sourceUrl' | 'sourceTier'> {
-  const sectionSources = sources.filter((source) => source.section === section)
-  const fallbackSource = sectionSources[0] ?? sources[0]
-
-  const source = sectionSources[itemIndex] ?? fallbackSource
-  if (source) {
-    return {
-      sourceTitle: source.title,
-      sourceUrl: source.url,
-      sourceTier: source.tier,
-    }
-  }
-
-  return {
-    sourceTitle: DEFAULT_SOURCE.title,
-    sourceUrl: DEFAULT_SOURCE.url,
-    sourceTier: DEFAULT_SOURCE.tier,
-  }
-}
-
-function buildProposalItems(proposalsText: string, sources: SourceSeed[]): ProposalItemSeed[] {
-  const items = splitSectionIntoItems(proposalsText)
-  return items.map((itemText, index) => {
-    const source = getItemSource(sources, 'proposals', index)
-    return {
-      title: deriveTitleFromItem(itemText, 'Propuesta', index),
-      description: itemText,
-      topic: deriveProposalTopic(itemText),
-      ...source,
-    }
-  })
-}
-
-function buildControversyItems(
-  controversiesText: string,
-  sources: SourceSeed[],
-): ControversyItemSeed[] {
-  const items = splitSectionIntoItems(controversiesText, { splitByCommaClauses: false })
-  return items.map((itemText, index) => {
-    const source = getItemSource(sources, 'controversies', index)
-    return {
-      title: deriveTitleFromItem(itemText, 'Controversia', index),
-      description: itemText,
-      status: inferControversyStatus(itemText),
-      year: inferControversyYear(itemText),
-      ...source,
-    }
-  })
 }
 
 async function exists(filePath: string): Promise<boolean> {
@@ -544,6 +463,8 @@ async function upsertCandidate(
     photo: photoId,
     lastUpdated: new Date().toISOString(),
     biography: toLexicalRichText(candidate.biography),
+    publicTrajectoryItems: candidate.publicTrajectoryItems,
+    privateTrajectoryItems: candidate.privateTrajectoryItems,
     proposals: toLexicalRichText(candidate.proposals),
     proposalItems: candidate.proposalItems,
     controversies: toLexicalRichText(candidate.controversies),
@@ -784,15 +705,13 @@ async function main() {
   const payload = await getPayload({ config })
 
   try {
-    const raw = await fs.readFile(CANDIDATES_DATA_PATH, 'utf8')
-    const jsonData = JSON.parse(raw) as JsonDataFile
-    const candidates = parseCandidatesFromJson(jsonData)
+    const candidates = await loadCandidatesFromDataDir()
 
     if (candidates.length === 0) {
-      throw new Error('No candidates were parsed from data/candidates.json.')
+      throw new Error('No candidates were parsed from data/ directory.')
     }
 
-    // Delete any candidates in the DB that are no longer in the JSON file.
+    // Delete any candidates in the DB that are no longer in the JSON files.
     const keepSlugs = new Set(candidates.map((c) => c.slug))
     const allInDb = await payload.find({
       collection: 'candidates',

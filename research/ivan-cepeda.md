@@ -32,88 +32,23 @@
 
 ### `biography` (texto narrativo)
 
-Filósofo, defensor de derechos humanos y legislador bogotano. Hijo del senador Manuel Cepeda Vargas, asesinado por agentes del Estado en 1994. Representante a la Cámara (2010–2014) y senador desde 2014. Ganó la consulta interna del Pacto Histórico en octubre de 2025 con más de 1,5 millones de votos.
+- Filósofo, defensor de derechos humanos y legislador bogotano.
+- Hijo del senador Manuel Cepeda Vargas, asesinado por agentes del Estado en 1994, y de Yira Castro, concejal de Bogotá por la Unión Patriótica, fallecida en 1981.
+- Casado con Blanca del Pilar Rueda.
+- En 2018 reveló un diagnóstico de cáncer de colon del que se recuperó tras cirugía.
+- Representante a la Cámara (2010–2014) y senador desde 2014.
+- Ganó la consulta interna del Pacto Histórico en octubre de 2025 con más de 1,5 millones de votos.
 
 ### `publicTrajectoryItems`
 
 ```
 1.
-  role: Activista estudiantil (Juventudes Comunistas, JUCO)
-  organization: Partido Comunista Colombiano
-  startYear: 1975
-  endYear: 1987
-  location: Colombia / Bulgaria
-  description: Militó en las juventudes comunistas desde los 13 años. Parte de su adolescencia y formación transcurrió en el exilio familiar.
+  role: Candidato presidencial
+  organization: Pacto Histórico
+  startYear: 2025
+  description: Anunció su candidatura el 22 de agosto de 2025 desde Pasto. Ganó la consulta interna del Pacto Histórico en octubre de 2025 con 1.540.391 votos.
 
 2.
-  role: Docente de Filosofía
-  organization: Universidad INCCA de Colombia
-  startYear: 1988
-  endYear: 1993
-  location: Bogotá
-  description: Dictó clases de filosofía tras regresar del exilio en Bulgaria.
-
-3.
-  role: Docente de Filosofía
-  organization: Pontificia Universidad Javeriana
-  startYear: 1990
-  endYear: 1994
-  location: Bogotá
-
-4.
-  role: Cofundador y director
-  organization: Fundación Manuel Cepeda Vargas
-  startYear: 1994
-  location: Bogotá
-  description: Fundó esta organización tras el asesinato de su padre para documentar el genocidio contra la Unión Patriótica y exigir justicia al Estado colombiano.
-
-5.
-  role: Cofundador y vocero
-  organization: MOVICE — Movimiento Nacional de Víctimas de Crímenes de Estado
-  startYear: 2003
-  location: Colombia
-  description: Organización que agrupa a miles de familiares de víctimas de crímenes de Estado y a cientos de organizaciones sociales.
-
-6.
-  role: Representante a la Cámara (Bogotá)
-  organization: Polo Democrático Alternativo — Congreso de la República
-  startYear: 2010
-  endYear: 2014
-  location: Bogotá
-  description: Elegido con aproximadamente 35.000 votos; cuarta votación más alta en Bogotá y segunda del Polo. Reconocido como mejor representante 2010–2014 por Cifras & Conceptos.
-
-7.
-  role: Facilitador del proceso de paz con las FARC-EP
-  organization: Gobierno de Colombia
-  startYear: 2012
-  endYear: 2016
-  location: La Habana / Colombia
-  description: Participó como facilitador en las negociaciones de paz que culminaron en el Acuerdo de 2016.
-
-8.
-  role: Senador (primera elección)
-  organization: Polo Democrático Alternativo — Senado de la República
-  startYear: 2014
-  endYear: 2018
-  location: Bogotá
-  description: Elegido con 84.126 votos. Participó activamente en el debate del fast-track del Acuerdo de Paz y en el debate sobre los nexos de Álvaro Uribe con paramilitares (septiembre 2014).
-
-9.
-  role: Facilitador de los diálogos de paz con el ELN
-  organization: Gobierno de Colombia
-  startYear: 2015
-  location: Colombia / Ecuador
-  description: Se ha desempeñado como facilitador de los diálogos entre el gobierno y el ELN.
-
-10.
-  role: Senador (reelección)
-  organization: Polo Democrático Alternativo — Senado de la República
-  startYear: 2018
-  endYear: 2022
-  location: Bogotá
-  description: Elegido con 77.842 votos. Lideró mociones de censura contra ministros de defensa por violencia en el paro nacional y por la presencia de tropas estadounidenses en Colombia.
-
-11.
   role: Senador — Comisión Segunda
   organization: Pacto Histórico — Senado de la República
   startYear: 2022
@@ -121,25 +56,87 @@ Filósofo, defensor de derechos humanos y legislador bogotano. Hijo del senador 
   location: Bogotá
   description: Senador por el Pacto Histórico. Copresidente de la Comisión de Paz del Senado. Impulsó la Ley de Paz Total.
 
+3.
+  role: Senador (reelección)
+  organization: Polo Democrático Alternativo — Senado de la República
+  startYear: 2018
+  endYear: 2022
+  location: Bogotá
+  description: Elegido con 77.842 votos. Lideró mociones de censura contra ministros de defensa por violencia en el paro nacional y por la presencia de tropas estadounidenses en Colombia.
+
+4.
+  role: Facilitador de los diálogos de paz con el ELN
+  organization: Gobierno de Colombia
+  startYear: 2015
+  location: Colombia / Ecuador
+  description: Se ha desempeñado como facilitador de los diálogos entre el gobierno y el ELN.
+
+5.
+  role: Senador (primera elección)
+  organization: Polo Democrático Alternativo — Senado de la República
+  startYear: 2014
+  endYear: 2018
+  location: Bogotá
+  description: Elegido con 84.126 votos. Participó activamente en el debate del fast-track del Acuerdo de Paz y en el debate sobre los nexos de Álvaro Uribe con paramilitares (septiembre 2014).
+
+6.
+  role: Facilitador del proceso de paz con las FARC-EP
+  organization: Gobierno de Colombia
+  startYear: 2012
+  endYear: 2016
+  location: La Habana / Colombia
+  description: Participó como facilitador en las negociaciones de paz que culminaron en el Acuerdo de 2016.
+
+7.
+  role: Representante a la Cámara (Bogotá)
+  organization: Polo Democrático Alternativo — Congreso de la República
+  startYear: 2010
+  endYear: 2014
+  location: Bogotá
+  description: Elegido con aproximadamente 35.000 votos; quinta votación más alta en Bogotá y segunda del Polo. Reconocido como mejor representante 2010–2014 por Cifras & Conceptos.
+
+8.
+  role: Cofundador y vocero
+  organization: MOVICE — Movimiento Nacional de Víctimas de Crímenes de Estado
+  startYear: 2003
+  location: Colombia
+  description: Organización que agrupa a miles de familiares de víctimas de crímenes de Estado y a cientos de organizaciones sociales.
+
+9.
+  role: Cofundador y director
+  organization: Fundación Manuel Cepeda Vargas
+  startYear: 1994
+  location: Bogotá
+  description: Fundó esta organización tras el asesinato de su padre para documentar el genocidio contra la Unión Patriótica y exigir justicia al Estado colombiano.
+
+10.
+  role: Docente de Filosofía
+  organization: Pontificia Universidad Javeriana
+  startYear: 1990
+  endYear: 1994
+  location: Bogotá
+
+11.
+  role: Docente de Filosofía
+  organization: Universidad INCCA de Colombia
+  startYear: 1988
+  endYear: 1993
+  location: Bogotá
+  description: Dictó clases de filosofía tras regresar del exilio en Bulgaria.
+
 12.
-  role: Candidato presidencial
-  organization: Pacto Histórico
-  startYear: 2025
-  description: Anunció su candidatura el 22 de agosto de 2025 desde Pasto. Ganó la consulta interna del Pacto Histórico en octubre de 2025 con 1.540.391 votos.
+  role: Activista estudiantil (Juventudes Comunistas, JUCO)
+  organization: Partido Comunista Colombiano
+  startYear: 1975
+  endYear: 1987
+  location: Colombia / Bulgaria
+  description: Militó en las juventudes comunistas desde los 13 años. Parte de su adolescencia y formación transcurrió en el exilio familiar.
 ```
 
 ### `privateTrajectoryItems`
 
 ```
 1.
-  role: Exilio familiar
-  organization: —
-  startYear: 1965
-  endYear: 1970
-  location: Checoslovaquia (Praga) y Cuba (La Habana)
-  description: La familia de Cepeda vivió en el exilio por persecución política; regresaron a Colombia en 1970.
-
-2.
   role: Exilio personal
   organization: —
   startYear: 2000
@@ -147,11 +144,19 @@ Filósofo, defensor de derechos humanos y legislador bogotano. Hijo del senador 
   location: Francia
   description: Salió exiliado a Francia en 2000 por amenazas de muerte, tras la condena de dos suboficiales por el asesinato de su padre. Cursó su maestría en Derecho Internacional Humanitario durante este período.
 
-3.
+2.
   role: Escritor y autor
   organization: —
   startYear: 1994
   description: Ha publicado múltiples libros y artículos sobre derechos humanos, paramilitarismo, crímenes de Estado y el conflicto armado colombiano.
+
+3.
+  role: Exilio familiar
+  organization: —
+  startYear: 1965
+  endYear: 1970
+  location: Checoslovaquia (Praga) y Cuba (La Habana)
+  description: La familia de Cepeda vivió en el exilio por persecución política; regresaron a Colombia en 1970.
 ```
 
 ---
@@ -224,7 +229,7 @@ Su principal enfrentamiento fue con el expresidente Uribe, quien lo denunció po
 
 ### `controversyItems`
 
-```
+````
 1.
   title: Caso Uribe: denuncia por presunta manipulación de testigos
   description: En 2012, Cepeda denunció ante la Corte Suprema de Justicia los presuntos vínculos del expresidente Álvaro Uribe con grupos paramilitares. Uribe respondió con una denuncia penal contra Cepeda por manipulación de testigos. La Corte Suprema no encontró méritos para investigar a Cepeda; en cambio, abrió investigación contra Uribe. El 28 de julio de 2025 la primera instancia condenó a Uribe a doce años de arresto domiciliario. El 21 de octubre de 2025 el Tribunal Superior de Bogotá revocó esa condena en segunda instancia. Cepeda y la Fiscalía presentaron recurso de casación ante la Corte Suprema, que está pendiente de fallo.
@@ -278,34 +283,42 @@ Su principal enfrentamiento fue con el expresidente Uribe, quien lo denunció po
   sourceTitle: Iván Cepeda lleva una década de silencio frente a la opresión del chavismo — La Silla Vacía
   sourceUrl: https://www.lasillavacia.com/silla-nacional/cepeda-lleva-una-decada-de-silencio-frente-a-la-opresion-del-chavismo/
   sourceTier: prensa
-```
-
----
-
-## Sección 4 — Alianzas y avales (`alliances` + `allianceParties` + `endorsers`)
+6.
+  title: Denuncia ante la CIDH por presunta persecución política (2026)
+  description: En febrero de 2026, durante la campaña presidencial, Cepeda presentó una denuncia ante la Comisión Interamericana de Derechos Humanos (CIDH) alegando persecución política. La denuncia está relacionada con las revelaciones sobre su mención en los archivos del computador de Raúl Reyes y con el clima político de la campaña. La CIDH no se ha pronunciado sobre su admisibilidad al cierre de esta investigación.
+  status: pending
+  year: 2026
+  sourceTitle: Iván Cepeda responde a su mención en computadoras de Raúl Reyes y cuestiona garantías electorales — Revista Cambio
+  sourceUrl: https://cambiocolombia.com/poder/articulo/2026/2/ivan-cepeda-computadores-raul-reyes-farc-garantias-electorales-denuncia-persecucion-politica/
+  sourceTier: prensa
+``` (`alliances` + `allianceParties` + `endorsers`)
 
 ### `alliances` (texto introductorio)
 
-Es el candidato oficial del Pacto Histórico. Cuenta con el respaldo del presidente Gustavo Petro, la vicepresidenta Francia Márquez y los partidos de la coalición de gobierno.
+Es el candidato oficial del Pacto Histórico. Cuenta con el respaldo del presidente Gustavo Petro, la vicepresidenta Francia Márquez y los partidos de la coalición de gobierno. El CNE le impidió participar en la consulta interpartidista del Frente por la Vida del 8 de marzo de 2026; Cepeda concurrirá directamente a la primera vuelta presidencial sin pasar por ninguna consulta.
 
 ### `allianceParties` (logos se suben manualmente)
 
-```
+````
+
 1. Pacto Histórico (coalición)
 2. Polo Democrático Alternativo
 3. Colombia Humana
 4. Unión Patriótica (UP)
 5. MAIS (Movimiento Alternativo Indígena y Social)
 6. Comunes (partido surgido de las FARC)
+
 ```
 
 ### `endorsers` (fotos se suben manualmente)
 
 ```
+
 1. Gustavo Petro — Presidente de la República (aliado político cercano)
 2. Francia Márquez — Vicepresidenta de la República
 3. Alirio Uribe Muñoz — Congresista, Colectivo de Abogados José Alvear Restrepo
 4. Roy Barreras — ex-senador, compite en la consulta del Frente por la Vida del 8 de marzo de 2026
+
 ```
 
 > **Nota:** Los avales formales del Pacto Histórico para la primera vuelta presidencial no se han publicado completamente al cierre de esta investigación (feb. 28, 2026). Actualizar después del 8 de marzo de 2026.
@@ -333,75 +346,67 @@ Ejerce como legislador desde 2010, su principal fuente de ingresos conocida. Su 
 > Estas fuentes deben ingresarse en el arreglo `sources` de la entrada del candidato en el CMS, indicando la sección a la que corresponden.
 
 ```
-1.
-  section: biography
-  title: Quién es Iván Cepeda — La Silla Vacía
-  url: https://www.lasillavacia.com/quien-es-quien/ivan-cepeda/
-  publishedAt: 2026-02-19
-  tier: prensa
 
-2.
-  section: biography
-  title: Perfil de Iván Cepeda Castro — Congreso Visible (Uniandes)
-  url: https://congresovisible.uniandes.edu.co/congresistas/perfil/ivan-cepeda-castro/2395/
-  publishedAt: 2024-01-01
-  tier: ong
+1.  section: biography
+    title: Quién es Iván Cepeda — La Silla Vacía
+    url: https://www.lasillavacia.com/quien-es-quien/ivan-cepeda/
+    publishedAt: 2026-02-19
+    tier: prensa
 
-3.
-  section: biography
-  title: Iván Cepeda Castro — Wikipedia (ES)
-  url: https://es.wikipedia.org/wiki/Iv%C3%A1n_Cepeda
-  publishedAt: 2026-01-01
-  tier: prensa
+2.  section: biography
+    title: Perfil de Iván Cepeda Castro — Congreso Visible (Uniandes)
+    url: https://congresovisible.uniandes.edu.co/congresistas/perfil/ivan-cepeda-castro/2395/
+    publishedAt: 2024-01-01
+    tier: ong
 
-4.
-  section: biography
-  title: Perfil oficial — ivancepedacastro.com
-  url: https://ivancepedacastro.com/inicio/
-  publishedAt: 2019-09-01
-  tier: redes
+3.  section: biography
+    title: Iván Cepeda Castro — Wikipedia (ES)
+    url: https://es.wikipedia.org/wiki/Iv%C3%A1n_Cepeda
+    publishedAt: 2026-01-01
+    tier: prensa
 
-5.
-  section: record
-  title: Los 16 años de Iván Cepeda en el Congreso: Uribe, Acuerdo Farc y paz total — La Silla Vacía
-  url: https://www.lasillavacia.com/silla-nacional/los-16-anos-de-ivan-cepeda-en-el-congreso-uribe-acuerdo-farc-y-paz-total/
-  publishedAt: 2026-01-10
-  tier: prensa
+4.  section: biography
+    title: Perfil oficial — ivancepedacastro.com
+    url: https://ivancepedacastro.com/inicio/
+    publishedAt: 2019-09-01
+    tier: redes
 
-6.
-  section: proposals
-  title: Iván Cepeda abraza las banderas populares y populistas de Petro — La Silla Vacía
-  url: https://www.lasillavacia.com/silla-nacional/ivan-cepeda-abraza-las-banderas-populares-y-populistas-de-petro/
-  publishedAt: 2026-01-29
-  tier: prensa
+5.  section: record
+    title: Los 16 años de Iván Cepeda en el Congreso: Uribe, Acuerdo Farc y paz total — La Silla Vacía
+    url: https://www.lasillavacia.com/silla-nacional/los-16-anos-de-ivan-cepeda-en-el-congreso-uribe-acuerdo-farc-y-paz-total/
+    publishedAt: 2026-01-10
+    tier: prensa
 
-7.
-  section: controversies
-  title: Iván Cepeda lleva una década de silencio frente a la opresión del chavismo — La Silla Vacía
-  url: https://www.lasillavacia.com/silla-nacional/cepeda-lleva-una-decada-de-silencio-frente-a-la-opresion-del-chavismo/
-  publishedAt: 2026-01-21
-  tier: prensa
+6.  section: proposals
+    title: Iván Cepeda abraza las banderas populares y populistas de Petro — La Silla Vacía
+    url: https://www.lasillavacia.com/silla-nacional/ivan-cepeda-abraza-las-banderas-populares-y-populistas-de-petro/
+    publishedAt: 2026-01-29
+    tier: prensa
 
-8.
-  section: controversies
-  title: De nuevo, Cepeda trinó por error "nuestras fuerzas guerrilleras", y lo borró — La Silla Vacía (Detector)
-  url: https://www.lasillavacia.com/detector-de-mentiras/cierto-pero/de-nuevo-cepeda-trino-por-error-nuestras-fuerzas-guerrilleras-y-lo-borro/
-  publishedAt: 2026-02-26
-  tier: prensa
+7.  section: controversies
+    title: Iván Cepeda lleva una década de silencio frente a la opresión del chavismo — La Silla Vacía
+    url: https://www.lasillavacia.com/silla-nacional/cepeda-lleva-una-decada-de-silencio-frente-a-la-opresion-del-chavismo/
+    publishedAt: 2026-01-21
+    tier: prensa
 
-9.
-  section: controversies
-  title: Mención de Iván Cepeda en computador de las Farc no fue un montaje — La Silla Vacía (podcast)
-  url: https://www.lasillavacia.com/podcasts/huevos-revueltos-con-politica/mencion-de-ivan-cepeda-en-computador-de-las-farc-no-fue-un-montaje-2/
-  publishedAt: 2026-02-23
-  tier: prensa
+8.  section: controversies
+    title: De nuevo, Cepeda trinó por error "nuestras fuerzas guerrilleras", y lo borró — La Silla Vacía (Detector)
+    url: https://www.lasillavacia.com/detector-de-mentiras/cierto-pero/de-nuevo-cepeda-trino-por-error-nuestras-fuerzas-guerrilleras-y-lo-borro/
+    publishedAt: 2026-02-26
+    tier: prensa
 
-10.
-  section: alliances
-  title: De correría con Iván Cepeda: militancia radical y multitudes del Pacto — La Silla Vacía
-  url: https://www.lasillavacia.com/silla-nacional/de-correria-con-ivan-cepeda-militancia-radical-y-multitudes-del-pacto/
-  publishedAt: 2026-02-17
-  tier: prensa
+9.  section: controversies
+    title: Mención de Iván Cepeda en computador de las Farc no fue un montaje — La Silla Vacía (podcast)
+    url: https://www.lasillavacia.com/podcasts/huevos-revueltos-con-politica/mencion-de-ivan-cepeda-en-computador-de-las-farc-no-fue-un-montaje-2/
+    publishedAt: 2026-02-23
+    tier: prensa
+
+10. section: alliances
+    title: De correría con Iván Cepeda: militancia radical y multitudes del Pacto — La Silla Vacía
+    url: https://www.lasillavacia.com/silla-nacional/de-correria-con-ivan-cepeda-militancia-radical-y-multitudes-del-pacto/
+    publishedAt: 2026-02-17
+    tier: prensa
+
 ```
 
 ---
@@ -431,3 +436,4 @@ No se encontraron registros públicos de declaración de bienes o financiación 
 ---
 
 _Investigación realizada: 28 de febrero de 2026. Actualizar antes de publicar, especialmente las secciones de alianzas (post-8 de marzo 2026) y financiación de campaña._
+```

@@ -1,0 +1,350 @@
+{
+  "name": "Iván Cepeda Castro",
+  "slug": "ivan-cepeda",
+  "party": "Pacto Histórico",
+  "currentOffice": "Senador de la República (Comisión Segunda, 2022–2026); candidato presidencial Pacto Histórico 2026",
+  "lastUpdated": "2026-02-28",
+  "socialLinks": [
+    { "platform": "x", "url": "https://x.com/IvanCepedaCast" },
+    { "platform": "instagram", "url": "https://instagram.com/ivancepedacastr/" },
+    { "platform": "facebook", "url": "https://www.facebook.com/IvanCepedaCastro" },
+    { "platform": "youtube", "url": "https://www.youtube.com/@IvanCepedaCastro" }
+  ],
+  "biography": "Filósofo, defensor de derechos humanos y legislador bogotano. Hijo del senador Manuel Cepeda Vargas, asesinado por agentes del Estado en 1994, y de Yira Castro, concejal de Bogotá por la Unión Patriótica, fallecida en 1981. Casado con Blanca del Pilar Rueda. En 2018 reveló un diagnóstico de cáncer de colon del que se recuperó tras cirugía. Representante a la Cámara (2010–2014) y senador desde 2014. Ganó la consulta interna del Pacto Histórico en octubre de 2025 con más de 1,5 millones de votos.",
+  "publicTrajectoryItems": [
+    {
+      "role": "Candidato presidencial",
+      "organization": "Pacto Histórico",
+      "startYear": "2025",
+      "endYear": "",
+      "location": "",
+      "description": "Anunció su candidatura el 22 de agosto de 2025 desde Pasto. Ganó la consulta interna del Pacto Histórico en octubre de 2025 con 1.540.391 votos."
+    },
+    {
+      "role": "Senador — Comisión Segunda",
+      "organization": "Pacto Histórico — Senado de la República",
+      "startYear": "2022",
+      "endYear": "2026",
+      "location": "Bogotá",
+      "description": "Senador por el Pacto Histórico. Copresidente de la Comisión de Paz del Senado. Impulsó la Ley de Paz Total."
+    },
+    {
+      "role": "Senador (reelección)",
+      "organization": "Polo Democrático Alternativo — Senado de la República",
+      "startYear": "2018",
+      "endYear": "2022",
+      "location": "Bogotá",
+      "description": "Elegido con 77.842 votos. Lideró mociones de censura contra ministros de defensa por violencia en el paro nacional y por la presencia de tropas estadounidenses en Colombia."
+    },
+    {
+      "role": "Facilitador de los diálogos de paz con el ELN",
+      "organization": "Gobierno de Colombia",
+      "startYear": "2015",
+      "endYear": "",
+      "location": "Colombia / Ecuador",
+      "description": "Se ha desempeñado como facilitador de los diálogos entre el gobierno y el ELN."
+    },
+    {
+      "role": "Senador (primera elección)",
+      "organization": "Polo Democrático Alternativo — Senado de la República",
+      "startYear": "2014",
+      "endYear": "2018",
+      "location": "Bogotá",
+      "description": "Elegido con 84.126 votos. Participó activamente en el debate del fast-track del Acuerdo de Paz y en el debate sobre los nexos de Álvaro Uribe con paramilitares (septiembre 2014)."
+    },
+    {
+      "role": "Facilitador del proceso de paz con las FARC-EP",
+      "organization": "Gobierno de Colombia",
+      "startYear": "2012",
+      "endYear": "2016",
+      "location": "La Habana / Colombia",
+      "description": "Participó como facilitador en las negociaciones de paz que culminaron en el Acuerdo de 2016."
+    },
+    {
+      "role": "Representante a la Cámara (Bogotá)",
+      "organization": "Polo Democrático Alternativo — Congreso de la República",
+      "startYear": "2010",
+      "endYear": "2014",
+      "location": "Bogotá",
+      "description": "Elegido con aproximadamente 35.000 votos; quinta votación más alta en Bogotá y segunda del Polo. Reconocido como mejor representante 2010–2014 por Cifras & Conceptos."
+    },
+    {
+      "role": "Cofundador y vocero",
+      "organization": "MOVICE — Movimiento Nacional de Víctimas de Crímenes de Estado",
+      "startYear": "2003",
+      "endYear": "",
+      "location": "Colombia",
+      "description": "Organización que agrupa a miles de familiares de víctimas de crímenes de Estado y a cientos de organizaciones sociales."
+    },
+    {
+      "role": "Cofundador y director",
+      "organization": "Fundación Manuel Cepeda Vargas",
+      "startYear": "1994",
+      "endYear": "",
+      "location": "Bogotá",
+      "description": "Fundó esta organización tras el asesinato de su padre para documentar el genocidio contra la Unión Patriótica y exigir justicia al Estado colombiano."
+    },
+    {
+      "role": "Docente de Filosofía",
+      "organization": "Pontificia Universidad Javeriana",
+      "startYear": "1990",
+      "endYear": "1994",
+      "location": "Bogotá",
+      "description": ""
+    },
+    {
+      "role": "Docente de Filosofía",
+      "organization": "Universidad INCCA de Colombia",
+      "startYear": "1988",
+      "endYear": "1993",
+      "location": "Bogotá",
+      "description": "Dictó clases de filosofía tras regresar del exilio en Bulgaria."
+    },
+    {
+      "role": "Activista estudiantil (Juventudes Comunistas, JUCO)",
+      "organization": "Partido Comunista Colombiano",
+      "startYear": "1975",
+      "endYear": "1987",
+      "location": "Colombia / Bulgaria",
+      "description": "Militó en las juventudes comunistas desde los 13 años. Parte de su adolescencia y formación transcurrió en el exilio familiar."
+    }
+  ],
+  "privateTrajectoryItems": [
+    {
+      "role": "Exilio personal",
+      "organization": "—",
+      "startYear": "2000",
+      "endYear": "2004",
+      "location": "Francia",
+      "description": "Salió exiliado a Francia en 2000 por amenazas de muerte, tras la condena de dos suboficiales por el asesinato de su padre. Cursó su maestría en Derecho Internacional Humanitario durante este período."
+    },
+    {
+      "role": "Escritor y autor",
+      "organization": "—",
+      "startYear": "1994",
+      "endYear": "",
+      "location": "",
+      "description": "Ha publicado múltiples libros y artículos sobre derechos humanos, paramilitarismo, crímenes de Estado y el conflicto armado colombiano."
+    },
+    {
+      "role": "Exilio familiar",
+      "organization": "—",
+      "startYear": "1965",
+      "endYear": "1970",
+      "location": "Checoslovaquia (Praga) y Cuba (La Habana)",
+      "description": "La familia de Cepeda vivió en el exilio por persecución política; regresaron a Colombia en 1970."
+    }
+  ],
+  "proposals": "Propone profundizar la agenda del gobierno Petro: continuar la Paz Total, impulsar una reforma agraria, establecer un salario vital y convocar un gran diálogo con el sector empresarial.",
+  "proposalItems": [
+    {
+      "title": "Reducción de salarios de altos funcionarios del Estado",
+      "description": "Propone que la primera medida de su gobierno sea reducir los salarios de los funcionarios de alto rango del Estado, como señal de austeridad y equidad.",
+      "topic": "Reforma del Estado",
+      "sourceTitle": "Iván Cepeda abraza las banderas populares y populistas de Petro — La Silla Vacía",
+      "sourceUrl": "https://www.lasillavacia.com/silla-nacional/ivan-cepeda-abraza-las-banderas-populares-y-populistas-de-petro/",
+      "sourceTier": "prensa"
+    },
+    {
+      "title": "Salario vital (continuación del salario mínimo elevado)",
+      "description": "Defiende la política de aumentos sostenidos al salario mínimo impulsada bajo el gobierno Petro (23% en 2025) y propone profundizarla con un \"salario vital\".",
+      "topic": "Economía y trabajo",
+      "sourceTitle": "Iván Cepeda hace un llamado a respaldar al presidente Gustavo Petro, el salario vital y su participación en la consulta — ivancepedacastro.com",
+      "sourceUrl": "https://ivancepedacastro.com/ivan-cepeda-hace-un-llamado-a-respaldar-al-presidente-gustavo-petro-el-salario-vital-y-su-participacion-en-la-consulta-del-frente-por-la-vida/",
+      "sourceTier": "redes"
+    },
+    {
+      "title": "Reforma agraria y acceso al agua",
+      "description": "Propone una reforma agraria profunda, entrega de tierras a campesinos e indígenas, y plantea el acceso al agua como eje central de la revolución agraria.",
+      "topic": "Tierra y ruralidad",
+      "sourceTitle": "El acceso al agua como eje de la revolución agraria — ivancepedacastro.com",
+      "sourceUrl": "https://ivancepedacastro.com/el-acceso-al-agua-como-eje-de-la-revolucion-agraria/",
+      "sourceTier": "redes"
+    },
+    {
+      "title": "Continuación y rescate de la Paz Total",
+      "description": "Propone rescatar y profundizar la política de Paz Total iniciada bajo el gobierno Petro, incluyendo negociaciones con el ELN y otros grupos armados.",
+      "topic": "Paz y seguridad",
+      "sourceTitle": "Los 16 años de Iván Cepeda en el Congreso: Uribe, Acuerdo Farc y paz total — La Silla Vacía",
+      "sourceUrl": "https://www.lasillavacia.com/silla-nacional/los-16-anos-de-ivan-cepeda-en-el-congreso-uribe-acuerdo-farc-y-paz-total/",
+      "sourceTier": "prensa"
+    },
+    {
+      "title": "Reforma a la Policía Nacional",
+      "description": "Propone reformar la estructura y doctrina de la Policía Nacional para reducir el uso excesivo de la fuerza, especialmente en protestas sociales.",
+      "topic": "Seguridad y derechos humanos",
+      "sourceTitle": "Iván Cepeda abraza las banderas populares y populistas de Petro — La Silla Vacía",
+      "sourceUrl": "https://www.lasillavacia.com/silla-nacional/ivan-cepeda-abraza-las-banderas-populares-y-populistas-de-petro/",
+      "sourceTier": "prensa"
+    },
+    {
+      "title": "Diálogo nacional con empresarios y sociedad civil",
+      "description": "Propone convocar un gran diálogo nacional que incluya al sector empresarial para construir consensos sobre el modelo económico.",
+      "topic": "Economía y gobernanza",
+      "sourceTitle": "Iván Cepeda inicia diálogo con empresarios de Colombia — ivancepedacastro.com",
+      "sourceUrl": "https://ivancepedacastro.com/ivan-cepeda-inicia-dialogo-con-empresarios-de-colombia-como-parte-de-su-propuesta-de-dialogo-nacional/",
+      "sourceTier": "redes"
+    }
+  ],
+  "controversies": "Su principal enfrentamiento fue con el expresidente Uribe, quien lo denunció por manipulación de testigos; la Corte Suprema no encontró méritos para investigarlo. Ha sido señalado por su silencio frente a las violaciones de derechos humanos en Venezuela y por tuits con frases guerrilleras publicados y borrados por error.",
+  "controversyItems": [
+    {
+      "title": "Caso Uribe: denuncia por presunta manipulación de testigos",
+      "description": "En 2012, Cepeda denunció ante la Corte Suprema de Justicia los presuntos vínculos del expresidente Álvaro Uribe con grupos paramilitares. Uribe respondió con una denuncia penal contra Cepeda por manipulación de testigos. La Corte Suprema no encontró méritos para investigar a Cepeda; en cambio, abrió investigación contra Uribe. El 28 de julio de 2025 la primera instancia condenó a Uribe a doce años de arresto domiciliario. El 21 de octubre de 2025 el Tribunal Superior de Bogotá revocó esa condena en segunda instancia. Cepeda y la Fiscalía presentaron recurso de casación ante la Corte Suprema, que está pendiente de fallo.",
+      "status": "cleared",
+      "year": "2012",
+      "sourceTitle": "Los 16 años de Iván Cepeda en el Congreso — La Silla Vacía",
+      "sourceUrl": "https://www.lasillavacia.com/silla-nacional/los-16-anos-de-ivan-cepeda-en-el-congreso-uribe-acuerdo-farc-y-paz-total/",
+      "sourceTier": "prensa"
+    },
+    {
+      "title": "Mención en archivos de Raúl Reyes (computador de las FARC)",
+      "description": "El expresidente Uribe presentó en el Congreso correos extraídos del computador de Raúl Reyes, guerrillero de las FARC muerto en 2008, en los que supuestamente se menciona a Cepeda como aliado de esa organización. Cepeda negó los hechos. Los tribunales colombianos nunca validaron esos documentos como prueba por falta de cadena de custodia. La Silla Vacía publicó en febrero de 2026 un análisis que concluyó que la mención de Cepeda en los archivos \"no fue un montaje\", aunque no constituye evidencia de vinculación orgánica con las FARC.",
+      "status": "suspicion",
+      "year": "2008",
+      "sourceTitle": "Mención de Iván Cepeda en computador de las Farc no fue un montaje — La Silla Vacía (podcast)",
+      "sourceUrl": "https://www.lasillavacia.com/podcasts/huevos-revueltos-con-politica/mencion-de-ivan-cepeda-en-computador-de-las-farc-no-fue-un-montaje-2/",
+      "sourceTier": "prensa"
+    },
+    {
+      "title": "Presencia en la salida de Jesús Santrich de prisión (2018)",
+      "description": "En 2018, Cepeda acudió a recibir a Seuxis Hernández (alias Jesús Santrich) a las puertas de la Picota cuando fue liberado por orden de la Corte Suprema. Santrich fue capturado nuevamente meses después por cargos de narcotráfico, luego huyó a Venezuela junto a Iván Márquez y retomó las armas. Cepeda no enfrenta ningún proceso legal por este episodio, pero ha sido señalado políticamente por su relación con estos excomandantes guerrilleros.",
+      "status": "suspicion",
+      "year": "2018",
+      "sourceTitle": "Los 16 años de Iván Cepeda en el Congreso — La Silla Vacía",
+      "sourceUrl": "https://www.lasillavacia.com/silla-nacional/los-16-anos-de-ivan-cepeda-en-el-congreso-uribe-acuerdo-farc-y-paz-total/",
+      "sourceTier": "prensa"
+    },
+    {
+      "title": "Tuits con la frase \"nuestras fuerzas guerrilleras\" (2024 y 2026)",
+      "description": "Cepeda publicó y eliminó en dos ocasiones tuits que incluían la frase \"nuestras fuerzas guerrilleras\", aparentemente por error de copia-pega al compartir comunicados. El 26 de febrero de 2026 ocurrió el segundo episodio. La Silla Vacía lo clasificó como \"Cierto, pero\" y concluyó que fue un error, no una declaración intencional de simpatía guerrillera.",
+      "status": "suspicion",
+      "year": "2026",
+      "sourceTitle": "De nuevo, Cepeda trinó por error \"nuestras fuerzas guerrilleras\", y lo borró — La Silla Vacía",
+      "sourceUrl": "https://www.lasillavacia.com/detector-de-mentiras/cierto-pero/de-nuevo-cepeda-trino-por-error-nuestras-fuerzas-guerrilleras-y-lo-borro/",
+      "sourceTier": "prensa"
+    },
+    {
+      "title": "Retractación sobre acusaciones al General Nicacio Martínez (2020)",
+      "description": "Cepeda había acusado en debates de control político al general Nicacio Martínez de estar vinculado a ejecuciones extrajudiciales (falsos positivos). En 2020 se retractó públicamente de esas acusaciones y llegó a una conciliación con el general.",
+      "status": "cleared",
+      "year": "2020",
+      "sourceTitle": "Los 16 años de Iván Cepeda en el Congreso — La Silla Vacía",
+      "sourceUrl": "https://www.lasillavacia.com/silla-nacional/los-16-anos-de-ivan-cepeda-en-el-congreso-uribe-acuerdo-farc-y-paz-total/",
+      "sourceTier": "prensa"
+    },
+    {
+      "title": "Silencio sobre violaciones de derechos humanos en Venezuela",
+      "description": "Una investigación de La Silla Vacía publicada en enero de 2026 documentó que Cepeda, como miembro de la Comisión Segunda del Senado (relaciones exteriores, defensa), ha guardado silencio por más de una década frente a las denuncias de violaciones de derechos humanos perpetradas por el gobierno de Nicolás Maduro en Venezuela.",
+      "status": "suspicion",
+      "year": "2026",
+      "sourceTitle": "Iván Cepeda lleva una década de silencio frente a la opresión del chavismo — La Silla Vacía",
+      "sourceUrl": "https://www.lasillavacia.com/silla-nacional/cepeda-lleva-una-decada-de-silencio-frente-a-la-opresion-del-chavismo/",
+      "sourceTier": "prensa"
+    },
+    {
+      "title": "Denuncia ante la CIDH por presunta persecución política (2026)",
+      "description": "En febrero de 2026, durante la campaña presidencial, Cepeda presentó una denuncia ante la Comisión Interamericana de Derechos Humanos (CIDH) alegando persecución política. La denuncia está relacionada con las revelaciones sobre su mención en los archivos del computador de Raúl Reyes y con el clima político de la campaña. La CIDH no se ha pronunciado sobre su admisibilidad al cierre de esta investigación.",
+      "status": "under_investigation",
+      "year": "2026",
+      "sourceTitle": "Iván Cepeda responde a su mención en computadoras de Raúl Reyes y cuestiona garantías electorales — Revista Cambio",
+      "sourceUrl": "https://cambiocolombia.com/poder/articulo/2026/2/ivan-cepeda-computadores-raul-reyes-farc-garantias-electorales-denuncia-persecucion-politica/",
+      "sourceTier": "prensa"
+    }
+  ],
+  "alliances": "Es el candidato oficial del Pacto Histórico. Cuenta con el respaldo del presidente Gustavo Petro, la vicepresidenta Francia Márquez y los partidos de la coalición de gobierno. El CNE le impidió participar en la consulta interpartidista del Frente por la Vida del 8 de marzo de 2026; Cepeda concurrirá directamente a la primera vuelta presidencial sin pasar por ninguna consulta.",
+  "allianceParties": [
+    { "name": "Pacto Histórico (coalición)" },
+    { "name": "Polo Democrático Alternativo" },
+    { "name": "Colombia Humana" },
+    { "name": "Unión Patriótica (UP)" },
+    { "name": "MAIS (Movimiento Alternativo Indígena y Social)" },
+    { "name": "Comunes (partido surgido de las FARC)" }
+  ],
+  "endorsers": [
+    { "name": "Gustavo Petro — Presidente de la República" },
+    { "name": "Francia Márquez — Vicepresidenta de la República" },
+    { "name": "Alirio Uribe Muñoz — Congresista, Colectivo de Abogados José Alvear Restrepo" },
+    { "name": "Roy Barreras — ex-senador" }
+  ],
+  "record": "Más de 16 años en el Congreso. Autor de la Ley 1719 de 2014 contra la violencia sexual en el conflicto, las curules de paz del Acuerdo de 2016 y el marco jurídico de la Paz Total. Ha liderado mociones de censura contra ministros de defensa y debates sobre paramilitarismo.",
+  "funding": "Ejerce como legislador desde 2010, su principal fuente de ingresos conocida. Su campaña se financia a través del Pacto Histórico. No se han reportado irregularidades en su financiación. Los informes ante el CNE no estaban disponibles al momento de edición.",
+  "sources": [
+    {
+      "section": "biography",
+      "title": "Quién es Iván Cepeda — La Silla Vacía",
+      "publishedAt": "2026-02-19",
+      "url": "https://www.lasillavacia.com/quien-es-quien/ivan-cepeda/",
+      "tier": "prensa"
+    },
+    {
+      "section": "biography",
+      "title": "Perfil de Iván Cepeda Castro — Congreso Visible (Uniandes)",
+      "publishedAt": "2024-01-01",
+      "url": "https://congresovisible.uniandes.edu.co/congresistas/perfil/ivan-cepeda-castro/2395/",
+      "tier": "ong"
+    },
+    {
+      "section": "biography",
+      "title": "Iván Cepeda Castro — Wikipedia (ES)",
+      "publishedAt": "2026-01-01",
+      "url": "https://es.wikipedia.org/wiki/Iv%C3%A1n_Cepeda",
+      "tier": "prensa"
+    },
+    {
+      "section": "biography",
+      "title": "Perfil oficial — ivancepedacastro.com",
+      "publishedAt": "2019-09-01",
+      "url": "https://ivancepedacastro.com/inicio/",
+      "tier": "redes"
+    },
+    {
+      "section": "record",
+      "title": "Los 16 años de Iván Cepeda en el Congreso: Uribe, Acuerdo Farc y paz total — La Silla Vacía",
+      "publishedAt": "2026-01-10",
+      "url": "https://www.lasillavacia.com/silla-nacional/los-16-anos-de-ivan-cepeda-en-el-congreso-uribe-acuerdo-farc-y-paz-total/",
+      "tier": "prensa"
+    },
+    {
+      "section": "proposals",
+      "title": "Iván Cepeda abraza las banderas populares y populistas de Petro — La Silla Vacía",
+      "publishedAt": "2026-01-29",
+      "url": "https://www.lasillavacia.com/silla-nacional/ivan-cepeda-abraza-las-banderas-populares-y-populistas-de-petro/",
+      "tier": "prensa"
+    },
+    {
+      "section": "controversies",
+      "title": "Iván Cepeda lleva una década de silencio frente a la opresión del chavismo — La Silla Vacía",
+      "publishedAt": "2026-01-21",
+      "url": "https://www.lasillavacia.com/silla-nacional/cepeda-lleva-una-decada-de-silencio-frente-a-la-opresion-del-chavismo/",
+      "tier": "prensa"
+    },
+    {
+      "section": "controversies",
+      "title": "De nuevo, Cepeda trinó por error \"nuestras fuerzas guerrilleras\", y lo borró — La Silla Vacía (Detector)",
+      "publishedAt": "2026-02-26",
+      "url": "https://www.lasillavacia.com/detector-de-mentiras/cierto-pero/de-nuevo-cepeda-trino-por-error-nuestras-fuerzas-guerrilleras-y-lo-borro/",
+      "tier": "prensa"
+    },
+    {
+      "section": "controversies",
+      "title": "Mención de Iván Cepeda en computador de las Farc no fue un montaje — La Silla Vacía (podcast)",
+      "publishedAt": "2026-02-23",
+      "url": "https://www.lasillavacia.com/podcasts/huevos-revueltos-con-politica/mencion-de-ivan-cepeda-en-computador-de-las-farc-no-fue-un-montaje-2/",
+      "tier": "prensa"
+    },
+    {
+      "section": "alliances",
+      "title": "De correría con Iván Cepeda: militancia radical y multitudes del Pacto — La Silla Vacía",
+      "publishedAt": "2026-02-17",
+      "url": "https://www.lasillavacia.com/silla-nacional/de-correria-con-ivan-cepeda-militancia-radical-y-multitudes-del-pacto/",
+      "tier": "prensa"
+    }
+  ],
+  "summaryTrajectory": "Filósofo y defensor de derechos humanos, senador desde 2014. Hijo del senador Manuel Cepeda Vargas, asesinado por agentes del Estado en 1994. Ha sido facilitador de los procesos de paz con las FARC y el ELN.",
+  "summaryProposals": "Propone profundizar la agenda del gobierno Petro: continuación de la Paz Total, reforma agraria, reducción de salarios de altos funcionarios y diálogo nacional con el sector empresarial.",
+  "summaryControversies": "Su principal controversia es el enfrentamiento judicial con Álvaro Uribe, quien lo denunció por manipulación de testigos; los tribunales no encontraron méritos para investigar a Cepeda. Ha sido cuestionado por su silencio frente a las violaciones de derechos humanos en Venezuela.",
+  "summaryAlliances": "Candidato oficial del Pacto Histórico. Cuenta con el respaldo político del presidente Gustavo Petro y de los partidos de la coalición de gobierno.",
+  "summaryRecord": "Autor de la Ley 1719 de 2014 contra la violencia sexual en el conflicto y de las curules de paz del Acuerdo de 2016. Ha liderado más de 40 debates de control político y mociones de censura contra ministros.",
+  "summaryFunding": "No se encontraron registros públicos de declaración de bienes o financiación de campaña al cierre de esta investigación. No existen reportes de irregularidades en su financiación."
+}

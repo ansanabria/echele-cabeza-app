@@ -32,7 +32,11 @@
 
 ### `biography` (texto narrativo)
 
-Abogado penalista barranquillero conocido como "El Tigre de la Patria". Fundó en 2004 el bufete De la Espriella Lawyers y defendió casos de alto perfil como el de la pirámide DMG y el de Álex Saab. Esta es su primera candidatura a un cargo de elección popular.
+- Abogado penalista barranquillero conocido como "El Tigre de la Patria".
+- Fundó en 2004 el bufete De la Espriella Lawyers y defendió casos de alto perfil como el de la pirámide DMG y el de Álex Saab.
+- Está casado con Ana Lucía Pineda Aruachan; su cuñada es Lilian María Pineda Aruachan.
+- Antes de lanzar su candidatura presidencial residió en Italia.
+- Esta es su primera candidatura a un cargo de elección popular.
 
 ### `publicTrajectoryItems`
 
@@ -42,39 +46,39 @@ Abogado penalista barranquillero conocido como "El Tigre de la Patria". Fundó e
 
 ```
 1.
-  role: Abogado penalista y fundador
-  organization: De la Espriella Lawyers
-  startYear: 2004
-  location: Barranquilla / Bogotá
-  description: Fundó y dirige la firma de abogados De la Espriella Lawyers, especializada en defensa penal de alto perfil. Al cierre de 2024 registró un patrimonio de 16,5 mil millones de pesos y fue la única empresa del grupo con utilidades positivas.
+  role: Candidato presidencial
+  organization: Salvación Nacional
+  startYear: 2025
+  location: Colombia
+  description: Anunció su candidatura presidencial para las elecciones de 2026. Primera aspiración a cargo de elección popular. Obtuvo el aval del partido Salvación Nacional sin participar en la consulta presidencial del 8 de marzo de 2026.
 
 2.
   role: Empresario (marca de moda y contenido)
   organization: De la Espriella Style SAS
-  startYear: ~2018
-  location: Colombia
-  description: Empresa dedicada a libros, moda, podcast y un proyecto de apartasuites. Cerró 2024 con pérdidas de 26 millones de pesos y patrimonio negativo.
-
-3.
-  role: Co-fundador y socio (ron artesanal)
-  organization: Dominio De la Espriella SAS (Ron Defensor / Vino Fratellone)
   startYear: 2022
   location: Colombia
-  description: Lanzó en 2022 el ron Ron Defensor (ediciones de 12 y 18 años) junto al cantante Silvestre Dangond y otros socios. La empresa cerró 2024 con pérdidas de 552 millones de pesos y patrimonio negativo.
+  description: Empresa dedicada a libros, moda, podcast y un proyecto de apartasuites. Fundada en 2022. Cerró 2024 con pérdidas de 26 millones de pesos y patrimonio negativo.
 
-4.
+3.
   role: Socio y empresario (restaurante)
   organization: Místico Group LLC
   startYear: ~2021
   location: Miami, Florida, Estados Unidos
   description: Restaurante en Miami co-propiedad con Silvestre Dangond, Héctor Amarís y otros socios.
 
-5.
-  role: Candidato presidencial
-  organization: Salvación Nacional
-  startYear: 2025
+4.
+  role: Co-fundador y socio (ron artesanal)
+  organization: Dominio De la Espriella SAS (Ron Defensor / Vino Fratellone)
+  startYear: 2020
   location: Colombia
-  description: Anunció su candidatura presidencial para las elecciones de 2026. Primera aspiración a cargo de elección popular. Obtuvo el aval del partido Salvación Nacional sin participar en la consulta presidencial del 8 de marzo de 2026.
+  description: Empresa fundada en 2020. Lanzó en septiembre de 2022 el ron Ron Defensor (ediciones de 12 y 18 años) junto al cantante Silvestre Dangond y otros 12 socios (14 en total). La empresa cerró 2024 con pérdidas de 552 millones de pesos y patrimonio negativo.
+
+5.
+  role: Abogado penalista y fundador
+  organization: De la Espriella Lawyers
+  startYear: 2004
+  location: Barranquilla / Bogotá
+  description: Fundó y dirige la firma de abogados De la Espriella Lawyers, especializada en defensa penal de alto perfil. Al cierre de 2024 registró un patrimonio de 16,5 mil millones de pesos y fue la única empresa del grupo con utilidades positivas.
 ```
 
 ---
@@ -167,7 +171,7 @@ Los principales señalamientos provienen de sus clientes como abogado defensor y
 
 2.
   title: Defensa de Álex Saab, señalado testaferro de Nicolás Maduro
-  description: De la Espriella representó legalmente a Álex Saab, ciudadano de origen libanés-colombiano detenido en Estados Unidos y acusado por el Departamento de Justicia (DOJ) de ser un testaferro del régimen venezolano de Nicolás Maduro. El exsocio de De la Espriella, Daniel Peñarredonda, mantiene vínculos documentados con la esposa de Saab, Camila Fabri.
+  description: De la Espriella representó legalmente a Álex Saab, ciudadano de origen libanés-colombiano detenido en Estados Unidos y acusado por el Departamento de Justicia (DOJ) de ser un testaferro del régimen venezolano de Nicolás Maduro. Saab fue liberado posteriormente mediante un canje de prisioneros y regresó a Venezuela. El exsocio de De la Espriella, Daniel Peñarredonda, mantiene vínculos documentados con la esposa de Saab, Camila Fabri.
   status: suspicion
   year: 2020
   sourceTitle: "El universo empresarial De la Espriella: socios cuestionados, saldos en rojo y bienes raíces" — La Silla Vacía
@@ -176,7 +180,7 @@ Los principales señalamientos provienen de sus clientes como abogado defensor y
 
 3.
   title: Socios con antecedentes por paramilitarismo, narcotráfico y corrupción en Ron Defensor
-  description: La Silla Vacía identificó que entre los 14 accionistas de Dominio De la Espriella SAS (empresa del ron Ron Defensor), varios tienen antecedentes graves: Hugues Rodríguez Fuentes, condenado por paramilitarismo ("Comandante Barbie"); Aniano Iglesias, señalado de ser cuota de políticos y vinculado a bienes incautados por narcotráfico en 2011; y Juan Carlos Gossaín, exgobernador de Bolívar destituido e inhabilitado por el escándalo del "cartel de la hemofilia". La campaña de De la Espriella se negó a responder preguntas al respecto.
+  description: La Silla Vacía identificó que entre los 14 accionistas de Dominio De la Espriella SAS (empresa del ron Ron Defensor), varios tienen antecedentes graves: Hugues Rodríguez Fuentes, condenado por paramilitarismo ("Comandante Barbie"); Aniano Iglesias, señalado de ser cuota de políticos y vinculado a bienes incautados por narcotráfico en 2011; Juan Carlos Gossaín, exgobernador de Bolívar destituido e inhabilitado por el escándalo del "cartel de la hemofilia"; y Serafino Iácono, empresario petrolero que posee el 8% de la empresa a través de Black Swan Finance Corp. Además, el 50% de la empresa está en manos de Somos Inversiones, una sociedad constituida en Panamá que La Silla Vacía señala como posible vehículo prestanombres. La campaña de De la Espriella se negó a responder preguntas al respecto.
   status: suspicion
   year: 2026
   sourceTitle: "El universo empresarial De la Espriella: socios cuestionados, saldos en rojo y bienes raíces" — La Silla Vacía
@@ -217,9 +221,11 @@ Los principales señalamientos provienen de sus clientes como abogado defensor y
 
 ### `alliances` (texto introductorio)
 
-Su respaldo político viene de tres fuentes: el partido Salvación Nacional, el sector evangélico y cristiano, y figuras del uribismo y la centro-derecha que le han expresado simpatía.
+Su respaldo político viene de cuatro fuentes: el partido Salvación Nacional, el sector evangélico y cristiano, figuras del uribismo y la centro-derecha que le han expresado simpatía o apoyo formal, y ganaderos organizados representados por Fedegán.
 
-> Nota de investigación: Dilian Francisca Toro (Partido de la U), Hernán Andrade (Conservador), Carlos Fernando Mejía y Juan Camilo Ostos han dado señales de simpatía pero sin respaldo formal confirmado a la fecha de este perfil. No incluir como avales hasta confirmación.
+> Nota de investigación: Dilian Francisca Toro (Partido de la U), Hernán Andrade (Conservador) y Juan Camilo Ostos han dado señales de simpatía pero sin respaldo formal confirmado a la fecha de este perfil. No incluir como avales hasta confirmación.
+>
+> Nota de investigación: Carlos Felipe Mejía, exsenador uribista, aspira al Congreso por Salvación Nacional mientras apoya la candidatura de De la Espriella. Revista Cambio (26-feb-2026) reportó que Mejía tiene una contravención por daño en bien ajeno (ocurrida hace ~25 años) y una demanda ante el Consejo Nacional Electoral; los militantes del Centro Democrático habrían difundido la versión de que está "inhabilitado". No se incluye como endorser formal hasta confirmación de su rol oficial en la campaña.
 
 ### `allianceParties`
 
@@ -260,9 +266,11 @@ Su respaldo político viene de tres fuentes: el partido Salvación Nacional, el 
 7.
   name: Silvestre Dangond
   description: Cantante de vallenato y socio empresarial en Ron Defensor y el restaurante Místico en Miami. Referente de la imagen de la campaña.
-```
 
-> Nota de investigación: Dilian Francisca Toro (Partido de la U), Hernán Andrade (Conservador), Carlos Fernando Mejía y Juan Camilo Ostos han dado señales de simpatía pero sin respaldo formal confirmado a la fecha de este perfil. No incluir como avales hasta confirmación.
+8.
+  name: José Félix Lafaurie Rivera
+  description: Presidente de Fedegán (Federación Colombiana de Ganaderos) y esposo de la senadora María Fernanda Cabal. Militante histórico del Centro Democrático, anunció en febrero de 2026 su salida de ese partido para unirse a Salvación Nacional en respaldo a De la Espriella. Declaró: "No volví a hablar con el expresidente Uribe."
+```
 
 ---
 
@@ -278,20 +286,20 @@ No ha ocupado ningún cargo público ni de elección popular. Toda su carrera ha
 
 ### `funding` (texto narrativo)
 
-Afirma autofinanciarse. Según una investigación de La Silla Vacía (enero 2026), tiene propiedades en Colombia, una mansión valorada en 5,1 millones de dólares en Miami y empresas en Florida y Panamá. Sus empresas colombianas cerraron 2024 con pérdidas netas pese a tener ingresos importantes. Los informes de financiación ante el CNE no estaban disponibles al momento de edición.
+Afirma autofinanciarse. Según una investigación de La Silla Vacía (enero 2026), tiene propiedades en Colombia, una mansión valorada en 5,1 millones de dólares en Miami-Dade y una segunda propiedad en Miami-Dade valorada en 628.000 dólares, esta última en nombre de SGS Investments Global LLC. Tiene además empresas en Florida y Panamá. Sus empresas colombianas cerraron 2024 con pérdidas netas pese a tener ingresos importantes. Los informes de financiación ante el CNE no estaban disponibles al momento de edición.
 
 ---
 
 ## Campos resumen para la página de comparación
 
-| Campo                  | Texto (2–3 oraciones, tono neutro)                                                                                                                                                                                                                            |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `summaryTrajectory`    | Abogado penalista barranquillero sin cargos de elección popular previos. Fundó en 2004 el bufete De la Espriella Lawyers y es conocido por defender casos de alto perfil. Esta es su primera candidatura política.                                            |
-| `summaryProposals`     | Sus propuestas se centran en reducir el Estado, bajar impuestos, suspender la JEP y rechazar negociaciones con grupos armados. También propone reformas constitucionales para prohibir el aborto y permitir el voto de militares activos.                     |
-| `summaryControversies` | La Silla Vacía documentó socios con antecedentes penales en su empresa de ron y un déficit neto en sus compañías colombianas que contrasta con su imagen de empresario exitoso. Su campaña también ha sido señalada por hostigar judicialmente a periodistas. |
-| `summaryAlliances`     | Cuenta con el aval de Salvación Nacional y un sólido respaldo del sector evangélico y cristiano, articulado a través de pastores con estructuras electorales propias en varias regiones del país.                                                             |
-| `summaryRecord`        | No tiene registro en cargos públicos ni legislativos. Su carrera ha transcurrido íntegramente en el ejercicio privado del derecho penal.                                                                                                                      |
-| `summaryFunding`       | Afirma autofinanciarse. Tiene documentados bienes en Colombia, Florida (incluyendo una mansión de 5,1 millones de dólares en Miami-Dade) y Panamá. Los informes de financiación de campaña ante el CNE no están disponibles aún.                              |
+| Campo                  | Texto (2–3 oraciones, tono neutro)                                                                                                                                                                                                                                                                                                     |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `summaryTrajectory`    | Abogado penalista barranquillero sin cargos de elección popular previos. Fundó en 2004 el bufete De la Espriella Lawyers y es conocido por defender casos de alto perfil. Esta es su primera candidatura política.                                                                                                                     |
+| `summaryProposals`     | Sus propuestas se centran en reducir el Estado, bajar impuestos, suspender la JEP y rechazar negociaciones con grupos armados. También propone reformas constitucionales para prohibir el aborto y permitir el voto de militares activos.                                                                                              |
+| `summaryControversies` | La Silla Vacía documentó socios con antecedentes penales en su empresa de ron y un déficit neto en sus compañías colombianas que contrasta con su imagen de empresario exitoso. Su campaña también ha sido señalada por hostigar judicialmente a periodistas.                                                                          |
+| `summaryAlliances`     | Cuenta con el aval de Salvación Nacional y un sólido respaldo del sector evangélico y cristiano, articulado a través de pastores con estructuras electorales propias en varias regiones del país. En febrero de 2026, el presidente de Fedegán, José Félix Lafaurie Rivera, abandonó el Centro Democrático para apoyar su candidatura. |
+| `summaryRecord`        | No tiene registro en cargos públicos ni legislativos. Su carrera ha transcurrido íntegramente en el ejercicio privado del derecho penal.                                                                                                                                                                                               |
+| `summaryFunding`       | Afirma autofinanciarse. Tiene documentados bienes en Colombia, dos propiedades en Miami-Dade (una mansión de 5,1 millones de dólares y una segunda por 628.000 dólares vía SGS Investments Global LLC) y empresas en Florida y Panamá. Los informes de financiación de campaña ante el CNE no están disponibles aún.                   |
 
 ---
 
@@ -366,5 +374,12 @@ Afirma autofinanciarse. Según una investigación de La Silla Vacía (enero 2026
   title: "Hub candidato Abelardo de la Espriella — La Silla Vacía"
   publishedAt: 2026-02-28
   url: https://www.lasillavacia.com/abelardo-de-la-espriella-candidato-presidencial-2026/
+  tier: prensa
+
+11.
+  section: alliances
+  title: "Iván Cepeda es una persona reflexiva que escucha: José Félix Lafaurie" — Revista Cambio
+  publishedAt: 2026-02-25
+  url: https://cambiocolombia.com/elecciones-colombia-2026/articulo/2026/2/ivan-cepeda-es-una-persona-reflexiva-que-escucha-jose-felix-lafaurie/
   tier: prensa
 ```
